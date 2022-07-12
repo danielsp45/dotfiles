@@ -1,0 +1,1 @@
+/Users/danielsp_45/.config/nvim/vim-plug/plugins.vim
