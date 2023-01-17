@@ -1,0 +1,6 @@
+{
+	"codeLens.enable": true,
+	"emmet.includeLanguages": {"eelixir": "html", "smarty": "html", "javascript": "html"},
+	"elixir.pathToElixirLS": "~/.elixir-ls/release/language_server.sh",
+    "languageserver": {}
+}
