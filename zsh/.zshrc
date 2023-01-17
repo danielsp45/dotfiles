@@ -134,7 +134,8 @@ alias :q='exit'
 
 # git commands alias
 alias ga='git add .'
-alias gc='git commit -m'
+alias gcm='git commit -m'
+alias gch='git checkout'
 alias gs='git status'
 alias gd='git diff'
 alias gpl='git pull'
@@ -171,6 +172,7 @@ function new(){
     cd ~
     clear
     neofetch
+    kusa danielsp45
 }
 
 . /opt/homebrew/opt/asdf/libexec/asdf.sh
@@ -178,4 +180,4 @@ export PATH="/opt/homebrew/opt/bison/bin:$PATH"
 
 # Fig post block. Keep at the bottom of this file.
 [[ -f "$HOME/.fig/shell/zshrc.post.zsh" ]] && builtin source "$HOME/.fig/shell/zshrc.post.zsh"
-
+export PATH="/opt/homebrew/opt/ncurses/bin:$PATH"
