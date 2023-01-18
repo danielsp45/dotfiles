@@ -70,3 +70,5 @@ vim.cmd([[
     autocmd BufWritePost plugins.lua source <afile> | PackerCompile
   augroup end
 ]])
+
+vim.cmd("hi Normal guibg=NONE ctermbg=NONE")
