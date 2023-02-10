@@ -89,6 +89,11 @@ _G.packer_plugins = {
     path = "/Users/danielsp_45/.local/share/nvim/site/pack/packer/start/coc.nvim",
     url = "https://github.com/neoclide/coc.nvim"
   },
+  ["copilot.vim"] = {
+    loaded = true,
+    path = "/Users/danielsp_45/.local/share/nvim/site/pack/packer/start/copilot.vim",
+    url = "https://github.com/github/copilot.vim"
+  },
   fzf = {
     loaded = true,
     path = "/Users/danielsp_45/.local/share/nvim/site/pack/packer/start/fzf",
@@ -103,6 +108,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/danielsp_45/.local/share/nvim/site/pack/packer/start/nerdtree.git",
     url = "https://github.com/preservim/nerdtree"
+  },
+  ["nvim-treesitter"] = {
+    loaded = true,
+    path = "/Users/danielsp_45/.local/share/nvim/site/pack/packer/start/nvim-treesitter",
+    url = "https://github.com/nvim-treesitter/nvim-treesitter"
   },
   ["packer.nvim"] = {
     loaded = true,
