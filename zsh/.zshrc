@@ -75,7 +75,8 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Which plugins would you like to load?
 # Standard plugins can be found in $ZSH/plugins/
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
-# Example format: plugins=(rails git textmate ruby lighthouse)
+plugins=(asdf git docker-compose extract zsh-autosuggestions zsh-syntax-highlighting zsh-completions)
+
 # Add wisely, as too many plugins slow down shell startup.
 
 source $ZSH/oh-my-zsh.sh
@@ -141,9 +142,37 @@ alias gd='git diff'
 alias gpl='git pull'
 alias gps='git push'
 
-# makefile commands alias 
-alias mc='make clean'
-alias mp='make program'
+# binary scripts
+alias bs="bin/server"
+alias bb="bin/build"
+alias br="bin/run"
+alias bt="bin/test"
+alias bf="bin/format"
+alias bl="bin/lint"
+alias bsh="bin/console"
+alias bcl="bin/clean"
+alias bst="bin/setup"
+alias bsr="bin/start"
+alias bsp="bin/stop"
+
+# elixir mix commands
+alias m=mix
+alias im="iex -S mix"
+alias ms="mix phx.server"
+alias mc="mix do clean, compile"
+alias mf="mix format"
+alias ml="mix lint"
+alias mt="mix test"
+
+# make commands
+alias mk=make
+alias mkh="make help"
+alias mkl="make lint"
+alias mkc="make clean"
+alias mkr="make run"
+alias mkt="make test"
+alias mkut="make unit-tests"
+alias mkts="make tests"
 
 eval $(thefuck --alias)
 
