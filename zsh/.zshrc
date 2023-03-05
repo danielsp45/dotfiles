@@ -75,7 +75,7 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Which plugins would you like to load?
 # Standard plugins can be found in $ZSH/plugins/
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
-plugins=(asdf git docker-compose extract zsh-autosuggestions zsh-syntax-highlighting zsh-completions)
+plugins=(asdf git docker-compose extract fzf-tab)
 
 # Add wisely, as too many plugins slow down shell startup.
 
