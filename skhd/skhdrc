@@ -1,11 +1,11 @@
 # focus window
-shift + alt - h : yabai -m window --focus west
-shift + alt - l : yabai -m window --focus east
-shift + alt - j : yabai -m window --focus south
-shift + alt - k : yabai -m window --focus north
+cmd + shift + alt + ctrl - h : yabai -m window --focus west
+cmd + shift + alt + ctrl - l : yabai -m window --focus east
+cmd + shift + alt + ctrl - j : yabai -m window --focus south
+cmd + shift + alt + ctrl - k : yabai -m window --focus north
 
 # Rotate windows clockwise and anticlockwise
-shift + alt - r : yabai -m space --rotate 270
+cmd + shift + alt + ctrl - r : yabai -m space --rotate 270
 
 ## Close active application
 # ctrl + alt + cmd + shift - backspace : $(yabai -m window $(yabai -m query --windows --window | jq -re ".id") --close)
@@ -19,14 +19,14 @@ shift + alt - 5 : yabai -m window --space  5; yabai -m space --focus 5
 shift + alt - 6 : yabai -m window --space  5; yabai -m space --focus 6
 
 # Resize windows
-shift + alt - n : yabai -m window --resize left:-50:0; \
+cmd + shift + alt + ctrl - n : yabai -m window --resize left:-50:0; \
                  yabai -m window --resize right:-50:0
 # ctrl + alt - m : yabai -m window --resize bottom:0:50; \
 #                  yabai -m window --resize top:0:50
 # ctrl + alt - k : yabai -m window --resize top:0:-50; \
 #                  yabai -m window --resize bottom:0:-50
-shift + alt - m : yabai -m window --resize right:50:0; \
+cmd + shift + alt + ctrl - m : yabai -m window --resize right:50:0; \
                  yabai -m window --resize left:50:0
 
 # Equalize size of windows
-shift + alt - e : yabai -m space --balance
+cmd + shift + alt + ctrl - e : yabai -m space --balance
