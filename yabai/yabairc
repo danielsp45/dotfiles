@@ -13,6 +13,9 @@ yabai -m space 5 --label five
 yabai -m space 6 --label six
 yabai -m space 9 --label nine
 
+# set focus follows mouse mode (default: off, options: off, autoraise, autofocus)
+yabai -m config focus_follows_mouse autoraise
+
 # float system preferences. Most of these just diable Yabai form resizing them.
 # yabai -m rule --add app="^System Preferences$" sticky=on layer=above manage=off
 # yabai -m rule --add app="^Karabiner-Elements$" sticky=on layer=above manage=off
@@ -80,7 +83,7 @@ yabai -m config mouse_action1 move
 
 ## Change how yabai looks
 yabai -m config layout bsp
-yabai -m config top_padding 40
+yabai -m config top_padding 10
 yabai -m config bottom_padding 10
 yabai -m config left_padding 10
 yabai -m config right_padding 10

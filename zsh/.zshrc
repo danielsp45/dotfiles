@@ -208,6 +208,7 @@ function new(){
 . /opt/homebrew/opt/asdf/libexec/asdf.sh
 export PATH="/opt/homebrew/opt/bison/bin:$PATH"
 
+export PATH="/opt/homebrew/opt/ncurses/bin:$PATH"
+
 # Fig post block. Keep at the bottom of this file.
 [[ -f "$HOME/.fig/shell/zshrc.post.zsh" ]] && builtin source "$HOME/.fig/shell/zshrc.post.zsh"
-export PATH="/opt/homebrew/opt/ncurses/bin:$PATH"

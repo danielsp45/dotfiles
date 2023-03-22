@@ -134,6 +134,11 @@ _G.packer_plugins = {
     path = "/Users/danielsp_45/.local/share/nvim/site/pack/packer/start/vim-airline-themes",
     url = "https://github.com/vim-airline/vim-airline-themes"
   },
+  ["vim-astro"] = {
+    loaded = true,
+    path = "/Users/danielsp_45/.local/share/nvim/site/pack/packer/start/vim-astro",
+    url = "https://github.com/wuelnerdotexe/vim-astro"
+  },
   ["vim-commentary.git"] = {
     loaded = true,
     path = "/Users/danielsp_45/.local/share/nvim/site/pack/packer/start/vim-commentary.git",

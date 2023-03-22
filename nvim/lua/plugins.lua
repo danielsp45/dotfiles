@@ -57,4 +57,7 @@ return require('packer').startup(function(use)
    -- Vim copilot
    use 'github/copilot.vim'
 
+   -- Astro plugin
+   use 'wuelnerdotexe/vim-astro'
+
 end)
