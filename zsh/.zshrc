@@ -202,7 +202,7 @@ function new(){
     cd ~
     clear
     neofetch
-    kusa danielsp45
+    # kusa danielsp45
 }
 
 . /opt/homebrew/opt/asdf/libexec/asdf.sh

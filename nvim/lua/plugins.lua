@@ -60,4 +60,6 @@ return require('packer').startup(function(use)
    -- Astro plugin
    use 'wuelnerdotexe/vim-astro'
 
+   -- Prisma plugin
+   use 'prisma/vim-prisma'
 end)
