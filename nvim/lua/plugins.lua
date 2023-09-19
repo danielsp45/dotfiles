@@ -5,6 +5,12 @@ return require('packer').startup(function(use)
     --Coc Vim
     use {'neoclide/coc.nvim', branch = 'release'}
 
+    --Treesitter
+    use {
+        'nvim-treesitter/nvim-treesitter',
+        run = ':TSUpdate'
+    }
+
     -- Gruvbox color scheme
     use 'morhetz/gruvbox'
 
@@ -50,9 +56,6 @@ return require('packer').startup(function(use)
 
    --Vim icons
    use 'ryanoasis/vim-devicons'
-
-   --Treesitter
-   use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
 
    -- Vim copilot
    use 'github/copilot.vim'
