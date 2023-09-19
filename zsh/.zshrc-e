@@ -212,5 +212,3 @@ export PATH="/opt/homebrew/opt/ncurses/bin:$PATH"
 
 # Fig post block. Keep at the bottom of this file.
 [[ -f "$HOME/.fig/shell/zshrc.post.zsh" ]] && builtin source "$HOME/.fig/shell/zshrc.post.zsh"
-
-[ -f "/Users/danielsp_45/.ghcup/env" ] && source "/Users/danielsp_45/.ghcup/env" # ghcup-env

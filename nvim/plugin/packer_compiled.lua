@@ -169,6 +169,11 @@ _G.packer_plugins = {
     path = "/Users/danielsp_45/.local/share/nvim/site/pack/packer/start/vim-polyglot",
     url = "https://github.com/sheerun/vim-polyglot"
   },
+  ["vim-prisma"] = {
+    loaded = true,
+    path = "/Users/danielsp_45/.local/share/nvim/site/pack/packer/start/vim-prisma",
+    url = "https://github.com/prisma/vim-prisma"
+  },
   ["vim-smoothie"] = {
     loaded = true,
     path = "/Users/danielsp_45/.local/share/nvim/site/pack/packer/start/vim-smoothie",
