@@ -1,6 +1,6 @@
 require('plugins')
 require('coc')
--- require('treesitter')
+require('treesitter')
 
 -- Clipboard
 vim.api.nvim_command("set clipboard=unnamedplus")

@@ -5,12 +5,6 @@ return require('packer').startup(function(use)
     --Coc Vim
     use {'neoclide/coc.nvim', branch = 'release'}
 
-    --Treesitter
-    use {
-        'nvim-treesitter/nvim-treesitter',
-        run = ':TSUpdate'
-    }
-
     -- Gruvbox color scheme
     use 'morhetz/gruvbox'
 
@@ -18,12 +12,21 @@ return require('packer').startup(function(use)
     use 'vim-airline/vim-airline'
     use 'vim-airline/vim-airline-themes'
 
+    --Treesitter
+    use {
+        'nvim-treesitter/nvim-treesitter',
+        run = function()
+            local ts_update = require('nvim-treesitter.install').update({ with_sync = true })
+            ts_update()
+        end,
+    }
+
     --Vim wiki
     use 'vimwiki/vimwiki'
 
     --Plugin to fast scrolling
     use 'psliwka/vim-smoothie'
-    
+
     --Vim commentery
     use 'https://github.com/tpope/vim-commentary.git'
 
