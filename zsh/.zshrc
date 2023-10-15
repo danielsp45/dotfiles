@@ -130,9 +130,11 @@ typeset -g POWERLEVEL9K_INSTANT_PROMPT=quiet
 
 # terminal commands alias
 alias cat='bat'
-alias nv='nvim'
+alias nv='lvim'
+alias lv='lvim'
 alias v='nvim $(fzf)'
 alias :q='exit'
+alias cl='clear'
 
 # git commands alias
 alias ga='git add .'
@@ -142,6 +144,8 @@ alias gs='git status'
 alias gd='git diff'
 alias gpl='git pull'
 alias gps='git push'
+alias gpf='git push --force-with-lease'
+alias gca='git commit --ammend --no-edit'
 
 # binary scripts
 alias bs="bin/server"
@@ -164,6 +168,12 @@ alias mc="mix do clean, compile"
 alias mf="mix format"
 alias ml="mix lint"
 alias mt="mix test"
+alias mpr="mix phx.routes"
+alias mer="mix ecto.reset"
+
+# postgres
+alias pg_start="docker-compose -f /Users/danielsp_45/.dotfiles/docker/postgres.yml start"
+alias pg_stop="docker-compose -f /Users/danielsp_45/.dotfiles/docker/postgres.yml stop"
 
 # make commands
 alias mk=make
