@@ -185,6 +185,10 @@ alias mkt="make test"
 alias mkut="make unit-tests"
 alias mkts="make tests"
 
+# core application
+alias core="/Users/danielsp_45/.dotfiles/core/core-start"
+alias core-terminal="docker exec -it coreemu7 /bin/bash"
+
 eval $(thefuck --alias)
 
 function bat_alias(){
