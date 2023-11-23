@@ -13,13 +13,19 @@ return require('packer').startup(function(use)
     use 'vim-airline/vim-airline-themes'
 
     --Treesitter
-    use {
-        'nvim-treesitter/nvim-treesitter',
-        run = function()
-            local ts_update = require('nvim-treesitter.install').update({ with_sync = true })
-            ts_update()
-        end,
-    }
+    -- use {
+    --     'nvim-treesitter/nvim-treesitter',
+    --     run = function()
+    --         local ts_update = require('nvim-treesitter.install').update({ with_sync = true })
+    --         ts_update()
+    --     end,
+    -- }
+
+    -- orgmode
+    -- use {'nvim-orgmode/orgmode', config = function()
+    --   require('orgmode').setup{}
+    -- end
+    -- }
 
     --Vim wiki
     use 'vimwiki/vimwiki'
