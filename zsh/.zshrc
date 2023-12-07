@@ -186,18 +186,10 @@ alias mkut="make unit-tests"
 alias mkts="make tests"
 
 # core application
-alias core="/Users/danielsp_45/.dotfiles/core/core-start"
+alias core="docker compose -f /Users/danielsp_45/Uni/CC/docker-compose.yml up -d"
 alias core-terminal="docker exec -it coreemu7 /bin/bash"
 
 eval $(thefuck --alias)
-
-function bat_alias(){
-    bat $1
-}
-
-function cluster(){
-    ssh a100545@s7edu.di.uminho.pt
-}
 
 function copy(){
     pbcopy < $1
@@ -224,7 +216,7 @@ export PATH="/opt/homebrew/opt/bison/bin:$PATH"
 
 export PATH="/opt/homebrew/opt/ncurses/bin:$PATH"
 
+[ -f "/Users/danielsp_45/.ghcup/env" ] && source "/Users/danielsp_45/.ghcup/env" # ghcup-env
+
 # Fig post block. Keep at the bottom of this file.
 [[ -f "$HOME/.fig/shell/zshrc.post.zsh" ]] && builtin source "$HOME/.fig/shell/zshrc.post.zsh"
-
-[ -f "/Users/danielsp_45/.ghcup/env" ] && source "/Users/danielsp_45/.ghcup/env" # ghcup-env
