@@ -12,8 +12,11 @@ matches:
   - trigger: ":espanso"
     replace: "Hi there!"
 
-  - trigger: ":meta"
-    replace: "---\n---"
+  - trigger: ":email"
+    replace: "hello@danielpereira.xyz"
+
+  - trigger: ":domain"
+    replace: "danielpereira.xyz"
 
   - trigger: ":v"
     replace: "nvim $(fzf)"

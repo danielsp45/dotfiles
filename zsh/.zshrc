@@ -75,7 +75,7 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Which plugins would you like to load?
 # Standard plugins can be found in $ZSH/plugins/
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
-plugins=(asdf git docker-compose extract fzf-tab)
+plugins=(asdf git docker-compose extract fzf-tab autoswitch_virtualenv $plugins)
 
 # Add wisely, as too many plugins slow down shell startup.
 
@@ -220,3 +220,10 @@ export PATH="/opt/homebrew/opt/ncurses/bin:$PATH"
 
 # Fig post block. Keep at the bottom of this file.
 [[ -f "$HOME/.fig/shell/zshrc.post.zsh" ]] && builtin source "$HOME/.fig/shell/zshrc.post.zsh"
+
+# bun completions
+[ -s "/Users/danielsp_45/.bun/_bun" ] && source "/Users/danielsp_45/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
