@@ -19,14 +19,16 @@ defmodule DownloadsCleaner do
     end)
   end
 
-  defp get_config(config) do
+  defp get_config(config_name) do
     file = File.read!(@config)
-    result = JSON.decode!(file)
+    config = JSON.decode!(file)
 
-    if result[config] do
-      result[config]
-    else
+    result = Map.get(config, config_name)
+
+    if is_nil(result) do
       raise "param not found in config file"
+    else
+      result
     end
   end
 end
