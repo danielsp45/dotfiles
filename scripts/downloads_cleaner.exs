@@ -15,7 +15,12 @@ defmodule DownloadsCleaner do
       source = Path.join(downloads_path, file)
       destination = Path.join(bin_path, file)
       IO.puts("Moving file #{source} to #{destination}")
-      File.rename!(source, destination)
+
+      try do
+        File.rename!(source, destination)
+      rescue
+        e in File.RenameError -> IO.puts("Error moving file #{source} to #{destination}")
+      end
     end)
   end
 
