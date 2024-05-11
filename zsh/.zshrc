@@ -136,17 +136,6 @@ alias v='nvim $(fzf)'
 alias :q='exit'
 alias cl='clear'
 
-# git commands alias
-alias ga='git add .'
-alias gcm='git commit -m'
-alias gch='git checkout'
-alias gs='git status'
-alias gd='git diff'
-alias gpl='git pull'
-alias gps='git push'
-alias gpf='git push --force-with-lease'
-alias gca='git commit --ammend --no-edit'
-
 # binary scripts
 alias bs="bin/server"
 alias bb="bin/build"
