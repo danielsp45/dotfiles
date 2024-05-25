@@ -21,12 +21,6 @@ return require('packer').startup(function(use)
     --     end,
     -- }
 
-    -- orgmode
-    -- use {'nvim-orgmode/orgmode', config = function()
-    --   require('orgmode').setup{}
-    -- end
-    -- }
-
     --Vim wiki
     use 'vimwiki/vimwiki'
 
