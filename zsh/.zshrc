@@ -130,7 +130,7 @@ typeset -g POWERLEVEL9K_INSTANT_PROMPT=quiet
 
 # terminal commands alias
 alias cat='bat'
-alias nv='lvim'
+alias nv='nvim'
 alias lv='lvim'
 alias v='nvim $(fzf)'
 alias :q='exit'
