@@ -1,7 +1,0 @@
-{
-	"codeLens.enable": true,
-	"emmet.includeLanguages": {"eelixir": "html", "smarty": "html", "javascript": "html"},
-	"elixir.pathToElixirLS": "~/.elixir-ls/release/language_server.sh",
-    "languageserver": {},
-    "java.import.gradle.java.home": "/Users/danielsp_45/Library/Java/JavaVirtualMachines/temurin-17.0.6/Contents/Home"
-}
