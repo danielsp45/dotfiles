@@ -17,3 +17,19 @@ vim.api.nvim_command("set tabstop=4") -- Sets tab to 4 spaces
 vim.api.nvim_command("set shiftwidth=4") -- Sets shiftwidth to 4 spaces
 vim.api.nvim_command("set softtabstop=4") -- Sets softtabstop to 4 spaces
 vim.api.nvim_command("set expandtab")
+
+vim.lsp.handlers["textDocument/hover"] =
+  vim.lsp.with(
+  vim.lsp.handlers.hover,
+  {
+    border = "single",
+  }
+)
+
+vim.lsp.handlers["textDocument/signatureHelp"] =
+  vim.lsp.with(
+  vim.lsp.handlers.signature_help,
+  {
+    border = "single",
+  }
+)
