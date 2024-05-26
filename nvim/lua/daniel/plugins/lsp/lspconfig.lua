@@ -85,11 +85,21 @@ return {
           capabilities = capabilities,
         })
       end,
+
       ["elixirls"] = function()
         lspconfig["elixirls"].setup({
+          cmd = {"/opt/homebrew/bin/elixir-ls"},
           capabilities = capabilities,
+            flags = {
+                debounce_text_changes = 150,
+              },
+              elixirLS = {
+                dialyzerEnabled = true,
+                fetchDeps = false,
+              },
         })
       end,
+
       ["lua_ls"] = function()
         -- configure lua server (with special settings)
         lspconfig["lua_ls"].setup({
