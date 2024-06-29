@@ -1,1 +1,0 @@
-/Users/danielsp_45/.asdf/installs/elixir/1.16.2-otp-26/bin/elixir: line 247: exec: erl: not found

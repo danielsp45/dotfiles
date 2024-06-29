@@ -32,6 +32,17 @@ local components = {
         end,
         color = { gui = "bold" },
     },
+    filepath = {
+        -- Get the filepath of the current buffer from the directory where nvim was started
+        function()
+          local path = vim.fn.expand "%:p"
+          local home = os.getenv "HOME"
+          if string.find(path, home) then
+            path = string.gsub(path, home, "~")
+          end
+          return path
+        end,
+    },
     filetype = {
         "filetype", cond = nil, padding = { left = 1, right = 1 },
     },
