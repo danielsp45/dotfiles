@@ -213,5 +213,6 @@ export PATH="/opt/homebrew/opt/ncurses/bin:$PATH"
 # bun
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
+export EDITOR=nvim
 
 export PATH="$PATH:/Users/danielsp_45/.local/bin"
