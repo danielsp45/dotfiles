@@ -9,17 +9,21 @@
     };
   };
 
-  outputs = { self, nixpkgs, home-manager, ... }: {
-    defaultPackage.aarch64-darwin = home-manager.defaultPackage.aarch64-darwin;
+    outputs = { self, nixpkgs, home-manager, ... }:
+        let
+            system = "aarch64-darwin";  # TODO: make this dynamic
+            username = builtins.getEnv "USER";
+            home = builtins.getEnv "HOME";
+        in {
+            defaultPackage.${system} = home-manager.defaultPackage.${system};
  
-    homeConfigurations = {
-	    # TODO: Modify "your.username" below to match your username
-        "danielsp_45" = home-manager.lib.homeManagerConfiguration {
-        system = "aarch64-darwin"; # TODO: replace with x86_64-linux on Linux
-        homeDirectory = "/Users/danielsp_45"; # TODO: make this match your home directory
-        username = "danielsp_45";
-        configuration.imports = [ ./home.nix ];
-      };
-    };
-  };
+            homeConfigurations = {
+                username = home-manager.lib.homeManagerConfiguration {
+                    system = system;
+                    homeDirectory = home;
+                    username = username;
+                    configuration.imports = [ ./home.nix ];
+                };
+            };
+        };
 }

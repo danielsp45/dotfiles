@@ -3,8 +3,8 @@
 {
     # Home Manager needs a bit of information about you and the paths it should
     # manage.
-    home.username = "danielsp_45";
-    home.homeDirectory = "/Users/danielsp_45";
+    home.username = builtins.getEnv "USER";
+    home.homeDirectory = builtins.getEnv "HOME";
 
     # This value determines the Home Manager release that your configuration is
     # compatible with. This helps avoid breakage when a new Home Manager release
@@ -57,7 +57,7 @@
     #  /etc/profiles/per-user/danielsp_45/etc/profile.d/hm-session-vars.sh
     #
     home.sessionVariables = {
-    EDITOR = "neovim";
+        EDITOR = "neovim";
     };
 
     # Let Home Manager install and manage itself.
