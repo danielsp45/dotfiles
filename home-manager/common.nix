@@ -16,6 +16,7 @@
         pkgs.zsh
         pkgs.zsh-z
         pkgs.oh-my-zsh
+        pkgs.zsh-powerlevel10k
         pkgs.neovim
         pkgs.ripgrep
         pkgs.lazygit
@@ -27,6 +28,7 @@
     # Home Manager is pretty good at managing dotfiles. The primary way to manage
     # plain files is through 'home.file'.
     home.file = {
+    ".zshrc".source = ./../zsh/zshrc;
     ".config/alacritty".source = ./../alacritty;
     ".config/nvim".source = ./../nvim;
     };
