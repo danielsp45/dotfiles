@@ -27,7 +27,6 @@
     # Home Manager is pretty good at managing dotfiles. The primary way to manage
     # plain files is through 'home.file'.
     home.file = {
-    ".zshrc".source = ./../zsh/zshrc;
     ".config/alacritty".source = ./../alacritty;
     ".config/nvim".source = ./../nvim;
     };
@@ -50,12 +49,6 @@
     #
     home.sessionVariables = {
         EDITOR = "neovim";
-    };
-
-    programs = {
-        zsh = {
-            enable = true;
-        };
     };
 
     # Let Home Manager install and manage itself.
