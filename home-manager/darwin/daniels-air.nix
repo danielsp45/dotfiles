@@ -7,7 +7,6 @@
     home.homeDirectory = "/Users/danielsp_45";
 
     home.file = {
-    ".zshrc".source = ./../../zsh/zshrc;
     ".config/yabai".source = ./../../yabai;
     ".config/skhd".source = ./../../skhd;
     };
