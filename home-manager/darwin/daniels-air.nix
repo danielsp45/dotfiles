@@ -9,6 +9,7 @@
     home.file = {
     ".config/yabai".source = ./../../yabai;
     ".config/skhd".source = ./../../skhd;
+    ".zshrc".source = ./../zsh/zshrc;
     };
 
     imports = [ ./../common.nix ];

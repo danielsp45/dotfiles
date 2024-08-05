@@ -29,7 +29,6 @@
     home.file = {
     ".config/alacritty".source = ./../alacritty;
     ".config/nvim".source = ./../nvim;
-    ".zshrc".source = ./../zsh/zshrc;
     };
 
     # Home Manager can also manage your environment variables through
