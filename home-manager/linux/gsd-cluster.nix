@@ -6,5 +6,9 @@
     home.username = "gsd";
     home.homeDirectory = "/home/gsd";
 
+    home.file = {
+    ".bashrc".source = ./../../bash/bashrc;
+    };
+
     imports = [ ./../common.nix ];
 }
