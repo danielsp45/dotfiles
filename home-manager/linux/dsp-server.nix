@@ -6,9 +6,5 @@
     home.username = "danielsp";
     home.homeDirectory = "/home/danielsp";
 
-    home.file = {
-    ".zshrc".source = ./../zsh/zshrc;
-    };
-
     imports = [ ./../common.nix ];
 }
