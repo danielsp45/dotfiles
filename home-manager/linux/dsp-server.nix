@@ -6,5 +6,5 @@
     home.username = "danielsp";
     home.homeDirectory = "/home/danielsp";
 
-    imports = [ ./common.nix ];
+    imports = [ ./../common.nix ];
 }

@@ -6,10 +6,10 @@
     home.username = "danielsp_45";
     home.homeDirectory = "/Users/danielsp_45";
 
-    imports = [ ./common.nix ];
-
     home.file = {
-    ".config/yabai".source = ./../yabai;
-    ".config/skhd".source = ./../skhd;
+    ".config/yabai".source = ./../../yabai;
+    ".config/skhd".source = ./../../skhd;
     };
+
+    imports = [ ./../common.nix ];
 }

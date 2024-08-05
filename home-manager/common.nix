@@ -15,6 +15,7 @@
     home.packages = [
         pkgs.zsh
         pkgs.zsh-z
+        pkgs.oh-my-zsh
         pkgs.neovim
         pkgs.ripgrep
         pkgs.lazygit
@@ -49,6 +50,12 @@
     #
     home.sessionVariables = {
         EDITOR = "neovim";
+    };
+
+    programs = {
+        zsh = {
+            enable = true;
+        };
     };
 
     # Let Home Manager install and manage itself.
