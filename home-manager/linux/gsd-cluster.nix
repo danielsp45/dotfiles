@@ -13,7 +13,6 @@
     programs = {
         zsh = {
             enable = true;
-            enableCompletion = true;
             shellAliases = {
                 cat="bat";
                 nv="nvim";
@@ -53,6 +52,18 @@
                 mkut="make unit-tests";
                 mkts="make tests";
 
+                ohMyZsh = {
+                    enable = true;
+                    theme = "robbyrussell";
+                    plugins = [
+                        "git"
+                        "npm"
+                        "history"
+                        "node"
+                        "rust"
+                        "deno"
+                    ];
+                };
             };
         };
     };
