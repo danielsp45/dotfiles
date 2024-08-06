@@ -73,7 +73,7 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Which plugins would you like to load?
 # Standard plugins can be found in $ZSH/plugins/
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
-plugins=(asdf git docker-compose extract fzf-tab)
+plugins=(asdf git docker-compose extract fzf-tab autoswitch_virtualenv $plugins)
 
 # Add wisely, as too many plugins slow down shell startup.
 
@@ -129,17 +129,10 @@ typeset -g POWERLEVEL9K_INSTANT_PROMPT=quiet
 # terminal commands alias
 alias cat='bat'
 alias nv='nvim'
+alias lv='lvim'
 alias v='nvim $(fzf)'
 alias :q='exit'
-
-# git commands alias
-alias ga='git add .'
-alias gcm='git commit -m'
-alias gch='git checkout'
-alias gs='git status'
-alias gd='git diff'
-alias gpl='git pull'
-alias gps='git push'
+alias cl='clear'
 
 # binary scripts
 alias bs="bin/server"
@@ -162,6 +155,12 @@ alias mc="mix do clean, compile"
 alias mf="mix format"
 alias ml="mix lint"
 alias mt="mix test"
+alias mpr="mix phx.routes"
+alias mer="mix ecto.reset"
+
+# postgres
+alias pg_start="docker-compose -f /Users/danielsp_45/.dotfiles/docker/postgres.yml start"
+alias pg_stop="docker-compose -f /Users/danielsp_45/.dotfiles/docker/postgres.yml stop"
 
 # make commands
 alias mk=make
@@ -174,14 +173,6 @@ alias mkut="make unit-tests"
 alias mkts="make tests"
 
 eval $(thefuck --alias)
-
-function bat_alias(){
-    bat $1
-}
-
-function cluster(){
-    ssh a100545@s7edu.di.uminho.pt
-}
 
 function copy(){
     pbcopy < $1
@@ -200,13 +191,4 @@ function new(){
     cd ~
     clear
     neofetch
-    # kusa danielsp45
 }
-
-. /opt/homebrew/opt/asdf/libexec/asdf.sh
-export PATH="/opt/homebrew/opt/bison/bin:$PATH"
-
-export PATH="/opt/homebrew/opt/ncurses/bin:$PATH"
-
-# Fig post block. Keep at the bottom of this file.
-[[ -f "$HOME/.fig/shell/zshrc.post.zsh" ]] && builtin source "$HOME/.fig/shell/zshrc.post.zsh"
