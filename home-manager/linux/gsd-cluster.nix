@@ -59,11 +59,10 @@
                 plugins = [
                     "git"
                     "history"
-                    "zsh-z"
+                    "z"
                     "asdf"
                     "docker-compose"
                     "extract"
-                    "fzf-tab"
                 ];
             };
 
