@@ -60,8 +60,25 @@
                     "git"
                     "history"
                     "zsh-z"
+                    "asdf"
+                    "docker-compose"
+                    "extract"
+                    "fzf-tab"
                 ];
             };
+
+            initExtra = ''
+                function new(){
+                    cd ~
+                    clear
+                    neofetch
+                }
+
+                function switch(){
+                    cd ~/.dotfiles
+                    home-manager switch --flake .#"${1}"
+                }
+            '';
         };
     };
 

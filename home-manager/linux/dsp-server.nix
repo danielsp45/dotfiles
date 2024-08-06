@@ -60,6 +60,10 @@
                     "git"
                     "history"
                     "zsh-z"
+                    "asdf"
+                    "docker-compose"
+                    "extract"
+                    "fzf-tab"
                 ];
             };
         };
