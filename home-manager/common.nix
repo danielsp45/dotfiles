@@ -49,7 +49,7 @@
     #  /etc/profiles/per-user/danielsp_45/etc/profile.d/hm-session-vars.sh
     #
     home.sessionVariables = {
-        EDITOR = "neovim";
+        EDITOR = "nvim";
     };
 
     # Let Home Manager install and manage itself.
