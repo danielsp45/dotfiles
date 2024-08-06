@@ -55,14 +55,6 @@
 
             };
         };
-
-        oh-my-zsh = {
-            enable = true;
-        };
-
-        zsh-powerlevel10k = {
-            enable = true;
-        };
     };
 
     imports = [ ./../common.nix ];
