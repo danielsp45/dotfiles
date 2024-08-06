@@ -76,7 +76,7 @@
 
                 function switch(){
                     cd ~/.dotfiles
-                    home-manager switch --flake .#"${1}"
+                    home-manager switch --flake .#"$1"
                 }
             '';
         };
