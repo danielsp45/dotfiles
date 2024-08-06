@@ -6,10 +6,6 @@
     home.username = "gsd";
     home.homeDirectory = "/home/gsd";
 
-    home.file = {
-    # ".zshrc".source = ./../../zsh/linux/zshrc;
-    };
-
     programs = {
         zsh = {
             enable = true;
@@ -62,11 +58,8 @@
                 theme = "cloud";
                 plugins = [
                     "git"
-                    "npm"
                     "history"
-                    "node"
-                    "rust"
-                    "deno"
+                    "zsh-z"
                 ];
             };
         };
