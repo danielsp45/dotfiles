@@ -14,6 +14,7 @@
         zsh = {
             enable = true;
             shellAliases = {
+                # General
                 cat="bat";
                 nv="nvim";
                 lv="lvim";
@@ -21,6 +22,7 @@
                 ":q"="exit";
                 cl="clear";
 
+                # Scripts
                 bs="bin/server";
                 bb="bin/build";
                 br="bin/run";
@@ -33,6 +35,7 @@
                 bsr="bin/start";
                 bsp="bin/stop";
                     
+                # Elixir mix
                 m="mix";
                 im="iex -S mix";
                 ms="mix phx.server";
@@ -43,6 +46,7 @@
                 mpr="mix phx.routes";
                 mer="mix ecto.reset";
 
+                # Make
                 mk="make";
                 mkh="make help";
                 mkl="make lint";
@@ -51,12 +55,11 @@
                 mkt="make test";
                 mkut="make unit-tests";
                 mkts="make tests";
-
             };
 
             oh-my-zsh = {
                 enable = true;
-                theme = "robbyrussell";
+                theme = "cloud";
                 plugins = [
                     "git"
                     "npm"
