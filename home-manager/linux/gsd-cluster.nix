@@ -52,18 +52,19 @@
                 mkut="make unit-tests";
                 mkts="make tests";
 
-                ohMyZsh = {
-                    enable = true;
-                    theme = "robbyrussell";
-                    plugins = [
-                        "git"
-                        "npm"
-                        "history"
-                        "node"
-                        "rust"
-                        "deno"
-                    ];
-                };
+            };
+
+            oh-my-zsh = {
+                enable = true;
+                theme = "robbyrussell";
+                plugins = [
+                    "git"
+                    "npm"
+                    "history"
+                    "node"
+                    "rust"
+                    "deno"
+                ];
             };
         };
     };
