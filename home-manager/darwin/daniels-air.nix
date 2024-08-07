@@ -10,6 +10,7 @@
     ".zshrc".source = ./../../zsh/darwin/zshrc;
     ".config/yabai".source = ./../../yabai;
     ".config/skhd".source = ./../../skhd;
+    ".config/alacritty".source = ./../../alacritty;
     };
 
     imports = [ ./../common.nix ];
