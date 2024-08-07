@@ -77,6 +77,12 @@
                     cd ~/.dotfiles
                     home-manager switch --flake .#"$1"
                 }
+
+                function update(){
+                    cd ~/.dotfiles
+                    nix-channel update
+                    home-manager switch --flake .#"$1"
+                }
             '';
         };
     };
