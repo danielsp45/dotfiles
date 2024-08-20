@@ -12,5 +12,9 @@
     ".config/aerospace".source = ./../../aerospace;
     };
 
+    home.packages = [
+        pkgs.zellij
+    ];
+
     imports = [ ./../common.nix ];
 }
