@@ -7,9 +7,13 @@
             url = "github:nix-community/home-manager";
             inputs.nixpkgs.follows = "nixpkgs";
         };
+        nix-darwin = {
+            url = "github:LnL7/nix-darwin";
+            inputs.nixpkgs.follows = "nixpkgs";
+        };
     };
 
-    outputs = { self, nixpkgs, home-manager, ... }:
+    outputs = { self, nixpkgs, home-manager, nix-darwin, ... }:
         let
             system = "aarch64-darwin";
             pkgs = nixpkgs.legacyPackages.${system};
@@ -29,6 +33,18 @@
                 "gsd-cluster" = home-manager.lib.homeManagerConfiguration {
                     pkgs = nixpkgs.legacyPackages."x86_64-linux";
                     modules = [ ./home-manager/linux/gsd-cluster.nix ];
+                };
+            };
+
+            darwinConfigurations = {
+                "daniels-air" = nix-darwin.lib.darwinSystem {
+                    modules = [ 
+                        ./nix-darwin/flake.nix 
+                        configuration
+                        home-manager.darwinModules."daniels-air" {
+                            modules = [ ./home-manager/darwin/daniels-air.nix ];
+                        }
+                    ];
                 };
             };
         };
