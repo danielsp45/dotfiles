@@ -43,7 +43,6 @@
     #
     # or
     #
-    #  ~/.local/state/nix/profiles/profile/etc/profile.d/hm-session-vars.sh
     #
     # or
     #

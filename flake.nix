@@ -20,11 +20,6 @@
 
         in {
             homeConfigurations = {
-                "daniels-air" = home-manager.lib.homeManagerConfiguration {
-                    pkgs = nixpkgs.legacyPackages."aarch64-darwin";
-                    modules = [ ./home-manager/darwin/daniels-air.nix ];
-                };
-
                 "dsp-server" = home-manager.lib.homeManagerConfiguration {
                     pkgs = nixpkgs.legacyPackages."x86_64-linux";
                     modules = [ ./home-manager/linux/dsp-server.nix ];
@@ -38,11 +33,14 @@
 
             darwinConfigurations = {
                 "daniels-air" = nix-darwin.lib.darwinSystem {
+                    system = "aarch64-darwin";
                     modules = [ 
-                        ./nix-darwin/flake.nix 
-                        configuration
-                        home-manager.darwinModules."daniels-air" {
-                            modules = [ ./home-manager/darwin/daniels-air.nix ];
+                        ./nix-darwin/default.nix
+                        home-manager.darwinModules.home-manager
+                        {
+                            home-manager.useGlobalPkgs = true;
+                            home-manager.useUserPackages = true;
+                            home-manager.users.danielsp_45 = import ./home-manager/darwin/daniels-air.nix;
                         }
                     ];
                 };

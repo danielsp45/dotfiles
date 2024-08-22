@@ -42,18 +42,22 @@
         dock.orientation = "bottom";
       };
 
-      homebrew.enable = true;
-      homebrew.casks = [
-        "google-chrome"
-        "karabiner-elements"
-        "visual-studio-code"
-        "aerospace"
-        "docker"
-        "notion"
-        "xquartz"
-      ];
-      homebrew.brews = [
-      ];
+      homebrew = {
+        enable = true;
+
+        casks = [
+          "google-chrome"
+          "karabiner-elements"
+          "visual-studio-code"
+          "aerospace"
+          "docker"
+          "notion"
+          "xquartz"
+        ];
+
+        brews = [
+        ];
+      };
 
       security.pam.enableSudoTouchIdAuth = true;
     };
