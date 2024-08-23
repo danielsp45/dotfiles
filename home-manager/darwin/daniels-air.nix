@@ -7,13 +7,14 @@
     home.homeDirectory = "/Users/danielsp_45";
 
     home.file = {
-    ".zshrc".source = ./../../zsh/darwin/zshrc;
-    ".config/alacritty".source = ./../../alacritty;
-    ".config/aerospace".source = ./../../aerospace;
+        ".zshrc".source = ./../../zsh/darwin/zshrc;
+        ".config/alacritty".source = ./../../alacritty;
+        ".config/aerospace".source = ./../../aerospace;
     };
 
     home.packages = [
         pkgs.zellij
+        pkgs.gh
     ];
 
     imports = [ ./../common.nix ];
