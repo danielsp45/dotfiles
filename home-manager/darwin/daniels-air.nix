@@ -15,6 +15,7 @@
     home.packages = [
         pkgs.zellij
         pkgs.gh
+        pkgs.glow
     ];
 
     imports = [ ./../common.nix ];
