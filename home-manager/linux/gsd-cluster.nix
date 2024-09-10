@@ -6,6 +6,10 @@
     home.username = "gsd";
     home.homeDirectory = "/home/gsd";
 
+    home.packages = [
+        pkgs.python3
+    ];
+
     programs = {
         zsh = {
             enable = true;
