@@ -49,6 +49,7 @@
           "docker"
           "notion"
           "xquartz"
+          "obsidian"
         ];
 
         brews = [
