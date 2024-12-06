@@ -14,8 +14,7 @@ function new(){
 }
 
 function downloads() {
-    # ls the downloads folder organized by date
-    ls -lt ~/Downloads
+    eza -l --sort newest ~/Downloads
 }
 
 function rescue() {
