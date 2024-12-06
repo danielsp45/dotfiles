@@ -5,8 +5,8 @@ alias lv="lvim"
 alias v="nvim $(fzf)"
 alias :q="exit"
 alias cl="clear"
-alias ls="eza"
-alias l="ls -la"
+alias ls="eza --icons"
+alias l="ls -la --icons"
 
 # binary scripts
 alias bs="bin/server"
