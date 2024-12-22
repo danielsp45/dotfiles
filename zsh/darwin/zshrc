@@ -1,56 +1,75 @@
-# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
-# Initialization code that may require console input (password prompts, [y/n]
-# confirmations, etc.) must go above this block; everything else may go below.
+#------------------------------------------------------------------------------
+# Powerlevel10k Instant Prompt
+#------------------------------------------------------------------------------
 if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
+# Suppress error message at boot
+typeset -g POWERLEVEL9K_INSTANT_PROMPT=quiet
 
-# Path to your oh-my-zsh installation.
+#------------------------------------------------------------------------------
+# Oh-My-Zsh Configuration
+#------------------------------------------------------------------------------
 export ZSH="$HOME/.oh-my-zsh"
 ZSH_THEME="powerlevel10k/powerlevel10k"
 
-# Add wisely, as too many plugins slow down shell startup.
-plugins=(asdf git docker-compose extract fzf-tab autoswitch_virtualenv direnv $plugins)
+#------------------------------------------------------------------------------
+# Plugins
+#------------------------------------------------------------------------------
+# Core plugins
+plugins=(
+  asdf
+  git
+  docker-compose
+  extract
+  fzf-tab
+  autoswitch_virtualenv
+  direnv
+  zsh-autosuggestions
+  zsh-z
+)
 
+# Source Oh-My-Zsh
 source $ZSH/oh-my-zsh.sh
 
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-
-#------Plugins-------
-plugins=( zsh-autosuggestions git zsh-z )
-
+# Plugin-specific configurations
 source ~/zsh-z/zsh-z.plugin.zsh
-autoload -U compinit && compinit
-zstyle ':completion:*' menu select
 source ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 
-#Random error message at boot
-typeset -g POWERLEVEL9K_INSTANT_PROMPT=quiet
+#------------------------------------------------------------------------------
+# Completion System
+#------------------------------------------------------------------------------
+autoload -U compinit && compinit
+zstyle ':completion:*' menu select
 
-#-------------- CONFIGURATION ----------------
+#------------------------------------------------------------------------------
+# Path Configuration
+#------------------------------------------------------------------------------
+export PATH="/opt/homebrew/opt/bison/bin:$PATH"
+export PATH="/opt/homebrew/opt/ncurses/bin:$PATH"
+export PATH="$PATH:$HOME/.local/bin"
 
-# Import the file with the aliases
+#------------------------------------------------------------------------------
+# Tool Configuration
+#------------------------------------------------------------------------------
+# ASDF
+. /opt/homebrew/opt/asdf/libexec/asdf.sh
+
+# TheFuck
+eval $(thefuck --alias)
+
+# Editor
+export EDITOR=nvim
+
+#------------------------------------------------------------------------------
+# Custom Configurations
+#------------------------------------------------------------------------------
+# Source custom configurations
 source "$HOME/.dotfiles/zsh/aliases.zsh"
 source "$HOME/.dotfiles/zsh/functions.zsh"
 
-eval $(thefuck --alias)
-
-. /opt/homebrew/opt/asdf/libexec/asdf.sh
-export PATH="/opt/homebrew/opt/bison/bin:$PATH"
-
-export PATH="/opt/homebrew/opt/ncurses/bin:$PATH"
-
-[ -f "$HOME/.ghcup/env" ] && source "$HOME/.ghcup/env" # ghcup-env
-
-# bun completions
-[ -s "$HOME/.bun/_bun" ] && source "$HOME/.bun/_bun"
-
-# bun
-export BUN_INSTALL="$HOME/.bun"
-export PATH="$BUN_INSTALL/bin:$PATH"
-export EDITOR=nvim
-
-export PATH="$PATH:$HOME/.local/bin"
-
-# load the api keys from the ~/.secrets file
+# Source secrets if they exist
 [ -f ~/.secrets ] && source ~/.secrets
+
+# Source Powerlevel10k configuration
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh

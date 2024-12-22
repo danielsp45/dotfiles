@@ -2,7 +2,7 @@
 alias cat="bat"
 alias nv="nvim"
 alias lv="lvim"
-alias v="nvim $(fzf)"
+# alias fv="nvim $(fzf)"
 alias :q="exit"
 alias cl="clear"
 alias ls="eza --icons"
