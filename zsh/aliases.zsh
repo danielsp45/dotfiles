@@ -7,6 +7,7 @@ alias :q="exit"
 alias cl="clear"
 alias ls="eza --icons"
 alias l="ls -la --icons"
+alias lg="lazygit"
 
 # binary scripts
 alias bs="bin/server"
