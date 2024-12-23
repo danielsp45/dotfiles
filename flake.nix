@@ -1,5 +1,5 @@
 {
-    description = "My Home Manager and Nix Darwin flake";
+    description = "Daniel's Nix configuration";
 
     inputs = {
         nixpkgs.url = "github:nixos/nixpkgs/nixpkgs-unstable";
@@ -15,8 +15,6 @@
 
     outputs = { self, nixpkgs, home-manager, nix-darwin, ... }:
         let
-            system = "aarch64-darwin";
-            pkgs = nixpkgs.legacyPackages.${system};
 
         in {
             homeConfigurations = {
