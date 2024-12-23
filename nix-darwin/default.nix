@@ -34,9 +34,24 @@
     # The platform the configuration will be used on.
     nixpkgs.hostPlatform = "aarch64-darwin";
 
-    system.defaults = {
-        dock.autohide = true;
-        dock.orientation = "bottom";
+    system = {
+        defaults = {
+            dock.autohide = true;
+            dock.orientation = "bottom";
+
+            NSGlobalDomain = {
+                ApplePressAndHoldEnabled = false;
+                # 120, 94, 68, 35, 25, 15
+                InitialKeyRepeat = 15;
+                # 120, 90, 60, 30, 12, 6, 2
+                KeyRepeat = 2;
+            };
+        };
+
+        keyboard = {
+            enableKeyMapping = true;
+            remapCapsLockToControl = true;
+        };
     };
 
     homebrew = {
@@ -50,6 +65,7 @@
           "notion"
           "xquartz"
           "obsidian"
+          "nikitabobko/tap/aerospace"
         ];
 
         brews = [
