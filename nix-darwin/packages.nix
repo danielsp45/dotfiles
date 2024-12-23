@@ -25,10 +25,13 @@
 			"spotify"
 			"discord"
 			"zotero"
+			"alacritty"
         ];
+
         brews = [
 			"mas"
 		];
+
 		masApps = {};
 
 		onActivation = {
