@@ -1,0 +1,55 @@
+[window]
+opacity = 0.5
+blur = true
+dynamic_padding = false
+decorations = "buttonless"
+startup_mode = "Windowed"
+
+[window.padding]
+x = 5
+y = 5
+
+[font]
+size = 16.0
+
+[font.normal]
+family = "Iosevka Nerd Font"
+style = "Regular"
+
+[font.bold]
+family = "Iosevka Nerd Font"
+style = "Bold"
+
+[font.italic]
+family = "Iosevka Nerd Font"
+style = "Light"
+
+[font.offset]
+x = 0
+y = 0
+
+[font.glyph_offset]
+x = 0
+y = 0
+
+[bell]
+animation = "EaseOut"
+color = "0xffffff"
+duration = 0
+
+[mouse]
+hide_when_typing = true
+
+# [mouse.double_click]
+# threshold = 300
+
+# [mouse.triple_click]
+# threshold = 300
+
+[selection]
+semantic_escape_chars = ",│`|:\"' ()[]{}<>"
+save_to_clipboard = true
+
+[cursor]
+style = "Beam"
+unfocused_hollow = true
