@@ -26,10 +26,12 @@
 			"discord"
 			"zotero"
 			"alacritty"
+			"ghostty"
         ];
 
         brews = [
 			"mas"
+			"jmeter"
 		];
 
 		masApps = {};
