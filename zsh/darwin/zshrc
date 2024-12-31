@@ -61,6 +61,10 @@ eval $(thefuck --alias)
 # Editor
 export EDITOR=nvim
 
+# Terminal
+export TERM=xterm-256color
+export COLORTERM=truecolor
+
 #------------------------------------------------------------------------------
 # Custom Configurations
 #------------------------------------------------------------------------------

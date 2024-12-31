@@ -53,3 +53,7 @@ save_to_clipboard = true
 [cursor]
 style = "Beam"
 unfocused_hollow = true
+
+# For newer versions using TOML:
+[env]
+TERM = "xterm-256color"
