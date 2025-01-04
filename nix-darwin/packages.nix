@@ -6,6 +6,7 @@
     environment.systemPackages =
     [ 
         pkgs.vim
+		pkgs.ansible
     ];
 
     homebrew = {
