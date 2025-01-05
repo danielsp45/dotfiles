@@ -8,6 +8,7 @@
 
     home.packages = [
         pkgs.python3
+		pkgs.ansible
     ];
 
     programs = {
