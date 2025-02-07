@@ -10,6 +10,7 @@
         ".zshrc".source = ./../../zsh/darwin/zshrc;
         ".config/alacritty".source = ./../../alacritty;
         ".config/aerospace".source = ./../../aerospace;
+        ".config/zellij".source = ./../../zellij;
     };
 
     home.packages = [

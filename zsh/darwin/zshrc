@@ -72,6 +72,12 @@ export COLORTERM=truecolor
 source "$HOME/.dotfiles/zsh/aliases.zsh"
 source "$HOME/.dotfiles/zsh/functions.zsh"
 
+#------------------------------------------------------------------------------
+# Bun config
+#------------------------------------------------------------------------------
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
+
 # Source secrets if they exist
 [ -f ~/.secrets ] && source ~/.secrets
 
