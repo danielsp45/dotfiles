@@ -32,8 +32,6 @@
 
         brews = [
 			"mas"
-			"jmeter"
-			"k6"
 		];
 
 		masApps = {};
