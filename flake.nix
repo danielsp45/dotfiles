@@ -38,7 +38,7 @@
                         {
                             home-manager.useGlobalPkgs = true;
                             home-manager.useUserPackages = true;
-                            home-manager.users.danielsp_45 = import ./home-manager/darwin/daniels-air.nix;
+                            home-manager.users.daniel = import ./home-manager/darwin/daniels-air.nix;
                         }
                     ];
                 };

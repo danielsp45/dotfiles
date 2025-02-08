@@ -18,23 +18,19 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 #------------------------------------------------------------------------------
 # Core plugins
 plugins=(
-  asdf
-  git
-  docker-compose
-  extract
-  fzf-tab
-  autoswitch_virtualenv
-  direnv
-  zsh-autosuggestions
-  zsh-z
+git
+asdf
+docker-compose
+extract
+fzf-tab
+# autoswitch_virtualenv
+direnv
+zsh-autosuggestions
+zsh-z
 )
 
 # Source Oh-My-Zsh
 source $ZSH/oh-my-zsh.sh
-
-# Plugin-specific configurations
-source ~/zsh-z/zsh-z.plugin.zsh
-source ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 #------------------------------------------------------------------------------
 # Completion System
@@ -52,11 +48,12 @@ export PATH="$PATH:$HOME/.local/bin"
 #------------------------------------------------------------------------------
 # Tool Configuration
 #------------------------------------------------------------------------------
-# ASDF
-. /opt/homebrew/opt/asdf/libexec/asdf.sh
 
 # TheFuck
 eval $(thefuck --alias)
+
+# mise
+eval "$(mise activate zsh)"
 
 # Editor
 export EDITOR=nvim

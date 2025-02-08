@@ -1,9 +1,9 @@
 { pkgs, config, ... }:
 
 {
-    users.users.danielsp_45 = {
-        name = "danielsp_45";
-        home = "/Users/danielsp_45";
+    users.users.daniel = {
+        name = "daniel";
+        home = "/Users/daniel";
     };
 
     # Necessary for using flakes on this system.
