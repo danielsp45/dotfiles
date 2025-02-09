@@ -9,6 +9,9 @@
 			dock = {
 				autohide = true;
 				orientation = "bottom";
+				show-recents = false;
+				show-process-indicators = false;
+				tilesize = 24;
 				persistent-apps = [
 					"/Applications/Spotify.app"
 					"/Applications/Alacritty.app"
@@ -16,6 +19,7 @@
 					"/Applications/Discord.app"
 					"/System/Applications/Messages.app"
 				];
+				persistent-others = [];
 			};
 
             NSGlobalDomain = {
@@ -46,4 +50,3 @@
 
     security.pam.enableSudoTouchIdAuth = true;
 }
-

@@ -19,6 +19,7 @@
       "xquartz"
       "obsidian"
       "nikitabobko/tap/aerospace"
+      "vmware-fusion"
       "telegram"
       "arc"
       "zed"
@@ -33,6 +34,7 @@
       "1password-cli"
       "aldente"
       "raycast"
+      "vagrant"
     ];
 
     brews = [
