@@ -28,13 +28,15 @@
       "discord"
       "zotero"
       "alacritty"
-      "ghostty"
       "font-iosevka-nerd-font"
       "1password"
       "1password-cli"
       "aldente"
       "raycast"
       "vagrant"
+      "viscosity"
+      "tailscale"
+      "amethyst"
     ];
 
     brews = [

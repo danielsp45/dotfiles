@@ -17,6 +17,8 @@
         pkgs.zellij
         pkgs.gh
         pkgs.fzf
+        pkgs.maelstrom-clj
+		pkgs.maven
     ];
 
 
