@@ -354,8 +354,7 @@ theme "gruvbox-dark"
 // mirror_session true
 
 // The folder in which Zellij will look for layouts
-//
-// layout_dir "/path/to/my/layout_dir"
+layout_dir "/Users/daniel/.config/zellij/layouts"
 
 // The folder in which Zellij will look for themes
 //
