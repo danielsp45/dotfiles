@@ -11,6 +11,10 @@
 
   homebrew = {
     enable = true;
+    onActivation = {
+      cleanup = "uninstall";
+      upgrade = true;
+    };
 
     casks = [
       "google-chrome"
@@ -36,7 +40,7 @@
       "vagrant"
       "viscosity"
       "tailscale"
-      "amethyst"
+      "ghostty"
     ];
 
     brews = [
