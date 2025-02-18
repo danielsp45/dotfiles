@@ -11,6 +11,7 @@
         ".config/alacritty".source = ./../../alacritty;
         ".config/aerospace".source = ./../../aerospace;
         ".config/zellij".source = ./../../zellij;
+        ".config/ghostty".source = ./../../ghostty;
     };
 
     home.packages = [

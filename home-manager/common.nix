@@ -24,7 +24,6 @@
         pkgs.bat
         pkgs.btop
         pkgs.neofetch
-        pkgs.nodejs_22
         pkgs.thefuck
         pkgs.tree
         pkgs.direnv
@@ -35,8 +34,13 @@
     # Home Manager is pretty good at managing dotfiles. The primary way to manage
     # plain files is through 'home.file'.
     home.file = {
-    ".config/nvim".source = ./../nvim;
+      ".config/nvim".source = ./../nvim;
     };
+
+    home.sessionVariables = {
+      EDITOR = "nvim";
+    };
+
 
     # Home Manager can also manage your environment variables through
     # 'home.sessionVariables'. These will be explicitly sourced when using a
@@ -53,10 +57,6 @@
     #
     #  /etc/profiles/per-user/danielsp_45/etc/profile.d/hm-session-vars.sh
     #
-    home.sessionVariables = {
-        EDITOR = "nvim";
-    };
-
     # Let Home Manager install and manage itself.
     programs.home-manager.enable = true;
 }
