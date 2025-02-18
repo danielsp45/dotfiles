@@ -44,6 +44,7 @@ zstyle ':completion:*' menu select
 export PATH="/opt/homebrew/opt/bison/bin:$PATH"
 export PATH="/opt/homebrew/opt/ncurses/bin:$PATH"
 export PATH="$PATH:$HOME/.local/bin"
+export PATH="/Applications/Ghostty.app/Contents/MacOS:$PATH"
 
 #------------------------------------------------------------------------------
 # Tool Configuration
