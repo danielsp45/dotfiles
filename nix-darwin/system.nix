@@ -14,7 +14,7 @@
 				tilesize = 24;
 				persistent-apps = [
 					"/Applications/Spotify.app"
-					"/Applications/Alacritty.app"
+					"/Applications/Ghostty.app"
 					"/Applications/Arc.app"
 					"/Applications/Discord.app"
 					"/System/Applications/Messages.app"

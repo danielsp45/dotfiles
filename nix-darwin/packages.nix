@@ -41,6 +41,8 @@
       "viscosity"
       "tailscale"
       "ghostty"
+	  "visual-studio-code"
+	  "raspberry-pi-imager"
     ];
 
     brews = [
