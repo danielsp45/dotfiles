@@ -29,6 +29,7 @@
         pkgs.direnv
         pkgs.eza
         pkgs.mise
+		pkgs.fend
     ];
 
     # Home Manager is pretty good at managing dotfiles. The primary way to manage

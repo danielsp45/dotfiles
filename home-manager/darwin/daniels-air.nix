@@ -20,6 +20,7 @@
         pkgs.fzf
         pkgs.maelstrom-clj
 		pkgs.maven
+		pkgs.gnuplot # maelstrom SD classes
     ];
 
 
