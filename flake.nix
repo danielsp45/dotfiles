@@ -1,8 +1,11 @@
 {
     description = "Daniel's Nix configuration";
 
-    inputs = {
-        nixpkgs.url = "github:nixos/nixpkgs/nixpkgs-unstable";
+	inputs = {
+		nixpkgs.url = "github:nixos/nixpkgs/nixpkgs-unstable";
+		nixos = {
+			url = "github:nixos/nixpkgs/nixpkgs-unstable";
+		};
         home-manager = {
             url = "github:nix-community/home-manager";
             inputs.nixpkgs.follows = "nixpkgs";
@@ -45,7 +48,7 @@
             };
 
 			nixosConfigurations = {
-				"nixos" = {
+				nixos = {
 					system = "x86_64-linux";
 					modules = [
 						./nixos/configuration.nix
