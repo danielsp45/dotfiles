@@ -28,7 +28,6 @@
 
 	# Enable networking
 	networking.networkmanager.enable = true;
-	services.networkmanager.waitOnline.enable = false;
 
 	# Set your time zone.
 	time.timeZone = "Europe/Lisbon";
