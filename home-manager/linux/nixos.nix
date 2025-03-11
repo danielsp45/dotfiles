@@ -14,6 +14,7 @@
         pkgs._1password-cli
         pkgs._1password-gui
 		pkgs.btrfs-progs
+		pkgs.borgbackup
     ];
 
     programs = {
