@@ -10,6 +10,11 @@
         ".zshrc".source = ./../../zsh/linux/zshrc;
     };
 
+    home.packages = [
+        pkgs._1password-cli
+        pkgs._1password-gui
+    ];
+
     programs = {
         zsh = {
             enable = true;
