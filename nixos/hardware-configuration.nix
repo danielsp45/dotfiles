@@ -32,15 +32,16 @@
 
 	# Bakcup configuration
 	system.activationScripts.borgInit = let
-		borg = pkgs.borgbackup;
+	  borg = pkgs.borgbackup;
+	  sudo = pkgs.sudo;
 	in ''
-  export PATH=${borg}/bin:$PATH
-  if [ ! -d /mnt/data/backup/repository.d ]; then
-	echo "Borg repository not found, initializing..."
-	sudo -u daniel ${borg}/bin/borg init --encryption=repokey /mnt/data/backup
-  else
-	echo "Borg repository already initialized."
-  fi
+	  export PATH=${borg}/bin:${sudo}/bin:$PATH
+	  if [ ! -d /mnt/data/backup/repository.d ]; then
+		echo "Borg repository not found, initializing..."
+		sudo -u daniel ${borg}/bin/borg init --encryption=repokey /mnt/data/backup
+	  else
+		echo "Borg repository already initialized."
+	  fi
 	'';
 
 	swapDevices = [ ];
