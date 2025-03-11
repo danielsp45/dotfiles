@@ -10,10 +10,6 @@
         ".zshrc".source = ./../../zsh/darwin/zshrc;
     };
 
-    home.packages = [
-		pkgs.powerlevel10k
-    ];
-
     programs = {
         zsh = {
             enable = true;
