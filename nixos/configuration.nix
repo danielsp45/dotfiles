@@ -123,6 +123,16 @@
 		};
 	};
 
+	services.cron = {
+		enable = true;
+		# This creates a crontab entry for the user "daniel"
+		extraCrontabs."daniel" = ''
+	  # Run /home/daniel/scripts/my-cron-job.sh every day at 3:00 AM
+	  0 3 * * * /home/daniel/.dotfiles/nixos/backup/backup.sh
+		'';
+	};
+
+
 	# Some programs need SUID wrappers, can be configured further or are
 	# started in user sessions.
 	# programs.mtr.enable = true;
