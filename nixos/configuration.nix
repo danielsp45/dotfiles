@@ -5,12 +5,6 @@
 { config, pkgs, lib, ... }:
 
 {
-	# imports =
-	# 	[ # Include the results of the hardware scan.
-	# 		./hardware-configuration.nix
-	# 		<home-manager/nixos>
-	# 	];
-
 	# Enable nix flakes
 	nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
