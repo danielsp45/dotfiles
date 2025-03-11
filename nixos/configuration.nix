@@ -2,7 +2,7 @@
 # your system.  Help is available in the configuration.nix(5) man page
 # and in the NixOS manual (accessible by running ‘nixos-help’).
 
-{ config, pkgs, ... }:
+{ config, pkgs, lib, ... }:
 
 {
 	# imports =
@@ -28,6 +28,8 @@
 
 	# Enable networking
 	networking.networkmanager.enable = true;
+	systemd.services.NetworkManager-wait-online.enable = lib.mkForce false;
+
 
 	# Set your time zone.
 	time.timeZone = "Europe/Lisbon";
