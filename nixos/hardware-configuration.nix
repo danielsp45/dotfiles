@@ -31,10 +31,13 @@
     };
 
   # Bakcup configuration
-  system.activationScripts.borgInit = ''
+  system.activationScripts.borgInit = let
+    borg = pkgs.borgbackup;
+  in ''
+    export PATH=${borg}/bin:$PATH
     if [ ! -d /mnt/data/backup/repository.d ]; then
       echo "Borg repository not found, initializing..."
-      borg init --encryption=repokey /mnt/data/backup
+      ${borg}/bin/borg init --encryption=repokey /mnt/data/backup
     else
       echo "Borg repository already initialized."
     fi
