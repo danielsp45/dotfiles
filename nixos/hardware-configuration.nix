@@ -30,6 +30,16 @@
       options = [ "compress=zstd" "noatime" ];
     };
 
+  # Bakcup configuration
+  system.activationScripts.borgInit = ''
+    if [ ! -d /mnt/data/backup/repository.d ]; then
+      echo "Borg repository not found, initializing..."
+      borg init --encryption=repokey /mnt/data/backup
+    else
+      echo "Borg repository already initialized."
+    fi
+  '';
+
   swapDevices = [ ];
 
   # Enables DHCP on each ethernet and wireless interface. In case of scripted networking
