@@ -106,6 +106,7 @@
 		wget
 		neofetch
 		git
+		borgbackup
 	];
 
 	services.tailscale.enable = true;
