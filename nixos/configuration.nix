@@ -126,10 +126,10 @@
 	services.cron = {
 		enable = true;
 		# This creates a crontab entry for the user "daniel"
-		systemCronJobs = {
+		systemCronJobs = [
 			# Backup the system every day at 3am
 			"0 3 * * *  daniel  . /etc/profile; /home/daniel/.dotfiles/nixos/backup/backup.sh >> /tmp/backup.log 2>&1"
-		}
+		];
 	};
 
 
