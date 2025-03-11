@@ -28,6 +28,7 @@
 
 	# Enable networking
 	networking.networkmanager.enable = true;
+	systemd.network.wait-online.enable = false;
 
 	# Set your time zone.
 	time.timeZone = "Europe/Lisbon";
@@ -88,6 +89,7 @@
 		isNormalUser = true;
 		description = "Daniel Pereira";
 		extraGroups = [ "networkmanager" "wheel" ];
+		shell = pkgs.zsh;
 		packages = with pkgs; [
 			kdePackages.kate
 			#  thunderbird

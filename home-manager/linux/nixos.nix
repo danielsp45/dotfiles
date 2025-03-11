@@ -6,6 +6,13 @@
     home.username = "daniel";
 	home.homeDirectory = lib.mkForce "/home/daniel";
 
+    home.file = {
+        ".zshrc".source = ./../../zsh/darwin/zshrc;
+    };
+
+    home.packages = [
+		pkgs.powerlevel10k
+    ];
 
     programs = {
         zsh = {
