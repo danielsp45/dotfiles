@@ -7,7 +7,7 @@
 	home.homeDirectory = lib.mkForce "/home/daniel";
 
     home.file = {
-        ".zshrc".source = ./../../zsh/darwin/zshrc;
+        ".zshrc".source = ./../../zsh/linux/zshrc;
     };
 
     programs = {
