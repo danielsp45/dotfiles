@@ -21,6 +21,7 @@
         pkgs.maelstrom-clj
 		pkgs.maven
 		pkgs.gnuplot # maelstrom SD classes
+        pkgs.mise
     ];
 
 
