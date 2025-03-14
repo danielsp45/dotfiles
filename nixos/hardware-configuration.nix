@@ -24,11 +24,20 @@
 			options = [ "fmask=0077" "dmask=0077" ];
 		};
 
+	# --- Capacity Disk ---
+
 	fileSystems."/mnt/data" =
 		{ device = "/dev/disk/by-uuid/99c48fcb-2a18-40c3-898e-ea7d08012501";
 			fsType = "btrfs";
 			options = [ "compress=zstd" "noatime" ];
 		};
+
+	fileSystems."/var/lib/nextcloud" = {
+		device = "/mnt/data/nextcloud";
+		fsType = "none";
+		options = [ "bind" ];
+	};
+
 
 	swapDevices = [ ];
 
