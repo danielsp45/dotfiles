@@ -28,10 +28,10 @@
         pkgs.tree
         pkgs.direnv
         pkgs.eza
-        pkgs.mise
 		pkgs.fend
 		pkgs.cmake
 		pkgs.onefetch
+		pkgs.devenv
     ];
 
     # Home Manager is pretty good at managing dotfiles. The primary way to manage
