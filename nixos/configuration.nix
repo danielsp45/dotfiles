@@ -143,7 +143,19 @@
 		};
 	};
 
-
+	environment.etc."nextcloud-admin-pass".text = "admin";
+	services.nextcloud = {
+		enable = true;
+		package = pkgs.nextcloud30;
+		hostName = "localhost";
+		config.adminpassFile = "/etc/nextcloud-admin-pass";
+		config.dbtype = "sqlite";
+		settings = {
+			trusted_domains = [
+				"100.113.234.108"
+			];
+		};
+	};
 
 	# Some programs need SUID wrappers, can be configured further or are
 	# started in user sessions.
