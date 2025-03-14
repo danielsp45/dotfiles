@@ -36,9 +36,6 @@ zstyle ':completion:*' menu select
 # TheFuck
 eval $(thefuck --alias)
 
-# mise
-eval "$(mise activate zsh)"
-
 # Editor
 export EDITOR=nvim
 
