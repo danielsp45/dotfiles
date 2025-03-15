@@ -141,21 +141,53 @@
 				"--network=host" 
 				];
 		};
-	};
 
-	environment.etc."nextcloud-admin-pass".text = "admin";
-	services.nextcloud = {
-		enable = true;
-		package = pkgs.nextcloud30;
-		hostName = "localhost";
-		config.adminpassFile = "/etc/nextcloud-admin-pass";
-		config.dbtype = "sqlite";
-		settings = {
-			trusted_domains = [
-				"100.113.234.108"
+		containers.postgres = {
+			image = "postgres:latest";
+			autoStart = true;
+			ports = [ "5432:5432" ];
+			volumes = [ "/mnt/data/postgres:/var/lib/postgresql/data" ];
+			environment = {
+				POSTGRES_DB = "nextcloud";
+				POSTGRES_USER = "nextcloud";
+				POSTGRES_PASSWORD = "secret";  # Change to a strong password
+			};
+		};
+		containers.nextcloud = {
+			volumes = [
+				"/mnt/data/nextcloud:/var/www/html"  # Persist Nextcloud data on your disk
 			];
+			ports = [ "8080:80" ];  # Map port 80 inside the container to 8080 on the host
+			image = "nextcloud:latest"; # Warning: if the tag does not change, the image will not be updated
+			autoStart = true;
+			environment = {
+				NEXTCLOUD_ADMIN_USER = "admin";
+				NEXTCLOUD_ADMIN_PASSWORD = "root";
+				NEXTCLOUD_TRUSTED_DOMAINS = "100.113.234.108";
+				# PostgreSQL auto configuration variables:
+				POSTGRES_DB = "nextcloud";
+				POSTGRES_USER = "nextcloud";
+				POSTGRES_PASSWORD = "secret";
+				# Set this to the hostname or IP where the Postgres container is reachable.
+				POSTGRES_HOST = "127.0.0.1";  
+
+			};
 		};
 	};
+
+	# environment.etc."nextcloud-admin-pass".text = "admin";
+	# services.nextcloud = {
+	# 	enable = true;
+	# 	package = pkgs.nextcloud30;
+	# 	hostName = "localhost";
+	# 	config.adminpassFile = "/etc/nextcloud-admin-pass";
+	# 	config.dbtype = "sqlite";
+	# 	settings = {
+	# 		trusted_domains = [
+	# 			"100.113.234.108"
+	# 		];
+	# 	};
+	# };
 
 	# Some programs need SUID wrappers, can be configured further or are
 	# started in user sessions.
