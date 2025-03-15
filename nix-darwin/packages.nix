@@ -43,6 +43,7 @@
       "ghostty"
 	  "visual-studio-code"
 	  "raspberry-pi-imager"
+	  "nextcloud"
     ];
 
     brews = [
