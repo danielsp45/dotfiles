@@ -15,6 +15,7 @@
         pkgs._1password-gui
 		pkgs.btrfs-progs
 		pkgs.nodejs_23
+		pkgs.starship
     ];
 
     programs = {
