@@ -16,6 +16,7 @@
 		pkgs.btrfs-progs
 		pkgs.nodejs_23
 		pkgs.starship
+		pkgs.protonmail-bridge
     ];
 
     programs = {
