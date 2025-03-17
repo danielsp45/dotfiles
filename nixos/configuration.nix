@@ -138,7 +138,7 @@
 			environment.TZ = "Europe/Libon";
 			image = "ghcr.io/home-assistant/home-assistant:stable"; # Warning: if the tag does not change, the image will not be updated
 				extraOptions = [ 
-				"--network=host" 
+				"--network=bridge" 
 				];
 		};
 
