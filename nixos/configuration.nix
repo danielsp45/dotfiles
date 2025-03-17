@@ -138,7 +138,7 @@
 			environment.TZ = "Europe/Libon";
 			image = "ghcr.io/home-assistant/home-assistant:stable"; # Warning: if the tag does not change, the image will not be updated
 				extraOptions = [ 
-				"--network=bridge" 
+				"--network=host" 
 				];
 		};
 
@@ -172,6 +172,19 @@
 				POSTGRES_HOST = "127.0.0.1";  
 
 			};
+		};
+
+		containers.paperless = {
+			image = "ghcr.io/paperless-ngx/paperless-ngx:latest"; 
+			volumes = [
+				"/mnt/data/paperless/config:/config"   # Container config
+				"/mnt/data/paperless/data:/data"         # Database and metadata storage
+				"/mnt/data/paperless/media:/media"       # Storage for your documents
+				"/mnt/data/paperless/consume:/consume"   # Directory for documents awaiting processing
+			];
+
+			ports = [ "8000:8000" ];  # Map port 80 inside the container to 8080 on the host
+			autoStart = true;
 		};
 	};
 
