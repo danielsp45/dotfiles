@@ -34,6 +34,7 @@
 		pkgs.devenv
 		pkgs.unzip
 		pkgs.gcc
+		pkgs.tmux
     ];
 
     # Home Manager is pretty good at managing dotfiles. The primary way to manage
