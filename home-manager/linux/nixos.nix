@@ -8,6 +8,7 @@
 
     home.file = {
         ".zshrc".source = ./../../zsh/linux/zshrc;
+        ".config/i3".source = ./../../i3/config;
     };
 
     home.packages = [
