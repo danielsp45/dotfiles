@@ -22,6 +22,7 @@
 		pkgs.maven
 		pkgs.gnuplot # maelstrom SD classes
         pkgs.mise
+		pkgs.libffi
     ];
 
 
