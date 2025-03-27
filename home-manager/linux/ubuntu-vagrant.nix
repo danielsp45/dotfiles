@@ -7,6 +7,10 @@
     home.homeDirectory = "/home/vagrant";
 	home.defaultShell = pkgs.zsh;
 
+    home.packages = [
+		pkgs.nodejs_23
+		pkgs.starship
+    ];
 
     programs = {
         zsh = {
