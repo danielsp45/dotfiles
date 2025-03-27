@@ -5,6 +5,8 @@
     # manage.
     home.username = "vagrant";
     home.homeDirectory = "/home/vagrant";
+	home.defaultShell = pkgs.zsh;
+
 
     programs = {
         zsh = {
