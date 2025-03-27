@@ -23,6 +23,7 @@
 		pkgs.gnuplot # maelstrom SD classes
         pkgs.mise
 		pkgs.libffi
+		pkgs.pnpm_9
     ];
 
 

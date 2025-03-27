@@ -21,15 +21,16 @@
 
         in {
             homeConfigurations = {
-                "dsp-server" = home-manager.lib.homeManagerConfiguration {
-                    pkgs = nixpkgs.legacyPackages."x86_64-linux";
-                    modules = [ ./home-manager/linux/dsp-server.nix ];
+                "ubuntu-vagrant" = home-manager.lib.homeManagerConfiguration {
+                    pkgs = nixpkgs.legacyPackages."aarch64-linux";
+                    modules = [ ./home-manager/linux/ubuntu-vagrant.nix ];
                 };
 
                 "gsd-cluster" = home-manager.lib.homeManagerConfiguration {
                     pkgs = nixpkgs.legacyPackages."x86_64-linux";
                     modules = [ ./home-manager/linux/gsd-cluster.nix ];
                 };
+
             };
 
             darwinConfigurations = {
