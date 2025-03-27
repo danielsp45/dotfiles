@@ -24,7 +24,6 @@
         pkgs.bat
         pkgs.btop
         pkgs.neofetch
-        pkgs.thefuck
         pkgs.tree
         pkgs.direnv
         pkgs.eza
@@ -37,6 +36,8 @@
 		pkgs.tmux
 		pkgs.sbt
 		pkgs.zip
+		pkgs.bear
+		pkgs.pkg-config
     ];
 
     # Home Manager is pretty good at managing dotfiles. The primary way to manage
