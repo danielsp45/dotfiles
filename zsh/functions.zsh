@@ -55,3 +55,15 @@ function setwpp() {
     echo "\033[32mWallpaper changed to: $(basename "$WALLPAPER")\033[0m"
 }
 
+function remote-ched() {
+	user="mca55928"
+	folder="projects/F202500001HPCVLABEPICURE/${user}/CHED"
+	code --folder-uri "vscode-remote://ssh-remote+$(user)@deucalion/${folder}"
+}
+
+function remote-adgd() {
+	user="mca55928"
+	folder="projects/F202500001HPCVLABEPICURE/${user}/ADGD"
+	code --folder-uri "vscode-remote://ssh-remote+$(user)@deucalion/${folder}"
+}
+
