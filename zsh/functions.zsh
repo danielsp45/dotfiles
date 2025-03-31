@@ -22,8 +22,17 @@ function downloads() {
     eza -l --sort newest ~/Downloads
 }
 
+# Rescues a given file from the Downloads folder
 function rescue() {
-    mv ~/Downloads/$1 ./
+  local src
+  if [ $# -gt 0 ]; then
+    src=~/Downloads/"$1"
+  else
+	file=$(eza --sort oldest ~/Downloads | fzf --prompt="Select a file to rescue: " | tr -d "'")
+	src=~/Downloads/"$file"
+    [ -z "$file" ] && { echo "No file selected"; return 1; }
+  fi
+  mv "$src" .
 }
 
 function setwpp() {
