@@ -38,6 +38,7 @@
 		pkgs.zip
 		pkgs.bear
 		pkgs.pkg-config
+		pkgs.tmux
     ];
 
     # Home Manager is pretty good at managing dotfiles. The primary way to manage
