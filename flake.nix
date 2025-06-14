@@ -20,6 +20,35 @@
         let
 
         in {
+			nixosConfigurations = {
+				trooper = nixpkgs.lib.nixosSystem {
+					system = "x86_64-linux";
+					modules = [
+						./nixos/trooper/configuration.nix
+						./nixos/trooper/hardware-configuration.nix
+						home-manager.nixosModules.home-manager
+						{
+							home-manager.useGlobalPkgs = true;
+							home-manager.useUserPackages = true;
+							home-manager.users.daniel = import ./home-manager/linux/trooper.nix;
+						}
+					];
+				};
+				server = nixpkgs.lib.nixosSystem {
+					system = "x86_64-linux";
+					modules = [
+						./nixos/server/configuration.nix
+						./nixos/server/hardware-configuration.nix
+						home-manager.nixosModules.home-manager
+						{
+							home-manager.useGlobalPkgs = true;
+							home-manager.useUserPackages = true;
+							home-manager.users.daniel = import ./home-manager/linux/nixos.nix;
+						}
+					];
+				};
+			};
+
             homeConfigurations = {
                 "ubuntu-vagrant" = home-manager.lib.homeManagerConfiguration {
                     pkgs = nixpkgs.legacyPackages."aarch64-linux";
@@ -30,7 +59,6 @@
                     pkgs = nixpkgs.legacyPackages."x86_64-linux";
                     modules = [ ./home-manager/linux/gsd-cluster.nix ];
                 };
-
             };
 
             darwinConfigurations = {
@@ -48,20 +76,5 @@
                 };
             };
 
-			nixosConfigurations = {
-				nixos = nixpkgs.lib.nixosSystem {
-					system = "x86_64-linux";
-					modules = [
-						./nixos/configuration.nix
-						./nixos/hardware-configuration.nix
-						home-manager.nixosModules.home-manager
-						{
-							home-manager.useGlobalPkgs = true;
-							home-manager.useUserPackages = true;
-							home-manager.users.daniel = import ./home-manager/linux/nixos.nix;
-						}
-					];
-				};
-			};
         };
 }
