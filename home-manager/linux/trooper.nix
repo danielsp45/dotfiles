@@ -9,25 +9,59 @@
     home.file = {
         ".zshrc".source = ./../../zsh/linux/zshrc;
         ".config/ghostty".source = ./../../ghostty;
-        # ".config/bspwm".source = ./../../bspwm;
+        # ".config/bspwm/bspwmrc".source = ./../../bspwm/bspwmrc;
+        # ".config/sxhkd/sxhkdrc".source = ./../../bspwm/sxhkdrc;
     };
 
-    home.packages = [
-        pkgs._1password-cli
-        pkgs._1password-gui
-		pkgs.btrfs-progs
-		pkgs.nodejs_23
-		pkgs.starship
-		pkgs.caddy
-		pkgs.ghostty
-		pkgs.discord-ptb
-		pkgs.spotify
-		pkgs.telegram-desktop
-		pkgs.cmake
-		pkgs.libgcc
-		pkgs.gnumake
-		pkgs.xclip
+    home.packages = with pkgs; [
+        _1password-cli
+        _1password-gui
+		btrfs-progs
+		nodejs_23
+		starship
+		caddy
+		ghostty
+		discord
+		spotify
+		notion-app-enhanced
+		telegram-desktop
+		cmake
+		libgcc
+		gnumake
+		xclip
+		amdgpu_top
+		vscode
+		prismlauncher
+		rocmPackages.rpp
+		fastfetch
+		rofi-wayland
+		waybar
+		waypaper
+		swaybg
+		swaylock
+		wayidle 
+		capitaine-cursors
+		zotero
+		nemo
+		adw-gtk3
+		papirus-icon-theme
+		lxappearance
+		xdg-desktop-portal
+		grim
+		hyprshot
+		thunderbird
     ];
+
+	gtk = {
+	  enable = true;
+	  theme.name = "Adw-gtk3";
+	  iconTheme.name = "Papirus";
+	  cursorTheme.name = "Bibata-Modern-Classic";
+	};
+
+	home.sessionVariables = {
+		USE_WAYLAND_GRIM = "1";
+	};
 
     programs = {
         zsh = {
