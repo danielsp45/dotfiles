@@ -92,7 +92,7 @@
       "tooltip": false
     },
     "cpu": {
-      "interval": 10,
+      "interval": 1,
       "format": " {usage}%",
       "max-length": 13,
       "tooltip": true
