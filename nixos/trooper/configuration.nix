@@ -3,7 +3,6 @@
 # and in the NixOS manual (accessible by running ‘nixos-help’).
 
 { config, pkgs, lib, ... }:
-
 {
 	# Enable nix flakes
 	nix.settings.experimental-features = [ "nix-command" "flakes" ];
@@ -21,6 +20,9 @@
 
 	# Enable networking
 	networking.networkmanager.enable = true;
+	networking.resolvconf.enable = false;  # let NM manage DNS
+	networking.useHostResolvConf = false;
+	services.resolved.enable = true;
 	systemd.services.NetworkManager-wait-online.enable = lib.mkForce false;
 
 
@@ -47,26 +49,51 @@
 	# services.xserver.enable = true;
 
 	# Enable the GNOME Desktop Environment.
-	services.xserver.displayManager.gdm.enable = true;
-	services.xserver.desktopManager.gnome.enable = true;
-
+	# services.xserver.displayManager.gdm.enable = true;
+	# services.xserver.desktopManager.gnome.enable = true;
 
 	# Enable the BSPWM window manager.
-	services.xserver = {
-		enable = true;
-
-		# Configure keymap in X11
-		xkb = {
-		  layout = "us";
-		  variant = "";
-		};
+	# services.xserver = {
+	# 	enable = true;
+	#     videoDrivers  = [ "amdgpu" ];
+	#
+	# 	windowManager.bspwm.enable = true;
+	#
+	# 	# Configure keymap in X11
+	# 	xkb = {
+	# 	  layout = "us";
+	# 	  variant = "";
+	# 	};
+	#
+	# 	displayManager.sessionCommands = ''
+	# 	  blueman-applet &
+	# 	  ~/.screenlayout/monitor.sh &
+	# 	  polybar -c ~/.config/polybar/example &
+	# 	  flameshot &
+	# 	  dunst &
+	# 	'';
+	# };
+	# services.picom.enable = true;
+	# services.xserver.displayManager.sddm.enable = true;
+	services.displayManager.ly.enable = true;
+	services.displayManager.sddm.wayland.enable = true;
+    programs.hyprland.enable = true;
+	programs.xwayland.enable = true;
+	# Optional, hint electron apps to use wayland:
+	environment.sessionVariables = {
+		NIXOS_OZONE_WL = "1";
+		CLUTTER_BACKEND = "wayland";
+		SDL_VIDEODRIVER = "wayland";
+		QT_QPA_PLATFORM = "wayland";
+		GDK_BACKEND = "wayland";
 	};
+
 
 	# Enable CUPS to print documents.
 	services.printing.enable = true;
 
 	# Enable sound with pipewire.
-	hardware.pulseaudio.enable = false;
+	services.pulseaudio.enable = false;
 	security.rtkit.enable = true;
 	services.pipewire = {
 		enable = true;
@@ -112,19 +139,37 @@
 		neofetch
 		git
 		openrgb-with-all-plugins
-		rofi
+		# polybar
+		(polybar.override {
+			pulseSupport = true;
+		})
 		xorg.xinit
+		pciutils
+		arandr
+		blueman
+		flameshot
+		pulseaudio
+		playerctl
+		dunst
+		ly
+		networkmanagerapplet
 	];
+
+	programs.dconf.enable = true;
+
 
 	services.tailscale.enable = true;
 
 	services.hardware.openrgb.enable = true;
 
+	hardware.bluetooth.enable = true; # enables support for bluetooth
+	hardware.bluetooth.powerOnBoot = true;
+
 	programs.steam = {
-	  enable = true;
-	  remotePlay.openFirewall = true; # Open ports in the firewall for Steam Remote Play
-	  dedicatedServer.openFirewall = true; # Open ports in the firewall for Source Dedicated Server
-	  localNetworkGameTransfers.openFirewall = true; # Open ports in the firewall for Steam Local Network Game Transfers
+		enable = true;
+		remotePlay.openFirewall = true; # Open ports in the firewall for Steam Remote Play
+		dedicatedServer.openFirewall = true; # Open ports in the firewall for Source Dedicated Server
+		localNetworkGameTransfers.openFirewall = true; # Open ports in the firewall for Steam Local Network Game Transfers
 	};
 
 	services.openssh = {
@@ -148,6 +193,17 @@
 	};
 
 
+	fonts.packages = with pkgs; [ 
+		noto-fonts 
+		font-awesome
+		nerd-fonts.jetbrains-mono
+		nerd-fonts.fira-code
+		nerd-fonts.jetbrains-mono
+		nerd-fonts.hack
+		nerd-fonts.ubuntu-mono
+		nerd-fonts.caskaydia-cove
+	];
+
 	# Some programs need SUID wrappers, can be configured further or are
 	# started in user sessions.
 	# programs.mtr.enable = true;
@@ -164,11 +220,12 @@
 	# Or disable the firewall altogether.
 	# networking.firewall.enable = false;
 
+
 	# This value determines the NixOS release from which the default
 	# settings for stateful data, like file locations and database versions
 	# on your system were taken. It‘s perfectly fine and recommended to leave
 	# this value at the release version of the first install of this system.
 	# Before changing this value read the documentation for this option
 	# (e.g. man configuration.nix or on https://nixos.org/nixos/options.html).
-	system.stateVersion = "24.11"; # Did you read the comment?
+	system.stateVersion = "25.05"; # Did you read the comment?
 }

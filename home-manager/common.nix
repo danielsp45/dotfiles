@@ -13,10 +13,6 @@
     # The home.packages option allows you to install Nix packages into your
     # environment.
     home.packages = [
-        pkgs.zsh
-        pkgs.zsh-z
-        pkgs.oh-my-zsh
-        pkgs.zsh-powerlevel10k
         pkgs.neovim
         pkgs.ripgrep
         pkgs.lazygit
@@ -50,7 +46,6 @@
     home.sessionVariables = {
       EDITOR = "nvim";
     };
-
 
     # Home Manager can also manage your environment variables through
     # 'home.sessionVariables'. These will be explicitly sourced when using a

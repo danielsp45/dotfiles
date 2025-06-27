@@ -11,7 +11,8 @@ vim.opt.signcolumn = "yes" -- show sign column so that text doesn't shift
 vim.opt.pumblend = 0
 
 -- Clipboard
-vim.api.nvim_command("set clipboard=unnamedplus")
+-- vim.api.nvim_command("set clipboard=unnamedplus")
+-- vim.opt.clipboard = "unnamedplus"
 
 vim.api.nvim_command("set tabstop=4") -- Sets tab to 4 spaces
 vim.api.nvim_command("set shiftwidth=4") -- Sets shiftwidth to 4 spaces
