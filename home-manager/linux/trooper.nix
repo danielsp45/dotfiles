@@ -9,8 +9,9 @@
     home.file = {
         ".zshrc".source = ./../../zsh/linux/zshrc;
         ".config/ghostty".source = ./../../ghostty;
-        # ".config/bspwm/bspwmrc".source = ./../../bspwm/bspwmrc;
-        # ".config/sxhkd/sxhkdrc".source = ./../../bspwm/sxhkdrc;
+        ".config/hypr".source = ./../../hypr;
+        ".config/waybar".source = ./../../waybar;
+        ".config/rofi".source = ./../../rofi;
     };
 
     home.packages = with pkgs; [
@@ -40,7 +41,7 @@
 		swaybg
 		swaylock
 		wayidle 
-		capitaine-cursors
+		rose-pine-hyprcursor
 		zotero
 		nemo
 		adw-gtk3
@@ -50,81 +51,21 @@
 		grim
 		hyprshot
 		thunderbird
+		thefuck
+		fzf
     ];
 
 	gtk = {
-	  enable = true;
-	  theme.name = "Adw-gtk3";
-	  iconTheme.name = "Papirus";
-	  cursorTheme.name = "Bibata-Modern-Classic";
+		enable = true;
+		theme.name = "Adw-gtk3";
+		iconTheme.name = "Papirus";
+		cursorTheme = {
+			name = "rose-pine-hyprcursor";  # Change the name
+			size = 24;
+		};
 	};
 
-	home.sessionVariables = {
-		USE_WAYLAND_GRIM = "1";
-	};
-
-    programs = {
-        zsh = {
-            enable = true;
-            shellAliases = {
-                # General
-                cat="bat";
-                nv="nvim";
-                lv="lvim";
-                v="nvim $(fzf)";
-                ":q"="exit";
-                cl="clear";
-
-                # Scripts
-                bs="bin/server";
-                bb="bin/build";
-                br="bin/run";
-                bt="bin/test";
-                bf="bin/format";
-                bl="bin/lint";
-                bsh="bin/console";
-                bcl="bin/clean";
-                bst="bin/setup";
-                bsr="bin/start";
-                bsp="bin/stop";
-                    
-                # Elixir mix
-                m="mix";
-                im="iex -S mix";
-                ms="mix phx.server";
-                mc="mix do clean, compile";
-                mf="mix format";
-                ml="mix lint";
-                mt="mix test";
-                mpr="mix phx.routes";
-                mer="mix ecto.reset";
-
-                # Make
-                mk="make";
-                mkh="make help";
-                mkl="make lint";
-                mkc="make clean";
-                mkr="make run";
-                mkt="make test";
-                mkut="make unit-tests";
-                mkts="make tests";
-            };
-
-            oh-my-zsh = {
-                enable = true;
-                theme = "cloud";
-                plugins = [
-                    "git"
-                    "history"
-                    "zsh-z"
-                    "asdf"
-                    "docker-compose"
-                    "extract"
-                    "fzf-tab"
-                ];
-            };
-        };
-    };
+	programs.starship.enable = true;
 
     imports = [ ./../common.nix ];
 }

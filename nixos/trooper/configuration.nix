@@ -195,9 +195,13 @@
 
 	fonts.packages = with pkgs; [ 
 		noto-fonts 
-		nerd-fonts.caskaydia-cove
 		font-awesome
 		nerd-fonts.jetbrains-mono
+		nerd-fonts.fira-code
+		nerd-fonts.jetbrains-mono
+		nerd-fonts.hack
+		nerd-fonts.ubuntu-mono
+		nerd-fonts.caskaydia-cove
 	];
 
 	# Some programs need SUID wrappers, can be configured further or are
