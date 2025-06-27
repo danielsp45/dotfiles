@@ -1,9 +1,0 @@
-2025-06-15 21:51:32.634 [info] Acquired MSAL enablement value from default. Value: false
-2025-06-15 21:51:32.635 [warning] [Sun, 15 Jun 2025 20:51:32 GMT] : [aebc6443-996d-45c2-90f0-388ff96faa56] [https://login.microsoftonline.com/organizations] : @azure/msal-node@2.16.2 : Warning - NativeBroker implementation was provided but the broker is unavailable.
-2025-06-15 21:51:32.637 [info] [getSessions] [all] starting
-2025-06-15 21:51:32.637 [info] [getSessions] [all] returned 0 session(s)
-2025-06-15 21:51:32.637 [info] [getSessions] [all] starting
-2025-06-15 21:51:32.637 [info] [getSessions] [all] returned 0 session(s)
-2025-06-15 21:51:32.642 [info] [getSessions] [46da2f7e-b5ef-422a-88d4-2a7f9de6a0b2/.default email openid] starting
-2025-06-15 21:51:32.642 [warning] [Sun, 15 Jun 2025 20:51:32 GMT] : [aebc6443-996d-45c2-90f0-388ff96faa56] [https://login.microsoftonline.com/organizations] : @azure/msal-node@2.16.2 : Warning - NativeBroker implementation was provided but the broker is unavailable.
-2025-06-15 21:51:32.643 [info] [getSessions] [46da2f7e-b5ef-422a-88d4-2a7f9de6a0b2/.default email openid] returned 0 session(s)

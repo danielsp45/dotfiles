@@ -1,6 +1,0 @@
-2025/06/15-11:23:33.435 c1c Reusing MANIFEST /home/daniel/.config/discordptb/Local Storage/leveldb/MANIFEST-000001
-2025/06/15-11:23:33.440 c1c Recovering log #76
-2025/06/15-11:23:33.441 c1c Reusing old log /home/daniel/.config/discordptb/Local Storage/leveldb/000076.log 
-2025/06/15-11:27:10.614 c1d Level-0 table #81: started
-2025/06/15-11:27:10.623 c1d Level-0 table #81: 1099466 bytes OK
-2025/06/15-11:27:10.624 c1d Delete type=0 #76

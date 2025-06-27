@@ -1,1 +1,0 @@
-"use strict";(globalThis.webpackChunknotion_next=globalThis.webpackChunknotion_next||[]).push([[7091],{708980:(e,n,t)=>{t.r(n);!async function(){if(!t(865085).OPFSBootupRegistry.isEnabled)return;const{getOPFSPageCache:e}=await Promise.resolve().then(t.bind(t,882368)),n=e();n&&(0,t(604341).exposeDebugValue)("OPFS",{pageCache:n})}()}}]);
