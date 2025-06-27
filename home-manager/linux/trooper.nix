@@ -9,88 +9,63 @@
     home.file = {
         ".zshrc".source = ./../../zsh/linux/zshrc;
         ".config/ghostty".source = ./../../ghostty;
-        # ".config/bspwm".source = ./../../bspwm;
+        ".config/hypr".source = ./../../hypr;
+        ".config/waybar".source = ./../../waybar;
+        ".config/rofi".source = ./../../rofi;
     };
 
-    home.packages = [
-        pkgs._1password-cli
-        pkgs._1password-gui
-		pkgs.btrfs-progs
-		pkgs.nodejs_23
-		pkgs.starship
-		pkgs.caddy
-		pkgs.ghostty
-		pkgs.discord-ptb
-		pkgs.spotify
-		pkgs.telegram-desktop
-		pkgs.cmake
-		pkgs.libgcc
-		pkgs.gnumake
-		pkgs.xclip
+    home.packages = with pkgs; [
+        _1password-cli
+        _1password-gui
+		btrfs-progs
+		nodejs_23
+		starship
+		caddy
+		ghostty
+		discord
+		spotify
+		notion-app-enhanced
+		telegram-desktop
+		cmake
+		libgcc
+		gnumake
+		xclip
+		amdgpu_top
+		vscode
+		prismlauncher
+		rocmPackages.rpp
+		fastfetch
+		rofi-wayland
+		waybar
+		waypaper
+		swaybg
+		swaylock
+		wayidle 
+		rose-pine-hyprcursor
+		zotero
+		nemo
+		adw-gtk3
+		papirus-icon-theme
+		lxappearance
+		xdg-desktop-portal
+		grim
+		hyprshot
+		thunderbird
+		thefuck
+		fzf
     ];
 
-    programs = {
-        zsh = {
-            enable = true;
-            shellAliases = {
-                # General
-                cat="bat";
-                nv="nvim";
-                lv="lvim";
-                v="nvim $(fzf)";
-                ":q"="exit";
-                cl="clear";
+	gtk = {
+		enable = true;
+		theme.name = "Adw-gtk3";
+		iconTheme.name = "Papirus";
+		cursorTheme = {
+			name = "rose-pine-hyprcursor";  # Change the name
+			size = 24;
+		};
+	};
 
-                # Scripts
-                bs="bin/server";
-                bb="bin/build";
-                br="bin/run";
-                bt="bin/test";
-                bf="bin/format";
-                bl="bin/lint";
-                bsh="bin/console";
-                bcl="bin/clean";
-                bst="bin/setup";
-                bsr="bin/start";
-                bsp="bin/stop";
-                    
-                # Elixir mix
-                m="mix";
-                im="iex -S mix";
-                ms="mix phx.server";
-                mc="mix do clean, compile";
-                mf="mix format";
-                ml="mix lint";
-                mt="mix test";
-                mpr="mix phx.routes";
-                mer="mix ecto.reset";
-
-                # Make
-                mk="make";
-                mkh="make help";
-                mkl="make lint";
-                mkc="make clean";
-                mkr="make run";
-                mkt="make test";
-                mkut="make unit-tests";
-                mkts="make tests";
-            };
-
-            oh-my-zsh = {
-                enable = true;
-                theme = "cloud";
-                plugins = [
-                    "git"
-                    "history"
-                    "zsh-z"
-                    "asdf"
-                    "docker-compose"
-                    "extract"
-                    "fzf-tab"
-                ];
-            };
-        };
-    };
+	programs.starship.enable = true;
 
     imports = [ ./../common.nix ];
 }
