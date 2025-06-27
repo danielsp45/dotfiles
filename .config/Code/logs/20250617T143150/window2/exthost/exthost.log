@@ -1,0 +1,59 @@
+2025-06-17 21:43:01.238 [info] Extension host with pid 130518 started
+2025-06-17 21:43:01.238 [info] [resolveAuthority(ssh-remote,1)][0ms] activating remote resolvers ssh-remote+deucalion
+2025-06-17 21:43:01.238 [info] [resolveAuthority(ssh-remote,1)][0ms] activating resolver for ssh-remote+deucalion...
+2025-06-17 21:43:01.241 [info] ExtensionService#_doActivateExtension ms-vscode-remote.remote-ssh, startup: false, activationEvent: 'onResolveRemoteAuthority:ssh-remote'
+2025-06-17 21:43:01.324 [info] [resolveAuthority(ssh-remote,1)][87ms] invoking final resolve()...
+2025-06-17 21:43:01.430 [info] [resolveAuthority(ssh-remote,1)][193ms] setting tunnel factory...
+2025-06-17 21:43:01.430 [info] [resolveAuthority(ssh-remote,1)][193ms] returned managed authority
+2025-06-17 21:43:02.809 [info] ExtensionService#_doActivateExtension illixion.vscode-vibrancy-continued, startup: true, activationEvent: '*'
+2025-06-17 21:43:02.819 [info] ExtensionService#_doActivateExtension wayou.vscode-todo-highlight, startup: true, activationEvent: '*'
+2025-06-17 21:43:02.820 [info] ExtensionService#_doActivateExtension vscode.github-authentication, startup: false, activationEvent: 'onAuthenticationRequest:github'
+2025-06-17 21:43:02.866 [info] Eager extensions activated
+2025-06-17 21:43:02.884 [info] ExtensionService#_doActivateExtension ms-vscode-remote.remote-containers, startup: false, activationEvent: 'onStartupFinished'
+2025-06-17 21:43:02.956 [info] ExtensionService#_doActivateExtension ms-vscode-remote.remote-wsl, startup: false, activationEvent: 'onStartupFinished'
+2025-06-17 21:43:03.002 [info] ExtensionService#_doActivateExtension vscodevim.vim, startup: false, activationEvent: 'onStartupFinished'
+2025-06-17 21:43:04.061 [error] Error: ENOENT: no such file or directory, open '/home/daniel/.config/Code/User/globalStorage/vscodevim.vim/.registers'
+2025-06-17 21:43:42.944 [info] Extension host terminating: renderer closed the MessagePort
+2025-06-17 21:43:42.952 [error] Canceled: Canceled
+	at new dR (file:///nix/store/qsq8pyvxvwfwsvhsq6xqw1276hxzvv50-vscode-1.98.2/lib/vscode/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:29:111670)
+	at qy.U (file:///nix/store/qsq8pyvxvwfwsvhsq6xqw1276hxzvv50-vscode-1.98.2/lib/vscode/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:29:116281)
+	at s.<computed>.n.charCodeAt.s.<computed> (file:///nix/store/qsq8pyvxvwfwsvhsq6xqw1276hxzvv50-vscode-1.98.2/lib/vscode/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:29:113775)
+	at Sw.g (file:///nix/store/qsq8pyvxvwfwsvhsq6xqw1276hxzvv50-vscode-1.98.2/lib/vscode/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:112:41039)
+	at Sw.executeCommand (file:///nix/store/qsq8pyvxvwfwsvhsq6xqw1276hxzvv50-vscode-1.98.2/lib/vscode/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:112:40543)
+	at r.registerCommand.description (file:///nix/store/qsq8pyvxvwfwsvhsq6xqw1276hxzvv50-vscode-1.98.2/lib/vscode/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:112:39873)
+	at Sw.h (file:///nix/store/qsq8pyvxvwfwsvhsq6xqw1276hxzvv50-vscode-1.98.2/lib/vscode/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:112:41559)
+	at Sw.g (file:///nix/store/qsq8pyvxvwfwsvhsq6xqw1276hxzvv50-vscode-1.98.2/lib/vscode/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:112:40636)
+	at Sw.executeCommand (file:///nix/store/qsq8pyvxvwfwsvhsq6xqw1276hxzvv50-vscode-1.98.2/lib/vscode/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:112:40543)
+	at Object.executeCommand (file:///nix/store/qsq8pyvxvwfwsvhsq6xqw1276hxzvv50-vscode-1.98.2/lib/vscode/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:172:37375)
+	at t.shutdown (/home/daniel/.vscode/extensions/ms-vscode-remote.remote-ssh-0.120.0/out/extension.js:2:827000)
+	at e.deactivate (/home/daniel/.vscode/extensions/ms-vscode-remote.remote-ssh-0.120.0/out/extension.js:2:1117579)
+	at zz.eb (file:///nix/store/qsq8pyvxvwfwsvhsq6xqw1276hxzvv50-vscode-1.98.2/lib/vscode/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:116:11726)
+	at file:///nix/store/qsq8pyvxvwfwsvhsq6xqw1276hxzvv50-vscode-1.98.2/lib/vscode/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:116:9876
+	at Array.map (<anonymous>)
+	at zz.$ (file:///nix/store/qsq8pyvxvwfwsvhsq6xqw1276hxzvv50-vscode-1.98.2/lib/vscode/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:116:9864)
+	at zz.terminate (file:///nix/store/qsq8pyvxvwfwsvhsq6xqw1276hxzvv50-vscode-1.98.2/lib/vscode/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:116:10107)
+	at OI.terminate (file:///nix/store/qsq8pyvxvwfwsvhsq6xqw1276hxzvv50-vscode-1.98.2/lib/vscode/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:117:1434)
+	at ts (file:///nix/store/qsq8pyvxvwfwsvhsq6xqw1276hxzvv50-vscode-1.98.2/lib/vscode/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:190:15108)
+	at MessagePortMain.<anonymous> (file:///nix/store/qsq8pyvxvwfwsvhsq6xqw1276hxzvv50-vscode-1.98.2/lib/vscode/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:190:11656)
+	at MessagePortMain.emit (node:events:518:28)
+	at MessagePortMain._internalPort.emit (node:electron/js2c/utility_init:2:2949) setContext undefined
+2025-06-17 21:43:42.952 [info] Extension host with pid 130518 exiting with code 0
+2025-06-17 21:43:43.434 [info] Extension host with pid 130780 started
+2025-06-17 21:43:43.434 [info] Skipping acquiring lock for /home/daniel/.config/Code/User/workspaceStorage/29b4e21dd4aaccfccb16a45bf71fbec4.
+2025-06-17 21:43:43.434 [info] $getCanonicalURI invoked for authority (ssh-remote)
+2025-06-17 21:43:43.437 [info] ExtensionService#_doActivateExtension ms-vscode-remote.remote-ssh, startup: false, activationEvent: 'onResolveRemoteAuthority:ssh-remote'
+2025-06-17 21:43:43.524 [info] [resolveAuthority(ssh-remote,1)][0ms] activating remote resolvers ssh-remote+deucalion
+2025-06-17 21:43:43.524 [info] [resolveAuthority(ssh-remote,1)][0ms] activating resolver for ssh-remote+deucalion...
+2025-06-17 21:43:43.524 [info] [resolveAuthority(ssh-remote,1)][0ms] invoking final resolve()...
+2025-06-17 21:43:43.624 [info] [resolveAuthority(ssh-remote,1)][100ms] setting tunnel factory...
+2025-06-17 21:43:43.625 [info] [resolveAuthority(ssh-remote,1)][101ms] returned managed authority
+2025-06-17 21:43:45.633 [info] ExtensionService#_doActivateExtension illixion.vscode-vibrancy-continued, startup: true, activationEvent: '*'
+2025-06-17 21:43:45.639 [info] ExtensionService#_doActivateExtension wayou.vscode-todo-highlight, startup: true, activationEvent: '*'
+2025-06-17 21:43:45.640 [info] ExtensionService#_doActivateExtension vscode.github-authentication, startup: false, activationEvent: 'onAuthenticationRequest:github'
+2025-06-17 21:43:45.651 [info] ExtensionService#_doActivateExtension ms-vscode.remote-explorer, startup: false, activationEvent: 'onCommand:remote-internal.setActiveFolders'
+2025-06-17 21:43:45.729 [info] ExtensionService#_doActivateExtension ms-vscode.remote-server, startup: false, activationEvent: 'onCommand:remote-tunnels.internal.isAuthenticated'
+2025-06-17 21:43:48.251 [info] ExtensionService#_doActivateExtension vscodevim.vim, startup: false, activationEvent: 'onCommand:type'
+2025-06-17 21:43:51.355 [info] ExtensionService#_doActivateExtension vscode.microsoft-authentication, startup: false, activationEvent: 'onAuthenticationRequest:microsoft'
+2025-06-17 21:43:51.534 [info] Eager extensions activated
+2025-06-17 21:43:51.535 [info] ExtensionService#_doActivateExtension ms-vscode-remote.remote-containers, startup: false, activationEvent: 'onStartupFinished'
+2025-06-17 21:43:51.610 [info] ExtensionService#_doActivateExtension ms-vscode-remote.remote-wsl, startup: false, activationEvent: 'onStartupFinished'

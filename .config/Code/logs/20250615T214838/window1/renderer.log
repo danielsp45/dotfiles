@@ -1,0 +1,18 @@
+2025-06-15 21:48:39.477 [info] Started local extension host with pid 15054.
+2025-06-15 21:48:39.488 [info] Started initializing default profile extensions in extensions installation folder. file:///home/daniel/.vscode/extensions
+2025-06-15 21:48:39.535 [info] Completed initializing default profile extensions in extensions installation folder. file:///home/daniel/.vscode/extensions
+2025-06-15 21:48:39.706 [info] Settings Sync: Account status changed from uninitialized to unavailable
+2025-06-15 21:48:42.197 [info] [perf] Render performance baseline is 9ms
+2025-06-15 21:48:50.129 [error] No default agent contributed: CodeExpectedError: No default agent contributed
+    at FXe.U (vscode-file://vscode-app/nix/store/qsq8pyvxvwfwsvhsq6xqw1276hxzvv50-vscode-1.98.2/lib/vscode/resources/app/out/vs/workbench/workbench.desktop.main.js:1960:25292)
+2025-06-15 21:49:11.660 [error] No registered selector for ID: copilot-chat.fixWithCopilot
+2025-06-15 21:49:11.660 [error] No registered selector for ID: copilot-chat.generateCommitMessage
+2025-06-15 21:49:11.686 [error] No registered selector for ID: copilot-chat.terminalToDebugging
+2025-06-15 21:49:11.686 [error] No registered selector for ID: copilot-chat.terminalToDebuggingSuccess
+2025-06-15 21:49:26.774 [info] Settings Sync: Updated current session 2ae055aa5f89580e
+2025-06-15 21:49:26.776 [info] Settings Sync: Token updated for the account danielsp45
+2025-06-15 21:49:26.776 [info] Settings Sync: Account status changed from unavailable to available
+2025-06-15 21:49:37.827 [error] [tht13.python]: 'configuration.jsonValidation.url' must be an absolute URL or start with './'  to reference schemas located in the extension.
+2025-06-15 21:49:38.745 [error] [Extension Host] (node:15054) [DEP0005] DeprecationWarning: Buffer() is deprecated due to security and usability issues. Please use the Buffer.alloc(), Buffer.allocUnsafe(), or Buffer.from() methods instead.
+(Use `exe --trace-deprecation ...` to show where the warning was created)
+2025-06-15 21:49:39.509 [error] An unknown error occurred. Please consult the log for more details.

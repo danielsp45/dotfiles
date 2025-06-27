@@ -1,0 +1,245 @@
+2025-06-19 19:20:16.356 [info] Extension host with pid 21377 started
+2025-06-19 19:20:16.356 [info] Skipping acquiring lock for /home/daniel/.config/Code/User/workspaceStorage/29b4e21dd4aaccfccb16a45bf71fbec4.
+2025-06-19 19:20:16.356 [info] $getCanonicalURI invoked for authority (ssh-remote)
+2025-06-19 19:20:16.359 [info] ExtensionService#_doActivateExtension ms-vscode-remote.remote-ssh, startup: false, activationEvent: 'onResolveRemoteAuthority:ssh-remote'
+2025-06-19 19:20:16.436 [info] [resolveAuthority(ssh-remote,1)][0ms] activating remote resolvers ssh-remote+deucalion
+2025-06-19 19:20:16.436 [info] [resolveAuthority(ssh-remote,1)][1ms] activating resolver for ssh-remote+deucalion...
+2025-06-19 19:20:16.436 [info] [resolveAuthority(ssh-remote,1)][1ms] invoking final resolve()...
+2025-06-19 19:20:17.436 [info] [resolveAuthority(ssh-remote,1)][1001ms] waiting...
+2025-06-19 19:20:18.436 [info] [resolveAuthority(ssh-remote,1)][2001ms] waiting...
+2025-06-19 19:20:19.437 [info] [resolveAuthority(ssh-remote,1)][3002ms] waiting...
+2025-06-19 19:20:20.438 [info] [resolveAuthority(ssh-remote,1)][4003ms] waiting...
+2025-06-19 19:20:21.439 [info] [resolveAuthority(ssh-remote,1)][5004ms] waiting...
+2025-06-19 19:20:21.489 [info] [resolveAuthority(ssh-remote,1)][5054ms] setting tunnel factory...
+2025-06-19 19:20:21.490 [info] [resolveAuthority(ssh-remote,1)][5055ms] returned managed authority
+2025-06-19 19:20:27.039 [info] ExtensionService#_doActivateExtension illixion.vscode-vibrancy-continued, startup: true, activationEvent: '*'
+2025-06-19 19:20:27.054 [info] ExtensionService#_doActivateExtension wayou.vscode-todo-highlight, startup: true, activationEvent: '*'
+2025-06-19 19:20:27.055 [info] ExtensionService#_doActivateExtension vscode.github-authentication, startup: false, activationEvent: 'onAuthenticationRequest:github'
+2025-06-19 19:20:27.068 [info] ExtensionService#_doActivateExtension ms-vscode.remote-explorer, startup: false, activationEvent: 'onCommand:remote-internal.setActiveFolders'
+2025-06-19 19:20:27.145 [info] ExtensionService#_doActivateExtension ms-vscode.remote-server, startup: false, activationEvent: 'onCommand:remote-tunnels.internal.isAuthenticated'
+2025-06-19 19:20:27.401 [info] Extension host terminating: renderer closed the MessagePort
+2025-06-19 19:20:27.409 [error] Canceled: Canceled
+	at new dR (file:///nix/store/qsq8pyvxvwfwsvhsq6xqw1276hxzvv50-vscode-1.98.2/lib/vscode/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:29:111670)
+	at qy.U (file:///nix/store/qsq8pyvxvwfwsvhsq6xqw1276hxzvv50-vscode-1.98.2/lib/vscode/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:29:116281)
+	at s.<computed>.n.charCodeAt.s.<computed> (file:///nix/store/qsq8pyvxvwfwsvhsq6xqw1276hxzvv50-vscode-1.98.2/lib/vscode/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:29:113775)
+	at Sw.g (file:///nix/store/qsq8pyvxvwfwsvhsq6xqw1276hxzvv50-vscode-1.98.2/lib/vscode/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:112:41039)
+	at Sw.executeCommand (file:///nix/store/qsq8pyvxvwfwsvhsq6xqw1276hxzvv50-vscode-1.98.2/lib/vscode/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:112:40543)
+	at r.registerCommand.description (file:///nix/store/qsq8pyvxvwfwsvhsq6xqw1276hxzvv50-vscode-1.98.2/lib/vscode/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:112:39873)
+	at Sw.h (file:///nix/store/qsq8pyvxvwfwsvhsq6xqw1276hxzvv50-vscode-1.98.2/lib/vscode/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:112:41559)
+	at Sw.g (file:///nix/store/qsq8pyvxvwfwsvhsq6xqw1276hxzvv50-vscode-1.98.2/lib/vscode/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:112:40636)
+	at Sw.executeCommand (file:///nix/store/qsq8pyvxvwfwsvhsq6xqw1276hxzvv50-vscode-1.98.2/lib/vscode/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:112:40543)
+	at Object.executeCommand (file:///nix/store/qsq8pyvxvwfwsvhsq6xqw1276hxzvv50-vscode-1.98.2/lib/vscode/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:172:37375)
+	at t.shutdown (/home/daniel/.vscode/extensions/ms-vscode-remote.remote-ssh-0.120.0/out/extension.js:2:827000)
+	at e.deactivate (/home/daniel/.vscode/extensions/ms-vscode-remote.remote-ssh-0.120.0/out/extension.js:2:1117579)
+	at zz.eb (file:///nix/store/qsq8pyvxvwfwsvhsq6xqw1276hxzvv50-vscode-1.98.2/lib/vscode/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:116:11726)
+	at file:///nix/store/qsq8pyvxvwfwsvhsq6xqw1276hxzvv50-vscode-1.98.2/lib/vscode/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:116:9876
+	at Array.map (<anonymous>)
+	at zz.$ (file:///nix/store/qsq8pyvxvwfwsvhsq6xqw1276hxzvv50-vscode-1.98.2/lib/vscode/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:116:9864)
+	at zz.terminate (file:///nix/store/qsq8pyvxvwfwsvhsq6xqw1276hxzvv50-vscode-1.98.2/lib/vscode/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:116:10107)
+	at OI.terminate (file:///nix/store/qsq8pyvxvwfwsvhsq6xqw1276hxzvv50-vscode-1.98.2/lib/vscode/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:117:1434)
+	at ts (file:///nix/store/qsq8pyvxvwfwsvhsq6xqw1276hxzvv50-vscode-1.98.2/lib/vscode/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:190:15108)
+	at MessagePortMain.<anonymous> (file:///nix/store/qsq8pyvxvwfwsvhsq6xqw1276hxzvv50-vscode-1.98.2/lib/vscode/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:190:11656)
+	at MessagePortMain.emit (node:events:518:28)
+	at MessagePortMain._internalPort.emit (node:electron/js2c/utility_init:2:2949) setContext undefined
+2025-06-19 19:20:27.409 [info] Extension host with pid 21377 exiting with code 0
+2025-06-19 19:20:27.950 [info] Extension host with pid 21483 started
+2025-06-19 19:20:27.977 [info] ExtensionService#_doActivateExtension vscode.github-authentication, startup: false, activationEvent: 'onAuthenticationRequest:github'
+2025-06-19 19:20:28.060 [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*', root cause: vscode.git
+2025-06-19 19:20:28.062 [info] ExtensionService#_doActivateExtension illixion.vscode-vibrancy-continued, startup: true, activationEvent: '*'
+2025-06-19 19:20:28.069 [info] ExtensionService#_doActivateExtension wayou.vscode-todo-highlight, startup: true, activationEvent: '*'
+2025-06-19 19:20:28.089 [info] ExtensionService#_doActivateExtension vscode.git, startup: true, activationEvent: '*'
+2025-06-19 19:20:28.118 [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+2025-06-19 19:20:28.162 [info] Eager extensions activated
+2025-06-19 19:20:28.213 [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: false, activationEvent: 'onStartupFinished'
+2025-06-19 19:20:28.215 [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+2025-06-19 19:20:28.224 [info] ExtensionService#_doActivateExtension eamodio.gitlens, startup: false, activationEvent: 'onStartupFinished'
+2025-06-19 19:20:28.298 [info] ExtensionService#_doActivateExtension esbenp.prettier-vscode, startup: false, activationEvent: 'onStartupFinished'
+2025-06-19 19:20:28.332 [info] ExtensionService#_doActivateExtension formulahendry.code-runner, startup: false, activationEvent: 'onStartupFinished'
+2025-06-19 19:20:28.344 [info] ExtensionService#_doActivateExtension github.classroom, startup: false, activationEvent: 'onStartupFinished'
+2025-06-19 19:20:28.372 [info] ExtensionService#_doActivateExtension GitHub.copilot, startup: false, activationEvent: 'onStartupFinished'
+2025-06-19 19:20:28.554 [info] ExtensionService#_doActivateExtension GitHub.copilot-chat, startup: false, activationEvent: 'onStartupFinished'
+2025-06-19 19:20:28.778 [info] ExtensionService#_doActivateExtension GitHub.vscode-pull-request-github, startup: false, activationEvent: 'onStartupFinished'
+2025-06-19 19:20:28.819 [info] ExtensionService#_doActivateExtension Gruntfuggly.todo-tree, startup: false, activationEvent: 'onStartupFinished'
+2025-06-19 19:20:28.836 [info] ExtensionService#_doActivateExtension ms-dotnettools.vscode-dotnet-runtime, startup: false, activationEvent: 'onStartupFinished'
+2025-06-19 19:20:28.868 [info] ExtensionService#_doActivateExtension ms-vscode-remote.remote-containers, startup: false, activationEvent: 'onStartupFinished'
+2025-06-19 19:20:28.935 [info] ExtensionService#_doActivateExtension ms-vscode-remote.remote-wsl, startup: false, activationEvent: 'onStartupFinished'
+2025-06-19 19:20:28.980 [info] ExtensionService#_doActivateExtension ritwickdey.LiveServer, startup: false, activationEvent: 'onStartupFinished'
+2025-06-19 19:20:28.984 [info] ExtensionService#_doActivateExtension vscodevim.vim, startup: false, activationEvent: 'onStartupFinished'
+2025-06-19 19:20:29.269 [info] ExtensionService#_doActivateExtension ms-vsliveshare.vsliveshare, startup: false, activationEvent: 'api', root cause: eamodio.gitlens
+2025-06-19 19:20:29.554 [info] ExtensionService#_doActivateExtension vscode.configuration-editing, startup: false, activationEvent: 'onLanguage:jsonc'
+2025-06-19 19:20:29.560 [info] ExtensionService#_doActivateExtension vscode.json-language-features, startup: false, activationEvent: 'onLanguage:jsonc'
+2025-06-19 19:20:29.581 [info] ExtensionService#_doActivateExtension vscode.typescript-language-features, startup: false, activationEvent: 'onLanguage:jsonc'
+2025-06-19 19:20:29.599 [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onLanguage'
+2025-06-19 19:20:44.423 [info] Extension host terminating: renderer closed the MessagePort
+2025-06-19 19:20:44.435 [error] An error occurred when disposing the subscriptions for extension 'eamodio.gitlens':
+2025-06-19 19:20:44.439 [error] TypeError: Cannot read properties of undefined (reading 'dispose')
+    at Object.dispose (file:///nix/store/qsq8pyvxvwfwsvhsq6xqw1276hxzvv50-vscode-1.98.2/lib/vscode/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:135:119760)
+    at fv.<anonymous> (file:///nix/store/qsq8pyvxvwfwsvhsq6xqw1276hxzvv50-vscode-1.98.2/lib/vscode/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:108:8922)
+    at fv.dispose (file:///nix/store/qsq8pyvxvwfwsvhsq6xqw1276hxzvv50-vscode-1.98.2/lib/vscode/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:108:9018)
+    at Object.dispose (/home/daniel/.vscode/extensions/eamodio.gitlens-17.2.0/dist/gitlens.js:489:29281)
+    at /home/daniel/.vscode/extensions/eamodio.gitlens-17.2.0/dist/gitlens.js:766:16142
+    at Array.forEach (<anonymous>)
+    at Object.dispose (/home/daniel/.vscode/extensions/eamodio.gitlens-17.2.0/dist/gitlens.js:766:16124)
+    at hi (file:///nix/store/qsq8pyvxvwfwsvhsq6xqw1276hxzvv50-vscode-1.98.2/lib/vscode/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:25:701)
+    at file:///nix/store/qsq8pyvxvwfwsvhsq6xqw1276hxzvv50-vscode-1.98.2/lib/vscode/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:116:14994
+    at file:///nix/store/qsq8pyvxvwfwsvhsq6xqw1276hxzvv50-vscode-1.98.2/lib/vscode/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:25:1011
+    at Object.dispose (file:///nix/store/qsq8pyvxvwfwsvhsq6xqw1276hxzvv50-vscode-1.98.2/lib/vscode/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:8:705)
+    at zz.eb (file:///nix/store/qsq8pyvxvwfwsvhsq6xqw1276hxzvv50-vscode-1.98.2/lib/vscode/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:116:11921)
+    at file:///nix/store/qsq8pyvxvwfwsvhsq6xqw1276hxzvv50-vscode-1.98.2/lib/vscode/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:116:9876
+    at Array.map (<anonymous>)
+    at zz.$ (file:///nix/store/qsq8pyvxvwfwsvhsq6xqw1276hxzvv50-vscode-1.98.2/lib/vscode/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:116:9864)
+    at zz.terminate (file:///nix/store/qsq8pyvxvwfwsvhsq6xqw1276hxzvv50-vscode-1.98.2/lib/vscode/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:116:10107)
+    at OI.terminate (file:///nix/store/qsq8pyvxvwfwsvhsq6xqw1276hxzvv50-vscode-1.98.2/lib/vscode/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:117:1434)
+    at ts (file:///nix/store/qsq8pyvxvwfwsvhsq6xqw1276hxzvv50-vscode-1.98.2/lib/vscode/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:190:15108)
+    at MessagePortMain.<anonymous> (file:///nix/store/qsq8pyvxvwfwsvhsq6xqw1276hxzvv50-vscode-1.98.2/lib/vscode/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:190:11656)
+    at MessagePortMain.emit (node:events:518:28)
+    at Object.MessagePortMain._internalPort.emit (node:electron/js2c/utility_init:2:2949)
+2025-06-19 19:20:44.445 [error] An error occurred when disposing the subscriptions for extension 'Gruntfuggly.todo-tree':
+2025-06-19 19:20:44.445 [error] AggregateError: Encountered errors while disposing of store
+    at hi (file:///nix/store/qsq8pyvxvwfwsvhsq6xqw1276hxzvv50-vscode-1.98.2/lib/vscode/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:25:777)
+    at file:///nix/store/qsq8pyvxvwfwsvhsq6xqw1276hxzvv50-vscode-1.98.2/lib/vscode/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:116:14994
+    at file:///nix/store/qsq8pyvxvwfwsvhsq6xqw1276hxzvv50-vscode-1.98.2/lib/vscode/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:25:1011
+    at Object.dispose (file:///nix/store/qsq8pyvxvwfwsvhsq6xqw1276hxzvv50-vscode-1.98.2/lib/vscode/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:8:705)
+    at zz.eb (file:///nix/store/qsq8pyvxvwfwsvhsq6xqw1276hxzvv50-vscode-1.98.2/lib/vscode/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:116:11921)
+    at file:///nix/store/qsq8pyvxvwfwsvhsq6xqw1276hxzvv50-vscode-1.98.2/lib/vscode/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:116:9876
+    at Array.map (<anonymous>)
+    at zz.$ (file:///nix/store/qsq8pyvxvwfwsvhsq6xqw1276hxzvv50-vscode-1.98.2/lib/vscode/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:116:9864)
+    at zz.terminate (file:///nix/store/qsq8pyvxvwfwsvhsq6xqw1276hxzvv50-vscode-1.98.2/lib/vscode/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:116:10107)
+    at OI.terminate (file:///nix/store/qsq8pyvxvwfwsvhsq6xqw1276hxzvv50-vscode-1.98.2/lib/vscode/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:117:1434)
+    at ts (file:///nix/store/qsq8pyvxvwfwsvhsq6xqw1276hxzvv50-vscode-1.98.2/lib/vscode/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:190:15108)
+    at MessagePortMain.<anonymous> (file:///nix/store/qsq8pyvxvwfwsvhsq6xqw1276hxzvv50-vscode-1.98.2/lib/vscode/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:190:11656)
+    at MessagePortMain.emit (node:events:518:28)
+    at Object.MessagePortMain._internalPort.emit (node:electron/js2c/utility_init:2:2949)
+2025-06-19 19:20:44.452 [error] Canceled: Canceled
+    at new dR (file:///nix/store/qsq8pyvxvwfwsvhsq6xqw1276hxzvv50-vscode-1.98.2/lib/vscode/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:29:111670)
+    at qy.U (file:///nix/store/qsq8pyvxvwfwsvhsq6xqw1276hxzvv50-vscode-1.98.2/lib/vscode/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:29:116281)
+    at Proxy.s.<computed>.n.charCodeAt.s.<computed> (file:///nix/store/qsq8pyvxvwfwsvhsq6xqw1276hxzvv50-vscode-1.98.2/lib/vscode/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:29:113775)
+    at Sw.g (file:///nix/store/qsq8pyvxvwfwsvhsq6xqw1276hxzvv50-vscode-1.98.2/lib/vscode/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:112:41039)
+    at Sw.executeCommand (file:///nix/store/qsq8pyvxvwfwsvhsq6xqw1276hxzvv50-vscode-1.98.2/lib/vscode/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:112:40543)
+    at r.registerCommand.description (file:///nix/store/qsq8pyvxvwfwsvhsq6xqw1276hxzvv50-vscode-1.98.2/lib/vscode/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:112:39873)
+    at Sw.h (file:///nix/store/qsq8pyvxvwfwsvhsq6xqw1276hxzvv50-vscode-1.98.2/lib/vscode/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:112:41559)
+    at Sw.g (file:///nix/store/qsq8pyvxvwfwsvhsq6xqw1276hxzvv50-vscode-1.98.2/lib/vscode/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:112:40636)
+    at Sw.executeCommand (file:///nix/store/qsq8pyvxvwfwsvhsq6xqw1276hxzvv50-vscode-1.98.2/lib/vscode/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:112:40543)
+    at Object.executeCommand (file:///nix/store/qsq8pyvxvwfwsvhsq6xqw1276hxzvv50-vscode-1.98.2/lib/vscode/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:172:37375)
+    at w (/home/daniel/.vscode/extensions/eamodio.gitlens-17.2.0/dist/gitlens.js:30:9119)
+    at c (/home/daniel/.vscode/extensions/eamodio.gitlens-17.2.0/dist/gitlens.js:2024:32473)
+    at ActionRunners._updateContextKeys (/home/daniel/.vscode/extensions/eamodio.gitlens-17.2.0/dist/gitlens.js:2029:3862)
+    at s (/home/daniel/.vscode/extensions/eamodio.gitlens-17.2.0/dist/gitlens.js:2029:2306)
+    at RegisteredActionRunner.unregister (/home/daniel/.vscode/extensions/eamodio.gitlens-17.2.0/dist/gitlens.js:2029:2449)
+    at RegisteredActionRunner.dispose (/home/daniel/.vscode/extensions/eamodio.gitlens-17.2.0/dist/gitlens.js:2029:1109)
+    at Object.dispose (/home/daniel/.vscode/extensions/eamodio.gitlens-17.2.0/dist/gitlens.js:2029:2543)
+    at hi (file:///nix/store/qsq8pyvxvwfwsvhsq6xqw1276hxzvv50-vscode-1.98.2/lib/vscode/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:25:701)
+    at file:///nix/store/qsq8pyvxvwfwsvhsq6xqw1276hxzvv50-vscode-1.98.2/lib/vscode/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:116:14994
+    at file:///nix/store/qsq8pyvxvwfwsvhsq6xqw1276hxzvv50-vscode-1.98.2/lib/vscode/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:25:1011
+    at Object.dispose (file:///nix/store/qsq8pyvxvwfwsvhsq6xqw1276hxzvv50-vscode-1.98.2/lib/vscode/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:8:705)
+    at zz.eb (file:///nix/store/qsq8pyvxvwfwsvhsq6xqw1276hxzvv50-vscode-1.98.2/lib/vscode/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:116:11921)
+    at file:///nix/store/qsq8pyvxvwfwsvhsq6xqw1276hxzvv50-vscode-1.98.2/lib/vscode/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:116:9876
+    at Array.map (<anonymous>)
+    at zz.$ (file:///nix/store/qsq8pyvxvwfwsvhsq6xqw1276hxzvv50-vscode-1.98.2/lib/vscode/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:116:9864)
+    at zz.terminate (file:///nix/store/qsq8pyvxvwfwsvhsq6xqw1276hxzvv50-vscode-1.98.2/lib/vscode/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:116:10107)
+    at OI.terminate (file:///nix/store/qsq8pyvxvwfwsvhsq6xqw1276hxzvv50-vscode-1.98.2/lib/vscode/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:117:1434)
+    at ts (file:///nix/store/qsq8pyvxvwfwsvhsq6xqw1276hxzvv50-vscode-1.98.2/lib/vscode/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:190:15108)
+    at MessagePortMain.<anonymous> (file:///nix/store/qsq8pyvxvwfwsvhsq6xqw1276hxzvv50-vscode-1.98.2/lib/vscode/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:190:11656)
+    at MessagePortMain.emit (node:events:518:28)
+    at Object.MessagePortMain._internalPort.emit (node:electron/js2c/utility_init:2:2949) setContext undefined
+2025-06-19 19:20:44.453 [error] Canceled: Canceled
+    at new dR (file:///nix/store/qsq8pyvxvwfwsvhsq6xqw1276hxzvv50-vscode-1.98.2/lib/vscode/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:29:111670)
+    at qy.U (file:///nix/store/qsq8pyvxvwfwsvhsq6xqw1276hxzvv50-vscode-1.98.2/lib/vscode/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:29:116281)
+    at Proxy.s.<computed>.n.charCodeAt.s.<computed> (file:///nix/store/qsq8pyvxvwfwsvhsq6xqw1276hxzvv50-vscode-1.98.2/lib/vscode/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:29:113775)
+    at Sw.g (file:///nix/store/qsq8pyvxvwfwsvhsq6xqw1276hxzvv50-vscode-1.98.2/lib/vscode/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:112:41039)
+    at Sw.executeCommand (file:///nix/store/qsq8pyvxvwfwsvhsq6xqw1276hxzvv50-vscode-1.98.2/lib/vscode/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:112:40543)
+    at r.registerCommand.description (file:///nix/store/qsq8pyvxvwfwsvhsq6xqw1276hxzvv50-vscode-1.98.2/lib/vscode/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:112:39873)
+    at Sw.h (file:///nix/store/qsq8pyvxvwfwsvhsq6xqw1276hxzvv50-vscode-1.98.2/lib/vscode/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:112:41559)
+    at Sw.g (file:///nix/store/qsq8pyvxvwfwsvhsq6xqw1276hxzvv50-vscode-1.98.2/lib/vscode/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:112:40636)
+    at Sw.executeCommand (file:///nix/store/qsq8pyvxvwfwsvhsq6xqw1276hxzvv50-vscode-1.98.2/lib/vscode/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:112:40543)
+    at Object.executeCommand (file:///nix/store/qsq8pyvxvwfwsvhsq6xqw1276hxzvv50-vscode-1.98.2/lib/vscode/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:172:37375)
+    at w (/home/daniel/.vscode/extensions/eamodio.gitlens-17.2.0/dist/gitlens.js:30:9119)
+    at c (/home/daniel/.vscode/extensions/eamodio.gitlens-17.2.0/dist/gitlens.js:2024:32473)
+    at ActionRunners._updateContextKeys (/home/daniel/.vscode/extensions/eamodio.gitlens-17.2.0/dist/gitlens.js:2029:3862)
+    at s (/home/daniel/.vscode/extensions/eamodio.gitlens-17.2.0/dist/gitlens.js:2029:2306)
+    at RegisteredActionRunner.unregister (/home/daniel/.vscode/extensions/eamodio.gitlens-17.2.0/dist/gitlens.js:2029:2449)
+    at RegisteredActionRunner.dispose (/home/daniel/.vscode/extensions/eamodio.gitlens-17.2.0/dist/gitlens.js:2029:1109)
+    at Object.dispose (/home/daniel/.vscode/extensions/eamodio.gitlens-17.2.0/dist/gitlens.js:2029:2543)
+    at hi (file:///nix/store/qsq8pyvxvwfwsvhsq6xqw1276hxzvv50-vscode-1.98.2/lib/vscode/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:25:701)
+    at file:///nix/store/qsq8pyvxvwfwsvhsq6xqw1276hxzvv50-vscode-1.98.2/lib/vscode/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:116:14994
+    at file:///nix/store/qsq8pyvxvwfwsvhsq6xqw1276hxzvv50-vscode-1.98.2/lib/vscode/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:25:1011
+    at Object.dispose (file:///nix/store/qsq8pyvxvwfwsvhsq6xqw1276hxzvv50-vscode-1.98.2/lib/vscode/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:8:705)
+    at zz.eb (file:///nix/store/qsq8pyvxvwfwsvhsq6xqw1276hxzvv50-vscode-1.98.2/lib/vscode/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:116:11921)
+    at file:///nix/store/qsq8pyvxvwfwsvhsq6xqw1276hxzvv50-vscode-1.98.2/lib/vscode/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:116:9876
+    at Array.map (<anonymous>)
+    at zz.$ (file:///nix/store/qsq8pyvxvwfwsvhsq6xqw1276hxzvv50-vscode-1.98.2/lib/vscode/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:116:9864)
+    at zz.terminate (file:///nix/store/qsq8pyvxvwfwsvhsq6xqw1276hxzvv50-vscode-1.98.2/lib/vscode/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:116:10107)
+    at OI.terminate (file:///nix/store/qsq8pyvxvwfwsvhsq6xqw1276hxzvv50-vscode-1.98.2/lib/vscode/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:117:1434)
+    at ts (file:///nix/store/qsq8pyvxvwfwsvhsq6xqw1276hxzvv50-vscode-1.98.2/lib/vscode/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:190:15108)
+    at MessagePortMain.<anonymous> (file:///nix/store/qsq8pyvxvwfwsvhsq6xqw1276hxzvv50-vscode-1.98.2/lib/vscode/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:190:11656)
+    at MessagePortMain.emit (node:events:518:28)
+    at Object.MessagePortMain._internalPort.emit (node:electron/js2c/utility_init:2:2949) setContext undefined
+2025-06-19 19:20:44.457 [error] Canceled: Canceled
+    at new dR (file:///nix/store/qsq8pyvxvwfwsvhsq6xqw1276hxzvv50-vscode-1.98.2/lib/vscode/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:29:111670)
+    at qy.U (file:///nix/store/qsq8pyvxvwfwsvhsq6xqw1276hxzvv50-vscode-1.98.2/lib/vscode/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:29:116281)
+    at Proxy.s.<computed>.n.charCodeAt.s.<computed> (file:///nix/store/qsq8pyvxvwfwsvhsq6xqw1276hxzvv50-vscode-1.98.2/lib/vscode/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:29:113775)
+    at Sw.g (file:///nix/store/qsq8pyvxvwfwsvhsq6xqw1276hxzvv50-vscode-1.98.2/lib/vscode/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:112:41039)
+    at Sw.executeCommand (file:///nix/store/qsq8pyvxvwfwsvhsq6xqw1276hxzvv50-vscode-1.98.2/lib/vscode/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:112:40543)
+    at r.registerCommand.description (file:///nix/store/qsq8pyvxvwfwsvhsq6xqw1276hxzvv50-vscode-1.98.2/lib/vscode/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:112:39873)
+    at Sw.h (file:///nix/store/qsq8pyvxvwfwsvhsq6xqw1276hxzvv50-vscode-1.98.2/lib/vscode/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:112:41559)
+    at Sw.g (file:///nix/store/qsq8pyvxvwfwsvhsq6xqw1276hxzvv50-vscode-1.98.2/lib/vscode/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:112:40636)
+    at Sw.executeCommand (file:///nix/store/qsq8pyvxvwfwsvhsq6xqw1276hxzvv50-vscode-1.98.2/lib/vscode/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:112:40543)
+    at Object.executeCommand (file:///nix/store/qsq8pyvxvwfwsvhsq6xqw1276hxzvv50-vscode-1.98.2/lib/vscode/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:172:37375)
+    at w (/home/daniel/.vscode/extensions/eamodio.gitlens-17.2.0/dist/gitlens.js:30:9119)
+    at c (/home/daniel/.vscode/extensions/eamodio.gitlens-17.2.0/dist/gitlens.js:2024:32473)
+    at ActionRunners._updateContextKeys (/home/daniel/.vscode/extensions/eamodio.gitlens-17.2.0/dist/gitlens.js:2029:3862)
+    at s (/home/daniel/.vscode/extensions/eamodio.gitlens-17.2.0/dist/gitlens.js:2029:2306)
+    at RegisteredActionRunner.unregister (/home/daniel/.vscode/extensions/eamodio.gitlens-17.2.0/dist/gitlens.js:2029:2449)
+    at RegisteredActionRunner.dispose (/home/daniel/.vscode/extensions/eamodio.gitlens-17.2.0/dist/gitlens.js:2029:1109)
+    at Object.dispose (/home/daniel/.vscode/extensions/eamodio.gitlens-17.2.0/dist/gitlens.js:2029:2543)
+    at p (/home/daniel/.vscode/extensions/github.vscode-pull-request-github-0.108.0/dist/extension.js:2075:446222)
+    at Ew.dispose (/home/daniel/.vscode/extensions/github.vscode-pull-request-github-0.108.0/dist/extension.js:2075:446390)
+    at hi (file:///nix/store/qsq8pyvxvwfwsvhsq6xqw1276hxzvv50-vscode-1.98.2/lib/vscode/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:25:701)
+    at file:///nix/store/qsq8pyvxvwfwsvhsq6xqw1276hxzvv50-vscode-1.98.2/lib/vscode/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:116:14994
+    at file:///nix/store/qsq8pyvxvwfwsvhsq6xqw1276hxzvv50-vscode-1.98.2/lib/vscode/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:25:1011
+    at Object.dispose (file:///nix/store/qsq8pyvxvwfwsvhsq6xqw1276hxzvv50-vscode-1.98.2/lib/vscode/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:8:705)
+    at zz.eb (file:///nix/store/qsq8pyvxvwfwsvhsq6xqw1276hxzvv50-vscode-1.98.2/lib/vscode/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:116:11921)
+    at file:///nix/store/qsq8pyvxvwfwsvhsq6xqw1276hxzvv50-vscode-1.98.2/lib/vscode/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:116:9876
+    at Array.map (<anonymous>)
+    at zz.$ (file:///nix/store/qsq8pyvxvwfwsvhsq6xqw1276hxzvv50-vscode-1.98.2/lib/vscode/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:116:9864)
+    at zz.terminate (file:///nix/store/qsq8pyvxvwfwsvhsq6xqw1276hxzvv50-vscode-1.98.2/lib/vscode/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:116:10107)
+    at OI.terminate (file:///nix/store/qsq8pyvxvwfwsvhsq6xqw1276hxzvv50-vscode-1.98.2/lib/vscode/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:117:1434)
+    at ts (file:///nix/store/qsq8pyvxvwfwsvhsq6xqw1276hxzvv50-vscode-1.98.2/lib/vscode/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:190:15108)
+    at MessagePortMain.<anonymous> (file:///nix/store/qsq8pyvxvwfwsvhsq6xqw1276hxzvv50-vscode-1.98.2/lib/vscode/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:190:11656)
+    at MessagePortMain.emit (node:events:518:28)
+    at Object.MessagePortMain._internalPort.emit (node:electron/js2c/utility_init:2:2949) setContext undefined
+2025-06-19 19:20:44.468 [info] Extension host with pid 21483 exiting with code 0
+2025-06-19 19:20:45.001 [info] Extension host with pid 21566 started
+2025-06-19 19:20:45.001 [info] Skipping acquiring lock for /home/daniel/.config/Code/User/workspaceStorage/4a3478581041fb2b8d6dcb1a23e79c42.
+2025-06-19 19:20:45.042 [info] ExtensionService#_doActivateExtension vscode.github-authentication, startup: false, activationEvent: 'onAuthenticationRequest:github'
+2025-06-19 19:20:45.065 [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*'
+2025-06-19 19:20:45.104 [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+2025-06-19 19:20:45.120 [info] Eager extensions activated
+2025-06-19 19:20:45.175 [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: false, activationEvent: 'onStartupFinished'
+2025-06-19 19:20:45.176 [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+2025-06-19 19:20:45.186 [info] ExtensionService#_doActivateExtension eamodio.gitlens, startup: false, activationEvent: 'onStartupFinished'
+2025-06-19 19:20:45.260 [info] ExtensionService#_doActivateExtension esbenp.prettier-vscode, startup: false, activationEvent: 'onStartupFinished'
+2025-06-19 19:20:45.292 [info] ExtensionService#_doActivateExtension github.classroom, startup: false, activationEvent: 'onStartupFinished'
+2025-06-19 19:20:45.323 [info] ExtensionService#_doActivateExtension GitHub.vscode-pull-request-github, startup: false, activationEvent: 'onStartupFinished'
+2025-06-19 19:20:45.369 [info] ExtensionService#_doActivateExtension ms-dotnettools.vscode-dotnet-runtime, startup: false, activationEvent: 'onStartupFinished'
+2025-06-19 19:20:45.403 [info] ExtensionService#_doActivateExtension ms-vscode-remote.remote-containers, startup: false, activationEvent: 'onStartupFinished'
+2025-06-19 19:20:45.477 [info] ExtensionService#_doActivateExtension ms-vscode-remote.remote-wsl, startup: false, activationEvent: 'onStartupFinished'
+2025-06-19 19:20:45.523 [info] ExtensionService#_doActivateExtension vscodevim.vim, startup: false, activationEvent: 'onStartupFinished'
+2025-06-19 19:20:45.677 [info] ExtensionService#_doActivateExtension ms-vsliveshare.vsliveshare, startup: false, activationEvent: 'api', root cause: eamodio.gitlens
+2025-06-19 19:20:47.094 [info] ExtensionService#_doActivateExtension vscode.git, startup: false, activationEvent: 'api', root cause: vscode.github
+2025-06-19 19:20:47.163 [info] ExtensionService#_doActivateExtension formulahendry.code-runner, startup: false, activationEvent: 'onStartupFinished'
+2025-06-19 19:20:47.170 [info] ExtensionService#_doActivateExtension GitHub.copilot, startup: false, activationEvent: 'onStartupFinished'
+2025-06-19 19:20:47.358 [info] ExtensionService#_doActivateExtension GitHub.copilot-chat, startup: false, activationEvent: 'onStartupFinished'
+2025-06-19 19:20:47.580 [info] ExtensionService#_doActivateExtension Gruntfuggly.todo-tree, startup: false, activationEvent: 'onStartupFinished'
+2025-06-19 19:20:47.593 [info] ExtensionService#_doActivateExtension illixion.vscode-vibrancy-continued, startup: false, activationEvent: '*'
+2025-06-19 19:20:47.598 [info] ExtensionService#_doActivateExtension ritwickdey.LiveServer, startup: false, activationEvent: 'onStartupFinished'
+2025-06-19 19:20:47.601 [info] ExtensionService#_doActivateExtension wayou.vscode-todo-highlight, startup: false, activationEvent: '*'
+2025-06-19 19:21:41.153 [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onLanguage'
+2025-06-19 19:22:30.006 [info] ExtensionService#_doActivateExtension vscode.configuration-editing, startup: false, activationEvent: 'onLanguage:json'
+2025-06-19 19:22:30.010 [info] ExtensionService#_doActivateExtension vscode.extension-editing, startup: false, activationEvent: 'onLanguage:json'
+2025-06-19 19:22:30.016 [info] ExtensionService#_doActivateExtension vscode.json-language-features, startup: false, activationEvent: 'onLanguage:json'
+2025-06-19 19:22:30.041 [info] ExtensionService#_doActivateExtension vscode.npm, startup: false, activationEvent: 'onLanguage:json'
+2025-06-19 19:27:38.867 [info] ExtensionService#_doActivateExtension vscode.typescript-language-features, startup: false, activationEvent: 'onLanguage:javascript'
+2025-06-19 19:27:38.886 [info] ExtensionService#_doActivateExtension VisualStudioExptTeam.intellicode-api-usage-examples, startup: false, activationEvent: 'onLanguage:javascript'
+2025-06-19 19:27:38.940 [info] ExtensionService#_doActivateExtension VisualStudioExptTeam.vscodeintellicode, startup: false, activationEvent: 'onLanguage:javascript'
+2025-06-19 19:27:38.956 [info] ExtensionService#_doActivateExtension xaver.clang-format, startup: false, activationEvent: 'onLanguage:javascript'

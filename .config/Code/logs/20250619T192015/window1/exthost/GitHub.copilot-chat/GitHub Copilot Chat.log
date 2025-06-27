@@ -1,0 +1,64 @@
+2025-06-19 19:20:29.783 [info] Using the Electron fetcher.
+2025-06-19 19:20:29.783 [info] Initializing Git extension service.
+2025-06-19 19:20:29.783 [info] Successfully activated the vscode.git extension.
+2025-06-19 19:20:29.783 [info] Enablement state of the vscode.git extension: true.
+2025-06-19 19:20:29.783 [info] Successfully registered Git commit message provider.
+2025-06-19 19:20:30.192 [info] Logged in as danielsp45
+2025-06-19 19:20:30.811 [info] Got Copilot token for danielsp45
+2025-06-19 19:20:30.838 [info] copilot token chat_enabled: true, sku: free_educational_quota
+2025-06-19 19:20:30.842 [info] Registering default platform agent...
+2025-06-19 19:20:30.843 [info] Successfully activated the GitHub.vscode-pull-request-github extension.
+2025-06-19 19:20:30.843 [info] [githubTitleAndDescriptionProvider] Initializing GitHub PR title and description provider provider.
+2025-06-19 19:20:30.843 [info] Successfully registered GitHub PR title and description provider.
+2025-06-19 19:20:30.843 [info] Successfully registered GitHub PR reviewer comments provider.
+2025-06-19 19:20:31.281 [info] Fetched model metadata in 465ms 46dcda46-177c-4b0f-887b-84d80c46e4aa
+2025-06-19 19:20:31.388 [info] activationBlocker from 'languageModelAccess' took for 1233ms
+2025-06-19 19:20:47.913 [info] Using the Electron fetcher.
+2025-06-19 19:20:47.913 [info] Initializing Git extension service.
+2025-06-19 19:20:47.913 [info] Successfully activated the vscode.git extension.
+2025-06-19 19:20:47.913 [info] Enablement state of the vscode.git extension: true.
+2025-06-19 19:20:47.913 [info] Successfully registered Git commit message provider.
+2025-06-19 19:20:48.107 [info] Logged in as danielsp45
+2025-06-19 19:20:48.573 [info] Got Copilot token for danielsp45
+2025-06-19 19:20:48.606 [info] copilot token chat_enabled: true, sku: free_educational_quota
+2025-06-19 19:20:48.609 [info] Registering default platform agent...
+2025-06-19 19:20:48.610 [info] Successfully activated the GitHub.vscode-pull-request-github extension.
+2025-06-19 19:20:48.610 [info] [githubTitleAndDescriptionProvider] Initializing GitHub PR title and description provider provider.
+2025-06-19 19:20:48.610 [info] Successfully registered GitHub PR title and description provider.
+2025-06-19 19:20:48.610 [info] Successfully registered GitHub PR reviewer comments provider.
+2025-06-19 19:20:48.748 [info] Fetched model metadata in 169ms 22712b2f-7a7d-4832-a0d7-495a9b09c526
+2025-06-19 19:20:48.749 [info] activationBlocker from 'languageModelAccess' took for 573ms
+2025-06-19 19:22:01.127 [info] message 0 returned. finish reason: [stop]
+2025-06-19 19:22:01.133 [info] request done: requestId: [51e66154-b36c-4e65-989e-7bc8ce03a555] model deployment ID: []
+2025-06-19 19:22:02.928 [info] message 0 returned. finish reason: [stop]
+2025-06-19 19:22:02.938 [info] request done: requestId: [97595c6d-3e92-4ae3-a1a3-634c161654e9] model deployment ID: []
+2025-06-19 19:22:14.473 [info] message 0 returned. finish reason: [stop]
+2025-06-19 19:22:14.477 [info] request done: requestId: [4e13e208-f0fa-4204-b230-2b65bea4ac82] model deployment ID: []
+2025-06-19 19:22:15.919 [info] message 0 returned. finish reason: [stop]
+2025-06-19 19:22:15.923 [info] request done: requestId: [109f0722-b21c-48c3-8378-95975432faed] model deployment ID: []
+2025-06-19 19:22:32.490 [info] message 0 returned. finish reason: [stop]
+2025-06-19 19:22:33.030 [info] request done: requestId: [8a2407b2-e045-41fd-9030-f92b11873a81] model deployment ID: []
+2025-06-19 19:22:33.459 [info] message 0 returned. finish reason: [stop]
+2025-06-19 19:22:33.464 [info] request done: requestId: [079450d7-76c9-466c-b69a-1fb2cc7682aa] model deployment ID: []
+2025-06-19 19:22:33.504 [info] message 0 returned. finish reason: [stop]
+2025-06-19 19:22:33.509 [info] request done: requestId: [afe25693-e4cf-401f-8329-d7a4147e8501] model deployment ID: []
+2025-06-19 19:27:31.351 [info] message 0 returned. finish reason: [stop]
+2025-06-19 19:27:31.355 [info] request done: requestId: [af498e48-7a07-4446-9441-3ae762ed6e87] model deployment ID: []
+2025-06-19 19:27:41.712 [info] message 0 returned. finish reason: [stop]
+2025-06-19 19:27:41.726 [info] request done: requestId: [9693c321-23b2-47e0-97df-38c0a9b904a3] model deployment ID: []
+2025-06-19 19:28:05.660 [info] message 0 returned. finish reason: [stop]
+2025-06-19 19:28:05.665 [info] request done: requestId: [c4f83610-1971-43cb-bbc6-c0b26ba28ba1] model deployment ID: []
+2025-06-19 19:28:19.738 [info] message 0 returned. finish reason: [stop]
+2025-06-19 19:28:19.742 [info] request done: requestId: [a1187ef2-dcdb-4155-ab32-4df55dcccc2b] model deployment ID: []
+2025-06-19 19:41:07.858 [info] Fetched model metadata in 657ms ff6976e7-cbac-4cdb-9042-c3521d6ab205
+2025-06-19 19:41:10.696 [info] message 0 returned. finish reason: [stop]
+2025-06-19 19:41:10.703 [info] request done: requestId: [02da5caf-096d-4bb7-987d-0e1d94293766] model deployment ID: []
+2025-06-19 19:41:26.156 [info] message 0 returned. finish reason: [stop]
+2025-06-19 19:41:26.169 [info] request done: requestId: [6c08e0f8-2d5b-4708-80d6-ee25d48ca2ce] model deployment ID: []
+2025-06-19 19:42:32.636 [info] Logged in as danielsp45
+2025-06-19 19:42:33.199 [info] Got Copilot token for danielsp45
+2025-06-19 19:42:33.209 [info] copilot token chat_enabled: true, sku: free_educational_quota
+2025-06-19 19:42:37.106 [info] message 0 returned. finish reason: [stop]
+2025-06-19 19:42:37.110 [info] request done: requestId: [fc0a1b7b-0602-4743-80f6-7ce1d531d158] model deployment ID: []
+2025-06-19 19:42:55.876 [info] message 0 returned. finish reason: [stop]
+2025-06-19 19:42:55.984 [info] request done: requestId: [648226ae-9ce3-423c-9b78-bd9c2c50fb40] model deployment ID: []

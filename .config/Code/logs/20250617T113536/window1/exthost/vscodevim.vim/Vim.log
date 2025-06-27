@@ -1,0 +1,77 @@
+2025-06-17 11:35:55.930 [info] /home/daniel/.config/Code/User/settings.json closed
+2025-06-17 11:36:11.106 [info] Configuration changed
+2025-06-17 11:36:27.764 [info] Active editor: vscode-remote://ssh-remote%2Bdeucalion/projects/F202500001HPCVLABEPICURE/mca55928/CHED/ched/src/multiplication_algorithms.cpp
+2025-06-17 11:36:27.845 [info] /projects/F202500001HPCVLABEPICURE/mca55928/CHED/ched/src/main.cpp.git closed
+2025-06-17 11:36:36.304 [info] Active editor: vscode-remote://ssh-remote%2Bdeucalion/projects/F202500001HPCVLABEPICURE/mca55928/CHED/ched/src/main.cpp
+2025-06-17 11:36:36.307 [info] /projects/F202500001HPCVLABEPICURE/mca55928/CHED/ched/src/multiplication_algorithms.cpp.git closed
+2025-06-17 11:36:51.368 [info] Active editor: vscode-remote://ssh-remote%2Bdeucalion/projects/F202500001HPCVLABEPICURE/mca55928/CHED/ched/src/multiplication_algorithms.cpp
+2025-06-17 11:36:51.370 [info] /projects/F202500001HPCVLABEPICURE/mca55928/CHED/ched/src/main.cpp.git closed
+2025-06-17 11:38:48.038 [info] /projects/F202500001HPCVLABEPICURE/mca55928/CHED/ched/src/multiplication_algorithms.cpp closed
+2025-06-17 11:38:48.069 [info] Active editor: vscode-remote://ssh-remote%2Bdeucalion/projects/F202500001HPCVLABEPICURE/mca55928/CHED/ched/src/matrix.cpp
+2025-06-17 11:38:48.125 [info] /projects/F202500001HPCVLABEPICURE/mca55928/CHED/ched/src/multiplication_algorithms.cpp.git closed
+2025-06-17 11:38:51.650 [info] Active editor: vscode-remote://ssh-remote%2Bdeucalion/projects/F202500001HPCVLABEPICURE/mca55928/CHED/ched/src/matrix.h
+2025-06-17 11:38:51.862 [info] /projects/F202500001HPCVLABEPICURE/mca55928/CHED/ched/src/matrix.cpp.git closed
+2025-06-17 11:39:27.798 [info] Active editor: vscode-remote://ssh-remote%2Bdeucalion/projects/F202500001HPCVLABEPICURE/mca55928/CHED/ched/src/matrix.cpp
+2025-06-17 11:39:27.803 [info] /projects/F202500001HPCVLABEPICURE/mca55928/CHED/ched/src/matrix.h.git closed
+2025-06-17 11:39:32.879 [info] Searching for csr_csc_multiply
+2025-06-17 11:39:35.178 [info] Active editor: vscode-remote://ssh-remote%2Bdeucalion/projects/F202500001HPCVLABEPICURE/mca55928/CHED/ched/src/main.cpp
+2025-06-17 11:39:35.181 [info] /projects/F202500001HPCVLABEPICURE/mca55928/CHED/ched/src/matrix.cpp.git closed
+2025-06-17 11:39:43.461 [info] Searching for benchmark_algorithm
+2025-06-17 11:40:05.785 [info] Active editor: vscode-remote://ssh-remote%2Bdeucalion/projects/F202500001HPCVLABEPICURE/mca55928/CHED/ched/src/multiplication_algorithms.cpp
+2025-06-17 11:40:05.802 [info] /projects/F202500001HPCVLABEPICURE/mca55928/CHED/ched/src/main.cpp.git closed
+2025-06-17 11:41:00.034 [info] Active editor: vscode-remote://ssh-remote%2Bdeucalion/projects/F202500001HPCVLABEPICURE/mca55928/CHED/ched/src/cuda_multiplication.cpp
+2025-06-17 11:41:00.042 [info] /projects/F202500001HPCVLABEPICURE/mca55928/CHED/ched/src/multiplication_algorithms.cpp.git closed
+2025-06-17 11:41:07.288 [info] /projects/F202500001HPCVLABEPICURE/mca55928/CHED/ched/src/cuda_multiplication.cpp closed
+2025-06-17 11:41:07.354 [info] Active editor: vscode-remote://ssh-remote%2Bdeucalion/projects/F202500001HPCVLABEPICURE/mca55928/CHED/ched/src/multiplication_cuda.cpp
+2025-06-17 11:41:10.708 [info] /projects/F202500001HPCVLABEPICURE/mca55928/CHED/ched/src/multiplication_algorithms.cpp closed
+2025-06-17 11:41:10.755 [info] Active editor: vscode-remote://ssh-remote%2Bdeucalion/projects/F202500001HPCVLABEPICURE/mca55928/CHED/ched/src/multiplication_algorithms.h
+2025-06-17 11:41:12.543 [info] Active editor: vscode-remote://ssh-remote%2Bdeucalion/projects/F202500001HPCVLABEPICURE/mca55928/CHED/ched/src/multiplication_cuda.cpp
+2025-06-17 11:41:12.546 [info] /projects/F202500001HPCVLABEPICURE/mca55928/CHED/ched/src/multiplication_algorithms.h.git closed
+2025-06-17 11:41:18.637 [info] Active editor: vscode-remote://ssh-remote%2Bdeucalion/projects/F202500001HPCVLABEPICURE/mca55928/CHED/ched/src/multiplication_algorithms.h
+2025-06-17 11:41:20.485 [info] /projects/F202500001HPCVLABEPICURE/mca55928/CHED/ched/src/multiplication_algorithms.h closed
+2025-06-17 11:41:20.556 [info] Active editor: vscode-remote://ssh-remote%2Bdeucalion/projects/F202500001HPCVLABEPICURE/mca55928/CHED/ched/src/multiplication_algorithms.cpp
+2025-06-17 11:41:20.571 [info] /projects/F202500001HPCVLABEPICURE/mca55928/CHED/ched/src/multiplication_algorithms.h.git closed
+2025-06-17 11:41:27.441 [info] Active editor: vscode-remote://ssh-remote%2Bdeucalion/projects/F202500001HPCVLABEPICURE/mca55928/CHED/ched/src/multiplication_cuda.cpp
+2025-06-17 11:41:27.443 [info] /projects/F202500001HPCVLABEPICURE/mca55928/CHED/ched/src/multiplication_algorithms.cpp.git closed
+2025-06-17 11:41:30.001 [info] Executing :w
+2025-06-17 11:42:03.545 [info] Active editor: vscode-remote://ssh-remote%2Bdeucalion/projects/F202500001HPCVLABEPICURE/mca55928/CHED/ched/src/multiplication_algorithms.cpp
+2025-06-17 11:42:07.649 [info] /projects/F202500001HPCVLABEPICURE/mca55928/CHED/ched/src/multiplication_algorithms.cpp closed
+2025-06-17 11:42:07.651 [info] Active editor: vscode-remote://ssh-remote%2Bdeucalion/projects/F202500001HPCVLABEPICURE/mca55928/CHED/ched/src/multiplication_cuda.cpp
+2025-06-17 11:42:07.656 [info] /projects/F202500001HPCVLABEPICURE/mca55928/CHED/ched/src/multiplication_algorithms.cpp.git closed
+2025-06-17 11:42:09.045 [info] Active editor: vscode-remote://ssh-remote%2Bdeucalion/projects/F202500001HPCVLABEPICURE/mca55928/CHED/ched/src/matrix.cpp
+2025-06-17 11:42:09.876 [info] /projects/F202500001HPCVLABEPICURE/mca55928/CHED/ched/src/matrix.cpp closed
+2025-06-17 11:42:09.878 [info] Active editor: vscode-remote://ssh-remote%2Bdeucalion/projects/F202500001HPCVLABEPICURE/mca55928/CHED/ched/src/multiplication_cuda.cpp
+2025-06-17 11:42:09.884 [info] /projects/F202500001HPCVLABEPICURE/mca55928/CHED/ched/src/matrix.cpp.git closed
+2025-06-17 11:42:13.220 [info] Active editor: vscode-remote://ssh-remote%2Bdeucalion/projects/F202500001HPCVLABEPICURE/mca55928/CHED/ched/src/multiplication_algorithms.h
+2025-06-17 11:42:15.924 [info] /projects/F202500001HPCVLABEPICURE/mca55928/CHED/ched/src/multiplication_algorithms.h closed
+2025-06-17 11:42:15.953 [info] Active editor: vscode-remote://ssh-remote%2Bdeucalion/projects/F202500001HPCVLABEPICURE/mca55928/CHED/ched/src/multiplication_algorithms.cpp
+2025-06-17 11:42:15.966 [info] /projects/F202500001HPCVLABEPICURE/mca55928/CHED/ched/src/multiplication_algorithms.h.git closed
+2025-06-17 11:42:17.990 [info] Active editor: vscode-remote://ssh-remote%2Bdeucalion/projects/F202500001HPCVLABEPICURE/mca55928/CHED/ched/src/multiplication_cuda.cpp
+2025-06-17 11:42:17.995 [info] /projects/F202500001HPCVLABEPICURE/mca55928/CHED/ched/src/multiplication_algorithms.cpp.git closed
+2025-06-17 11:42:23.626 [info] Active editor: vscode-remote://ssh-remote%2Bdeucalion/projects/F202500001HPCVLABEPICURE/mca55928/CHED/ched/src/matrix.h
+2025-06-17 11:45:21.014 [info] Active editor: vscode-remote://ssh-remote%2Bdeucalion/projects/F202500001HPCVLABEPICURE/mca55928/CHED/ched/src/multiplication_cuda.cpp
+2025-06-17 11:45:21.023 [info] /projects/F202500001HPCVLABEPICURE/mca55928/CHED/ched/src/matrix.h.git closed
+2025-06-17 11:45:32.092 [info] Active editor: vscode-remote://ssh-remote%2Bdeucalion/projects/F202500001HPCVLABEPICURE/mca55928/CHED/ched/src/matrix.h
+2025-06-17 11:45:36.011 [info] Searching for csr_row_ptr
+2025-06-17 11:45:42.553 [info] Active editor: vscode-remote://ssh-remote%2Bdeucalion/projects/F202500001HPCVLABEPICURE/mca55928/CHED/ched/src/multiplication_cuda.cpp
+2025-06-17 11:45:42.555 [info] /projects/F202500001HPCVLABEPICURE/mca55928/CHED/ched/src/matrix.h.git closed
+2025-06-17 11:46:10.312 [info] Active editor: vscode-remote://ssh-remote%2Bdeucalion/projects/F202500001HPCVLABEPICURE/mca55928/CHED/ched/src/matrix.h
+2025-06-17 11:46:28.476 [info] Active editor: vscode-remote://ssh-remote%2Bdeucalion/projects/F202500001HPCVLABEPICURE/mca55928/CHED/ched/src/multiplication_cuda.cpp
+2025-06-17 11:46:28.482 [info] /projects/F202500001HPCVLABEPICURE/mca55928/CHED/ched/src/matrix.h.git closed
+2025-06-17 12:00:34.680 [info] Executing :w
+2025-06-17 12:01:53.184 [info] Executing :w
+2025-06-17 12:02:00.954 [info] Executing :w
+2025-06-17 12:03:22.329 [info] Executing :w
+2025-06-17 12:36:02.296 [info] Executing :w
+2025-06-17 12:36:28.899 [info] Executing :w
+2025-06-17 12:36:36.901 [info] Executing :w
+2025-06-17 12:36:50.206 [info] Executing :wa
+2025-06-17 12:37:59.040 [info] Executing :w
+2025-06-17 12:39:38.071 [info] Executing :w
+2025-06-17 12:40:30.024 [info] Executing :w
+2025-06-17 13:50:48.511 [info] Executing :wa
+2025-06-17 13:51:42.780 [info] Executing :w
+2025-06-17 13:51:45.204 [info] Executing :w
+2025-06-17 14:00:09.757 [info] Active editor: vscode-remote://ssh-remote%2Bdeucalion/projects/F202500001HPCVLABEPICURE/mca55928/CHED/ched/src/matrix.h
+2025-06-17 14:00:24.033 [info] Active editor: vscode-remote://ssh-remote%2Bdeucalion/projects/F202500001HPCVLABEPICURE/mca55928/CHED/ched/src/multiplication_cuda.cpp
+2025-06-17 14:00:24.035 [info] /projects/F202500001HPCVLABEPICURE/mca55928/CHED/ched/src/matrix.h.git closed

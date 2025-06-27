@@ -1,0 +1,36 @@
+2025-06-17 14:32:04.161 [info] Latency measurements for ssh-remote+deucalion backend
+window<->ptyhostservice<->ptyhost: 95.30ms
+ptyhostservice<->ptyhost: 0.37ms []
+2025-06-17 14:32:04.161 [info] Latency measurements for ssh-remote+deucalion backend
+window<->ptyhostservice<->ptyhost: 95.30ms
+ptyhostservice<->ptyhost: 0.22ms []
+2025-06-17 14:32:04.161 [info] Latency measurements for ssh-remote+deucalion backend
+window<->ptyhostservice<->ptyhost: 93.10ms
+ptyhostservice<->ptyhost: 0.25ms []
+2025-06-17 14:32:04.161 [info] Latency measurements for ssh-remote+deucalion backend
+window<->ptyhostservice<->ptyhost: 93.10ms
+ptyhostservice<->ptyhost: 0.25ms []
+2025-06-17 21:43:02.175 [info] Latency measurements for ssh-remote+deucalion backend
+window<->ptyhostservice<->ptyhost: 55.50ms
+ptyhostservice<->ptyhost: 0.44ms []
+2025-06-17 21:43:02.175 [info] Latency measurements for ssh-remote+deucalion backend
+window<->ptyhostservice<->ptyhost: 55.40ms
+ptyhostservice<->ptyhost: 0.50ms []
+2025-06-17 21:43:02.175 [info] Latency measurements for ssh-remote+deucalion backend
+window<->ptyhostservice<->ptyhost: 55.40ms
+ptyhostservice<->ptyhost: 0.48ms []
+2025-06-17 21:43:02.242 [info] Latency measurements for ssh-remote+deucalion backend
+window<->ptyhostservice<->ptyhost: 20.90ms
+ptyhostservice<->ptyhost: 0.26ms []
+2025-06-17 21:43:44.359 [info] Latency measurements for ssh-remote+deucalion backend
+window<->ptyhostservice<->ptyhost: 23.20ms
+ptyhostservice<->ptyhost: 0.35ms []
+2025-06-17 21:43:44.379 [info] Latency measurements for ssh-remote+deucalion backend
+window<->ptyhostservice<->ptyhost: 43.00ms
+ptyhostservice<->ptyhost: 0.40ms []
+2025-06-17 21:43:44.379 [info] Latency measurements for ssh-remote+deucalion backend
+window<->ptyhostservice<->ptyhost: 43.00ms
+ptyhostservice<->ptyhost: 0.33ms []
+2025-06-17 21:43:44.379 [info] Latency measurements for ssh-remote+deucalion backend
+window<->ptyhostservice<->ptyhost: 42.90ms
+ptyhostservice<->ptyhost: 0.30ms []

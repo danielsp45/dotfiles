@@ -1,0 +1,25 @@
+2025-06-17 11:35:36.950 [info] Extension host with pid 3517 started
+2025-06-17 11:35:36.950 [info] Skipping acquiring lock for /home/daniel/.config/Code/User/workspaceStorage/bf7e58e9e66e2601c793ad7fc24dc612.
+2025-06-17 11:35:36.950 [info] $getCanonicalURI invoked for authority (ssh-remote)
+2025-06-17 11:35:36.952 [info] ExtensionService#_doActivateExtension ms-vscode-remote.remote-ssh, startup: false, activationEvent: 'onResolveRemoteAuthority:ssh-remote'
+2025-06-17 11:35:37.027 [info] [resolveAuthority(ssh-remote,1)][0ms] activating remote resolvers ssh-remote+deucalion
+2025-06-17 11:35:37.027 [info] [resolveAuthority(ssh-remote,1)][0ms] activating resolver for ssh-remote+deucalion...
+2025-06-17 11:35:37.027 [info] [resolveAuthority(ssh-remote,1)][0ms] invoking final resolve()...
+2025-06-17 11:35:38.028 [info] [resolveAuthority(ssh-remote,1)][1000ms] waiting...
+2025-06-17 11:35:39.028 [info] [resolveAuthority(ssh-remote,1)][2001ms] waiting...
+2025-06-17 11:35:40.028 [info] [resolveAuthority(ssh-remote,1)][3001ms] waiting...
+2025-06-17 11:35:41.029 [info] [resolveAuthority(ssh-remote,1)][4002ms] waiting...
+2025-06-17 11:35:41.582 [info] [resolveAuthority(ssh-remote,1)][4555ms] setting tunnel factory...
+2025-06-17 11:35:41.582 [info] [resolveAuthority(ssh-remote,1)][4555ms] returned managed authority
+2025-06-17 11:35:48.169 [info] ExtensionService#_doActivateExtension illixion.vscode-vibrancy-continued, startup: true, activationEvent: '*'
+2025-06-17 11:35:48.186 [info] ExtensionService#_doActivateExtension wayou.vscode-todo-highlight, startup: true, activationEvent: '*'
+2025-06-17 11:35:48.187 [info] ExtensionService#_doActivateExtension vscode.github-authentication, startup: false, activationEvent: 'onAuthenticationRequest:github'
+2025-06-17 11:35:48.198 [info] ExtensionService#_doActivateExtension ms-vscode.remote-explorer, startup: false, activationEvent: 'onCommand:remote-internal.setActiveFolders'
+2025-06-17 11:35:48.403 [info] ExtensionService#_doActivateExtension ms-vscode.remote-server, startup: false, activationEvent: 'onCommand:remote-tunnels.internal.isAuthenticated'
+2025-06-17 11:35:55.112 [info] Not activating extension 'ms-vscode-remote.remote-containers': Timed out while searching for 'workspaceContains' pattern .devcontainer/devcontainer.json,.devcontainer.json
+2025-06-17 11:35:55.113 [info] Eager extensions activated
+2025-06-17 11:35:55.114 [info] ExtensionService#_doActivateExtension ms-vscode-remote.remote-containers, startup: false, activationEvent: 'onStartupFinished'
+2025-06-17 11:35:55.185 [info] ExtensionService#_doActivateExtension ms-vscode-remote.remote-wsl, startup: false, activationEvent: 'onStartupFinished'
+2025-06-17 11:35:55.233 [info] ExtensionService#_doActivateExtension vscodevim.vim, startup: false, activationEvent: 'onStartupFinished'
+2025-06-17 11:35:55.495 [info] ExtensionService#_doActivateExtension vscode.microsoft-authentication, startup: false, activationEvent: 'onAuthenticationRequest:microsoft'
+2025-06-17 11:35:56.303 [error] Error: ENOENT: no such file or directory, open '/home/daniel/.config/Code/User/globalStorage/vscodevim.vim/.registers'

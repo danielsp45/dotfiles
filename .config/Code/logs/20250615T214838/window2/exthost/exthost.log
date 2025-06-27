@@ -1,0 +1,65 @@
+2025-06-15 21:49:56.554 [info] Extension host with pid 16096 started
+2025-06-15 21:49:56.554 [info] [resolveAuthority(ssh-remote,1)][0ms] activating remote resolvers ssh-remote+deucalion
+2025-06-15 21:49:56.554 [info] [resolveAuthority(ssh-remote,1)][0ms] activating resolver for ssh-remote+deucalion...
+2025-06-15 21:49:56.559 [info] ExtensionService#_doActivateExtension ms-vscode-remote.remote-ssh, startup: false, activationEvent: 'onResolveRemoteAuthority:ssh-remote'
+2025-06-15 21:49:56.639 [info] [resolveAuthority(ssh-remote,1)][87ms] invoking final resolve()...
+2025-06-15 21:49:57.639 [info] [resolveAuthority(ssh-remote,1)][1087ms] waiting...
+2025-06-15 21:49:58.640 [info] [resolveAuthority(ssh-remote,1)][2088ms] waiting...
+2025-06-15 21:49:59.640 [info] [resolveAuthority(ssh-remote,1)][3088ms] waiting...
+2025-06-15 21:50:00.641 [info] [resolveAuthority(ssh-remote,1)][4089ms] waiting...
+2025-06-15 21:50:01.143 [info] [resolveAuthority(ssh-remote,1)][4591ms] setting tunnel factory...
+2025-06-15 21:50:01.143 [info] [resolveAuthority(ssh-remote,1)][4591ms] returned managed authority
+2025-06-15 21:50:07.984 [info] ExtensionService#_doActivateExtension illixion.vscode-vibrancy-continued, startup: true, activationEvent: '*'
+2025-06-15 21:50:07.990 [info] ExtensionService#_doActivateExtension wayou.vscode-todo-highlight, startup: true, activationEvent: '*'
+2025-06-15 21:50:07.991 [info] ExtensionService#_doActivateExtension vscode.github-authentication, startup: false, activationEvent: 'onAuthenticationRequest:github'
+2025-06-15 21:50:08.043 [info] Eager extensions activated
+2025-06-15 21:50:08.080 [info] ExtensionService#_doActivateExtension ms-vscode-remote.remote-containers, startup: false, activationEvent: 'onStartupFinished'
+2025-06-15 21:50:08.153 [info] ExtensionService#_doActivateExtension ms-vscode-remote.remote-wsl, startup: false, activationEvent: 'onStartupFinished'
+2025-06-15 21:50:08.198 [info] ExtensionService#_doActivateExtension vscodevim.vim, startup: false, activationEvent: 'onStartupFinished'
+2025-06-15 21:50:09.252 [error] Error: ENOENT: no such file or directory, open '/home/daniel/.config/Code/User/globalStorage/vscodevim.vim/.registers'
+2025-06-15 21:51:23.126 [info] Extension host terminating: renderer closed the MessagePort
+2025-06-15 21:51:23.132 [error] Canceled: Canceled
+	at new dR (file:///nix/store/qsq8pyvxvwfwsvhsq6xqw1276hxzvv50-vscode-1.98.2/lib/vscode/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:29:111670)
+	at qy.U (file:///nix/store/qsq8pyvxvwfwsvhsq6xqw1276hxzvv50-vscode-1.98.2/lib/vscode/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:29:116281)
+	at s.<computed>.n.charCodeAt.s.<computed> (file:///nix/store/qsq8pyvxvwfwsvhsq6xqw1276hxzvv50-vscode-1.98.2/lib/vscode/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:29:113775)
+	at Sw.g (file:///nix/store/qsq8pyvxvwfwsvhsq6xqw1276hxzvv50-vscode-1.98.2/lib/vscode/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:112:41039)
+	at Sw.executeCommand (file:///nix/store/qsq8pyvxvwfwsvhsq6xqw1276hxzvv50-vscode-1.98.2/lib/vscode/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:112:40543)
+	at r.registerCommand.description (file:///nix/store/qsq8pyvxvwfwsvhsq6xqw1276hxzvv50-vscode-1.98.2/lib/vscode/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:112:39873)
+	at Sw.h (file:///nix/store/qsq8pyvxvwfwsvhsq6xqw1276hxzvv50-vscode-1.98.2/lib/vscode/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:112:41559)
+	at Sw.g (file:///nix/store/qsq8pyvxvwfwsvhsq6xqw1276hxzvv50-vscode-1.98.2/lib/vscode/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:112:40636)
+	at Sw.executeCommand (file:///nix/store/qsq8pyvxvwfwsvhsq6xqw1276hxzvv50-vscode-1.98.2/lib/vscode/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:112:40543)
+	at Object.executeCommand (file:///nix/store/qsq8pyvxvwfwsvhsq6xqw1276hxzvv50-vscode-1.98.2/lib/vscode/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:172:37375)
+	at t.shutdown (/home/daniel/.vscode/extensions/ms-vscode-remote.remote-ssh-0.120.0/out/extension.js:2:827000)
+	at e.deactivate (/home/daniel/.vscode/extensions/ms-vscode-remote.remote-ssh-0.120.0/out/extension.js:2:1117579)
+	at zz.eb (file:///nix/store/qsq8pyvxvwfwsvhsq6xqw1276hxzvv50-vscode-1.98.2/lib/vscode/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:116:11726)
+	at file:///nix/store/qsq8pyvxvwfwsvhsq6xqw1276hxzvv50-vscode-1.98.2/lib/vscode/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:116:9876
+	at Array.map (<anonymous>)
+	at zz.$ (file:///nix/store/qsq8pyvxvwfwsvhsq6xqw1276hxzvv50-vscode-1.98.2/lib/vscode/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:116:9864)
+	at zz.terminate (file:///nix/store/qsq8pyvxvwfwsvhsq6xqw1276hxzvv50-vscode-1.98.2/lib/vscode/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:116:10107)
+	at OI.terminate (file:///nix/store/qsq8pyvxvwfwsvhsq6xqw1276hxzvv50-vscode-1.98.2/lib/vscode/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:117:1434)
+	at ts (file:///nix/store/qsq8pyvxvwfwsvhsq6xqw1276hxzvv50-vscode-1.98.2/lib/vscode/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:190:15108)
+	at MessagePortMain.<anonymous> (file:///nix/store/qsq8pyvxvwfwsvhsq6xqw1276hxzvv50-vscode-1.98.2/lib/vscode/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:190:11656)
+	at MessagePortMain.emit (node:events:518:28)
+	at MessagePortMain._internalPort.emit (node:electron/js2c/utility_init:2:2949) setContext undefined
+2025-06-15 21:51:23.132 [error] Error: ENOENT: no such file or directory, open '/home/daniel/.config/Code/User/globalStorage/vscodevim.vim/.registers'
+2025-06-15 21:51:23.132 [info] Extension host with pid 16096 exiting with code 0
+2025-06-15 21:51:23.573 [info] Extension host with pid 17005 started
+2025-06-15 21:51:23.573 [info] Skipping acquiring lock for /home/daniel/.config/Code/User/workspaceStorage/bf7e58e9e66e2601c793ad7fc24dc612.
+2025-06-15 21:51:23.573 [info] $getCanonicalURI invoked for authority (ssh-remote)
+2025-06-15 21:51:23.575 [info] ExtensionService#_doActivateExtension ms-vscode-remote.remote-ssh, startup: false, activationEvent: 'onResolveRemoteAuthority:ssh-remote'
+2025-06-15 21:51:23.654 [info] [resolveAuthority(ssh-remote,1)][0ms] activating remote resolvers ssh-remote+deucalion
+2025-06-15 21:51:23.654 [info] [resolveAuthority(ssh-remote,1)][0ms] activating resolver for ssh-remote+deucalion...
+2025-06-15 21:51:23.654 [info] [resolveAuthority(ssh-remote,1)][0ms] invoking final resolve()...
+2025-06-15 21:51:23.753 [info] [resolveAuthority(ssh-remote,1)][99ms] setting tunnel factory...
+2025-06-15 21:51:23.753 [info] [resolveAuthority(ssh-remote,1)][99ms] returned managed authority
+2025-06-15 21:51:25.770 [info] ExtensionService#_doActivateExtension illixion.vscode-vibrancy-continued, startup: true, activationEvent: '*'
+2025-06-15 21:51:25.778 [info] ExtensionService#_doActivateExtension wayou.vscode-todo-highlight, startup: true, activationEvent: '*'
+2025-06-15 21:51:25.779 [info] ExtensionService#_doActivateExtension vscode.github-authentication, startup: false, activationEvent: 'onAuthenticationRequest:github'
+2025-06-15 21:51:25.788 [info] ExtensionService#_doActivateExtension ms-vscode.remote-explorer, startup: false, activationEvent: 'onCommand:remote-internal.setActiveFolders'
+2025-06-15 21:51:25.865 [info] ExtensionService#_doActivateExtension ms-vscode.remote-server, startup: false, activationEvent: 'onCommand:remote-tunnels.internal.isAuthenticated'
+2025-06-15 21:51:32.217 [info] ExtensionService#_doActivateExtension vscode.microsoft-authentication, startup: false, activationEvent: 'onAuthenticationRequest:microsoft'
+2025-06-15 21:51:32.362 [info] Eager extensions activated
+2025-06-15 21:51:32.363 [info] ExtensionService#_doActivateExtension ms-vscode-remote.remote-containers, startup: false, activationEvent: 'onStartupFinished'
+2025-06-15 21:51:32.429 [info] ExtensionService#_doActivateExtension ms-vscode-remote.remote-wsl, startup: false, activationEvent: 'onStartupFinished'
+2025-06-15 21:51:32.478 [info] ExtensionService#_doActivateExtension vscodevim.vim, startup: false, activationEvent: 'onStartupFinished'
+2025-06-15 21:51:33.559 [error] Error: ENOENT: no such file or directory, open '/home/daniel/.config/Code/User/globalStorage/vscodevim.vim/.registers'

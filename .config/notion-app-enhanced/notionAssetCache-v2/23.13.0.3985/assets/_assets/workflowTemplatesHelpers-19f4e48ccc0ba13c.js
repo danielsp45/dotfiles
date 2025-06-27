@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunknotion_next=globalThis.webpackChunknotion_next||[]).push([[71204],{299177:(e,t,n)=>{n.d(t,{A:()=>s});class o extends(()=>n(757695))().Store{getInitialState(){return{}}}const a=new o;n(604341).exposeDebugValue("SpaceWorkflowTemplateInstanceMapStore",a);const s=a},888325:(e,t,n)=>{function o(e){return`${e.table}:${e.id}`}n.d(t,{_:()=>o})}}]);

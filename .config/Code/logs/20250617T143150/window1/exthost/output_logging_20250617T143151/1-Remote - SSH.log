@@ -1,0 +1,990 @@
+[14:31:51.125] Log Level: 2
+[14:31:51.136] VS Code version: 1.98.2
+[14:31:51.136] Remote-SSH version: remote-ssh@0.120.0
+[14:31:51.136] linux x64
+[14:31:51.137] SSH Resolver called for "ssh-remote+deucalion", attempt 1
+[14:31:51.138] remote.SSH.useLocalServer = true
+[14:31:51.138] remote.SSH.useExecServer = true
+[14:31:51.138] remote.SSH.bindHost = {}
+[14:31:51.138] remote.SSH.path = undefined
+[14:31:51.138] remote.SSH.configFile = undefined
+[14:31:51.138] remote.SSH.useFlock = true
+[14:31:51.138] remote.SSH.lockfilesInTmp = false
+[14:31:51.138] remote.SSH.localServerDownload = auto
+[14:31:51.138] remote.SSH.remoteServerListenOnSocket = false
+[14:31:51.138] remote.SSH.defaultExtensions = []
+[14:31:51.138] remote.SSH.defaultExtensionsIfInstalledLocally = []
+[14:31:51.139] remote.SSH.loglevel = 2
+[14:31:51.139] remote.SSH.enableDynamicForwarding = true
+[14:31:51.139] remote.SSH.enableRemoteCommand = false
+[14:31:51.139] remote.SSH.serverPickPortsFromRange = {}
+[14:31:51.139] remote.SSH.serverInstallPath = {}
+[14:31:51.139] remote.SSH.permitPtyAllocation = false
+[14:31:51.139] remote.SSH.preferredLocalPortRange = undefined
+[14:31:51.139] remote.SSH.useCurlAndWgetConfigurationFiles = false
+[14:31:51.140] remote.SSH.experimental.chat = false
+[14:31:51.140] remote.SSH.experimental.enhancedSessionLogs = false
+[14:31:51.140] remote.SSH.httpProxy = {}
+[14:31:51.140] remote.SSH.httpsProxy = {}
+[14:31:51.146] SSH Resolver called for host: deucalion
+[14:31:51.146] Setting up SSH remote "deucalion"
+[14:31:51.149] Acquiring local install lock: /tmp/vscode-remote-ssh-4fc7920b-install.lock
+[14:31:51.150] Looking for existing server data file at /home/daniel/.config/Code/User/globalStorage/ms-vscode-remote.remote-ssh/vscode-ssh-host-4fc7920b-ddc367ed5c8936efe395cffeec279b04ffd7db78-0.120.0-es/data.json
+[14:31:51.150] No existing data file
+[14:31:51.150] Using commit id "ddc367ed5c8936efe395cffeec279b04ffd7db78" and quality "stable" for server
+[14:31:51.150] Extensions to install: 
+[14:31:51.153] Install and start server if needed
+[14:31:51.155] PATH: /nix/store/hagh8q3p2w9qvxwbmbaxbhyypp38f5p9-glib-2.82.4-bin/bin:/run/wrappers/bin:/home/daniel/.nix-profile/bin:/nix/profile/bin:/home/daniel/.local/state/nix/profile/bin:/etc/profiles/per-user/daniel/bin:/nix/var/nix/profiles/default/bin:/run/current-system/sw/bin
+[14:31:51.155] Checking ssh with "ssh -V"
+[14:31:51.159] > OpenSSH_9.9p2, OpenSSL 3.4.1 11 Feb 2025
+
+[14:31:51.161] askpass server listening on /run/user/1000/vscode-ssh-askpass-cccace7a363ca6ded817d9e417bb9f69af596099.sock
+[14:31:51.161] Spawning local server with {"serverId":1,"ipcHandlePath":"/run/user/1000/vscode-ssh-askpass-23c13b62cb2664d551d338e9f4368ef0d41007bf.sock","sshCommand":"ssh","sshArgs":["-v","-T","-D","40117","-o","ConnectTimeout=15","deucalion"],"serverDataFolderName":".vscode-server","dataFilePath":"/home/daniel/.config/Code/User/globalStorage/ms-vscode-remote.remote-ssh/vscode-ssh-host-4fc7920b-ddc367ed5c8936efe395cffeec279b04ffd7db78-0.120.0-es/data.json"}
+[14:31:51.161] Local server env: {"SHELL":"/run/current-system/sw/bin/zsh","DISPLAY":":0","ELECTRON_RUN_AS_NODE":"1","SSH_ASKPASS":"/home/daniel/.vscode/extensions/ms-vscode-remote.remote-ssh-0.120.0/out/local-server/askpass.sh","VSCODE_SSH_ASKPASS_NODE":"/nix/store/qsq8pyvxvwfwsvhsq6xqw1276hxzvv50-vscode-1.98.2/lib/vscode/code","VSCODE_SSH_ASKPASS_EXTRA_ARGS":"","VSCODE_SSH_ASKPASS_MAIN":"/home/daniel/.vscode/extensions/ms-vscode-remote.remote-ssh-0.120.0/out/askpass-main.js","VSCODE_SSH_ASKPASS_HANDLE":"/run/user/1000/vscode-ssh-askpass-cccace7a363ca6ded817d9e417bb9f69af596099.sock"}
+[14:31:51.163] Spawned 4530
+[14:31:51.163] Using connect timeout of 17 seconds
+[14:31:51.208] > local-server-1> Running ssh connection command: ssh -v -T -D 40117 -o ConnectTimeout=15 deucalion
+[14:31:51.209] > local-server-1> Spawned ssh, pid=4538
+[14:31:51.211] stderr> OpenSSH_9.9p2, OpenSSL 3.4.1 11 Feb 2025
+[14:31:51.315] stderr> debug1: Server host key: ssh-ed25519 SHA256:AMzlfN8g69jQGN26hYJqtag20d2CYG2Xg16VXmJv5V0
+[14:31:51.482] stderr> Authenticated to login.deucalion.macc.fccn.pt ([194.210.49.25]:22) using "publickey".
+[14:31:51.578] > 8888888b.  8888888888 888     888  .d8888b.        d8888 888      8888888 .d88888b.  888b    888 
+> 888   Y88b 888        888     888 d88P  Y88b      d88888 888        888  d88P   Y88b 8888b   888 
+> 888    888 888        888     888 888    888     d88P888 888        888  888     888 88888b  888 
+> 888    888 8888888    888     888 888           d88P 888 888        888  888     888 888Y88b 888 
+> 888    888 888        888     888 888          d88P  888 888        888  888     888 888 Y88b888 
+> 888    888 888        888     888 888    888  d88P   888 888        888  888     888 888  Y88888 
+> 888  .d88P 888        Y88b. .d88P Y88b  d88P d8888888888 888        888  Y88b. .d88P 888   Y8888 
+> 8888888P   8888888888   Y88888P     Y8888P   888 8888888 8888888  888888   Y88888P   888    Y888 
+[14:31:52.383] > ready: 53c4c2f2722f
+[14:31:52.408] > Linux 4.18.0-348.el8.0.2.x86_64 #1 SMP Sun Nov 14 00:51:12 UTC 2021
+[14:31:52.408] Platform: linux
+[14:31:52.425] > /bin/bash
+[14:31:52.425] Parent Shell: bash
+[14:31:52.425] Parent Shell pid: 4530
+[14:31:52.425] Waiting for subshell to start
+[14:31:52.456] > 798563
+[14:31:52.456] stdout -> '798563'
+[14:31:52.456] sub-process detected
+[14:31:52.483] > 53c4c2f2722f: running
+> Script executing under PID: 798563
+[14:31:52.549] > Deleting old install /home/mca55928/.vscode-server/code-ddc367ed5c8936efe395cffeec279b04ffd7db78
+[14:31:52.564] > Installing to /home/mca55928/.vscode-server...
+[14:31:52.580] > 53c4c2f2722f%%1%%
+[14:31:52.586] > Downloading with wget
+[14:31:52.596] > wget is from busybox: no
+[14:31:52.612] stderr> Program 'wget' appears to support flag '--no-config'
+[14:31:54.014] > Download complete
+[14:31:54.029] > 53c4c2f2722f%%2%%
+[14:31:54.036] > tar --version: tar (GNU tar) 1.30
+> Copyright (C) 2017 Free Software Foundation, Inc.
+> License GPLv3+: GNU GPL version 3 or later <https://gnu.org/licenses/gpl.html>.
+> This is free software: you are free to change and redistribute it.
+> There is NO WARRANTY, to the extent permitted by law.
+> 
+> Written by John Gilmore and Jay Fenlason.
+[14:31:55.476] > code 1.98.2 (commit ddc367ed5c8936efe395cffeec279b04ffd7db78)
+[14:31:55.488] > Starting VS Code CLI...
+[14:31:55.498] > Removing old logfile at /home/mca55928/.vscode-server/.cli.ddc367ed5c8936efe395cffeec279b04ffd7db78.log
+[14:31:55.523] > Spawned remote CLI: 800809
+[14:31:55.533] > Waiting for server log...
+[14:31:55.582] > Waiting for server log...
+[14:31:55.632] > 53c4c2f2722f: start
+> listeningOn==127.0.0.1:45879==
+> osReleaseId==rocky==
+> arch==x86_64==
+> vscodeArch==x64==
+> bitness==64==
+> tmpDir==/run/user/30398==
+> platform==linux==
+> unpackResult==success==
+> didLocalDownload==0==
+> downloadTime==1441==
+> installTime==1387==
+> serverStartTime==136==
+> execServerToken==1111aa1a-1a11-1a11-1a11-1aa1aa11a1a1==
+> platformDownloadPath==cli-alpine-x64==
+> SSH_AUTH_SOCK====
+> DISPLAY====
+> 53c4c2f2722f: end
+[14:31:55.632] Received install output: 
+listeningOn==127.0.0.1:45879==
+osReleaseId==rocky==
+arch==x86_64==
+vscodeArch==x64==
+bitness==64==
+tmpDir==/run/user/30398==
+platform==linux==
+unpackResult==success==
+didLocalDownload==0==
+downloadTime==1441==
+installTime==1387==
+serverStartTime==136==
+execServerToken==1111aa1a-1a11-1a11-1a11-1aa1aa11a1a1==
+platformDownloadPath==cli-alpine-x64==
+SSH_AUTH_SOCK====
+DISPLAY====
+
+[14:31:55.632] Remote server is listening on port 45879
+[14:31:55.632] Parsed server configuration: {"serverConfiguration":{"remoteListeningOn":{"port":45879},"osReleaseId":"rocky","arch":"x86_64","sshAuthSock":"","display":"","tmpDir":"/run/user/30398","platform":"linux","execServerToken":"1111aa1a-1a11-1a11-1a11-1aa1aa11a1a1"},"downloadTime":1441,"installTime":1387,"serverStartTime":136,"installUnpackCode":"success"}
+[14:31:55.633] Persisting server connection details to /home/daniel/.config/Code/User/globalStorage/ms-vscode-remote.remote-ssh/vscode-ssh-host-4fc7920b-ddc367ed5c8936efe395cffeec279b04ffd7db78-0.120.0-es/data.json
+[14:31:55.634] Starting forwarding server. local port 42787 -> socksPort 40117 -> remotePort 45879
+[14:31:55.634] Forwarding server listening on port 42787
+[14:31:55.634] Waiting for ssh tunnel to be ready
+[14:31:55.635] [Forwarding server port 42787] Got connection 0
+[14:31:55.635] Tunneled port 45879 to local port 42787
+[14:31:55.635] Resolved "ssh-remote+deucalion" to "port 42787"
+[14:31:55.639] Initizing new exec server for ssh-remote+deucalion
+[14:31:55.639] Resolving exec server at port 42787
+[14:31:55.640] [Forwarding server port 42787] Got connection 1
+[14:31:55.718] Exec server for ssh-remote+deucalion created and cached
+[14:31:55.718] Extensions to install: 
+[14:31:55.722] ------
+
+
+
+
+[14:31:55.722] No hints found in the recent session.
+[14:31:55.750] [server] Checking /home/mca55928/.vscode-server/cli/servers/Stable-ddc367ed5c8936efe395cffeec279b04ffd7db78/log.txt and /home/mca55928/.vscode-server/cli/servers/Stable-ddc367ed5c8936efe395cffeec279b04ffd7db78/pid.txt for a running server...
+[14:31:55.770] [server] Installing and setting up Visual Studio Code Server...
+[14:31:55.770] [server] Server setup complete
+[14:31:55.770] [server] Starting server...
+[14:31:55.770] [server] Starting server with command... Command { std: "/home/mca55928/.vscode-server/cli/servers/Stable-ddc367ed5c8936efe395cffeec279b04ffd7db78/server/bin/code-server" "--connection-token=remotessh" "--accept-server-license-terms" "--start-server" "--enable-remote-auto-shutdown" "--socket-path=/tmp/code-a4161897-0603-42f3-8aa1-5a245679d9e4", kill_on_drop: false }
+[14:31:56.106] [server] *
+[14:31:56.107] [server] * Visual Studio Code Server
+[14:31:56.108] [server] *
+[14:31:56.109] [server] * By using the software, you agree to
+[14:31:56.110] [server] * the Visual Studio Code Server License Terms (https://aka.ms/vscode-server-license) and
+[14:31:56.111] [server] * the Microsoft Privacy Statement (https://privacy.microsoft.com/en-US/privacystatement).
+[14:31:56.112] [server] *
+[14:31:56.113] [server] Server bound to /tmp/code-a4161897-0603-42f3-8aa1-5a245679d9e4
+[14:31:56.115] [server] Extension host agent listening on /tmp/code-a4161897-0603-42f3-8aa1-5a245679d9e4
+[14:31:56.115] [server] parsed location: "/tmp/code-a4161897-0603-42f3-8aa1-5a245679d9e4"
+[14:31:56.123] [server] 
+[14:31:56.123] [server] Server started
+[14:31:56.227] [server] [14:31:56] 
+[14:31:56.268] [server] 
+[14:31:56.268] [server] 
+[14:31:56.268] [server] 
+[14:31:56.268] [server] 
+[14:31:59.962] [server] [14:31:59] Extension host agent started.
+[14:32:00.777] [server] [14:32:00] [<unknown>][8b2fd871][ExtensionHostConnection] New connection established.
+[14:32:00.817] [server] [14:32:00] [<unknown>][e3d12bea][ManagementConnection] New connection established.
+[14:32:01.037] [server] [14:32:01] [/home/mca55928/.vscode-server/extensions/github.vscode-pull-request-github-0.110.0]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0.
+[14:32:01.055] [server] [14:32:01] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0-20250426.
+[14:32:01.055] [server] [14:32:01] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: This extension is using the API proposals 'defaultChatParticipant', 'chatParticipantPrivate' and 'languageModelDataPart' that are not compatible with the current version of VS Code.
+[14:32:01.055] [server] [14:32:01] [/home/mca55928/.vscode-server/extensions/ms-python.vscode-pylance-2025.6.1]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.99.0.
+[14:32:01.096] [server] [14:32:01] [/home/mca55928/.vscode-server/extensions/github.vscode-pull-request-github-0.110.0]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0.
+[14:32:01.096] [server] [14:32:01] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0-20250426.
+[14:32:01.096] [server] [14:32:01] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: This extension is using the API proposals 'defaultChatParticipant', 'chatParticipantPrivate' and 'languageModelDataPart' that are not compatible with the current version of VS Code.
+[14:32:01.096] [server] [14:32:01] [/home/mca55928/.vscode-server/extensions/ms-python.vscode-pylance-2025.6.1]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.99.0.
+[14:32:01.512] [server] [14:32:01] [/home/mca55928/.vscode-server/extensions/github.vscode-pull-request-github-0.110.0]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0.
+[14:32:01.552] [server] [14:32:01] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0-20250426.
+[14:32:01.552] [server] [14:32:01] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: This extension is using the API proposals 'defaultChatParticipant', 'chatParticipantPrivate' and 'languageModelDataPart' that are not compatible with the current version of VS Code.
+[14:32:01.552] [server] [14:32:01] [/home/mca55928/.vscode-server/extensions/ms-python.vscode-pylance-2025.6.1]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.99.0.
+[14:32:01.902] [server] [14:32:01] [<unknown>][8b2fd871][ExtensionHostConnection] <805518> Launched Extension Host Process.
+[14:32:02.060] [server] [14:32:02] [/home/mca55928/.vscode-server/extensions/github.vscode-pull-request-github-0.110.0]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0.
+[14:32:02.100] [server] [14:32:02] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0-20250426.
+[14:32:02.108] [server] [14:32:02] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: This extension is using the API proposals 'defaultChatParticipant', 'chatParticipantPrivate' and 'languageModelDataPart' that are not compatible with the current version of VS Code.
+[14:32:02.109] [server] [14:32:02] [/home/mca55928/.vscode-server/extensions/ms-python.vscode-pylance-2025.6.1]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.99.0.
+[14:32:02.215] [server] [14:32:02] [/home/mca55928/.vscode-server/extensions/github.vscode-pull-request-github-0.110.0]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0.
+[14:32:02.215] [server] [14:32:02] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0-20250426.
+[14:32:02.215] [server] [14:32:02] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: This extension is using the API proposals 'defaultChatParticipant', 'chatParticipantPrivate' and 'languageModelDataPart' that are not compatible with the current version of VS Code.
+[14:32:02.215] [server] [14:32:02] [/home/mca55928/.vscode-server/extensions/ms-python.vscode-pylance-2025.6.1]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.99.0.
+[14:32:02.659] [server] [14:32:02] [/home/mca55928/.vscode-server/extensions/github.vscode-pull-request-github-0.110.0]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0.
+[14:32:02.675] [server] [14:32:02] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0-20250426.
+[14:32:02.676] [server] [14:32:02] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: This extension is using the API proposals 'defaultChatParticipant', 'chatParticipantPrivate' and 'languageModelDataPart' that are not compatible with the current version of VS Code.
+[14:32:02.678] [server] [14:32:02] [/home/mca55928/.vscode-server/extensions/ms-python.vscode-pylance-2025.6.1]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.99.0.
+[14:32:03.140] [server] [14:32:03] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0-20250426.
+[14:32:03.181] [server] [14:32:03] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: This extension is using the API proposals 'defaultChatParticipant', 'chatParticipantPrivate' and 'languageModelDataPart' that are not compatible with the current version of VS Code.
+[14:32:03.181] [server] [14:32:03] [/home/mca55928/.vscode-server/extensions/github.vscode-pull-request-github-0.110.0]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0.
+[14:32:03.181] [server] [14:32:03] [/home/mca55928/.vscode-server/extensions/ms-python.vscode-pylance-2025.6.1]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.99.0.
+[14:32:04.235] [server] [14:32:04] [/home/mca55928/.vscode-server/extensions/github.vscode-pull-request-github-0.110.0]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0.
+[14:32:04.235] [server] [14:32:04] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0-20250426.
+[14:32:04.235] [server] [14:32:04] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: This extension is using the API proposals 'defaultChatParticipant', 'chatParticipantPrivate' and 'languageModelDataPart' that are not compatible with the current version of VS Code.
+[14:32:04.235] [server] [14:32:04] [/home/mca55928/.vscode-server/extensions/ms-python.vscode-pylance-2025.6.1]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.99.0.
+[14:32:05.031] [server] [14:32:05] [/home/mca55928/.vscode-server/extensions/github.vscode-pull-request-github-0.110.0]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0.
+[14:32:05.031] [server] [14:32:05] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0-20250426.
+[14:32:05.031] [server] [14:32:05] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: This extension is using the API proposals 'defaultChatParticipant', 'chatParticipantPrivate' and 'languageModelDataPart' that are not compatible with the current version of VS Code.
+[14:32:05.031] [server] [14:32:05] [/home/mca55928/.vscode-server/extensions/ms-python.vscode-pylance-2025.6.1]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.99.0.
+[14:32:05.411] [server] [14:32:05] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0-20250426.
+[14:32:05.452] [server] [14:32:05] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: This extension is using the API proposals 'defaultChatParticipant', 'chatParticipantPrivate' and 'languageModelDataPart' that are not compatible with the current version of VS Code.
+[14:32:05.452] [server] [14:32:05] [/home/mca55928/.vscode-server/extensions/github.vscode-pull-request-github-0.110.0]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0.
+[14:32:05.452] [server] [14:32:05] [/home/mca55928/.vscode-server/extensions/ms-python.vscode-pylance-2025.6.1]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.99.0.
+[14:32:05.785] [server] [14:32:05] [/home/mca55928/.vscode-server/extensions/github.vscode-pull-request-github-0.110.0]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0.
+[14:32:05.825] [server] [14:32:05] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0-20250426.
+[14:32:05.825] [server] [14:32:05] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: This extension is using the API proposals 'defaultChatParticipant', 'chatParticipantPrivate' and 'languageModelDataPart' that are not compatible with the current version of VS Code.
+[14:32:05.825] [server] [14:32:05] [/home/mca55928/.vscode-server/extensions/ms-python.vscode-pylance-2025.6.1]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.99.0.
+[14:32:06.116] [server] [14:32:06] [/home/mca55928/.vscode-server/extensions/github.vscode-pull-request-github-0.110.0]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0.
+[14:32:06.157] [server] [14:32:06] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0-20250426.
+[14:32:06.157] [server] [14:32:06] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: This extension is using the API proposals 'defaultChatParticipant', 'chatParticipantPrivate' and 'languageModelDataPart' that are not compatible with the current version of VS Code.
+[14:32:06.157] [server] [14:32:06] [/home/mca55928/.vscode-server/extensions/ms-python.vscode-pylance-2025.6.1]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.99.0.
+[14:32:09.594] Opening exec server for ssh-remote+deucalion
+[14:32:09.632] Opening exec server for ssh-remote+deucalion
+[14:32:09.642] Verified and reusing cached exec server for ssh-remote+deucalion
+[14:32:09.642] No hints found in the recent session.
+[14:32:09.684] Verified and reusing cached exec server for ssh-remote+deucalion
+[14:32:09.684] No hints found in the recent session.
+[14:32:09.703] Opening exec server for ssh-remote+deucalion
+[14:32:09.723] Verified and reusing cached exec server for ssh-remote+deucalion
+[14:32:09.723] No hints found in the recent session.
+[14:32:22.588] [server] [14:32:22] Getting Manifest... ms-python.vscode-pylance
+[14:32:23.027] [server] [14:32:23] Installing extension: ms-python.vscode-pylance {
+[14:32:23.028] [server]   productVersion: { version: '1.101.0', date: '2025-06-11T15:01:29.756Z' },
+[14:32:23.029] [server]   pinned: false,
+[14:32:23.031] [server]   operation: 3,
+[14:32:23.032] [server]   isApplicationScoped: false,
+[14:32:23.033] [server]   donotVerifySignature: false,
+[14:32:23.034] [server]   context: { clientTargetPlatform: 'linux-x64' },
+[14:32:23.036] [server]   profileLocation: Er {
+[14:32:23.037] [server]     scheme: 'file',
+[14:32:23.038] [server]     authority: '',
+[14:32:23.046] [server]     path: '/home/mca55928/.vscode-server/extensions/extensions.json',
+[14:32:23.046] [server]     query: '',
+[14:32:23.046] [server]     fragment: '',
+[14:32:23.046] [server]     _formatted: 'file:///home/mca55928/.vscode-server/extensions/extensions.json',
+[14:32:23.046] [server]     _fsPath: '/home/mca55928/.vscode-server/extensions/extensions.json'
+[14:32:23.046] [server]   }
+[14:32:23.046] [server] }
+[14:32:23.323] [server] [14:32:23] Getting Manifest... ms-python.python
+[14:32:23.977] [server] [14:32:23] Getting Manifest... ms-python.debugpy
+[14:32:24.099] [server] [14:32:24] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: This extension is using the API proposals 'defaultChatParticipant', 'chatParticipantPrivate' and 'languageModelDataPart' that are not compatible with the current version of VS Code.
+[14:32:24.367] [server] [14:32:24] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: This extension is using the API proposals 'defaultChatParticipant', 'chatParticipantPrivate' and 'languageModelDataPart' that are not compatible with the current version of VS Code.
+[14:32:24.529] [server] [14:32:24] [/home/mca55928/.vscode-server/extensions/github.vscode-pull-request-github-0.110.0]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0.
+[14:32:24.535] [server] [14:32:24] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0-20250426.
+[14:32:24.537] [server] [14:32:24] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: This extension is using the API proposals 'defaultChatParticipant', 'chatParticipantPrivate' and 'languageModelDataPart' that are not compatible with the current version of VS Code.
+[14:32:24.539] [server] [14:32:24] [/home/mca55928/.vscode-server/extensions/ms-python.vscode-pylance-2025.6.1]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.99.0.
+[14:32:24.542] [server] [14:32:24] Error while installing the extension ms-python.vscode-pylance Cannot read the extension from /home/mca55928/.vscode-server/extensions/ms-python.vscode-pylance-2025.6.1 file:///home/mca55928/.vscode-server/extensions/extensions.json
+[14:36:59.979] [server] New EH opened, aborting shutdown
+[14:36:59.980] [server] [14:36:59] New EH opened, aborting shutdown
+[14:37:03.030] [server] [14:37:02] [/home/mca55928/.vscode-server/extensions/github.vscode-pull-request-github-0.110.0]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0.
+[14:37:03.033] [server] [14:37:03] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0-20250426.
+[14:37:03.034] [server] [14:37:03] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: This extension is using the API proposals 'defaultChatParticipant', 'chatParticipantPrivate' and 'languageModelDataPart' that are not compatible with the current version of VS Code.
+[14:37:03.036] [server] [14:37:03] [/home/mca55928/.vscode-server/extensions/ms-python.vscode-pylance-2025.6.1]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.99.0.
+[14:42:03.949] [server] [14:42:03] [/home/mca55928/.vscode-server/extensions/github.vscode-pull-request-github-0.110.0]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0.
+[14:42:03.961] [server] [14:42:03] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0-20250426.
+[14:42:03.962] [server] [14:42:03] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: This extension is using the API proposals 'defaultChatParticipant', 'chatParticipantPrivate' and 'languageModelDataPart' that are not compatible with the current version of VS Code.
+[14:42:04.016] [server] [14:42:03] [/home/mca55928/.vscode-server/extensions/ms-python.vscode-pylance-2025.6.1]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.99.0.
+[14:47:04.568] [server] [14:47:04] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0-20250426.
+[14:47:04.569] [server] [14:47:04] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: This extension is using the API proposals 'defaultChatParticipant', 'chatParticipantPrivate' and 'languageModelDataPart' that are not compatible with the current version of VS Code.
+[14:47:04.572] [server] [14:47:04] [/home/mca55928/.vscode-server/extensions/github.vscode-pull-request-github-0.110.0]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0.
+[14:47:04.574] [server] [14:47:04] [/home/mca55928/.vscode-server/extensions/ms-python.vscode-pylance-2025.6.1]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.99.0.
+[14:52:05.079] [server] [14:52:05] [/home/mca55928/.vscode-server/extensions/github.vscode-pull-request-github-0.110.0]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0.
+[14:52:05.081] [server] [14:52:05] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0-20250426.
+[14:52:05.082] [server] [14:52:05] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: This extension is using the API proposals 'defaultChatParticipant', 'chatParticipantPrivate' and 'languageModelDataPart' that are not compatible with the current version of VS Code.
+[14:52:05.085] [server] [14:52:05] [/home/mca55928/.vscode-server/extensions/ms-python.vscode-pylance-2025.6.1]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.99.0.
+[14:57:05.583] [server] [14:57:05] [/home/mca55928/.vscode-server/extensions/github.vscode-pull-request-github-0.110.0]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0.
+[14:57:05.593] [server] [14:57:05] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0-20250426.
+[14:57:05.594] [server] [14:57:05] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: This extension is using the API proposals 'defaultChatParticipant', 'chatParticipantPrivate' and 'languageModelDataPart' that are not compatible with the current version of VS Code.
+[14:57:05.596] [server] [14:57:05] [/home/mca55928/.vscode-server/extensions/ms-python.vscode-pylance-2025.6.1]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.99.0.
+[15:02:06.213] [server] [15:02:06] [/home/mca55928/.vscode-server/extensions/github.vscode-pull-request-github-0.110.0]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0.
+[15:02:06.215] [server] [15:02:06] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0-20250426.
+[15:02:06.216] [server] [15:02:06] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: This extension is using the API proposals 'defaultChatParticipant', 'chatParticipantPrivate' and 'languageModelDataPart' that are not compatible with the current version of VS Code.
+[15:02:06.222] [server] [15:02:06] [/home/mca55928/.vscode-server/extensions/ms-python.vscode-pylance-2025.6.1]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.99.0.
+[15:07:06.744] [server] [15:07:06] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0-20250426.
+[15:07:06.744] [server] [15:07:06] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: This extension is using the API proposals 'defaultChatParticipant', 'chatParticipantPrivate' and 'languageModelDataPart' that are not compatible with the current version of VS Code.
+[15:07:06.747] [server] [15:07:06] [/home/mca55928/.vscode-server/extensions/github.vscode-pull-request-github-0.110.0]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0.
+[15:07:06.749] [server] [15:07:06] [/home/mca55928/.vscode-server/extensions/ms-python.vscode-pylance-2025.6.1]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.99.0.
+[15:12:07.255] [server] [15:12:07] [/home/mca55928/.vscode-server/extensions/github.vscode-pull-request-github-0.110.0]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0.
+[15:12:07.257] [server] [15:12:07] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0-20250426.
+[15:12:07.258] [server] [15:12:07] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: This extension is using the API proposals 'defaultChatParticipant', 'chatParticipantPrivate' and 'languageModelDataPart' that are not compatible with the current version of VS Code.
+[15:12:07.262] [server] [15:12:07] [/home/mca55928/.vscode-server/extensions/ms-python.vscode-pylance-2025.6.1]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.99.0.
+[15:17:07.820] [server] [15:17:07] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0-20250426.
+[15:17:07.820] [server] [15:17:07] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: This extension is using the API proposals 'defaultChatParticipant', 'chatParticipantPrivate' and 'languageModelDataPart' that are not compatible with the current version of VS Code.
+[15:17:07.822] [server] [15:17:07] [/home/mca55928/.vscode-server/extensions/github.vscode-pull-request-github-0.110.0]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0.
+[15:17:07.824] [server] [15:17:07] [/home/mca55928/.vscode-server/extensions/ms-python.vscode-pylance-2025.6.1]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.99.0.
+[15:22:08.344] [server] [15:22:08] [/home/mca55928/.vscode-server/extensions/github.vscode-pull-request-github-0.110.0]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0.
+[15:22:08.344] [server] [15:22:08] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0-20250426.
+[15:22:08.344] [server] [15:22:08] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: This extension is using the API proposals 'defaultChatParticipant', 'chatParticipantPrivate' and 'languageModelDataPart' that are not compatible with the current version of VS Code.
+[15:22:08.347] [server] [15:22:08] [/home/mca55928/.vscode-server/extensions/ms-python.vscode-pylance-2025.6.1]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.99.0.
+[15:27:08.879] [server] [15:27:08] [/home/mca55928/.vscode-server/extensions/github.vscode-pull-request-github-0.110.0]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0.
+[15:27:08.920] [server] [15:27:08] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0-20250426.
+[15:27:08.920] [server] [15:27:08] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: This extension is using the API proposals 'defaultChatParticipant', 'chatParticipantPrivate' and 'languageModelDataPart' that are not compatible with the current version of VS Code.
+[15:27:08.920] [server] [15:27:08] [/home/mca55928/.vscode-server/extensions/ms-python.vscode-pylance-2025.6.1]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.99.0.
+[15:32:09.410] [server] [15:32:09] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0-20250426.
+[15:32:09.452] [server] [15:32:09] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: This extension is using the API proposals 'defaultChatParticipant', 'chatParticipantPrivate' and 'languageModelDataPart' that are not compatible with the current version of VS Code.
+[15:32:09.452] [server] [15:32:09] [/home/mca55928/.vscode-server/extensions/github.vscode-pull-request-github-0.110.0]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0.
+[15:32:09.452] [server] [15:32:09] [/home/mca55928/.vscode-server/extensions/ms-python.vscode-pylance-2025.6.1]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.99.0.
+[15:37:09.929] [server] [15:37:09] [/home/mca55928/.vscode-server/extensions/github.vscode-pull-request-github-0.110.0]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0.
+[15:37:09.970] [server] [15:37:09] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0-20250426.
+[15:37:09.970] [server] [15:37:09] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: This extension is using the API proposals 'defaultChatParticipant', 'chatParticipantPrivate' and 'languageModelDataPart' that are not compatible with the current version of VS Code.
+[15:37:09.970] [server] [15:37:09] [/home/mca55928/.vscode-server/extensions/ms-python.vscode-pylance-2025.6.1]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.99.0.
+[15:42:10.421] [server] [15:42:10] [/home/mca55928/.vscode-server/extensions/github.vscode-pull-request-github-0.110.0]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0.
+[15:42:10.423] [server] [15:42:10] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0-20250426.
+[15:42:10.423] [server] [15:42:10] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: This extension is using the API proposals 'defaultChatParticipant', 'chatParticipantPrivate' and 'languageModelDataPart' that are not compatible with the current version of VS Code.
+[15:42:10.428] [server] [15:42:10] [/home/mca55928/.vscode-server/extensions/ms-python.vscode-pylance-2025.6.1]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.99.0.
+[15:47:10.921] [server] [15:47:10] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0-20250426.
+[15:47:10.922] [server] [15:47:10] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: This extension is using the API proposals 'defaultChatParticipant', 'chatParticipantPrivate' and 'languageModelDataPart' that are not compatible with the current version of VS Code.
+[15:47:10.923] [server] [15:47:10] [/home/mca55928/.vscode-server/extensions/github.vscode-pull-request-github-0.110.0]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0.
+[15:47:10.925] [server] [15:47:10] [/home/mca55928/.vscode-server/extensions/ms-python.vscode-pylance-2025.6.1]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.99.0.
+[15:52:11.578] [server] [15:52:11] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0-20250426.
+[15:52:11.579] [server] [15:52:11] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: This extension is using the API proposals 'defaultChatParticipant', 'chatParticipantPrivate' and 'languageModelDataPart' that are not compatible with the current version of VS Code.
+[15:52:11.581] [server] [15:52:11] [/home/mca55928/.vscode-server/extensions/github.vscode-pull-request-github-0.110.0]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0.
+[15:52:11.584] [server] [15:52:11] [/home/mca55928/.vscode-server/extensions/ms-python.vscode-pylance-2025.6.1]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.99.0.
+[15:57:12.140] [server] [15:57:12] [/home/mca55928/.vscode-server/extensions/github.vscode-pull-request-github-0.110.0]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0.
+[15:57:12.142] [server] [15:57:12] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0-20250426.
+[15:57:12.143] [server] [15:57:12] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: This extension is using the API proposals 'defaultChatParticipant', 'chatParticipantPrivate' and 'languageModelDataPart' that are not compatible with the current version of VS Code.
+[15:57:12.152] [server] [15:57:12] [/home/mca55928/.vscode-server/extensions/ms-python.vscode-pylance-2025.6.1]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.99.0.
+[16:02:13.546] [server] [16:02:13] [/home/mca55928/.vscode-server/extensions/github.vscode-pull-request-github-0.110.0]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0.
+[16:02:13.552] [server] [16:02:13] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0-20250426.
+[16:02:13.553] [server] [16:02:13] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: This extension is using the API proposals 'defaultChatParticipant', 'chatParticipantPrivate' and 'languageModelDataPart' that are not compatible with the current version of VS Code.
+[16:02:13.555] [server] [16:02:13] [/home/mca55928/.vscode-server/extensions/ms-python.vscode-pylance-2025.6.1]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.99.0.
+[16:07:14.094] [server] [16:07:14] [/home/mca55928/.vscode-server/extensions/github.vscode-pull-request-github-0.110.0]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0.
+[16:07:14.135] [server] [16:07:14] [/home/mca55928/.vscode-server/extensions/ms-python.vscode-pylance-2025.6.1]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.99.0.
+[16:07:14.135] [server] [16:07:14] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0-20250426.
+[16:07:14.135] [server] [16:07:14] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: This extension is using the API proposals 'defaultChatParticipant', 'chatParticipantPrivate' and 'languageModelDataPart' that are not compatible with the current version of VS Code.
+[16:12:14.598] [server] [16:12:14] [/home/mca55928/.vscode-server/extensions/github.vscode-pull-request-github-0.110.0]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0.
+[16:12:14.599] [server] [16:12:14] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0-20250426.
+[16:12:14.600] [server] [16:12:14] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: This extension is using the API proposals 'defaultChatParticipant', 'chatParticipantPrivate' and 'languageModelDataPart' that are not compatible with the current version of VS Code.
+[16:12:14.602] [server] [16:12:14] [/home/mca55928/.vscode-server/extensions/ms-python.vscode-pylance-2025.6.1]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.99.0.
+[16:17:15.135] [server] [16:17:15] [/home/mca55928/.vscode-server/extensions/github.vscode-pull-request-github-0.110.0]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0.
+[16:17:15.155] [server] [16:17:15] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0-20250426.
+[16:17:15.155] [server] [16:17:15] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: This extension is using the API proposals 'defaultChatParticipant', 'chatParticipantPrivate' and 'languageModelDataPart' that are not compatible with the current version of VS Code.
+[16:17:15.155] [server] [16:17:15] [/home/mca55928/.vscode-server/extensions/ms-python.vscode-pylance-2025.6.1]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.99.0.
+[16:22:15.829] [server] [16:22:15] [/home/mca55928/.vscode-server/extensions/ms-python.vscode-pylance-2025.6.1]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.99.0.
+[16:22:15.835] [server] [16:22:15] [/home/mca55928/.vscode-server/extensions/github.vscode-pull-request-github-0.110.0]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0.
+[16:22:15.838] [server] [16:22:15] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0-20250426.
+[16:22:15.839] [server] [16:22:15] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: This extension is using the API proposals 'defaultChatParticipant', 'chatParticipantPrivate' and 'languageModelDataPart' that are not compatible with the current version of VS Code.
+[16:27:16.334] [server] [16:27:16] [/home/mca55928/.vscode-server/extensions/github.vscode-pull-request-github-0.110.0]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0.
+[16:27:16.339] [server] [16:27:16] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0-20250426.
+[16:27:16.339] [server] [16:27:16] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: This extension is using the API proposals 'defaultChatParticipant', 'chatParticipantPrivate' and 'languageModelDataPart' that are not compatible with the current version of VS Code.
+[16:27:16.346] [server] [16:27:16] [/home/mca55928/.vscode-server/extensions/ms-python.vscode-pylance-2025.6.1]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.99.0.
+[16:32:16.909] [server] [16:32:16] [/home/mca55928/.vscode-server/extensions/github.vscode-pull-request-github-0.110.0]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0.
+[16:32:16.909] [server] [16:32:16] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0-20250426.
+[16:32:16.909] [server] [16:32:16] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: This extension is using the API proposals 'defaultChatParticipant', 'chatParticipantPrivate' and 'languageModelDataPart' that are not compatible with the current version of VS Code.
+[16:32:16.909] [server] [16:32:16] [/home/mca55928/.vscode-server/extensions/ms-python.vscode-pylance-2025.6.1]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.99.0.
+[16:37:17.438] [server] [16:37:17] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0-20250426.
+[16:37:17.480] [server] [16:37:17] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: This extension is using the API proposals 'defaultChatParticipant', 'chatParticipantPrivate' and 'languageModelDataPart' that are not compatible with the current version of VS Code.
+[16:37:17.480] [server] [16:37:17] [/home/mca55928/.vscode-server/extensions/github.vscode-pull-request-github-0.110.0]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0.
+[16:37:17.480] [server] [16:37:17] [/home/mca55928/.vscode-server/extensions/ms-python.vscode-pylance-2025.6.1]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.99.0.
+[16:42:17.942] [server] [16:42:17] [/home/mca55928/.vscode-server/extensions/github.vscode-pull-request-github-0.110.0]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0.
+[16:42:17.944] [server] [16:42:17] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0-20250426.
+[16:42:17.945] [server] [16:42:17] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: This extension is using the API proposals 'defaultChatParticipant', 'chatParticipantPrivate' and 'languageModelDataPart' that are not compatible with the current version of VS Code.
+[16:42:17.947] [server] [16:42:17] [/home/mca55928/.vscode-server/extensions/ms-python.vscode-pylance-2025.6.1]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.99.0.
+[16:47:18.470] [server] [16:47:18] [/home/mca55928/.vscode-server/extensions/github.vscode-pull-request-github-0.110.0]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0.
+[16:47:18.476] [server] [16:47:18] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0-20250426.
+[16:47:18.477] [server] [16:47:18] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: This extension is using the API proposals 'defaultChatParticipant', 'chatParticipantPrivate' and 'languageModelDataPart' that are not compatible with the current version of VS Code.
+[16:47:18.480] [server] [16:47:18] [/home/mca55928/.vscode-server/extensions/ms-python.vscode-pylance-2025.6.1]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.99.0.
+[16:52:18.956] [server] [16:52:18] [/home/mca55928/.vscode-server/extensions/github.vscode-pull-request-github-0.110.0]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0.
+[16:52:18.959] [server] [16:52:18] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0-20250426.
+[16:52:18.960] [server] [16:52:18] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: This extension is using the API proposals 'defaultChatParticipant', 'chatParticipantPrivate' and 'languageModelDataPart' that are not compatible with the current version of VS Code.
+[16:52:18.962] [server] [16:52:18] [/home/mca55928/.vscode-server/extensions/ms-python.vscode-pylance-2025.6.1]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.99.0.
+[16:57:19.457] [server] [16:57:19] [/home/mca55928/.vscode-server/extensions/github.vscode-pull-request-github-0.110.0]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0.
+[16:57:19.462] [server] [16:57:19] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0-20250426.
+[16:57:19.464] [server] [16:57:19] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: This extension is using the API proposals 'defaultChatParticipant', 'chatParticipantPrivate' and 'languageModelDataPart' that are not compatible with the current version of VS Code.
+[16:57:19.466] [server] [16:57:19] [/home/mca55928/.vscode-server/extensions/ms-python.vscode-pylance-2025.6.1]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.99.0.
+[17:02:19.948] [server] [17:02:19] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0-20250426.
+[17:02:19.949] [server] [17:02:19] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: This extension is using the API proposals 'defaultChatParticipant', 'chatParticipantPrivate' and 'languageModelDataPart' that are not compatible with the current version of VS Code.
+[17:02:19.952] [server] [17:02:19] [/home/mca55928/.vscode-server/extensions/github.vscode-pull-request-github-0.110.0]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0.
+[17:02:19.956] [server] [17:02:19] [/home/mca55928/.vscode-server/extensions/ms-python.vscode-pylance-2025.6.1]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.99.0.
+[17:07:20.454] [server] [17:07:20] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0-20250426.
+[17:07:20.455] [server] [17:07:20] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: This extension is using the API proposals 'defaultChatParticipant', 'chatParticipantPrivate' and 'languageModelDataPart' that are not compatible with the current version of VS Code.
+[17:07:20.457] [server] [17:07:20] [/home/mca55928/.vscode-server/extensions/github.vscode-pull-request-github-0.110.0]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0.
+[17:07:20.459] [server] [17:07:20] [/home/mca55928/.vscode-server/extensions/ms-python.vscode-pylance-2025.6.1]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.99.0.
+[17:12:20.958] [server] [17:12:20] [/home/mca55928/.vscode-server/extensions/github.vscode-pull-request-github-0.110.0]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0.
+[17:12:20.959] [server] [17:12:20] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0-20250426.
+[17:12:20.960] [server] [17:12:20] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: This extension is using the API proposals 'defaultChatParticipant', 'chatParticipantPrivate' and 'languageModelDataPart' that are not compatible with the current version of VS Code.
+[17:12:20.965] [server] [17:12:20] [/home/mca55928/.vscode-server/extensions/ms-python.vscode-pylance-2025.6.1]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.99.0.
+[17:17:21.461] [server] [17:17:21] [/home/mca55928/.vscode-server/extensions/github.vscode-pull-request-github-0.110.0]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0.
+[17:17:21.462] [server] [17:17:21] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0-20250426.
+[17:17:21.463] [server] [17:17:21] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: This extension is using the API proposals 'defaultChatParticipant', 'chatParticipantPrivate' and 'languageModelDataPart' that are not compatible with the current version of VS Code.
+[17:17:21.465] [server] [17:17:21] [/home/mca55928/.vscode-server/extensions/ms-python.vscode-pylance-2025.6.1]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.99.0.
+[17:22:21.967] [server] [17:22:21] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0-20250426.
+[17:22:21.968] [server] [17:22:21] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: This extension is using the API proposals 'defaultChatParticipant', 'chatParticipantPrivate' and 'languageModelDataPart' that are not compatible with the current version of VS Code.
+[17:22:21.969] [server] [17:22:21] [/home/mca55928/.vscode-server/extensions/github.vscode-pull-request-github-0.110.0]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0.
+[17:22:21.971] [server] [17:22:21] [/home/mca55928/.vscode-server/extensions/ms-python.vscode-pylance-2025.6.1]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.99.0.
+[17:27:22.495] [server] [17:27:22] [/home/mca55928/.vscode-server/extensions/github.vscode-pull-request-github-0.110.0]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0.
+[17:27:22.496] [server] [17:27:22] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0-20250426.
+[17:27:22.497] [server] [17:27:22] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: This extension is using the API proposals 'defaultChatParticipant', 'chatParticipantPrivate' and 'languageModelDataPart' that are not compatible with the current version of VS Code.
+[17:27:22.502] [server] [17:27:22] [/home/mca55928/.vscode-server/extensions/ms-python.vscode-pylance-2025.6.1]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.99.0.
+[17:32:23.194] [server] [17:32:23] [/home/mca55928/.vscode-server/extensions/github.vscode-pull-request-github-0.110.0]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0.
+[17:32:23.197] [server] [17:32:23] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0-20250426.
+[17:32:23.197] [server] [17:32:23] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: This extension is using the API proposals 'defaultChatParticipant', 'chatParticipantPrivate' and 'languageModelDataPart' that are not compatible with the current version of VS Code.
+[17:32:23.199] [server] [17:32:23] [/home/mca55928/.vscode-server/extensions/ms-python.vscode-pylance-2025.6.1]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.99.0.
+[17:37:23.707] [server] [17:37:23] [/home/mca55928/.vscode-server/extensions/github.vscode-pull-request-github-0.110.0]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0.
+[17:37:23.710] [server] [17:37:23] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0-20250426.
+[17:37:23.711] [server] [17:37:23] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: This extension is using the API proposals 'defaultChatParticipant', 'chatParticipantPrivate' and 'languageModelDataPart' that are not compatible with the current version of VS Code.
+[17:37:23.714] [server] [17:37:23] [/home/mca55928/.vscode-server/extensions/ms-python.vscode-pylance-2025.6.1]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.99.0.
+[17:42:24.218] [server] [17:42:24] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0-20250426.
+[17:42:24.218] [server] [17:42:24] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: This extension is using the API proposals 'defaultChatParticipant', 'chatParticipantPrivate' and 'languageModelDataPart' that are not compatible with the current version of VS Code.
+[17:42:24.220] [server] [17:42:24] [/home/mca55928/.vscode-server/extensions/github.vscode-pull-request-github-0.110.0]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0.
+[17:42:24.223] [server] [17:42:24] [/home/mca55928/.vscode-server/extensions/ms-python.vscode-pylance-2025.6.1]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.99.0.
+[17:47:24.720] [server] [17:47:24] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0-20250426.
+[17:47:24.721] [server] [17:47:24] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: This extension is using the API proposals 'defaultChatParticipant', 'chatParticipantPrivate' and 'languageModelDataPart' that are not compatible with the current version of VS Code.
+[17:47:24.723] [server] [17:47:24] [/home/mca55928/.vscode-server/extensions/github.vscode-pull-request-github-0.110.0]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0.
+[17:47:24.726] [server] [17:47:24] [/home/mca55928/.vscode-server/extensions/ms-python.vscode-pylance-2025.6.1]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.99.0.
+[17:52:25.202] [server] [17:52:25] [/home/mca55928/.vscode-server/extensions/github.vscode-pull-request-github-0.110.0]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0.
+[17:52:25.208] [server] [17:52:25] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0-20250426.
+[17:52:25.209] [server] [17:52:25] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: This extension is using the API proposals 'defaultChatParticipant', 'chatParticipantPrivate' and 'languageModelDataPart' that are not compatible with the current version of VS Code.
+[17:52:25.214] [server] [17:52:25] [/home/mca55928/.vscode-server/extensions/ms-python.vscode-pylance-2025.6.1]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.99.0.
+[17:57:25.792] [server] [17:57:25] [/home/mca55928/.vscode-server/extensions/github.vscode-pull-request-github-0.110.0]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0.
+[17:57:25.797] [server] [17:57:25] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0-20250426.
+[17:57:25.798] [server] [17:57:25] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: This extension is using the API proposals 'defaultChatParticipant', 'chatParticipantPrivate' and 'languageModelDataPart' that are not compatible with the current version of VS Code.
+[17:57:25.802] [server] [17:57:25] [/home/mca55928/.vscode-server/extensions/ms-python.vscode-pylance-2025.6.1]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.99.0.
+[18:02:26.603] [server] [18:02:26] [/home/mca55928/.vscode-server/extensions/github.vscode-pull-request-github-0.110.0]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0.
+[18:02:26.603] [server] [18:02:26] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0-20250426.
+[18:02:26.603] [server] [18:02:26] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: This extension is using the API proposals 'defaultChatParticipant', 'chatParticipantPrivate' and 'languageModelDataPart' that are not compatible with the current version of VS Code.
+[18:02:26.603] [server] [18:02:26] [/home/mca55928/.vscode-server/extensions/ms-python.vscode-pylance-2025.6.1]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.99.0.
+[18:07:27.114] [server] [18:07:27] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0-20250426.
+[18:07:27.115] [server] [18:07:27] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: This extension is using the API proposals 'defaultChatParticipant', 'chatParticipantPrivate' and 'languageModelDataPart' that are not compatible with the current version of VS Code.
+[18:07:27.116] [server] [18:07:27] [/home/mca55928/.vscode-server/extensions/github.vscode-pull-request-github-0.110.0]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0.
+[18:07:27.119] [server] [18:07:27] [/home/mca55928/.vscode-server/extensions/ms-python.vscode-pylance-2025.6.1]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.99.0.
+[18:12:27.606] [server] [18:12:27] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0-20250426.
+[18:12:27.606] [server] [18:12:27] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: This extension is using the API proposals 'defaultChatParticipant', 'chatParticipantPrivate' and 'languageModelDataPart' that are not compatible with the current version of VS Code.
+[18:12:27.608] [server] [18:12:27] [/home/mca55928/.vscode-server/extensions/github.vscode-pull-request-github-0.110.0]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0.
+[18:12:27.609] [server] [18:12:27] [/home/mca55928/.vscode-server/extensions/ms-python.vscode-pylance-2025.6.1]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.99.0.
+[18:17:28.099] [server] [18:17:28] [/home/mca55928/.vscode-server/extensions/github.vscode-pull-request-github-0.110.0]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0.
+[18:17:28.104] [server] [18:17:28] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0-20250426.
+[18:17:28.105] [server] [18:17:28] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: This extension is using the API proposals 'defaultChatParticipant', 'chatParticipantPrivate' and 'languageModelDataPart' that are not compatible with the current version of VS Code.
+[18:17:28.108] [server] [18:17:28] [/home/mca55928/.vscode-server/extensions/ms-python.vscode-pylance-2025.6.1]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.99.0.
+[18:22:28.557] [server] [18:22:28] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0-20250426.
+[18:22:28.558] [server] [18:22:28] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: This extension is using the API proposals 'defaultChatParticipant', 'chatParticipantPrivate' and 'languageModelDataPart' that are not compatible with the current version of VS Code.
+[18:22:28.562] [server] [18:22:28] [/home/mca55928/.vscode-server/extensions/github.vscode-pull-request-github-0.110.0]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0.
+[18:22:28.564] [server] [18:22:28] [/home/mca55928/.vscode-server/extensions/ms-python.vscode-pylance-2025.6.1]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.99.0.
+[18:27:29.024] [server] [18:27:29] [/home/mca55928/.vscode-server/extensions/github.vscode-pull-request-github-0.110.0]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0.
+[18:27:29.035] [server] [18:27:29] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0-20250426.
+[18:27:29.035] [server] [18:27:29] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: This extension is using the API proposals 'defaultChatParticipant', 'chatParticipantPrivate' and 'languageModelDataPart' that are not compatible with the current version of VS Code.
+[18:27:29.035] [server] [18:27:29] [/home/mca55928/.vscode-server/extensions/ms-python.vscode-pylance-2025.6.1]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.99.0.
+[18:32:29.534] [server] [18:32:29] [/home/mca55928/.vscode-server/extensions/github.vscode-pull-request-github-0.110.0]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0.
+[18:32:29.575] [server] [18:32:29] [/home/mca55928/.vscode-server/extensions/ms-python.vscode-pylance-2025.6.1]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.99.0.
+[18:32:29.575] [server] [18:32:29] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0-20250426.
+[18:32:29.576] [server] [18:32:29] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: This extension is using the API proposals 'defaultChatParticipant', 'chatParticipantPrivate' and 'languageModelDataPart' that are not compatible with the current version of VS Code.
+[18:37:30.017] [server] [18:37:30] [/home/mca55928/.vscode-server/extensions/ms-python.vscode-pylance-2025.6.1]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.99.0.
+[18:37:30.043] [server] [18:37:30] [/home/mca55928/.vscode-server/extensions/github.vscode-pull-request-github-0.110.0]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0.
+[18:37:30.043] [server] [18:37:30] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0-20250426.
+[18:37:30.043] [server] [18:37:30] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: This extension is using the API proposals 'defaultChatParticipant', 'chatParticipantPrivate' and 'languageModelDataPart' that are not compatible with the current version of VS Code.
+[18:42:30.598] [server] [18:42:30] [/home/mca55928/.vscode-server/extensions/github.vscode-pull-request-github-0.110.0]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0.
+[18:42:30.600] [server] [18:42:30] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0-20250426.
+[18:42:30.601] [server] [18:42:30] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: This extension is using the API proposals 'defaultChatParticipant', 'chatParticipantPrivate' and 'languageModelDataPart' that are not compatible with the current version of VS Code.
+[18:42:30.609] [server] [18:42:30] [/home/mca55928/.vscode-server/extensions/ms-python.vscode-pylance-2025.6.1]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.99.0.
+[18:47:31.124] [server] [18:47:31] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0-20250426.
+[18:47:31.125] [server] [18:47:31] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: This extension is using the API proposals 'defaultChatParticipant', 'chatParticipantPrivate' and 'languageModelDataPart' that are not compatible with the current version of VS Code.
+[18:47:31.128] [server] [18:47:31] [/home/mca55928/.vscode-server/extensions/github.vscode-pull-request-github-0.110.0]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0.
+[18:47:31.129] [server] [18:47:31] [/home/mca55928/.vscode-server/extensions/ms-python.vscode-pylance-2025.6.1]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.99.0.
+[18:52:31.637] [server] [18:52:31] [/home/mca55928/.vscode-server/extensions/github.vscode-pull-request-github-0.110.0]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0.
+[18:52:31.643] [server] [18:52:31] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0-20250426.
+[18:52:31.645] [server] [18:52:31] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: This extension is using the API proposals 'defaultChatParticipant', 'chatParticipantPrivate' and 'languageModelDataPart' that are not compatible with the current version of VS Code.
+[18:52:31.649] [server] [18:52:31] [/home/mca55928/.vscode-server/extensions/ms-python.vscode-pylance-2025.6.1]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.99.0.
+[18:57:32.131] [server] [18:57:32] [/home/mca55928/.vscode-server/extensions/github.vscode-pull-request-github-0.110.0]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0.
+[18:57:32.134] [server] [18:57:32] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0-20250426.
+[18:57:32.135] [server] [18:57:32] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: This extension is using the API proposals 'defaultChatParticipant', 'chatParticipantPrivate' and 'languageModelDataPart' that are not compatible with the current version of VS Code.
+[18:57:32.138] [server] [18:57:32] [/home/mca55928/.vscode-server/extensions/ms-python.vscode-pylance-2025.6.1]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.99.0.
+[19:02:32.641] [server] [19:02:32] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0-20250426.
+[19:02:32.642] [server] [19:02:32] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: This extension is using the API proposals 'defaultChatParticipant', 'chatParticipantPrivate' and 'languageModelDataPart' that are not compatible with the current version of VS Code.
+[19:02:32.643] [server] [19:02:32] [/home/mca55928/.vscode-server/extensions/github.vscode-pull-request-github-0.110.0]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0.
+[19:02:32.650] [server] [19:02:32] [/home/mca55928/.vscode-server/extensions/ms-python.vscode-pylance-2025.6.1]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.99.0.
+[19:07:33.469] [server] [19:07:33] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0-20250426.
+[19:07:33.478] [server] [19:07:33] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: This extension is using the API proposals 'defaultChatParticipant', 'chatParticipantPrivate' and 'languageModelDataPart' that are not compatible with the current version of VS Code.
+[19:07:33.493] [server] [19:07:33] [/home/mca55928/.vscode-server/extensions/github.vscode-pull-request-github-0.110.0]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0.
+[19:07:33.507] [server] [19:07:33] [/home/mca55928/.vscode-server/extensions/ms-python.vscode-pylance-2025.6.1]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.99.0.
+[19:12:34.035] [server] [19:12:34] [/home/mca55928/.vscode-server/extensions/github.vscode-pull-request-github-0.110.0]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0.
+[19:12:34.035] [server] [19:12:34] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0-20250426.
+[19:12:34.037] [server] [19:12:34] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: This extension is using the API proposals 'defaultChatParticipant', 'chatParticipantPrivate' and 'languageModelDataPart' that are not compatible with the current version of VS Code.
+[19:12:34.043] [server] [19:12:34] [/home/mca55928/.vscode-server/extensions/ms-python.vscode-pylance-2025.6.1]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.99.0.
+[19:17:34.530] [server] [19:17:34] [/home/mca55928/.vscode-server/extensions/github.vscode-pull-request-github-0.110.0]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0.
+[19:17:34.537] [server] [19:17:34] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0-20250426.
+[19:17:34.538] [server] [19:17:34] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: This extension is using the API proposals 'defaultChatParticipant', 'chatParticipantPrivate' and 'languageModelDataPart' that are not compatible with the current version of VS Code.
+[19:17:34.542] [server] [19:17:34] [/home/mca55928/.vscode-server/extensions/ms-python.vscode-pylance-2025.6.1]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.99.0.
+[19:22:35.030] [server] [19:22:35] [/home/mca55928/.vscode-server/extensions/github.vscode-pull-request-github-0.110.0]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0.
+[19:22:35.031] [server] [19:22:35] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0-20250426.
+[19:22:35.032] [server] [19:22:35] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: This extension is using the API proposals 'defaultChatParticipant', 'chatParticipantPrivate' and 'languageModelDataPart' that are not compatible with the current version of VS Code.
+[19:22:35.036] [server] [19:22:35] [/home/mca55928/.vscode-server/extensions/ms-python.vscode-pylance-2025.6.1]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.99.0.
+[19:27:35.548] [server] [19:27:35] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0-20250426.
+[19:27:35.550] [server] [19:27:35] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: This extension is using the API proposals 'defaultChatParticipant', 'chatParticipantPrivate' and 'languageModelDataPart' that are not compatible with the current version of VS Code.
+[19:27:35.551] [server] [19:27:35] [/home/mca55928/.vscode-server/extensions/github.vscode-pull-request-github-0.110.0]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0.
+[19:27:35.557] [server] [19:27:35] [/home/mca55928/.vscode-server/extensions/ms-python.vscode-pylance-2025.6.1]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.99.0.
+[19:32:36.056] [server] [19:32:36] [/home/mca55928/.vscode-server/extensions/github.vscode-pull-request-github-0.110.0]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0.
+[19:32:36.062] [server] [19:32:36] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0-20250426.
+[19:32:36.063] [server] [19:32:36] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: This extension is using the API proposals 'defaultChatParticipant', 'chatParticipantPrivate' and 'languageModelDataPart' that are not compatible with the current version of VS Code.
+[19:32:36.067] [server] [19:32:36] [/home/mca55928/.vscode-server/extensions/ms-python.vscode-pylance-2025.6.1]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.99.0.
+[19:37:36.557] [server] [19:37:36] [/home/mca55928/.vscode-server/extensions/github.vscode-pull-request-github-0.110.0]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0.
+[19:37:36.558] [server] [19:37:36] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0-20250426.
+[19:37:36.559] [server] [19:37:36] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: This extension is using the API proposals 'defaultChatParticipant', 'chatParticipantPrivate' and 'languageModelDataPart' that are not compatible with the current version of VS Code.
+[19:37:36.561] [server] [19:37:36] [/home/mca55928/.vscode-server/extensions/ms-python.vscode-pylance-2025.6.1]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.99.0.
+[19:42:37.058] [server] [19:42:37] [/home/mca55928/.vscode-server/extensions/github.vscode-pull-request-github-0.110.0]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0.
+[19:42:37.066] [server] [19:42:37] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0-20250426.
+[19:42:37.067] [server] [19:42:37] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: This extension is using the API proposals 'defaultChatParticipant', 'chatParticipantPrivate' and 'languageModelDataPart' that are not compatible with the current version of VS Code.
+[19:42:37.069] [server] [19:42:37] [/home/mca55928/.vscode-server/extensions/ms-python.vscode-pylance-2025.6.1]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.99.0.
+[19:47:37.582] [server] [19:47:37] [/home/mca55928/.vscode-server/extensions/github.vscode-pull-request-github-0.110.0]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0.
+[19:47:37.586] [server] [19:47:37] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0-20250426.
+[19:47:37.587] [server] [19:47:37] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: This extension is using the API proposals 'defaultChatParticipant', 'chatParticipantPrivate' and 'languageModelDataPart' that are not compatible with the current version of VS Code.
+[19:47:37.593] [server] [19:47:37] [/home/mca55928/.vscode-server/extensions/ms-python.vscode-pylance-2025.6.1]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.99.0.
+[19:52:38.052] [server] [19:52:38] [/home/mca55928/.vscode-server/extensions/github.vscode-pull-request-github-0.110.0]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0.
+[19:52:38.057] [server] [19:52:38] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0-20250426.
+[19:52:38.058] [server] [19:52:38] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: This extension is using the API proposals 'defaultChatParticipant', 'chatParticipantPrivate' and 'languageModelDataPart' that are not compatible with the current version of VS Code.
+[19:52:38.061] [server] [19:52:38] [/home/mca55928/.vscode-server/extensions/ms-python.vscode-pylance-2025.6.1]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.99.0.
+[19:57:38.546] [server] [19:57:38] [/home/mca55928/.vscode-server/extensions/github.vscode-pull-request-github-0.110.0]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0.
+[19:57:38.549] [server] [19:57:38] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0-20250426.
+[19:57:38.550] [server] [19:57:38] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: This extension is using the API proposals 'defaultChatParticipant', 'chatParticipantPrivate' and 'languageModelDataPart' that are not compatible with the current version of VS Code.
+[19:57:38.554] [server] [19:57:38] [/home/mca55928/.vscode-server/extensions/ms-python.vscode-pylance-2025.6.1]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.99.0.
+[20:02:44.043] [server] [20:02:44] [/home/mca55928/.vscode-server/extensions/github.vscode-pull-request-github-0.110.0]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0.
+[20:02:44.052] [server] [20:02:44] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0-20250426.
+[20:02:44.052] [server] [20:02:44] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: This extension is using the API proposals 'defaultChatParticipant', 'chatParticipantPrivate' and 'languageModelDataPart' that are not compatible with the current version of VS Code.
+[20:02:44.059] [server] [20:02:44] [/home/mca55928/.vscode-server/extensions/ms-python.vscode-pylance-2025.6.1]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.99.0.
+[20:07:44.798] [server] [20:07:44] [/home/mca55928/.vscode-server/extensions/github.vscode-pull-request-github-0.110.0]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0.
+[20:07:44.802] [server] [20:07:44] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0-20250426.
+[20:07:44.803] [server] [20:07:44] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: This extension is using the API proposals 'defaultChatParticipant', 'chatParticipantPrivate' and 'languageModelDataPart' that are not compatible with the current version of VS Code.
+[20:07:44.806] [server] [20:07:44] [/home/mca55928/.vscode-server/extensions/ms-python.vscode-pylance-2025.6.1]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.99.0.
+[20:12:45.281] [server] [20:12:45] [/home/mca55928/.vscode-server/extensions/github.vscode-pull-request-github-0.110.0]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0.
+[20:12:45.286] [server] [20:12:45] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0-20250426.
+[20:12:45.287] [server] [20:12:45] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: This extension is using the API proposals 'defaultChatParticipant', 'chatParticipantPrivate' and 'languageModelDataPart' that are not compatible with the current version of VS Code.
+[20:12:45.290] [server] [20:12:45] [/home/mca55928/.vscode-server/extensions/ms-python.vscode-pylance-2025.6.1]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.99.0.
+[20:17:45.780] [server] [20:17:45] [/home/mca55928/.vscode-server/extensions/github.vscode-pull-request-github-0.110.0]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0.
+[20:17:45.783] [server] [20:17:45] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0-20250426.
+[20:17:45.784] [server] [20:17:45] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: This extension is using the API proposals 'defaultChatParticipant', 'chatParticipantPrivate' and 'languageModelDataPart' that are not compatible with the current version of VS Code.
+[20:17:45.786] [server] [20:17:45] [/home/mca55928/.vscode-server/extensions/ms-python.vscode-pylance-2025.6.1]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.99.0.
+[20:22:46.272] [server] [20:22:46] [/home/mca55928/.vscode-server/extensions/github.vscode-pull-request-github-0.110.0]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0.
+[20:22:46.279] [server] [20:22:46] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0-20250426.
+[20:22:46.280] [server] [20:22:46] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: This extension is using the API proposals 'defaultChatParticipant', 'chatParticipantPrivate' and 'languageModelDataPart' that are not compatible with the current version of VS Code.
+[20:22:46.284] [server] [20:22:46] [/home/mca55928/.vscode-server/extensions/ms-python.vscode-pylance-2025.6.1]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.99.0.
+[20:27:46.778] [server] [20:27:46] [/home/mca55928/.vscode-server/extensions/github.vscode-pull-request-github-0.110.0]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0.
+[20:27:46.780] [server] [20:27:46] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0-20250426.
+[20:27:46.782] [server] [20:27:46] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: This extension is using the API proposals 'defaultChatParticipant', 'chatParticipantPrivate' and 'languageModelDataPart' that are not compatible with the current version of VS Code.
+[20:27:46.784] [server] [20:27:46] [/home/mca55928/.vscode-server/extensions/ms-python.vscode-pylance-2025.6.1]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.99.0.
+[20:32:47.286] [server] [20:32:47] [/home/mca55928/.vscode-server/extensions/github.vscode-pull-request-github-0.110.0]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0.
+[20:32:47.288] [server] [20:32:47] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0-20250426.
+[20:32:47.289] [server] [20:32:47] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: This extension is using the API proposals 'defaultChatParticipant', 'chatParticipantPrivate' and 'languageModelDataPart' that are not compatible with the current version of VS Code.
+[20:32:47.295] [server] [20:32:47] [/home/mca55928/.vscode-server/extensions/ms-python.vscode-pylance-2025.6.1]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.99.0.
+[20:37:47.799] [server] [20:37:47] [/home/mca55928/.vscode-server/extensions/github.vscode-pull-request-github-0.110.0]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0.
+[20:37:47.810] [server] [20:37:47] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0-20250426.
+[20:37:47.811] [server] [20:37:47] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: This extension is using the API proposals 'defaultChatParticipant', 'chatParticipantPrivate' and 'languageModelDataPart' that are not compatible with the current version of VS Code.
+[20:37:47.813] [server] [20:37:47] [/home/mca55928/.vscode-server/extensions/ms-python.vscode-pylance-2025.6.1]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.99.0.
+[20:42:48.313] [server] [20:42:48] [/home/mca55928/.vscode-server/extensions/github.vscode-pull-request-github-0.110.0]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0.
+[20:42:48.316] [server] [20:42:48] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0-20250426.
+[20:42:48.317] [server] [20:42:48] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: This extension is using the API proposals 'defaultChatParticipant', 'chatParticipantPrivate' and 'languageModelDataPart' that are not compatible with the current version of VS Code.
+[20:42:48.320] [server] [20:42:48] [/home/mca55928/.vscode-server/extensions/ms-python.vscode-pylance-2025.6.1]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.99.0.
+[20:47:48.845] [server] [20:47:48] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0-20250426.
+[20:47:48.845] [server] [20:47:48] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: This extension is using the API proposals 'defaultChatParticipant', 'chatParticipantPrivate' and 'languageModelDataPart' that are not compatible with the current version of VS Code.
+[20:47:48.848] [server] [20:47:48] [/home/mca55928/.vscode-server/extensions/github.vscode-pull-request-github-0.110.0]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0.
+[20:47:48.852] [server] [20:47:48] [/home/mca55928/.vscode-server/extensions/ms-python.vscode-pylance-2025.6.1]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.99.0.
+[20:52:49.336] [server] [20:52:49] [/home/mca55928/.vscode-server/extensions/github.vscode-pull-request-github-0.110.0]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0.
+[20:52:49.338] [server] [20:52:49] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0-20250426.
+[20:52:49.339] [server] [20:52:49] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: This extension is using the API proposals 'defaultChatParticipant', 'chatParticipantPrivate' and 'languageModelDataPart' that are not compatible with the current version of VS Code.
+[20:52:49.343] [server] [20:52:49] [/home/mca55928/.vscode-server/extensions/ms-python.vscode-pylance-2025.6.1]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.99.0.
+[20:57:49.892] [server] [20:57:49] [/home/mca55928/.vscode-server/extensions/github.vscode-pull-request-github-0.110.0]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0.
+[20:57:49.894] [server] [20:57:49] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0-20250426.
+[20:57:49.895] [server] [20:57:49] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: This extension is using the API proposals 'defaultChatParticipant', 'chatParticipantPrivate' and 'languageModelDataPart' that are not compatible with the current version of VS Code.
+[20:57:49.899] [server] [20:57:49] [/home/mca55928/.vscode-server/extensions/ms-python.vscode-pylance-2025.6.1]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.99.0.
+[21:02:50.414] [server] [21:02:50] [/home/mca55928/.vscode-server/extensions/github.vscode-pull-request-github-0.110.0]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0.
+[21:02:50.417] [server] [21:02:50] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0-20250426.
+[21:02:50.418] [server] [21:02:50] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: This extension is using the API proposals 'defaultChatParticipant', 'chatParticipantPrivate' and 'languageModelDataPart' that are not compatible with the current version of VS Code.
+[21:02:50.422] [server] [21:02:50] [/home/mca55928/.vscode-server/extensions/ms-python.vscode-pylance-2025.6.1]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.99.0.
+[21:07:50.961] [server] [21:07:50] [/home/mca55928/.vscode-server/extensions/github.vscode-pull-request-github-0.110.0]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0.
+[21:07:50.966] [server] [21:07:50] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0-20250426.
+[21:07:50.967] [server] [21:07:50] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: This extension is using the API proposals 'defaultChatParticipant', 'chatParticipantPrivate' and 'languageModelDataPart' that are not compatible with the current version of VS Code.
+[21:07:50.969] [server] [21:07:50] [/home/mca55928/.vscode-server/extensions/ms-python.vscode-pylance-2025.6.1]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.99.0.
+[21:12:51.457] [server] [21:12:51] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0-20250426.
+[21:12:51.458] [server] [21:12:51] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: This extension is using the API proposals 'defaultChatParticipant', 'chatParticipantPrivate' and 'languageModelDataPart' that are not compatible with the current version of VS Code.
+[21:12:51.459] [server] [21:12:51] [/home/mca55928/.vscode-server/extensions/github.vscode-pull-request-github-0.110.0]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0.
+[21:12:51.463] [server] [21:12:51] [/home/mca55928/.vscode-server/extensions/ms-python.vscode-pylance-2025.6.1]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.99.0.
+[21:17:51.981] [server] [21:17:51] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0-20250426.
+[21:17:51.982] [server] [21:17:51] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: This extension is using the API proposals 'defaultChatParticipant', 'chatParticipantPrivate' and 'languageModelDataPart' that are not compatible with the current version of VS Code.
+[21:17:51.984] [server] [21:17:51] [/home/mca55928/.vscode-server/extensions/github.vscode-pull-request-github-0.110.0]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0.
+[21:17:51.987] [server] [21:17:51] [/home/mca55928/.vscode-server/extensions/ms-python.vscode-pylance-2025.6.1]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.99.0.
+[21:22:52.487] [server] [21:22:52] [/home/mca55928/.vscode-server/extensions/github.vscode-pull-request-github-0.110.0]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0.
+[21:22:52.493] [server] [21:22:52] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0-20250426.
+[21:22:52.494] [server] [21:22:52] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: This extension is using the API proposals 'defaultChatParticipant', 'chatParticipantPrivate' and 'languageModelDataPart' that are not compatible with the current version of VS Code.
+[21:22:52.497] [server] [21:22:52] [/home/mca55928/.vscode-server/extensions/ms-python.vscode-pylance-2025.6.1]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.99.0.
+[21:27:53.070] [server] [21:27:53] [/home/mca55928/.vscode-server/extensions/github.vscode-pull-request-github-0.110.0]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0.
+[21:27:53.077] [server] [21:27:53] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0-20250426.
+[21:27:53.078] [server] [21:27:53] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: This extension is using the API proposals 'defaultChatParticipant', 'chatParticipantPrivate' and 'languageModelDataPart' that are not compatible with the current version of VS Code.
+[21:27:53.079] [server] [21:27:53] [/home/mca55928/.vscode-server/extensions/ms-python.vscode-pylance-2025.6.1]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.99.0.
+[21:32:53.595] [server] [21:32:53] [/home/mca55928/.vscode-server/extensions/github.vscode-pull-request-github-0.110.0]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0.
+[21:32:53.597] [server] [21:32:53] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0-20250426.
+[21:32:53.598] [server] [21:32:53] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: This extension is using the API proposals 'defaultChatParticipant', 'chatParticipantPrivate' and 'languageModelDataPart' that are not compatible with the current version of VS Code.
+[21:32:53.599] [server] [21:32:53] [/home/mca55928/.vscode-server/extensions/ms-python.vscode-pylance-2025.6.1]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.99.0.
+[21:37:54.107] [server] [21:37:54] [/home/mca55928/.vscode-server/extensions/github.vscode-pull-request-github-0.110.0]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0.
+[21:37:54.109] [server] [21:37:54] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0-20250426.
+[21:37:54.110] [server] [21:37:54] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: This extension is using the API proposals 'defaultChatParticipant', 'chatParticipantPrivate' and 'languageModelDataPart' that are not compatible with the current version of VS Code.
+[21:37:54.113] [server] [21:37:54] [/home/mca55928/.vscode-server/extensions/ms-python.vscode-pylance-2025.6.1]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.99.0.
+[21:42:54.598] [server] [21:42:54] [/home/mca55928/.vscode-server/extensions/github.vscode-pull-request-github-0.110.0]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0.
+[21:42:54.601] [server] [21:42:54] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0-20250426.
+[21:42:54.602] [server] [21:42:54] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: This extension is using the API proposals 'defaultChatParticipant', 'chatParticipantPrivate' and 'languageModelDataPart' that are not compatible with the current version of VS Code.
+[21:42:54.604] [server] [21:42:54] [/home/mca55928/.vscode-server/extensions/ms-python.vscode-pylance-2025.6.1]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.99.0.
+[21:42:59.058] Picking SSH host
+[21:43:00.700] Selected deucalion
+[21:43:01.621] [server] [21:43:01] [<unknown>][a293c171][ManagementConnection] New connection established.
+[21:43:01.644] [server] [21:43:01] [<unknown>][d09da28d][ExtensionHostConnection] New connection established.
+[21:43:01.661] [server] [21:43:01] [<unknown>][d09da28d][ExtensionHostConnection] <3087064> Launched Extension Host Process.
+[21:43:02.027] [server] [21:43:02] [/home/mca55928/.vscode-server/extensions/github.vscode-pull-request-github-0.110.0]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0.
+[21:43:02.029] [server] [21:43:02] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0-20250426.
+[21:43:02.030] [server] [21:43:02] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: This extension is using the API proposals 'defaultChatParticipant', 'chatParticipantPrivate' and 'languageModelDataPart' that are not compatible with the current version of VS Code.
+[21:43:02.032] [server] [21:43:02] [/home/mca55928/.vscode-server/extensions/ms-python.vscode-pylance-2025.6.1]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.99.0.
+[21:43:02.565] [server] [21:43:02] [/home/mca55928/.vscode-server/extensions/github.vscode-pull-request-github-0.110.0]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0.
+[21:43:02.571] [server] [21:43:02] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0-20250426.
+[21:43:02.572] [server] [21:43:02] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: This extension is using the API proposals 'defaultChatParticipant', 'chatParticipantPrivate' and 'languageModelDataPart' that are not compatible with the current version of VS Code.
+[21:43:02.575] [server] [21:43:02] [/home/mca55928/.vscode-server/extensions/ms-python.vscode-pylance-2025.6.1]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.99.0.
+[21:43:02.647] [server] [21:43:02] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: This extension is using the API proposals 'defaultChatParticipant', 'chatParticipantPrivate' and 'languageModelDataPart' that are not compatible with the current version of VS Code.
+[21:43:03.353] [server] [21:43:03] [/home/mca55928/.vscode-server/extensions/github.vscode-pull-request-github-0.110.0]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0.
+[21:43:03.358] [server] [21:43:03] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0-20250426.
+[21:43:03.359] [server] [21:43:03] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: This extension is using the API proposals 'defaultChatParticipant', 'chatParticipantPrivate' and 'languageModelDataPart' that are not compatible with the current version of VS Code.
+[21:43:03.362] [server] [21:43:03] [/home/mca55928/.vscode-server/extensions/ms-python.vscode-pylance-2025.6.1]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.99.0.
+[21:43:03.836] [server] [21:43:03] [/home/mca55928/.vscode-server/extensions/github.vscode-pull-request-github-0.110.0]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0.
+[21:43:03.837] [server] [21:43:03] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0-20250426.
+[21:43:03.838] [server] [21:43:03] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: This extension is using the API proposals 'defaultChatParticipant', 'chatParticipantPrivate' and 'languageModelDataPart' that are not compatible with the current version of VS Code.
+[21:43:03.839] [server] [21:43:03] [/home/mca55928/.vscode-server/extensions/ms-python.vscode-pylance-2025.6.1]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.99.0.
+[21:43:04.406] [server] [21:43:04] [/home/mca55928/.vscode-server/extensions/github.vscode-pull-request-github-0.110.0]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0.
+[21:43:04.408] [server] [21:43:04] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0-20250426.
+[21:43:04.409] [server] [21:43:04] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: This extension is using the API proposals 'defaultChatParticipant', 'chatParticipantPrivate' and 'languageModelDataPart' that are not compatible with the current version of VS Code.
+[21:43:04.412] [server] [21:43:04] [/home/mca55928/.vscode-server/extensions/ms-python.vscode-pylance-2025.6.1]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.99.0.
+[21:43:04.716] [server] [21:43:04] [/home/mca55928/.vscode-server/extensions/github.vscode-pull-request-github-0.110.0]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0.
+[21:43:04.717] [server] [21:43:04] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0-20250426.
+[21:43:04.718] [server] [21:43:04] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: This extension is using the API proposals 'defaultChatParticipant', 'chatParticipantPrivate' and 'languageModelDataPart' that are not compatible with the current version of VS Code.
+[21:43:04.721] [server] [21:43:04] [/home/mca55928/.vscode-server/extensions/ms-python.vscode-pylance-2025.6.1]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.99.0.
+[21:43:05.017] [server] [21:43:05] [/home/mca55928/.vscode-server/extensions/github.vscode-pull-request-github-0.110.0]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0.
+[21:43:05.020] [server] [21:43:05] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0-20250426.
+[21:43:05.021] [server] [21:43:05] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: This extension is using the API proposals 'defaultChatParticipant', 'chatParticipantPrivate' and 'languageModelDataPart' that are not compatible with the current version of VS Code.
+[21:43:05.022] [server] [21:43:05] [/home/mca55928/.vscode-server/extensions/ms-python.vscode-pylance-2025.6.1]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.99.0.
+[21:43:05.370] [server] [21:43:05] [/home/mca55928/.vscode-server/extensions/github.vscode-pull-request-github-0.110.0]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0.
+[21:43:05.412] [server] [21:43:05] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0-20250426.
+[21:43:05.412] [server] [21:43:05] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: This extension is using the API proposals 'defaultChatParticipant', 'chatParticipantPrivate' and 'languageModelDataPart' that are not compatible with the current version of VS Code.
+[21:43:05.412] [server] [21:43:05] [/home/mca55928/.vscode-server/extensions/ms-python.vscode-pylance-2025.6.1]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.99.0.
+[21:43:05.708] [server] [21:43:05] [/home/mca55928/.vscode-server/extensions/github.vscode-pull-request-github-0.110.0]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0.
+[21:43:05.709] [server] [21:43:05] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0-20250426.
+[21:43:05.711] [server] [21:43:05] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: This extension is using the API proposals 'defaultChatParticipant', 'chatParticipantPrivate' and 'languageModelDataPart' that are not compatible with the current version of VS Code.
+[21:43:05.713] [server] [21:43:05] [/home/mca55928/.vscode-server/extensions/ms-python.vscode-pylance-2025.6.1]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.99.0.
+[21:43:06.973] [server] [21:43:06] Getting Manifest... ms-python.vscode-pylance
+[21:43:07.604] [server] [21:43:07] Installing extension: ms-python.vscode-pylance {
+[21:43:07.605] [server]   productVersion: { version: '1.101.0', date: '2025-06-11T15:01:29.756Z' },
+[21:43:07.606] [server]   pinned: false,
+[21:43:07.607] [server]   operation: 3,
+[21:43:07.608] [server]   isApplicationScoped: false,
+[21:43:07.609] [server]   donotVerifySignature: false,
+[21:43:07.610] [server]   context: { clientTargetPlatform: 'linux-x64' },
+[21:43:07.611] [server]   profileLocation: Er {
+[21:43:07.612] [server]     scheme: 'file',
+[21:43:07.613] [server]     authority: '',
+[21:43:07.614] [server]     path: '/home/mca55928/.vscode-server/extensions/extensions.json',
+[21:43:07.615] [server]     query: '',
+[21:43:07.616] [server]     fragment: '',
+[21:43:07.617] [server]     _formatted: 'file:///home/mca55928/.vscode-server/extensions/extensions.json',
+[21:43:07.618] [server]     _fsPath: '/home/mca55928/.vscode-server/extensions/extensions.json'
+[21:43:07.619] [server]   }
+[21:43:07.620] [server] }
+[21:43:07.940] [server] [21:43:07] Getting Manifest... ms-python.python
+[21:43:08.368] [server] [21:43:08] Getting Manifest... ms-python.debugpy
+[21:43:08.470] [server] [21:43:08] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: This extension is using the API proposals 'defaultChatParticipant', 'chatParticipantPrivate' and 'languageModelDataPart' that are not compatible with the current version of VS Code.
+[21:43:08.704] [server] [21:43:08] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: This extension is using the API proposals 'defaultChatParticipant', 'chatParticipantPrivate' and 'languageModelDataPart' that are not compatible with the current version of VS Code.
+[21:43:08.850] [server] [21:43:08] [/home/mca55928/.vscode-server/extensions/github.vscode-pull-request-github-0.110.0]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0.
+[21:43:08.854] [server] [21:43:08] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0-20250426.
+[21:43:08.855] [server] [21:43:08] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: This extension is using the API proposals 'defaultChatParticipant', 'chatParticipantPrivate' and 'languageModelDataPart' that are not compatible with the current version of VS Code.
+[21:43:08.856] [server] [21:43:08] [/home/mca55928/.vscode-server/extensions/ms-python.vscode-pylance-2025.6.1]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.99.0.
+[21:43:08.859] [server] [21:43:08] Error while installing the extension ms-python.vscode-pylance Cannot read the extension from /home/mca55928/.vscode-server/extensions/ms-python.vscode-pylance-2025.6.1 file:///home/mca55928/.vscode-server/extensions/extensions.json
+[21:43:42.962] [server] [21:43:42] [<unknown>][a293c171][ManagementConnection] The client has disconnected gracefully, so the connection will be disposed.
+[21:43:43.855] [server] [21:43:43] [<unknown>][c07c52e4][ManagementConnection] New connection established.
+[21:43:43.876] [server] [21:43:43] [<unknown>][7214fc7d][ExtensionHostConnection] New connection established.
+[21:43:43.892] [server] [21:43:43] [<unknown>][7214fc7d][ExtensionHostConnection] <3087230> Launched Extension Host Process.
+[21:43:44.106] [server] [21:43:44] [/home/mca55928/.vscode-server/extensions/github.vscode-pull-request-github-0.110.0]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0.
+[21:43:44.108] [server] [21:43:44] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0-20250426.
+[21:43:44.109] [server] [21:43:44] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: This extension is using the API proposals 'defaultChatParticipant', 'chatParticipantPrivate' and 'languageModelDataPart' that are not compatible with the current version of VS Code.
+[21:43:44.220] [server] [21:43:44] [/home/mca55928/.vscode-server/extensions/ms-python.vscode-pylance-2025.6.1]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.99.0.
+[21:43:45.396] [server] [21:43:45] [/home/mca55928/.vscode-server/extensions/github.vscode-pull-request-github-0.110.0]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0.
+[21:43:45.397] [server] [21:43:45] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0-20250426.
+[21:43:45.399] [server] [21:43:45] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: This extension is using the API proposals 'defaultChatParticipant', 'chatParticipantPrivate' and 'languageModelDataPart' that are not compatible with the current version of VS Code.
+[21:43:45.400] [server] [21:43:45] [/home/mca55928/.vscode-server/extensions/ms-python.vscode-pylance-2025.6.1]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.99.0.
+[21:43:45.908] [server] [21:43:45] [/home/mca55928/.vscode-server/extensions/github.vscode-pull-request-github-0.110.0]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0.
+[21:43:45.914] [server] [21:43:45] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0-20250426.
+[21:43:45.915] [server] [21:43:45] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: This extension is using the API proposals 'defaultChatParticipant', 'chatParticipantPrivate' and 'languageModelDataPart' that are not compatible with the current version of VS Code.
+[21:43:45.918] [server] [21:43:45] [/home/mca55928/.vscode-server/extensions/ms-python.vscode-pylance-2025.6.1]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.99.0.
+[21:43:46.174] [server] [21:43:46] [/home/mca55928/.vscode-server/extensions/github.vscode-pull-request-github-0.110.0]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0.
+[21:43:46.175] [server] [21:43:46] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0-20250426.
+[21:43:46.177] [server] [21:43:46] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: This extension is using the API proposals 'defaultChatParticipant', 'chatParticipantPrivate' and 'languageModelDataPart' that are not compatible with the current version of VS Code.
+[21:43:46.180] [server] [21:43:46] [/home/mca55928/.vscode-server/extensions/ms-python.vscode-pylance-2025.6.1]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.99.0.
+[21:43:46.615] [server] [21:43:46] [/home/mca55928/.vscode-server/extensions/github.vscode-pull-request-github-0.110.0]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0.
+[21:43:46.619] [server] [21:43:46] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0-20250426.
+[21:43:46.620] [server] [21:43:46] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: This extension is using the API proposals 'defaultChatParticipant', 'chatParticipantPrivate' and 'languageModelDataPart' that are not compatible with the current version of VS Code.
+[21:43:46.621] [server] [21:43:46] [/home/mca55928/.vscode-server/extensions/ms-python.vscode-pylance-2025.6.1]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.99.0.
+[21:43:47.021] [server] [21:43:47] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: This extension is using the API proposals 'defaultChatParticipant', 'chatParticipantPrivate' and 'languageModelDataPart' that are not compatible with the current version of VS Code.
+[21:43:47.489] [server] [21:43:47] [/home/mca55928/.vscode-server/extensions/github.vscode-pull-request-github-0.110.0]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0.
+[21:43:47.491] [server] [21:43:47] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0-20250426.
+[21:43:47.492] [server] [21:43:47] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: This extension is using the API proposals 'defaultChatParticipant', 'chatParticipantPrivate' and 'languageModelDataPart' that are not compatible with the current version of VS Code.
+[21:43:47.494] [server] [21:43:47] [/home/mca55928/.vscode-server/extensions/ms-python.vscode-pylance-2025.6.1]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.99.0.
+[21:43:47.835] [server] [21:43:47] [/home/mca55928/.vscode-server/extensions/github.vscode-pull-request-github-0.110.0]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0.
+[21:43:47.838] [server] [21:43:47] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0-20250426.
+[21:43:47.839] [server] [21:43:47] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: This extension is using the API proposals 'defaultChatParticipant', 'chatParticipantPrivate' and 'languageModelDataPart' that are not compatible with the current version of VS Code.
+[21:43:47.842] [server] [21:43:47] [/home/mca55928/.vscode-server/extensions/ms-python.vscode-pylance-2025.6.1]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.99.0.
+[21:43:48.187] [server] [21:43:48] [/home/mca55928/.vscode-server/extensions/github.vscode-pull-request-github-0.110.0]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0.
+[21:43:48.189] [server] [21:43:48] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0-20250426.
+[21:43:48.190] [server] [21:43:48] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: This extension is using the API proposals 'defaultChatParticipant', 'chatParticipantPrivate' and 'languageModelDataPart' that are not compatible with the current version of VS Code.
+[21:43:48.193] [server] [21:43:48] [/home/mca55928/.vscode-server/extensions/ms-python.vscode-pylance-2025.6.1]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.99.0.
+[21:47:55.529] [server] [21:47:55] [/home/mca55928/.vscode-server/extensions/github.vscode-pull-request-github-0.110.0]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0.
+[21:47:55.531] [server] [21:47:55] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0-20250426.
+[21:47:55.532] [server] [21:47:55] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: This extension is using the API proposals 'defaultChatParticipant', 'chatParticipantPrivate' and 'languageModelDataPart' that are not compatible with the current version of VS Code.
+[21:47:55.541] [server] [21:47:55] [/home/mca55928/.vscode-server/extensions/ms-python.vscode-pylance-2025.6.1]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.99.0.
+[21:48:43.980] [server] [21:48:43] [<unknown>][d09da28d][ExtensionHostConnection] <3087064> Extension Host Process exited with code: 0, signal: null.
+[21:48:46.479] [server] [21:48:46] [/home/mca55928/.vscode-server/extensions/github.vscode-pull-request-github-0.110.0]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0.
+[21:48:46.519] [server] [21:48:46] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0-20250426.
+[21:48:46.519] [server] [21:48:46] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: This extension is using the API proposals 'defaultChatParticipant', 'chatParticipantPrivate' and 'languageModelDataPart' that are not compatible with the current version of VS Code.
+[21:48:46.519] [server] [21:48:46] [/home/mca55928/.vscode-server/extensions/ms-python.vscode-pylance-2025.6.1]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.99.0.
+[21:52:56.043] [server] [21:52:56] [/home/mca55928/.vscode-server/extensions/github.vscode-pull-request-github-0.110.0]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0.
+[21:52:56.050] [server] [21:52:56] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0-20250426.
+[21:52:56.051] [server] [21:52:56] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: This extension is using the API proposals 'defaultChatParticipant', 'chatParticipantPrivate' and 'languageModelDataPart' that are not compatible with the current version of VS Code.
+[21:52:56.053] [server] [21:52:56] [/home/mca55928/.vscode-server/extensions/ms-python.vscode-pylance-2025.6.1]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.99.0.
+[21:53:46.707] [server] [21:53:46] [/home/mca55928/.vscode-server/extensions/github.vscode-pull-request-github-0.110.0]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0.
+[21:53:46.713] [server] [21:53:46] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0-20250426.
+[21:53:46.714] [server] [21:53:46] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: This extension is using the API proposals 'defaultChatParticipant', 'chatParticipantPrivate' and 'languageModelDataPart' that are not compatible with the current version of VS Code.
+[21:53:46.718] [server] [21:53:46] [/home/mca55928/.vscode-server/extensions/ms-python.vscode-pylance-2025.6.1]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.99.0.
+[21:57:57.096] [server] [21:57:57] [/home/mca55928/.vscode-server/extensions/github.vscode-pull-request-github-0.110.0]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0.
+[21:57:57.098] [server] [21:57:57] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0-20250426.
+[21:57:57.099] [server] [21:57:57] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: This extension is using the API proposals 'defaultChatParticipant', 'chatParticipantPrivate' and 'languageModelDataPart' that are not compatible with the current version of VS Code.
+[21:57:57.105] [server] [21:57:57] [/home/mca55928/.vscode-server/extensions/ms-python.vscode-pylance-2025.6.1]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.99.0.
+[21:58:46.946] [server] [21:58:46] [/home/mca55928/.vscode-server/extensions/github.vscode-pull-request-github-0.110.0]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0.
+[21:58:46.949] [server] [21:58:46] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0-20250426.
+[21:58:46.950] [server] [21:58:46] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: This extension is using the API proposals 'defaultChatParticipant', 'chatParticipantPrivate' and 'languageModelDataPart' that are not compatible with the current version of VS Code.
+[21:58:46.956] [server] [21:58:46] [/home/mca55928/.vscode-server/extensions/ms-python.vscode-pylance-2025.6.1]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.99.0.
+[22:02:57.566] [server] [22:02:57] [/home/mca55928/.vscode-server/extensions/github.vscode-pull-request-github-0.110.0]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0.
+[22:02:57.569] [server] [22:02:57] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0-20250426.
+[22:02:57.569] [server] [22:02:57] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: This extension is using the API proposals 'defaultChatParticipant', 'chatParticipantPrivate' and 'languageModelDataPart' that are not compatible with the current version of VS Code.
+[22:02:57.573] [server] [22:02:57] [/home/mca55928/.vscode-server/extensions/ms-python.vscode-pylance-2025.6.1]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.99.0.
+[22:03:47.184] [server] [22:03:47] [/home/mca55928/.vscode-server/extensions/github.vscode-pull-request-github-0.110.0]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0.
+[22:03:47.187] [server] [22:03:47] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0-20250426.
+[22:03:47.188] [server] [22:03:47] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: This extension is using the API proposals 'defaultChatParticipant', 'chatParticipantPrivate' and 'languageModelDataPart' that are not compatible with the current version of VS Code.
+[22:03:47.197] [server] [22:03:47] [/home/mca55928/.vscode-server/extensions/ms-python.vscode-pylance-2025.6.1]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.99.0.
+[22:07:58.039] [server] [22:07:58] [/home/mca55928/.vscode-server/extensions/github.vscode-pull-request-github-0.110.0]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0.
+[22:07:58.044] [server] [22:07:58] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0-20250426.
+[22:07:58.045] [server] [22:07:58] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: This extension is using the API proposals 'defaultChatParticipant', 'chatParticipantPrivate' and 'languageModelDataPart' that are not compatible with the current version of VS Code.
+[22:07:58.046] [server] [22:07:58] [/home/mca55928/.vscode-server/extensions/ms-python.vscode-pylance-2025.6.1]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.99.0.
+[22:08:47.431] [server] [22:08:47] [/home/mca55928/.vscode-server/extensions/github.vscode-pull-request-github-0.110.0]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0.
+[22:08:47.434] [server] [22:08:47] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0-20250426.
+[22:08:47.435] [server] [22:08:47] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: This extension is using the API proposals 'defaultChatParticipant', 'chatParticipantPrivate' and 'languageModelDataPart' that are not compatible with the current version of VS Code.
+[22:08:47.437] [server] [22:08:47] [/home/mca55928/.vscode-server/extensions/ms-python.vscode-pylance-2025.6.1]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.99.0.
+[22:12:58.549] [server] [22:12:58] [/home/mca55928/.vscode-server/extensions/github.vscode-pull-request-github-0.110.0]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0.
+[22:12:58.550] [server] [22:12:58] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0-20250426.
+[22:12:58.551] [server] [22:12:58] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: This extension is using the API proposals 'defaultChatParticipant', 'chatParticipantPrivate' and 'languageModelDataPart' that are not compatible with the current version of VS Code.
+[22:12:58.559] [server] [22:12:58] [/home/mca55928/.vscode-server/extensions/ms-python.vscode-pylance-2025.6.1]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.99.0.
+[22:13:47.659] [server] [22:13:47] [/home/mca55928/.vscode-server/extensions/github.vscode-pull-request-github-0.110.0]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0.
+[22:13:47.661] [server] [22:13:47] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0-20250426.
+[22:13:47.663] [server] [22:13:47] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: This extension is using the API proposals 'defaultChatParticipant', 'chatParticipantPrivate' and 'languageModelDataPart' that are not compatible with the current version of VS Code.
+[22:13:47.665] [server] [22:13:47] [/home/mca55928/.vscode-server/extensions/ms-python.vscode-pylance-2025.6.1]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.99.0.
+[22:17:59.032] [server] [22:17:59] [/home/mca55928/.vscode-server/extensions/github.vscode-pull-request-github-0.110.0]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0.
+[22:17:59.035] [server] [22:17:59] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0-20250426.
+[22:17:59.036] [server] [22:17:59] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: This extension is using the API proposals 'defaultChatParticipant', 'chatParticipantPrivate' and 'languageModelDataPart' that are not compatible with the current version of VS Code.
+[22:17:59.039] [server] [22:17:59] [/home/mca55928/.vscode-server/extensions/ms-python.vscode-pylance-2025.6.1]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.99.0.
+[22:18:47.880] [server] [22:18:47] [/home/mca55928/.vscode-server/extensions/github.vscode-pull-request-github-0.110.0]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0.
+[22:18:47.881] [server] [22:18:47] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0-20250426.
+[22:18:47.882] [server] [22:18:47] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: This extension is using the API proposals 'defaultChatParticipant', 'chatParticipantPrivate' and 'languageModelDataPart' that are not compatible with the current version of VS Code.
+[22:18:47.888] [server] [22:18:47] [/home/mca55928/.vscode-server/extensions/ms-python.vscode-pylance-2025.6.1]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.99.0.
+[22:22:59.532] [server] [22:22:59] [/home/mca55928/.vscode-server/extensions/github.vscode-pull-request-github-0.110.0]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0.
+[22:22:59.535] [server] [22:22:59] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0-20250426.
+[22:22:59.535] [server] [22:22:59] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: This extension is using the API proposals 'defaultChatParticipant', 'chatParticipantPrivate' and 'languageModelDataPart' that are not compatible with the current version of VS Code.
+[22:22:59.541] [server] [22:22:59] [/home/mca55928/.vscode-server/extensions/ms-python.vscode-pylance-2025.6.1]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.99.0.
+[22:23:48.097] [server] [22:23:48] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0-20250426.
+[22:23:48.098] [server] [22:23:48] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: This extension is using the API proposals 'defaultChatParticipant', 'chatParticipantPrivate' and 'languageModelDataPart' that are not compatible with the current version of VS Code.
+[22:23:48.099] [server] [22:23:48] [/home/mca55928/.vscode-server/extensions/github.vscode-pull-request-github-0.110.0]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0.
+[22:23:48.107] [server] [22:23:48] [/home/mca55928/.vscode-server/extensions/ms-python.vscode-pylance-2025.6.1]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.99.0.
+[22:28:00.043] [server] [22:28:00] [/home/mca55928/.vscode-server/extensions/github.vscode-pull-request-github-0.110.0]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0.
+[22:28:00.045] [server] [22:28:00] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0-20250426.
+[22:28:00.046] [server] [22:28:00] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: This extension is using the API proposals 'defaultChatParticipant', 'chatParticipantPrivate' and 'languageModelDataPart' that are not compatible with the current version of VS Code.
+[22:28:00.052] [server] [22:28:00] [/home/mca55928/.vscode-server/extensions/ms-python.vscode-pylance-2025.6.1]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.99.0.
+[22:28:48.337] [server] [22:28:48] [/home/mca55928/.vscode-server/extensions/github.vscode-pull-request-github-0.110.0]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0.
+[22:28:48.339] [server] [22:28:48] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0-20250426.
+[22:28:48.343] [server] [22:28:48] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: This extension is using the API proposals 'defaultChatParticipant', 'chatParticipantPrivate' and 'languageModelDataPart' that are not compatible with the current version of VS Code.
+[22:28:48.344] [server] [22:28:48] [/home/mca55928/.vscode-server/extensions/ms-python.vscode-pylance-2025.6.1]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.99.0.
+[22:33:00.507] [server] [22:33:00] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0-20250426.
+[22:33:00.508] [server] [22:33:00] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: This extension is using the API proposals 'defaultChatParticipant', 'chatParticipantPrivate' and 'languageModelDataPart' that are not compatible with the current version of VS Code.
+[22:33:00.510] [server] [22:33:00] [/home/mca55928/.vscode-server/extensions/github.vscode-pull-request-github-0.110.0]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0.
+[22:33:00.516] [server] [22:33:00] [/home/mca55928/.vscode-server/extensions/ms-python.vscode-pylance-2025.6.1]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.99.0.
+[22:33:48.563] [server] [22:33:48] [/home/mca55928/.vscode-server/extensions/github.vscode-pull-request-github-0.110.0]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0.
+[22:33:48.565] [server] [22:33:48] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0-20250426.
+[22:33:48.567] [server] [22:33:48] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: This extension is using the API proposals 'defaultChatParticipant', 'chatParticipantPrivate' and 'languageModelDataPart' that are not compatible with the current version of VS Code.
+[22:33:48.574] [server] [22:33:48] [/home/mca55928/.vscode-server/extensions/ms-python.vscode-pylance-2025.6.1]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.99.0.
+[22:38:01.018] [server] [22:38:01] [/home/mca55928/.vscode-server/extensions/github.vscode-pull-request-github-0.110.0]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0.
+[22:38:01.021] [server] [22:38:01] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0-20250426.
+[22:38:01.022] [server] [22:38:01] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: This extension is using the API proposals 'defaultChatParticipant', 'chatParticipantPrivate' and 'languageModelDataPart' that are not compatible with the current version of VS Code.
+[22:38:01.024] [server] [22:38:01] [/home/mca55928/.vscode-server/extensions/ms-python.vscode-pylance-2025.6.1]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.99.0.
+[22:38:48.803] [server] [22:38:48] [/home/mca55928/.vscode-server/extensions/github.vscode-pull-request-github-0.110.0]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0.
+[22:38:48.806] [server] [22:38:48] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0-20250426.
+[22:38:48.808] [server] [22:38:48] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: This extension is using the API proposals 'defaultChatParticipant', 'chatParticipantPrivate' and 'languageModelDataPart' that are not compatible with the current version of VS Code.
+[22:38:48.813] [server] [22:38:48] [/home/mca55928/.vscode-server/extensions/ms-python.vscode-pylance-2025.6.1]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.99.0.
+[22:43:01.494] [server] [22:43:01] [/home/mca55928/.vscode-server/extensions/github.vscode-pull-request-github-0.110.0]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0.
+[22:43:01.495] [server] [22:43:01] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0-20250426.
+[22:43:01.496] [server] [22:43:01] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: This extension is using the API proposals 'defaultChatParticipant', 'chatParticipantPrivate' and 'languageModelDataPart' that are not compatible with the current version of VS Code.
+[22:43:01.499] [server] [22:43:01] [/home/mca55928/.vscode-server/extensions/ms-python.vscode-pylance-2025.6.1]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.99.0.
+[22:43:49.039] [server] [22:43:49] [/home/mca55928/.vscode-server/extensions/github.vscode-pull-request-github-0.110.0]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0.
+[22:43:49.045] [server] [22:43:49] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0-20250426.
+[22:43:49.046] [server] [22:43:49] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: This extension is using the API proposals 'defaultChatParticipant', 'chatParticipantPrivate' and 'languageModelDataPart' that are not compatible with the current version of VS Code.
+[22:43:49.050] [server] [22:43:49] [/home/mca55928/.vscode-server/extensions/ms-python.vscode-pylance-2025.6.1]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.99.0.
+[22:48:02.239] [server] [22:48:02] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0-20250426.
+[22:48:02.280] [server] [22:48:02] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: This extension is using the API proposals 'defaultChatParticipant', 'chatParticipantPrivate' and 'languageModelDataPart' that are not compatible with the current version of VS Code.
+[22:48:02.280] [server] [22:48:02] [/home/mca55928/.vscode-server/extensions/github.vscode-pull-request-github-0.110.0]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0.
+[22:48:02.280] [server] [22:48:02] [/home/mca55928/.vscode-server/extensions/ms-python.vscode-pylance-2025.6.1]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.99.0.
+[22:48:49.271] [server] [22:48:49] [/home/mca55928/.vscode-server/extensions/github.vscode-pull-request-github-0.110.0]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0.
+[22:48:49.278] [server] [22:48:49] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0-20250426.
+[22:48:49.279] [server] [22:48:49] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: This extension is using the API proposals 'defaultChatParticipant', 'chatParticipantPrivate' and 'languageModelDataPart' that are not compatible with the current version of VS Code.
+[22:48:49.280] [server] [22:48:49] [/home/mca55928/.vscode-server/extensions/ms-python.vscode-pylance-2025.6.1]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.99.0.
+[22:53:02.772] [server] [22:53:02] [/home/mca55928/.vscode-server/extensions/github.vscode-pull-request-github-0.110.0]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0.
+[22:53:02.773] [server] [22:53:02] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0-20250426.
+[22:53:02.773] [server] [22:53:02] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: This extension is using the API proposals 'defaultChatParticipant', 'chatParticipantPrivate' and 'languageModelDataPart' that are not compatible with the current version of VS Code.
+[22:53:02.773] [server] [22:53:02] [/home/mca55928/.vscode-server/extensions/ms-python.vscode-pylance-2025.6.1]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.99.0.
+[22:53:49.495] [server] [22:53:49] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0-20250426.
+[22:53:49.496] [server] [22:53:49] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: This extension is using the API proposals 'defaultChatParticipant', 'chatParticipantPrivate' and 'languageModelDataPart' that are not compatible with the current version of VS Code.
+[22:53:49.502] [server] [22:53:49] [/home/mca55928/.vscode-server/extensions/github.vscode-pull-request-github-0.110.0]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0.
+[22:53:49.505] [server] [22:53:49] [/home/mca55928/.vscode-server/extensions/ms-python.vscode-pylance-2025.6.1]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.99.0.
+[22:58:03.267] [server] [22:58:03] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0-20250426.
+[22:58:03.268] [server] [22:58:03] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: This extension is using the API proposals 'defaultChatParticipant', 'chatParticipantPrivate' and 'languageModelDataPart' that are not compatible with the current version of VS Code.
+[22:58:03.270] [server] [22:58:03] [/home/mca55928/.vscode-server/extensions/github.vscode-pull-request-github-0.110.0]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0.
+[22:58:03.273] [server] [22:58:03] [/home/mca55928/.vscode-server/extensions/ms-python.vscode-pylance-2025.6.1]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.99.0.
+[22:58:49.722] [server] [22:58:49] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0-20250426.
+[22:58:49.722] [server] [22:58:49] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: This extension is using the API proposals 'defaultChatParticipant', 'chatParticipantPrivate' and 'languageModelDataPart' that are not compatible with the current version of VS Code.
+[22:58:49.728] [server] [22:58:49] [/home/mca55928/.vscode-server/extensions/github.vscode-pull-request-github-0.110.0]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0.
+[22:58:49.733] [server] [22:58:49] [/home/mca55928/.vscode-server/extensions/ms-python.vscode-pylance-2025.6.1]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.99.0.
+[23:03:03.791] [server] [23:03:03] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0-20250426.
+[23:03:03.792] [server] [23:03:03] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: This extension is using the API proposals 'defaultChatParticipant', 'chatParticipantPrivate' and 'languageModelDataPart' that are not compatible with the current version of VS Code.
+[23:03:03.794] [server] [23:03:03] [/home/mca55928/.vscode-server/extensions/github.vscode-pull-request-github-0.110.0]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0.
+[23:03:03.798] [server] [23:03:03] [/home/mca55928/.vscode-server/extensions/ms-python.vscode-pylance-2025.6.1]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.99.0.
+[23:03:49.952] [server] [23:03:49] [/home/mca55928/.vscode-server/extensions/github.vscode-pull-request-github-0.110.0]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0.
+[23:03:49.957] [server] [23:03:49] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0-20250426.
+[23:03:49.958] [server] [23:03:49] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: This extension is using the API proposals 'defaultChatParticipant', 'chatParticipantPrivate' and 'languageModelDataPart' that are not compatible with the current version of VS Code.
+[23:03:49.960] [server] [23:03:49] [/home/mca55928/.vscode-server/extensions/ms-python.vscode-pylance-2025.6.1]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.99.0.
+[23:08:04.267] [server] [23:08:04] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0-20250426.
+[23:08:04.268] [server] [23:08:04] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: This extension is using the API proposals 'defaultChatParticipant', 'chatParticipantPrivate' and 'languageModelDataPart' that are not compatible with the current version of VS Code.
+[23:08:04.271] [server] [23:08:04] [/home/mca55928/.vscode-server/extensions/github.vscode-pull-request-github-0.110.0]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0.
+[23:08:04.273] [server] [23:08:04] [/home/mca55928/.vscode-server/extensions/ms-python.vscode-pylance-2025.6.1]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.99.0.
+[23:08:50.183] [server] [23:08:50] [/home/mca55928/.vscode-server/extensions/github.vscode-pull-request-github-0.110.0]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0.
+[23:08:50.184] [server] [23:08:50] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0-20250426.
+[23:08:50.186] [server] [23:08:50] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: This extension is using the API proposals 'defaultChatParticipant', 'chatParticipantPrivate' and 'languageModelDataPart' that are not compatible with the current version of VS Code.
+[23:08:50.190] [server] [23:08:50] [/home/mca55928/.vscode-server/extensions/ms-python.vscode-pylance-2025.6.1]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.99.0.
+[23:13:04.769] [server] [23:13:04] [/home/mca55928/.vscode-server/extensions/github.vscode-pull-request-github-0.110.0]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0.
+[23:13:04.809] [server] [23:13:04] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0-20250426.
+[23:13:04.809] [server] [23:13:04] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: This extension is using the API proposals 'defaultChatParticipant', 'chatParticipantPrivate' and 'languageModelDataPart' that are not compatible with the current version of VS Code.
+[23:13:04.809] [server] [23:13:04] [/home/mca55928/.vscode-server/extensions/ms-python.vscode-pylance-2025.6.1]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.99.0.
+[23:13:50.427] [server] [23:13:50] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0-20250426.
+[23:13:50.427] [server] [23:13:50] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: This extension is using the API proposals 'defaultChatParticipant', 'chatParticipantPrivate' and 'languageModelDataPart' that are not compatible with the current version of VS Code.
+[23:13:50.430] [server] [23:13:50] [/home/mca55928/.vscode-server/extensions/github.vscode-pull-request-github-0.110.0]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0.
+[23:13:50.433] [server] [23:13:50] [/home/mca55928/.vscode-server/extensions/ms-python.vscode-pylance-2025.6.1]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.99.0.
+[23:18:05.265] [server] [23:18:05] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0-20250426.
+[23:18:05.266] [server] [23:18:05] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: This extension is using the API proposals 'defaultChatParticipant', 'chatParticipantPrivate' and 'languageModelDataPart' that are not compatible with the current version of VS Code.
+[23:18:05.267] [server] [23:18:05] [/home/mca55928/.vscode-server/extensions/github.vscode-pull-request-github-0.110.0]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0.
+[23:18:05.272] [server] [23:18:05] [/home/mca55928/.vscode-server/extensions/ms-python.vscode-pylance-2025.6.1]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.99.0.
+[23:18:50.660] [server] [23:18:50] [/home/mca55928/.vscode-server/extensions/github.vscode-pull-request-github-0.110.0]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0.
+[23:18:50.662] [server] [23:18:50] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0-20250426.
+[23:18:50.663] [server] [23:18:50] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: This extension is using the API proposals 'defaultChatParticipant', 'chatParticipantPrivate' and 'languageModelDataPart' that are not compatible with the current version of VS Code.
+[23:18:50.666] [server] [23:18:50] [/home/mca55928/.vscode-server/extensions/ms-python.vscode-pylance-2025.6.1]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.99.0.
+[23:23:05.748] [server] [23:23:05] [/home/mca55928/.vscode-server/extensions/github.vscode-pull-request-github-0.110.0]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0.
+[23:23:05.750] [server] [23:23:05] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0-20250426.
+[23:23:05.751] [server] [23:23:05] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: This extension is using the API proposals 'defaultChatParticipant', 'chatParticipantPrivate' and 'languageModelDataPart' that are not compatible with the current version of VS Code.
+[23:23:05.753] [server] [23:23:05] [/home/mca55928/.vscode-server/extensions/ms-python.vscode-pylance-2025.6.1]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.99.0.
+[23:23:50.884] [server] [23:23:50] [/home/mca55928/.vscode-server/extensions/github.vscode-pull-request-github-0.110.0]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0.
+[23:23:50.885] [server] [23:23:50] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0-20250426.
+[23:23:50.886] [server] [23:23:50] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: This extension is using the API proposals 'defaultChatParticipant', 'chatParticipantPrivate' and 'languageModelDataPart' that are not compatible with the current version of VS Code.
+[23:23:50.891] [server] [23:23:50] [/home/mca55928/.vscode-server/extensions/ms-python.vscode-pylance-2025.6.1]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.99.0.
+[23:28:06.236] [server] [23:28:06] [/home/mca55928/.vscode-server/extensions/github.vscode-pull-request-github-0.110.0]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0.
+[23:28:06.238] [server] [23:28:06] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0-20250426.
+[23:28:06.239] [server] [23:28:06] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: This extension is using the API proposals 'defaultChatParticipant', 'chatParticipantPrivate' and 'languageModelDataPart' that are not compatible with the current version of VS Code.
+[23:28:06.243] [server] [23:28:06] [/home/mca55928/.vscode-server/extensions/ms-python.vscode-pylance-2025.6.1]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.99.0.
+[23:28:51.100] [server] [23:28:51] [/home/mca55928/.vscode-server/extensions/github.vscode-pull-request-github-0.110.0]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0.
+[23:28:51.103] [server] [23:28:51] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0-20250426.
+[23:28:51.104] [server] [23:28:51] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: This extension is using the API proposals 'defaultChatParticipant', 'chatParticipantPrivate' and 'languageModelDataPart' that are not compatible with the current version of VS Code.
+[23:28:51.109] [server] [23:28:51] [/home/mca55928/.vscode-server/extensions/ms-python.vscode-pylance-2025.6.1]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.99.0.
+[23:33:06.741] [server] [23:33:06] [/home/mca55928/.vscode-server/extensions/github.vscode-pull-request-github-0.110.0]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0.
+[23:33:06.744] [server] [23:33:06] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0-20250426.
+[23:33:06.744] [server] [23:33:06] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: This extension is using the API proposals 'defaultChatParticipant', 'chatParticipantPrivate' and 'languageModelDataPart' that are not compatible with the current version of VS Code.
+[23:33:06.748] [server] [23:33:06] [/home/mca55928/.vscode-server/extensions/ms-python.vscode-pylance-2025.6.1]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.99.0.
+[23:33:51.321] [server] [23:33:51] [/home/mca55928/.vscode-server/extensions/github.vscode-pull-request-github-0.110.0]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0.
+[23:33:51.322] [server] [23:33:51] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0-20250426.
+[23:33:51.323] [server] [23:33:51] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: This extension is using the API proposals 'defaultChatParticipant', 'chatParticipantPrivate' and 'languageModelDataPart' that are not compatible with the current version of VS Code.
+[23:33:51.327] [server] [23:33:51] [/home/mca55928/.vscode-server/extensions/ms-python.vscode-pylance-2025.6.1]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.99.0.
+[23:38:07.266] [server] [23:38:07] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0-20250426.
+[23:38:07.267] [server] [23:38:07] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: This extension is using the API proposals 'defaultChatParticipant', 'chatParticipantPrivate' and 'languageModelDataPart' that are not compatible with the current version of VS Code.
+[23:38:07.271] [server] [23:38:07] [/home/mca55928/.vscode-server/extensions/ms-python.vscode-pylance-2025.6.1]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.99.0.
+[23:38:07.274] [server] [23:38:07] [/home/mca55928/.vscode-server/extensions/github.vscode-pull-request-github-0.110.0]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0.
+[23:38:51.537] [server] [23:38:51] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0-20250426.
+[23:38:51.538] [server] [23:38:51] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: This extension is using the API proposals 'defaultChatParticipant', 'chatParticipantPrivate' and 'languageModelDataPart' that are not compatible with the current version of VS Code.
+[23:38:51.539] [server] [23:38:51] [/home/mca55928/.vscode-server/extensions/github.vscode-pull-request-github-0.110.0]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0.
+[23:38:51.542] [server] [23:38:51] [/home/mca55928/.vscode-server/extensions/ms-python.vscode-pylance-2025.6.1]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.99.0.
+[23:43:07.757] [server] [23:43:07] [/home/mca55928/.vscode-server/extensions/github.vscode-pull-request-github-0.110.0]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0.
+[23:43:07.758] [server] [23:43:07] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0-20250426.
+[23:43:07.759] [server] [23:43:07] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: This extension is using the API proposals 'defaultChatParticipant', 'chatParticipantPrivate' and 'languageModelDataPart' that are not compatible with the current version of VS Code.
+[23:43:07.762] [server] [23:43:07] [/home/mca55928/.vscode-server/extensions/ms-python.vscode-pylance-2025.6.1]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.99.0.
+[23:43:51.769] [server] [23:43:51] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0-20250426.
+[23:43:51.770] [server] [23:43:51] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: This extension is using the API proposals 'defaultChatParticipant', 'chatParticipantPrivate' and 'languageModelDataPart' that are not compatible with the current version of VS Code.
+[23:43:51.773] [server] [23:43:51] [/home/mca55928/.vscode-server/extensions/github.vscode-pull-request-github-0.110.0]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0.
+[23:43:51.780] [server] [23:43:51] [/home/mca55928/.vscode-server/extensions/ms-python.vscode-pylance-2025.6.1]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.99.0.
+[23:48:08.276] [server] [23:48:08] [/home/mca55928/.vscode-server/extensions/ms-python.vscode-pylance-2025.6.1]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.99.0.
+[23:48:08.277] [server] [23:48:08] [/home/mca55928/.vscode-server/extensions/github.vscode-pull-request-github-0.110.0]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0.
+[23:48:08.280] [server] [23:48:08] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0-20250426.
+[23:48:08.281] [server] [23:48:08] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: This extension is using the API proposals 'defaultChatParticipant', 'chatParticipantPrivate' and 'languageModelDataPart' that are not compatible with the current version of VS Code.
+[23:48:51.999] [server] [23:48:51] [/home/mca55928/.vscode-server/extensions/github.vscode-pull-request-github-0.110.0]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0.
+[23:48:52.002] [server] [23:48:51] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0-20250426.
+[23:48:52.003] [server] [23:48:51] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: This extension is using the API proposals 'defaultChatParticipant', 'chatParticipantPrivate' and 'languageModelDataPart' that are not compatible with the current version of VS Code.
+[23:48:52.006] [server] [23:48:51] [/home/mca55928/.vscode-server/extensions/ms-python.vscode-pylance-2025.6.1]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.99.0.
+[23:53:08.773] [server] [23:53:08] [/home/mca55928/.vscode-server/extensions/github.vscode-pull-request-github-0.110.0]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0.
+[23:53:08.774] [server] [23:53:08] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0-20250426.
+[23:53:08.775] [server] [23:53:08] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: This extension is using the API proposals 'defaultChatParticipant', 'chatParticipantPrivate' and 'languageModelDataPart' that are not compatible with the current version of VS Code.
+[23:53:08.781] [server] [23:53:08] [/home/mca55928/.vscode-server/extensions/ms-python.vscode-pylance-2025.6.1]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.99.0.
+[23:53:52.226] [server] [23:53:52] [/home/mca55928/.vscode-server/extensions/github.vscode-pull-request-github-0.110.0]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0.
+[23:53:52.229] [server] [23:53:52] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0-20250426.
+[23:53:52.230] [server] [23:53:52] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: This extension is using the API proposals 'defaultChatParticipant', 'chatParticipantPrivate' and 'languageModelDataPart' that are not compatible with the current version of VS Code.
+[23:53:52.233] [server] [23:53:52] [/home/mca55928/.vscode-server/extensions/ms-python.vscode-pylance-2025.6.1]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.99.0.
+[23:58:09.284] [server] [23:58:09] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0-20250426.
+[23:58:09.284] [server] [23:58:09] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: This extension is using the API proposals 'defaultChatParticipant', 'chatParticipantPrivate' and 'languageModelDataPart' that are not compatible with the current version of VS Code.
+[23:58:09.286] [server] [23:58:09] [/home/mca55928/.vscode-server/extensions/ms-python.vscode-pylance-2025.6.1]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.99.0.
+[23:58:09.288] [server] [23:58:09] [/home/mca55928/.vscode-server/extensions/github.vscode-pull-request-github-0.110.0]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0.
+[23:58:52.452] [server] [23:58:52] [/home/mca55928/.vscode-server/extensions/github.vscode-pull-request-github-0.110.0]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0.
+[23:58:52.457] [server] [23:58:52] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0-20250426.
+[23:58:52.458] [server] [23:58:52] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: This extension is using the API proposals 'defaultChatParticipant', 'chatParticipantPrivate' and 'languageModelDataPart' that are not compatible with the current version of VS Code.
+[23:58:52.461] [server] [23:58:52] [/home/mca55928/.vscode-server/extensions/ms-python.vscode-pylance-2025.6.1]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.99.0.
+[00:03:09.789] [server] [00:03:09] [/home/mca55928/.vscode-server/extensions/github.vscode-pull-request-github-0.110.0]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0.
+[00:03:09.794] [server] [00:03:09] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0-20250426.
+[00:03:09.795] [server] [00:03:09] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: This extension is using the API proposals 'defaultChatParticipant', 'chatParticipantPrivate' and 'languageModelDataPart' that are not compatible with the current version of VS Code.
+[00:03:09.799] [server] [00:03:09] [/home/mca55928/.vscode-server/extensions/ms-python.vscode-pylance-2025.6.1]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.99.0.
+[00:03:52.681] [server] [00:03:52] [/home/mca55928/.vscode-server/extensions/github.vscode-pull-request-github-0.110.0]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0.
+[00:03:52.683] [server] [00:03:52] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0-20250426.
+[00:03:52.684] [server] [00:03:52] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: This extension is using the API proposals 'defaultChatParticipant', 'chatParticipantPrivate' and 'languageModelDataPart' that are not compatible with the current version of VS Code.
+[00:03:52.688] [server] [00:03:52] [/home/mca55928/.vscode-server/extensions/ms-python.vscode-pylance-2025.6.1]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.99.0.
+[00:08:10.277] [server] [00:08:10] [/home/mca55928/.vscode-server/extensions/github.vscode-pull-request-github-0.110.0]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0.
+[00:08:10.283] [server] [00:08:10] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0-20250426.
+[00:08:10.284] [server] [00:08:10] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: This extension is using the API proposals 'defaultChatParticipant', 'chatParticipantPrivate' and 'languageModelDataPart' that are not compatible with the current version of VS Code.
+[00:08:10.286] [server] [00:08:10] [/home/mca55928/.vscode-server/extensions/ms-python.vscode-pylance-2025.6.1]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.99.0.
+[00:08:52.906] [server] [00:08:52] [/home/mca55928/.vscode-server/extensions/github.vscode-pull-request-github-0.110.0]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0.
+[00:08:52.910] [server] [00:08:52] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0-20250426.
+[00:08:52.911] [server] [00:08:52] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: This extension is using the API proposals 'defaultChatParticipant', 'chatParticipantPrivate' and 'languageModelDataPart' that are not compatible with the current version of VS Code.
+[00:08:52.917] [server] [00:08:52] [/home/mca55928/.vscode-server/extensions/ms-python.vscode-pylance-2025.6.1]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.99.0.
+[00:13:10.787] [server] [00:13:10] [/home/mca55928/.vscode-server/extensions/github.vscode-pull-request-github-0.110.0]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0.
+[00:13:10.791] [server] [00:13:10] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0-20250426.
+[00:13:10.792] [server] [00:13:10] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: This extension is using the API proposals 'defaultChatParticipant', 'chatParticipantPrivate' and 'languageModelDataPart' that are not compatible with the current version of VS Code.
+[00:13:10.794] [server] [00:13:10] [/home/mca55928/.vscode-server/extensions/ms-python.vscode-pylance-2025.6.1]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.99.0.
+[00:13:53.136] [server] [00:13:53] [/home/mca55928/.vscode-server/extensions/github.vscode-pull-request-github-0.110.0]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0.
+[00:13:53.142] [server] [00:13:53] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0-20250426.
+[00:13:53.143] [server] [00:13:53] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: This extension is using the API proposals 'defaultChatParticipant', 'chatParticipantPrivate' and 'languageModelDataPart' that are not compatible with the current version of VS Code.
+[00:13:53.149] [server] [00:13:53] [/home/mca55928/.vscode-server/extensions/ms-python.vscode-pylance-2025.6.1]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.99.0.
+[00:18:11.292] [server] [00:18:11] [/home/mca55928/.vscode-server/extensions/github.vscode-pull-request-github-0.110.0]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0.
+[00:18:11.295] [server] [00:18:11] [/home/mca55928/.vscode-server/extensions/ms-python.vscode-pylance-2025.6.1]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.99.0.
+[00:18:11.297] [server] [00:18:11] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0-20250426.
+[00:18:11.298] [server] [00:18:11] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: This extension is using the API proposals 'defaultChatParticipant', 'chatParticipantPrivate' and 'languageModelDataPart' that are not compatible with the current version of VS Code.
+[00:18:53.352] [server] [00:18:53] [/home/mca55928/.vscode-server/extensions/github.vscode-pull-request-github-0.110.0]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0.
+[00:18:53.353] [server] [00:18:53] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0-20250426.
+[00:18:53.354] [server] [00:18:53] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: This extension is using the API proposals 'defaultChatParticipant', 'chatParticipantPrivate' and 'languageModelDataPart' that are not compatible with the current version of VS Code.
+[00:18:53.357] [server] [00:18:53] [/home/mca55928/.vscode-server/extensions/ms-python.vscode-pylance-2025.6.1]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.99.0.
+[00:23:11.799] [server] [00:23:11] [/home/mca55928/.vscode-server/extensions/github.vscode-pull-request-github-0.110.0]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0.
+[00:23:11.805] [server] [00:23:11] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0-20250426.
+[00:23:11.806] [server] [00:23:11] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: This extension is using the API proposals 'defaultChatParticipant', 'chatParticipantPrivate' and 'languageModelDataPart' that are not compatible with the current version of VS Code.
+[00:23:11.810] [server] [00:23:11] [/home/mca55928/.vscode-server/extensions/ms-python.vscode-pylance-2025.6.1]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.99.0.
+[00:23:53.578] [server] [00:23:53] [/home/mca55928/.vscode-server/extensions/github.vscode-pull-request-github-0.110.0]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0.
+[00:23:53.583] [server] [00:23:53] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0-20250426.
+[00:23:53.584] [server] [00:23:53] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: This extension is using the API proposals 'defaultChatParticipant', 'chatParticipantPrivate' and 'languageModelDataPart' that are not compatible with the current version of VS Code.
+[00:23:53.587] [server] [00:23:53] [/home/mca55928/.vscode-server/extensions/ms-python.vscode-pylance-2025.6.1]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.99.0.
+[00:28:12.330] [server] [00:28:12] [/home/mca55928/.vscode-server/extensions/github.vscode-pull-request-github-0.110.0]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0.
+[00:28:12.332] [server] [00:28:12] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0-20250426.
+[00:28:12.332] [server] [00:28:12] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: This extension is using the API proposals 'defaultChatParticipant', 'chatParticipantPrivate' and 'languageModelDataPart' that are not compatible with the current version of VS Code.
+[00:28:12.336] [server] [00:28:12] [/home/mca55928/.vscode-server/extensions/ms-python.vscode-pylance-2025.6.1]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.99.0.
+[00:28:53.801] [server] [00:28:53] [/home/mca55928/.vscode-server/extensions/github.vscode-pull-request-github-0.110.0]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0.
+[00:28:53.806] [server] [00:28:53] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0-20250426.
+[00:28:53.807] [server] [00:28:53] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: This extension is using the API proposals 'defaultChatParticipant', 'chatParticipantPrivate' and 'languageModelDataPart' that are not compatible with the current version of VS Code.
+[00:28:53.810] [server] [00:28:53] [/home/mca55928/.vscode-server/extensions/ms-python.vscode-pylance-2025.6.1]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.99.0.
+[00:33:12.836] [server] [00:33:12] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0-20250426.
+[00:33:12.876] [server] [00:33:12] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: This extension is using the API proposals 'defaultChatParticipant', 'chatParticipantPrivate' and 'languageModelDataPart' that are not compatible with the current version of VS Code.
+[00:33:12.877] [server] [00:33:12] [/home/mca55928/.vscode-server/extensions/github.vscode-pull-request-github-0.110.0]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0.
+[00:33:12.877] [server] [00:33:12] [/home/mca55928/.vscode-server/extensions/ms-python.vscode-pylance-2025.6.1]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.99.0.
+[00:33:54.023] [server] [00:33:54] [/home/mca55928/.vscode-server/extensions/github.vscode-pull-request-github-0.110.0]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0.
+[00:33:54.027] [server] [00:33:54] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0-20250426.
+[00:33:54.028] [server] [00:33:54] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: This extension is using the API proposals 'defaultChatParticipant', 'chatParticipantPrivate' and 'languageModelDataPart' that are not compatible with the current version of VS Code.
+[00:33:54.031] [server] [00:33:54] [/home/mca55928/.vscode-server/extensions/ms-python.vscode-pylance-2025.6.1]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.99.0.
+[00:38:13.346] [server] [00:38:13] [/home/mca55928/.vscode-server/extensions/github.vscode-pull-request-github-0.110.0]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0.
+[00:38:13.352] [server] [00:38:13] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0-20250426.
+[00:38:13.353] [server] [00:38:13] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: This extension is using the API proposals 'defaultChatParticipant', 'chatParticipantPrivate' and 'languageModelDataPart' that are not compatible with the current version of VS Code.
+[00:38:13.356] [server] [00:38:13] [/home/mca55928/.vscode-server/extensions/ms-python.vscode-pylance-2025.6.1]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.99.0.
+[00:38:54.246] [server] [00:38:54] [/home/mca55928/.vscode-server/extensions/github.vscode-pull-request-github-0.110.0]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0.
+[00:38:54.248] [server] [00:38:54] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0-20250426.
+[00:38:54.249] [server] [00:38:54] [/home/mca55928/.vscode-server/extensions/github.copilot-chat-0.27.2]: This extension is using the API proposals 'defaultChatParticipant', 'chatParticipantPrivate' and 'languageModelDataPart' that are not compatible with the current version of VS Code.
+[00:38:54.253] [server] [00:38:54] [/home/mca55928/.vscode-server/extensions/ms-python.vscode-pylance-2025.6.1]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.99.0.

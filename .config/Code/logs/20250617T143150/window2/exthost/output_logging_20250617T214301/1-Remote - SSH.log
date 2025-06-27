@@ -1,0 +1,63 @@
+[21:43:01.314] Log Level: 2
+[21:43:01.325] SSH Resolver called for "ssh-remote+deucalion", attempt 1
+[21:43:01.327] remote.SSH.useLocalServer = true
+[21:43:01.327] remote.SSH.useExecServer = true
+[21:43:01.327] remote.SSH.bindHost = {}
+[21:43:01.327] remote.SSH.path = 
+[21:43:01.327] remote.SSH.configFile = 
+[21:43:01.327] remote.SSH.useFlock = true
+[21:43:01.328] remote.SSH.lockfilesInTmp = false
+[21:43:01.328] remote.SSH.localServerDownload = auto
+[21:43:01.328] remote.SSH.remoteServerListenOnSocket = false
+[21:43:01.328] remote.SSH.defaultExtensions = []
+[21:43:01.328] remote.SSH.defaultExtensionsIfInstalledLocally = []
+[21:43:01.328] remote.SSH.loglevel = 2
+[21:43:01.328] remote.SSH.enableDynamicForwarding = true
+[21:43:01.328] remote.SSH.enableRemoteCommand = false
+[21:43:01.328] remote.SSH.serverPickPortsFromRange = {}
+[21:43:01.330] remote.SSH.serverInstallPath = {}
+[21:43:01.330] remote.SSH.permitPtyAllocation = false
+[21:43:01.330] remote.SSH.preferredLocalPortRange = undefined
+[21:43:01.330] remote.SSH.useCurlAndWgetConfigurationFiles = false
+[21:43:01.330] remote.SSH.experimental.chat = true
+[21:43:01.330] remote.SSH.experimental.enhancedSessionLogs = true
+[21:43:01.330] remote.SSH.httpProxy = {"*":""}
+[21:43:01.330] remote.SSH.httpsProxy = {"*":""}
+[21:43:01.337] VS Code version: 1.98.2
+[21:43:01.337] Remote-SSH version: remote-ssh@0.120.0
+[21:43:01.337] linux x64
+[21:43:01.338] SSH Resolver called for host: deucalion
+[21:43:01.338] Setting up SSH remote "deucalion"
+[21:43:01.341] Acquiring local install lock: /tmp/vscode-remote-ssh-4fc7920b-install.lock
+[21:43:01.342] Looking for existing server data file at /home/daniel/.config/Code/User/globalStorage/ms-vscode-remote.remote-ssh/vscode-ssh-host-4fc7920b-ddc367ed5c8936efe395cffeec279b04ffd7db78-0.120.0-es/data.json
+[21:43:01.343] Found existing data file
+[21:43:01.343] Found local server running: {"remoteListeningOn":{"port":45879},"osReleaseId":"rocky","arch":"x86_64","sshAuthSock":"","display":"","tmpDir":"/run/user/30398","platform":"linux","execServerToken":"8143bf7c-3f65-4e49-9e49-9ec4ac02a7c7","pid":4530,"ipcHandlePath":"/run/user/1000/vscode-ssh-askpass-23c13b62cb2664d551d338e9f4368ef0d41007bf.sock","socksPort":40117,"startupTime":1750167111163}
+[21:43:01.347] Found running server - short-circuiting install
+[21:43:01.349] Starting forwarding server. local port 45249 -> socksPort 40117 -> remotePort 45879
+[21:43:01.349] Forwarding server listening on port 45249
+[21:43:01.349] Waiting for ssh tunnel to be ready
+[21:43:01.350] [Forwarding server port 45249] Got connection 0
+[21:43:01.350] Tunneled port 45879 to local port 45249
+[21:43:01.350] Resolved "ssh-remote+deucalion" to "port 45249"
+[21:43:01.354] Initizing new exec server for ssh-remote+deucalion
+[21:43:01.354] Resolving exec server at port 45249
+[21:43:01.354] [Forwarding server port 45249] Got connection 1
+[21:43:01.425] Exec server for ssh-remote+deucalion created and cached
+[21:43:01.425] Extensions to install: 
+[21:43:01.429] ------
+
+
+
+
+[21:43:01.429] No hints found in the recent session.
+[21:43:01.457] [server] Checking /home/mca55928/.vscode-server/cli/servers/Stable-ddc367ed5c8936efe395cffeec279b04ffd7db78/log.txt and /home/mca55928/.vscode-server/cli/servers/Stable-ddc367ed5c8936efe395cffeec279b04ffd7db78/pid.txt for a running server...
+[21:43:01.481] [server] Found running server (pid=801014)
+[21:43:03.052] Opening exec server for ssh-remote+deucalion
+[21:43:03.080] Opening exec server for ssh-remote+deucalion
+[21:43:03.109] Verified and reusing cached exec server for ssh-remote+deucalion
+[21:43:03.110] No hints found in the recent session.
+[21:43:03.173] Verified and reusing cached exec server for ssh-remote+deucalion
+[21:43:03.173] No hints found in the recent session.
+[21:43:03.261] Opening exec server for ssh-remote+deucalion
+[21:43:03.323] Verified and reusing cached exec server for ssh-remote+deucalion
+[21:43:03.324] No hints found in the recent session.

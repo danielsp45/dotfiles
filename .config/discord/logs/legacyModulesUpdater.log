@@ -1,0 +1,1633 @@
+6/15/2025, 12:11:35 PM GMT+1 [Modules] Modules initializing
+6/15/2025, 12:11:35 PM GMT+1 [Modules] Distribution: remote
+6/15/2025, 12:11:35 PM GMT+1 [Modules] Host updates: disabled
+6/15/2025, 12:11:35 PM GMT+1 [Modules] Module updates: enabled
+6/15/2025, 12:11:35 PM GMT+1 [Modules] Module install path: /home/daniel/.config/discord/0.0.88/modules
+6/15/2025, 12:11:35 PM GMT+1 [Modules] Module installed file path: /home/daniel/.config/discord/0.0.88/modules/installed.json
+6/15/2025, 12:11:35 PM GMT+1 [Modules] Module download path: /home/daniel/.config/discord/0.0.88/modules/pending
+6/15/2025, 12:11:35 PM GMT+1 [Modules] Bootstrapping...
+6/15/2025, 12:11:35 PM GMT+1 [Modules] Installing discord_desktop_core@0 from /nix/store/4qh0ylywrry7yqygwvdxvgfgrxinxh7j-discord-0.0.88/opt/Discord/resources/bootstrap/discord_desktop_core.zip
+6/15/2025, 12:11:35 PM GMT+1 [Modules] Failed installing discord_desktop_core@0: Error: ENOENT: no such file or directory, open '/nix/store/4qh0ylywrry7yqygwvdxvgfgrxinxh7j-discord-0.0.88/opt/Discord/resources/bootstrap/discord_desktop_core.zip'
+6/15/2025, 12:11:35 PM GMT+1 [Modules] Installing discord_erlpack@0 from /nix/store/4qh0ylywrry7yqygwvdxvgfgrxinxh7j-discord-0.0.88/opt/Discord/resources/bootstrap/discord_erlpack.zip
+6/15/2025, 12:11:35 PM GMT+1 [Modules] Failed installing discord_erlpack@0: Error: ENOENT: no such file or directory, open '/nix/store/4qh0ylywrry7yqygwvdxvgfgrxinxh7j-discord-0.0.88/opt/Discord/resources/bootstrap/discord_erlpack.zip'
+6/15/2025, 12:11:35 PM GMT+1 [Modules] Installing discord_spellcheck@0 from /nix/store/4qh0ylywrry7yqygwvdxvgfgrxinxh7j-discord-0.0.88/opt/Discord/resources/bootstrap/discord_spellcheck.zip
+6/15/2025, 12:11:35 PM GMT+1 [Modules] Failed installing discord_spellcheck@0: Error: ENOENT: no such file or directory, open '/nix/store/4qh0ylywrry7yqygwvdxvgfgrxinxh7j-discord-0.0.88/opt/Discord/resources/bootstrap/discord_spellcheck.zip'
+6/15/2025, 12:11:35 PM GMT+1 [Modules] Installing discord_utils@0 from /nix/store/4qh0ylywrry7yqygwvdxvgfgrxinxh7j-discord-0.0.88/opt/Discord/resources/bootstrap/discord_utils.zip
+6/15/2025, 12:11:35 PM GMT+1 [Modules] Failed installing discord_utils@0: Error: ENOENT: no such file or directory, open '/nix/store/4qh0ylywrry7yqygwvdxvgfgrxinxh7j-discord-0.0.88/opt/Discord/resources/bootstrap/discord_utils.zip'
+6/15/2025, 12:11:35 PM GMT+1 [Modules] Installing discord_voice@0 from /nix/store/4qh0ylywrry7yqygwvdxvgfgrxinxh7j-discord-0.0.88/opt/Discord/resources/bootstrap/discord_voice.zip
+6/15/2025, 12:11:35 PM GMT+1 [Modules] Failed installing discord_voice@0: Error: ENOENT: no such file or directory, open '/nix/store/4qh0ylywrry7yqygwvdxvgfgrxinxh7j-discord-0.0.88/opt/Discord/resources/bootstrap/discord_voice.zip'
+6/15/2025, 12:11:35 PM GMT+1 [Modules] Installing discord_zstd@0 from /nix/store/4qh0ylywrry7yqygwvdxvgfgrxinxh7j-discord-0.0.88/opt/Discord/resources/bootstrap/discord_zstd.zip
+6/15/2025, 12:11:35 PM GMT+1 [Modules] Failed installing discord_zstd@0: Error: ENOENT: no such file or directory, open '/nix/store/4qh0ylywrry7yqygwvdxvgfgrxinxh7j-discord-0.0.88/opt/Discord/resources/bootstrap/discord_zstd.zip'
+6/15/2025, 12:11:35 PM GMT+1 [Modules] Finished module installations. [success: 0] [failure: 6]
+6/15/2025, 12:11:35 PM GMT+1 [Modules] Host is up to date.
+6/15/2025, 12:11:35 PM GMT+1 [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+6/15/2025, 12:11:35 PM GMT+1 [Modules] Module update available: discord_desktop_core@1 [installed: 0]
+6/15/2025, 12:11:35 PM GMT+1 [Modules] Module update available: discord_erlpack@1 [installed: 0]
+6/15/2025, 12:11:35 PM GMT+1 [Modules] Module update available: discord_spellcheck@1 [installed: 0]
+6/15/2025, 12:11:35 PM GMT+1 [Modules] Module update available: discord_utils@1 [installed: 0]
+6/15/2025, 12:11:35 PM GMT+1 [Modules] Module update available: discord_voice@1 [installed: 0]
+6/15/2025, 12:11:35 PM GMT+1 [Modules] Module update available: discord_zstd@1 [installed: 0]
+6/15/2025, 12:11:35 PM GMT+1 [Modules] Fetching discord_desktop_core@1 from https://discord.com/api/modules/stable/discord_desktop_core/1
+6/15/2025, 12:11:35 PM GMT+1 [Modules] Streaming discord_desktop_core@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_desktop_core-1.zip
+6/15/2025, 12:11:37 PM GMT+1 [Modules] Streaming discord_desktop_core@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_desktop_core-1.zip: 1%
+6/15/2025, 12:11:37 PM GMT+1 [Modules] Streaming discord_desktop_core@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_desktop_core-1.zip: 2%
+6/15/2025, 12:11:37 PM GMT+1 [Modules] Streaming discord_desktop_core@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_desktop_core-1.zip: 3%
+6/15/2025, 12:11:37 PM GMT+1 [Modules] Streaming discord_desktop_core@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_desktop_core-1.zip: 4%
+6/15/2025, 12:11:37 PM GMT+1 [Modules] Streaming discord_desktop_core@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_desktop_core-1.zip: 5%
+6/15/2025, 12:11:37 PM GMT+1 [Modules] Streaming discord_desktop_core@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_desktop_core-1.zip: 6%
+6/15/2025, 12:11:37 PM GMT+1 [Modules] Streaming discord_desktop_core@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_desktop_core-1.zip: 7%
+6/15/2025, 12:11:37 PM GMT+1 [Modules] Streaming discord_desktop_core@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_desktop_core-1.zip: 8%
+6/15/2025, 12:11:37 PM GMT+1 [Modules] Streaming discord_desktop_core@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_desktop_core-1.zip: 9%
+6/15/2025, 12:11:37 PM GMT+1 [Modules] Streaming discord_desktop_core@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_desktop_core-1.zip: 10%
+6/15/2025, 12:11:37 PM GMT+1 [Modules] Streaming discord_desktop_core@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_desktop_core-1.zip: 12%
+6/15/2025, 12:11:37 PM GMT+1 [Modules] Streaming discord_desktop_core@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_desktop_core-1.zip: 13%
+6/15/2025, 12:11:37 PM GMT+1 [Modules] Streaming discord_desktop_core@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_desktop_core-1.zip: 16%
+6/15/2025, 12:11:37 PM GMT+1 [Modules] Streaming discord_desktop_core@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_desktop_core-1.zip: 17%
+6/15/2025, 12:11:37 PM GMT+1 [Modules] Streaming discord_desktop_core@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_desktop_core-1.zip: 20%
+6/15/2025, 12:11:37 PM GMT+1 [Modules] Streaming discord_desktop_core@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_desktop_core-1.zip: 21%
+6/15/2025, 12:11:37 PM GMT+1 [Modules] Streaming discord_desktop_core@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_desktop_core-1.zip: 24%
+6/15/2025, 12:11:37 PM GMT+1 [Modules] Streaming discord_desktop_core@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_desktop_core-1.zip: 25%
+6/15/2025, 12:11:37 PM GMT+1 [Modules] Streaming discord_desktop_core@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_desktop_core-1.zip: 26%
+6/15/2025, 12:11:37 PM GMT+1 [Modules] Streaming discord_desktop_core@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_desktop_core-1.zip: 27%
+6/15/2025, 12:11:37 PM GMT+1 [Modules] Streaming discord_desktop_core@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_desktop_core-1.zip: 30%
+6/15/2025, 12:11:37 PM GMT+1 [Modules] Streaming discord_desktop_core@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_desktop_core-1.zip: 31%
+6/15/2025, 12:11:37 PM GMT+1 [Modules] Streaming discord_desktop_core@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_desktop_core-1.zip: 32%
+6/15/2025, 12:11:37 PM GMT+1 [Modules] Streaming discord_desktop_core@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_desktop_core-1.zip: 35%
+6/15/2025, 12:11:37 PM GMT+1 [Modules] Streaming discord_desktop_core@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_desktop_core-1.zip: 38%
+6/15/2025, 12:11:37 PM GMT+1 [Modules] Streaming discord_desktop_core@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_desktop_core-1.zip: 39%
+6/15/2025, 12:11:37 PM GMT+1 [Modules] Streaming discord_desktop_core@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_desktop_core-1.zip: 42%
+6/15/2025, 12:11:37 PM GMT+1 [Modules] Streaming discord_desktop_core@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_desktop_core-1.zip: 45%
+6/15/2025, 12:11:37 PM GMT+1 [Modules] Streaming discord_desktop_core@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_desktop_core-1.zip: 46%
+6/15/2025, 12:11:37 PM GMT+1 [Modules] Streaming discord_desktop_core@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_desktop_core-1.zip: 49%
+6/15/2025, 12:11:37 PM GMT+1 [Modules] Streaming discord_desktop_core@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_desktop_core-1.zip: 50%
+6/15/2025, 12:11:37 PM GMT+1 [Modules] Streaming discord_desktop_core@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_desktop_core-1.zip: 52%
+6/15/2025, 12:11:37 PM GMT+1 [Modules] Streaming discord_desktop_core@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_desktop_core-1.zip: 55%
+6/15/2025, 12:11:37 PM GMT+1 [Modules] Streaming discord_desktop_core@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_desktop_core-1.zip: 58%
+6/15/2025, 12:11:37 PM GMT+1 [Modules] Streaming discord_desktop_core@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_desktop_core-1.zip: 59%
+6/15/2025, 12:11:37 PM GMT+1 [Modules] Streaming discord_desktop_core@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_desktop_core-1.zip: 61%
+6/15/2025, 12:11:37 PM GMT+1 [Modules] Streaming discord_desktop_core@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_desktop_core-1.zip: 63%
+6/15/2025, 12:11:37 PM GMT+1 [Modules] Streaming discord_desktop_core@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_desktop_core-1.zip: 66%
+6/15/2025, 12:11:37 PM GMT+1 [Modules] Streaming discord_desktop_core@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_desktop_core-1.zip: 67%
+6/15/2025, 12:11:37 PM GMT+1 [Modules] Streaming discord_desktop_core@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_desktop_core-1.zip: 70%
+6/15/2025, 12:11:37 PM GMT+1 [Modules] Streaming discord_desktop_core@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_desktop_core-1.zip: 73%
+6/15/2025, 12:11:37 PM GMT+1 [Modules] Streaming discord_desktop_core@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_desktop_core-1.zip: 75%
+6/15/2025, 12:11:37 PM GMT+1 [Modules] Streaming discord_desktop_core@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_desktop_core-1.zip: 78%
+6/15/2025, 12:11:37 PM GMT+1 [Modules] Streaming discord_desktop_core@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_desktop_core-1.zip: 81%
+6/15/2025, 12:11:37 PM GMT+1 [Modules] Streaming discord_desktop_core@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_desktop_core-1.zip: 82%
+6/15/2025, 12:11:37 PM GMT+1 [Modules] Streaming discord_desktop_core@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_desktop_core-1.zip: 85%
+6/15/2025, 12:11:37 PM GMT+1 [Modules] Streaming discord_desktop_core@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_desktop_core-1.zip: 88%
+6/15/2025, 12:11:37 PM GMT+1 [Modules] Streaming discord_desktop_core@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_desktop_core-1.zip: 91%
+6/15/2025, 12:11:37 PM GMT+1 [Modules] Streaming discord_desktop_core@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_desktop_core-1.zip: 93%
+6/15/2025, 12:11:37 PM GMT+1 [Modules] Streaming discord_desktop_core@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_desktop_core-1.zip: 96%
+6/15/2025, 12:11:37 PM GMT+1 [Modules] Streaming discord_desktop_core@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_desktop_core-1.zip: 99%
+6/15/2025, 12:11:37 PM GMT+1 [Modules] Streaming discord_desktop_core@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_desktop_core-1.zip: 100%
+6/15/2025, 12:11:37 PM GMT+1 [Modules] Fetching discord_erlpack@1 from https://discord.com/api/modules/stable/discord_erlpack/1
+6/15/2025, 12:11:37 PM GMT+1 [Modules] Streaming discord_erlpack@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_erlpack-1.zip
+6/15/2025, 12:11:37 PM GMT+1 [Modules] Streaming discord_erlpack@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_erlpack-1.zip: 3%
+6/15/2025, 12:11:37 PM GMT+1 [Modules] Streaming discord_erlpack@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_erlpack-1.zip: 6%
+6/15/2025, 12:11:37 PM GMT+1 [Modules] Streaming discord_erlpack@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_erlpack-1.zip: 11%
+6/15/2025, 12:11:37 PM GMT+1 [Modules] Streaming discord_erlpack@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_erlpack-1.zip: 17%
+6/15/2025, 12:11:37 PM GMT+1 [Modules] Streaming discord_erlpack@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_erlpack-1.zip: 20%
+6/15/2025, 12:11:37 PM GMT+1 [Modules] Streaming discord_erlpack@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_erlpack-1.zip: 24%
+6/15/2025, 12:11:37 PM GMT+1 [Modules] Streaming discord_erlpack@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_erlpack-1.zip: 27%
+6/15/2025, 12:11:37 PM GMT+1 [Modules] Streaming discord_erlpack@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_erlpack-1.zip: 32%
+6/15/2025, 12:11:37 PM GMT+1 [Modules] Streaming discord_erlpack@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_erlpack-1.zip: 35%
+6/15/2025, 12:11:37 PM GMT+1 [Modules] Streaming discord_erlpack@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_erlpack-1.zip: 36%
+6/15/2025, 12:11:37 PM GMT+1 [Modules] Streaming discord_erlpack@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_erlpack-1.zip: 40%
+6/15/2025, 12:11:37 PM GMT+1 [Modules] Streaming discord_erlpack@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_erlpack-1.zip: 44%
+6/15/2025, 12:11:37 PM GMT+1 [Modules] Streaming discord_erlpack@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_erlpack-1.zip: 47%
+6/15/2025, 12:11:37 PM GMT+1 [Modules] Streaming discord_erlpack@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_erlpack-1.zip: 49%
+6/15/2025, 12:11:37 PM GMT+1 [Modules] Streaming discord_erlpack@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_erlpack-1.zip: 53%
+6/15/2025, 12:11:37 PM GMT+1 [Modules] Streaming discord_erlpack@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_erlpack-1.zip: 57%
+6/15/2025, 12:11:37 PM GMT+1 [Modules] Streaming discord_erlpack@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_erlpack-1.zip: 61%
+6/15/2025, 12:11:37 PM GMT+1 [Modules] Streaming discord_erlpack@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_erlpack-1.zip: 66%
+6/15/2025, 12:11:37 PM GMT+1 [Modules] Streaming discord_erlpack@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_erlpack-1.zip: 69%
+6/15/2025, 12:11:37 PM GMT+1 [Modules] Streaming discord_erlpack@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_erlpack-1.zip: 73%
+6/15/2025, 12:11:37 PM GMT+1 [Modules] Streaming discord_erlpack@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_erlpack-1.zip: 76%
+6/15/2025, 12:11:37 PM GMT+1 [Modules] Streaming discord_erlpack@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_erlpack-1.zip: 79%
+6/15/2025, 12:11:37 PM GMT+1 [Modules] Streaming discord_erlpack@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_erlpack-1.zip: 82%
+6/15/2025, 12:11:37 PM GMT+1 [Modules] Streaming discord_erlpack@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_erlpack-1.zip: 85%
+6/15/2025, 12:11:37 PM GMT+1 [Modules] Streaming discord_erlpack@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_erlpack-1.zip: 88%
+6/15/2025, 12:11:37 PM GMT+1 [Modules] Streaming discord_erlpack@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_erlpack-1.zip: 90%
+6/15/2025, 12:11:37 PM GMT+1 [Modules] Streaming discord_erlpack@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_erlpack-1.zip: 93%
+6/15/2025, 12:11:37 PM GMT+1 [Modules] Streaming discord_erlpack@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_erlpack-1.zip: 94%
+6/15/2025, 12:11:37 PM GMT+1 [Modules] Streaming discord_erlpack@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_erlpack-1.zip: 96%
+6/15/2025, 12:11:37 PM GMT+1 [Modules] Streaming discord_erlpack@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_erlpack-1.zip: 100%
+6/15/2025, 12:11:37 PM GMT+1 [Modules] Fetching discord_spellcheck@1 from https://discord.com/api/modules/stable/discord_spellcheck/1
+6/15/2025, 12:11:37 PM GMT+1 [Modules] Streaming discord_spellcheck@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_spellcheck-1.zip
+6/15/2025, 12:11:38 PM GMT+1 [Modules] Streaming discord_spellcheck@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_spellcheck-1.zip: 1%
+6/15/2025, 12:11:38 PM GMT+1 [Modules] Streaming discord_spellcheck@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_spellcheck-1.zip: 2%
+6/15/2025, 12:11:38 PM GMT+1 [Modules] Streaming discord_spellcheck@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_spellcheck-1.zip: 3%
+6/15/2025, 12:11:38 PM GMT+1 [Modules] Streaming discord_spellcheck@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_spellcheck-1.zip: 4%
+6/15/2025, 12:11:38 PM GMT+1 [Modules] Streaming discord_spellcheck@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_spellcheck-1.zip: 5%
+6/15/2025, 12:11:38 PM GMT+1 [Modules] Streaming discord_spellcheck@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_spellcheck-1.zip: 6%
+6/15/2025, 12:11:38 PM GMT+1 [Modules] Streaming discord_spellcheck@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_spellcheck-1.zip: 7%
+6/15/2025, 12:11:38 PM GMT+1 [Modules] Streaming discord_spellcheck@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_spellcheck-1.zip: 8%
+6/15/2025, 12:11:38 PM GMT+1 [Modules] Streaming discord_spellcheck@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_spellcheck-1.zip: 9%
+6/15/2025, 12:11:38 PM GMT+1 [Modules] Streaming discord_spellcheck@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_spellcheck-1.zip: 10%
+6/15/2025, 12:11:38 PM GMT+1 [Modules] Streaming discord_spellcheck@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_spellcheck-1.zip: 11%
+6/15/2025, 12:11:38 PM GMT+1 [Modules] Streaming discord_spellcheck@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_spellcheck-1.zip: 12%
+6/15/2025, 12:11:38 PM GMT+1 [Modules] Streaming discord_spellcheck@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_spellcheck-1.zip: 13%
+6/15/2025, 12:11:39 PM GMT+1 [Modules] Streaming discord_spellcheck@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_spellcheck-1.zip: 14%
+6/15/2025, 12:11:39 PM GMT+1 [Modules] Streaming discord_spellcheck@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_spellcheck-1.zip: 15%
+6/15/2025, 12:11:39 PM GMT+1 [Modules] Streaming discord_spellcheck@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_spellcheck-1.zip: 16%
+6/15/2025, 12:11:39 PM GMT+1 [Modules] Streaming discord_spellcheck@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_spellcheck-1.zip: 17%
+6/15/2025, 12:11:39 PM GMT+1 [Modules] Streaming discord_spellcheck@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_spellcheck-1.zip: 18%
+6/15/2025, 12:11:39 PM GMT+1 [Modules] Streaming discord_spellcheck@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_spellcheck-1.zip: 19%
+6/15/2025, 12:11:39 PM GMT+1 [Modules] Streaming discord_spellcheck@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_spellcheck-1.zip: 20%
+6/15/2025, 12:11:39 PM GMT+1 [Modules] Streaming discord_spellcheck@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_spellcheck-1.zip: 21%
+6/15/2025, 12:11:39 PM GMT+1 [Modules] Streaming discord_spellcheck@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_spellcheck-1.zip: 22%
+6/15/2025, 12:11:39 PM GMT+1 [Modules] Streaming discord_spellcheck@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_spellcheck-1.zip: 23%
+6/15/2025, 12:11:39 PM GMT+1 [Modules] Streaming discord_spellcheck@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_spellcheck-1.zip: 24%
+6/15/2025, 12:11:39 PM GMT+1 [Modules] Streaming discord_spellcheck@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_spellcheck-1.zip: 25%
+6/15/2025, 12:11:39 PM GMT+1 [Modules] Streaming discord_spellcheck@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_spellcheck-1.zip: 26%
+6/15/2025, 12:11:39 PM GMT+1 [Modules] Streaming discord_spellcheck@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_spellcheck-1.zip: 27%
+6/15/2025, 12:11:39 PM GMT+1 [Modules] Streaming discord_spellcheck@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_spellcheck-1.zip: 28%
+6/15/2025, 12:11:39 PM GMT+1 [Modules] Streaming discord_spellcheck@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_spellcheck-1.zip: 29%
+6/15/2025, 12:11:39 PM GMT+1 [Modules] Streaming discord_spellcheck@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_spellcheck-1.zip: 30%
+6/15/2025, 12:11:39 PM GMT+1 [Modules] Streaming discord_spellcheck@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_spellcheck-1.zip: 31%
+6/15/2025, 12:11:39 PM GMT+1 [Modules] Streaming discord_spellcheck@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_spellcheck-1.zip: 32%
+6/15/2025, 12:11:39 PM GMT+1 [Modules] Streaming discord_spellcheck@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_spellcheck-1.zip: 33%
+6/15/2025, 12:11:39 PM GMT+1 [Modules] Streaming discord_spellcheck@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_spellcheck-1.zip: 34%
+6/15/2025, 12:11:39 PM GMT+1 [Modules] Streaming discord_spellcheck@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_spellcheck-1.zip: 35%
+6/15/2025, 12:11:39 PM GMT+1 [Modules] Streaming discord_spellcheck@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_spellcheck-1.zip: 36%
+6/15/2025, 12:11:39 PM GMT+1 [Modules] Streaming discord_spellcheck@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_spellcheck-1.zip: 37%
+6/15/2025, 12:11:39 PM GMT+1 [Modules] Streaming discord_spellcheck@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_spellcheck-1.zip: 38%
+6/15/2025, 12:11:39 PM GMT+1 [Modules] Streaming discord_spellcheck@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_spellcheck-1.zip: 39%
+6/15/2025, 12:11:39 PM GMT+1 [Modules] Streaming discord_spellcheck@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_spellcheck-1.zip: 40%
+6/15/2025, 12:11:39 PM GMT+1 [Modules] Streaming discord_spellcheck@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_spellcheck-1.zip: 41%
+6/15/2025, 12:11:39 PM GMT+1 [Modules] Streaming discord_spellcheck@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_spellcheck-1.zip: 42%
+6/15/2025, 12:11:39 PM GMT+1 [Modules] Streaming discord_spellcheck@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_spellcheck-1.zip: 43%
+6/15/2025, 12:11:39 PM GMT+1 [Modules] Streaming discord_spellcheck@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_spellcheck-1.zip: 44%
+6/15/2025, 12:11:39 PM GMT+1 [Modules] Streaming discord_spellcheck@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_spellcheck-1.zip: 45%
+6/15/2025, 12:11:39 PM GMT+1 [Modules] Streaming discord_spellcheck@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_spellcheck-1.zip: 46%
+6/15/2025, 12:11:39 PM GMT+1 [Modules] Streaming discord_spellcheck@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_spellcheck-1.zip: 47%
+6/15/2025, 12:11:39 PM GMT+1 [Modules] Streaming discord_spellcheck@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_spellcheck-1.zip: 48%
+6/15/2025, 12:11:39 PM GMT+1 [Modules] Streaming discord_spellcheck@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_spellcheck-1.zip: 49%
+6/15/2025, 12:11:39 PM GMT+1 [Modules] Streaming discord_spellcheck@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_spellcheck-1.zip: 50%
+6/15/2025, 12:11:39 PM GMT+1 [Modules] Streaming discord_spellcheck@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_spellcheck-1.zip: 51%
+6/15/2025, 12:11:39 PM GMT+1 [Modules] Streaming discord_spellcheck@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_spellcheck-1.zip: 52%
+6/15/2025, 12:11:39 PM GMT+1 [Modules] Streaming discord_spellcheck@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_spellcheck-1.zip: 53%
+6/15/2025, 12:11:39 PM GMT+1 [Modules] Streaming discord_spellcheck@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_spellcheck-1.zip: 54%
+6/15/2025, 12:11:39 PM GMT+1 [Modules] Streaming discord_spellcheck@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_spellcheck-1.zip: 55%
+6/15/2025, 12:11:39 PM GMT+1 [Modules] Streaming discord_spellcheck@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_spellcheck-1.zip: 56%
+6/15/2025, 12:11:39 PM GMT+1 [Modules] Streaming discord_spellcheck@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_spellcheck-1.zip: 57%
+6/15/2025, 12:11:39 PM GMT+1 [Modules] Streaming discord_spellcheck@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_spellcheck-1.zip: 58%
+6/15/2025, 12:11:39 PM GMT+1 [Modules] Streaming discord_spellcheck@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_spellcheck-1.zip: 59%
+6/15/2025, 12:11:39 PM GMT+1 [Modules] Streaming discord_spellcheck@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_spellcheck-1.zip: 60%
+6/15/2025, 12:11:39 PM GMT+1 [Modules] Streaming discord_spellcheck@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_spellcheck-1.zip: 61%
+6/15/2025, 12:11:39 PM GMT+1 [Modules] Streaming discord_spellcheck@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_spellcheck-1.zip: 62%
+6/15/2025, 12:11:39 PM GMT+1 [Modules] Streaming discord_spellcheck@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_spellcheck-1.zip: 63%
+6/15/2025, 12:11:39 PM GMT+1 [Modules] Streaming discord_spellcheck@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_spellcheck-1.zip: 64%
+6/15/2025, 12:11:39 PM GMT+1 [Modules] Streaming discord_spellcheck@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_spellcheck-1.zip: 65%
+6/15/2025, 12:11:39 PM GMT+1 [Modules] Streaming discord_spellcheck@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_spellcheck-1.zip: 66%
+6/15/2025, 12:11:39 PM GMT+1 [Modules] Streaming discord_spellcheck@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_spellcheck-1.zip: 67%
+6/15/2025, 12:11:39 PM GMT+1 [Modules] Streaming discord_spellcheck@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_spellcheck-1.zip: 68%
+6/15/2025, 12:11:39 PM GMT+1 [Modules] Streaming discord_spellcheck@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_spellcheck-1.zip: 69%
+6/15/2025, 12:11:39 PM GMT+1 [Modules] Streaming discord_spellcheck@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_spellcheck-1.zip: 71%
+6/15/2025, 12:11:39 PM GMT+1 [Modules] Streaming discord_spellcheck@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_spellcheck-1.zip: 72%
+6/15/2025, 12:11:39 PM GMT+1 [Modules] Streaming discord_spellcheck@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_spellcheck-1.zip: 73%
+6/15/2025, 12:11:39 PM GMT+1 [Modules] Streaming discord_spellcheck@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_spellcheck-1.zip: 74%
+6/15/2025, 12:11:39 PM GMT+1 [Modules] Streaming discord_spellcheck@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_spellcheck-1.zip: 75%
+6/15/2025, 12:11:39 PM GMT+1 [Modules] Streaming discord_spellcheck@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_spellcheck-1.zip: 76%
+6/15/2025, 12:11:39 PM GMT+1 [Modules] Streaming discord_spellcheck@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_spellcheck-1.zip: 77%
+6/15/2025, 12:11:39 PM GMT+1 [Modules] Streaming discord_spellcheck@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_spellcheck-1.zip: 80%
+6/15/2025, 12:11:39 PM GMT+1 [Modules] Streaming discord_spellcheck@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_spellcheck-1.zip: 82%
+6/15/2025, 12:11:39 PM GMT+1 [Modules] Streaming discord_spellcheck@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_spellcheck-1.zip: 83%
+6/15/2025, 12:11:39 PM GMT+1 [Modules] Streaming discord_spellcheck@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_spellcheck-1.zip: 84%
+6/15/2025, 12:11:39 PM GMT+1 [Modules] Streaming discord_spellcheck@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_spellcheck-1.zip: 85%
+6/15/2025, 12:11:39 PM GMT+1 [Modules] Streaming discord_spellcheck@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_spellcheck-1.zip: 86%
+6/15/2025, 12:11:39 PM GMT+1 [Modules] Streaming discord_spellcheck@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_spellcheck-1.zip: 87%
+6/15/2025, 12:11:39 PM GMT+1 [Modules] Streaming discord_spellcheck@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_spellcheck-1.zip: 88%
+6/15/2025, 12:11:39 PM GMT+1 [Modules] Streaming discord_spellcheck@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_spellcheck-1.zip: 89%
+6/15/2025, 12:11:39 PM GMT+1 [Modules] Streaming discord_spellcheck@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_spellcheck-1.zip: 90%
+6/15/2025, 12:11:39 PM GMT+1 [Modules] Streaming discord_spellcheck@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_spellcheck-1.zip: 91%
+6/15/2025, 12:11:39 PM GMT+1 [Modules] Streaming discord_spellcheck@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_spellcheck-1.zip: 92%
+6/15/2025, 12:11:39 PM GMT+1 [Modules] Streaming discord_spellcheck@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_spellcheck-1.zip: 93%
+6/15/2025, 12:11:39 PM GMT+1 [Modules] Streaming discord_spellcheck@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_spellcheck-1.zip: 94%
+6/15/2025, 12:11:39 PM GMT+1 [Modules] Streaming discord_spellcheck@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_spellcheck-1.zip: 95%
+6/15/2025, 12:11:39 PM GMT+1 [Modules] Streaming discord_spellcheck@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_spellcheck-1.zip: 96%
+6/15/2025, 12:11:39 PM GMT+1 [Modules] Streaming discord_spellcheck@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_spellcheck-1.zip: 97%
+6/15/2025, 12:11:39 PM GMT+1 [Modules] Streaming discord_spellcheck@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_spellcheck-1.zip: 98%
+6/15/2025, 12:11:39 PM GMT+1 [Modules] Streaming discord_spellcheck@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_spellcheck-1.zip: 99%
+6/15/2025, 12:11:39 PM GMT+1 [Modules] Streaming discord_spellcheck@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_spellcheck-1.zip: 100%
+6/15/2025, 12:11:39 PM GMT+1 [Modules] Fetching discord_utils@1 from https://discord.com/api/modules/stable/discord_utils/1
+6/15/2025, 12:11:39 PM GMT+1 [Modules] Streaming discord_utils@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_utils-1.zip
+6/15/2025, 12:11:40 PM GMT+1 [Modules] Streaming discord_utils@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_utils-1.zip: 1%
+6/15/2025, 12:11:40 PM GMT+1 [Modules] Streaming discord_utils@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_utils-1.zip: 4%
+6/15/2025, 12:11:40 PM GMT+1 [Modules] Streaming discord_utils@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_utils-1.zip: 7%
+6/15/2025, 12:11:40 PM GMT+1 [Modules] Streaming discord_utils@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_utils-1.zip: 9%
+6/15/2025, 12:11:40 PM GMT+1 [Modules] Streaming discord_utils@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_utils-1.zip: 21%
+6/15/2025, 12:11:40 PM GMT+1 [Modules] Streaming discord_utils@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_utils-1.zip: 25%
+6/15/2025, 12:11:40 PM GMT+1 [Modules] Streaming discord_utils@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_utils-1.zip: 27%
+6/15/2025, 12:11:40 PM GMT+1 [Modules] Streaming discord_utils@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_utils-1.zip: 30%
+6/15/2025, 12:11:40 PM GMT+1 [Modules] Streaming discord_utils@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_utils-1.zip: 32%
+6/15/2025, 12:11:40 PM GMT+1 [Modules] Streaming discord_utils@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_utils-1.zip: 34%
+6/15/2025, 12:11:40 PM GMT+1 [Modules] Streaming discord_utils@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_utils-1.zip: 36%
+6/15/2025, 12:11:40 PM GMT+1 [Modules] Streaming discord_utils@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_utils-1.zip: 37%
+6/15/2025, 12:11:40 PM GMT+1 [Modules] Streaming discord_utils@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_utils-1.zip: 39%
+6/15/2025, 12:11:40 PM GMT+1 [Modules] Streaming discord_utils@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_utils-1.zip: 41%
+6/15/2025, 12:11:40 PM GMT+1 [Modules] Streaming discord_utils@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_utils-1.zip: 42%
+6/15/2025, 12:11:40 PM GMT+1 [Modules] Streaming discord_utils@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_utils-1.zip: 44%
+6/15/2025, 12:11:40 PM GMT+1 [Modules] Streaming discord_utils@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_utils-1.zip: 45%
+6/15/2025, 12:11:40 PM GMT+1 [Modules] Streaming discord_utils@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_utils-1.zip: 47%
+6/15/2025, 12:11:40 PM GMT+1 [Modules] Streaming discord_utils@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_utils-1.zip: 48%
+6/15/2025, 12:11:40 PM GMT+1 [Modules] Streaming discord_utils@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_utils-1.zip: 50%
+6/15/2025, 12:11:40 PM GMT+1 [Modules] Streaming discord_utils@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_utils-1.zip: 51%
+6/15/2025, 12:11:40 PM GMT+1 [Modules] Streaming discord_utils@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_utils-1.zip: 52%
+6/15/2025, 12:11:40 PM GMT+1 [Modules] Streaming discord_utils@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_utils-1.zip: 53%
+6/15/2025, 12:11:40 PM GMT+1 [Modules] Streaming discord_utils@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_utils-1.zip: 54%
+6/15/2025, 12:11:40 PM GMT+1 [Modules] Streaming discord_utils@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_utils-1.zip: 55%
+6/15/2025, 12:11:40 PM GMT+1 [Modules] Streaming discord_utils@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_utils-1.zip: 57%
+6/15/2025, 12:11:40 PM GMT+1 [Modules] Streaming discord_utils@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_utils-1.zip: 59%
+6/15/2025, 12:11:40 PM GMT+1 [Modules] Streaming discord_utils@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_utils-1.zip: 61%
+6/15/2025, 12:11:40 PM GMT+1 [Modules] Streaming discord_utils@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_utils-1.zip: 62%
+6/15/2025, 12:11:40 PM GMT+1 [Modules] Streaming discord_utils@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_utils-1.zip: 63%
+6/15/2025, 12:11:40 PM GMT+1 [Modules] Streaming discord_utils@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_utils-1.zip: 64%
+6/15/2025, 12:11:40 PM GMT+1 [Modules] Streaming discord_utils@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_utils-1.zip: 67%
+6/15/2025, 12:11:40 PM GMT+1 [Modules] Streaming discord_utils@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_utils-1.zip: 69%
+6/15/2025, 12:11:40 PM GMT+1 [Modules] Streaming discord_utils@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_utils-1.zip: 70%
+6/15/2025, 12:11:40 PM GMT+1 [Modules] Streaming discord_utils@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_utils-1.zip: 72%
+6/15/2025, 12:11:40 PM GMT+1 [Modules] Streaming discord_utils@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_utils-1.zip: 74%
+6/15/2025, 12:11:40 PM GMT+1 [Modules] Streaming discord_utils@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_utils-1.zip: 76%
+6/15/2025, 12:11:40 PM GMT+1 [Modules] Streaming discord_utils@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_utils-1.zip: 78%
+6/15/2025, 12:11:40 PM GMT+1 [Modules] Streaming discord_utils@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_utils-1.zip: 79%
+6/15/2025, 12:11:40 PM GMT+1 [Modules] Streaming discord_utils@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_utils-1.zip: 81%
+6/15/2025, 12:11:40 PM GMT+1 [Modules] Streaming discord_utils@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_utils-1.zip: 83%
+6/15/2025, 12:11:40 PM GMT+1 [Modules] Streaming discord_utils@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_utils-1.zip: 85%
+6/15/2025, 12:11:40 PM GMT+1 [Modules] Streaming discord_utils@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_utils-1.zip: 86%
+6/15/2025, 12:11:40 PM GMT+1 [Modules] Streaming discord_utils@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_utils-1.zip: 88%
+6/15/2025, 12:11:40 PM GMT+1 [Modules] Streaming discord_utils@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_utils-1.zip: 90%
+6/15/2025, 12:11:40 PM GMT+1 [Modules] Streaming discord_utils@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_utils-1.zip: 92%
+6/15/2025, 12:11:40 PM GMT+1 [Modules] Streaming discord_utils@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_utils-1.zip: 93%
+6/15/2025, 12:11:40 PM GMT+1 [Modules] Streaming discord_utils@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_utils-1.zip: 95%
+6/15/2025, 12:11:40 PM GMT+1 [Modules] Streaming discord_utils@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_utils-1.zip: 97%
+6/15/2025, 12:11:40 PM GMT+1 [Modules] Streaming discord_utils@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_utils-1.zip: 99%
+6/15/2025, 12:11:40 PM GMT+1 [Modules] Streaming discord_utils@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_utils-1.zip: 100%
+6/15/2025, 12:11:40 PM GMT+1 [Modules] Fetching discord_voice@1 from https://discord.com/api/modules/stable/discord_voice/1
+6/15/2025, 12:11:40 PM GMT+1 [Modules] Streaming discord_voice@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_voice-1.zip
+6/15/2025, 12:11:41 PM GMT+1 [Modules] Streaming discord_voice@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_voice-1.zip: 1%
+6/15/2025, 12:11:41 PM GMT+1 [Modules] Streaming discord_voice@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_voice-1.zip: 2%
+6/15/2025, 12:11:41 PM GMT+1 [Modules] Streaming discord_voice@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_voice-1.zip: 3%
+6/15/2025, 12:11:41 PM GMT+1 [Modules] Streaming discord_voice@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_voice-1.zip: 4%
+6/15/2025, 12:11:41 PM GMT+1 [Modules] Streaming discord_voice@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_voice-1.zip: 5%
+6/15/2025, 12:11:41 PM GMT+1 [Modules] Streaming discord_voice@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_voice-1.zip: 6%
+6/15/2025, 12:11:41 PM GMT+1 [Modules] Streaming discord_voice@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_voice-1.zip: 7%
+6/15/2025, 12:11:41 PM GMT+1 [Modules] Streaming discord_voice@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_voice-1.zip: 8%
+6/15/2025, 12:11:41 PM GMT+1 [Modules] Streaming discord_voice@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_voice-1.zip: 9%
+6/15/2025, 12:11:41 PM GMT+1 [Modules] Streaming discord_voice@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_voice-1.zip: 10%
+6/15/2025, 12:11:41 PM GMT+1 [Modules] Streaming discord_voice@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_voice-1.zip: 11%
+6/15/2025, 12:11:41 PM GMT+1 [Modules] Streaming discord_voice@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_voice-1.zip: 12%
+6/15/2025, 12:11:41 PM GMT+1 [Modules] Streaming discord_voice@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_voice-1.zip: 13%
+6/15/2025, 12:11:41 PM GMT+1 [Modules] Streaming discord_voice@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_voice-1.zip: 14%
+6/15/2025, 12:11:41 PM GMT+1 [Modules] Streaming discord_voice@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_voice-1.zip: 15%
+6/15/2025, 12:11:41 PM GMT+1 [Modules] Streaming discord_voice@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_voice-1.zip: 16%
+6/15/2025, 12:11:41 PM GMT+1 [Modules] Streaming discord_voice@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_voice-1.zip: 17%
+6/15/2025, 12:11:41 PM GMT+1 [Modules] Streaming discord_voice@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_voice-1.zip: 18%
+6/15/2025, 12:11:41 PM GMT+1 [Modules] Streaming discord_voice@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_voice-1.zip: 19%
+6/15/2025, 12:11:41 PM GMT+1 [Modules] Streaming discord_voice@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_voice-1.zip: 20%
+6/15/2025, 12:11:41 PM GMT+1 [Modules] Streaming discord_voice@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_voice-1.zip: 21%
+6/15/2025, 12:11:41 PM GMT+1 [Modules] Streaming discord_voice@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_voice-1.zip: 22%
+6/15/2025, 12:11:41 PM GMT+1 [Modules] Streaming discord_voice@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_voice-1.zip: 23%
+6/15/2025, 12:11:41 PM GMT+1 [Modules] Streaming discord_voice@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_voice-1.zip: 24%
+6/15/2025, 12:11:41 PM GMT+1 [Modules] Streaming discord_voice@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_voice-1.zip: 25%
+6/15/2025, 12:11:41 PM GMT+1 [Modules] Streaming discord_voice@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_voice-1.zip: 26%
+6/15/2025, 12:11:41 PM GMT+1 [Modules] Streaming discord_voice@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_voice-1.zip: 27%
+6/15/2025, 12:11:41 PM GMT+1 [Modules] Streaming discord_voice@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_voice-1.zip: 28%
+6/15/2025, 12:11:41 PM GMT+1 [Modules] Streaming discord_voice@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_voice-1.zip: 29%
+6/15/2025, 12:11:41 PM GMT+1 [Modules] Streaming discord_voice@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_voice-1.zip: 30%
+6/15/2025, 12:11:41 PM GMT+1 [Modules] Streaming discord_voice@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_voice-1.zip: 31%
+6/15/2025, 12:11:41 PM GMT+1 [Modules] Streaming discord_voice@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_voice-1.zip: 32%
+6/15/2025, 12:11:41 PM GMT+1 [Modules] Streaming discord_voice@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_voice-1.zip: 33%
+6/15/2025, 12:11:41 PM GMT+1 [Modules] Streaming discord_voice@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_voice-1.zip: 34%
+6/15/2025, 12:11:41 PM GMT+1 [Modules] Streaming discord_voice@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_voice-1.zip: 35%
+6/15/2025, 12:11:41 PM GMT+1 [Modules] Streaming discord_voice@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_voice-1.zip: 36%
+6/15/2025, 12:11:41 PM GMT+1 [Modules] Streaming discord_voice@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_voice-1.zip: 37%
+6/15/2025, 12:11:41 PM GMT+1 [Modules] Streaming discord_voice@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_voice-1.zip: 38%
+6/15/2025, 12:11:41 PM GMT+1 [Modules] Streaming discord_voice@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_voice-1.zip: 39%
+6/15/2025, 12:11:41 PM GMT+1 [Modules] Streaming discord_voice@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_voice-1.zip: 40%
+6/15/2025, 12:11:41 PM GMT+1 [Modules] Streaming discord_voice@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_voice-1.zip: 41%
+6/15/2025, 12:11:41 PM GMT+1 [Modules] Streaming discord_voice@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_voice-1.zip: 42%
+6/15/2025, 12:11:41 PM GMT+1 [Modules] Streaming discord_voice@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_voice-1.zip: 43%
+6/15/2025, 12:11:41 PM GMT+1 [Modules] Streaming discord_voice@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_voice-1.zip: 44%
+6/15/2025, 12:11:41 PM GMT+1 [Modules] Streaming discord_voice@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_voice-1.zip: 45%
+6/15/2025, 12:11:41 PM GMT+1 [Modules] Streaming discord_voice@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_voice-1.zip: 46%
+6/15/2025, 12:11:41 PM GMT+1 [Modules] Streaming discord_voice@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_voice-1.zip: 47%
+6/15/2025, 12:11:41 PM GMT+1 [Modules] Streaming discord_voice@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_voice-1.zip: 48%
+6/15/2025, 12:11:41 PM GMT+1 [Modules] Streaming discord_voice@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_voice-1.zip: 49%
+6/15/2025, 12:11:41 PM GMT+1 [Modules] Streaming discord_voice@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_voice-1.zip: 50%
+6/15/2025, 12:11:41 PM GMT+1 [Modules] Streaming discord_voice@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_voice-1.zip: 51%
+6/15/2025, 12:11:41 PM GMT+1 [Modules] Streaming discord_voice@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_voice-1.zip: 52%
+6/15/2025, 12:11:41 PM GMT+1 [Modules] Streaming discord_voice@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_voice-1.zip: 53%
+6/15/2025, 12:11:41 PM GMT+1 [Modules] Streaming discord_voice@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_voice-1.zip: 54%
+6/15/2025, 12:11:41 PM GMT+1 [Modules] Streaming discord_voice@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_voice-1.zip: 55%
+6/15/2025, 12:11:41 PM GMT+1 [Modules] Streaming discord_voice@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_voice-1.zip: 56%
+6/15/2025, 12:11:41 PM GMT+1 [Modules] Streaming discord_voice@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_voice-1.zip: 57%
+6/15/2025, 12:11:41 PM GMT+1 [Modules] Streaming discord_voice@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_voice-1.zip: 58%
+6/15/2025, 12:11:41 PM GMT+1 [Modules] Streaming discord_voice@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_voice-1.zip: 59%
+6/15/2025, 12:11:41 PM GMT+1 [Modules] Streaming discord_voice@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_voice-1.zip: 60%
+6/15/2025, 12:11:42 PM GMT+1 [Modules] Streaming discord_voice@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_voice-1.zip: 61%
+6/15/2025, 12:11:42 PM GMT+1 [Modules] Streaming discord_voice@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_voice-1.zip: 62%
+6/15/2025, 12:11:42 PM GMT+1 [Modules] Streaming discord_voice@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_voice-1.zip: 63%
+6/15/2025, 12:11:42 PM GMT+1 [Modules] Streaming discord_voice@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_voice-1.zip: 64%
+6/15/2025, 12:11:42 PM GMT+1 [Modules] Streaming discord_voice@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_voice-1.zip: 65%
+6/15/2025, 12:11:42 PM GMT+1 [Modules] Streaming discord_voice@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_voice-1.zip: 66%
+6/15/2025, 12:11:42 PM GMT+1 [Modules] Streaming discord_voice@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_voice-1.zip: 67%
+6/15/2025, 12:11:42 PM GMT+1 [Modules] Streaming discord_voice@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_voice-1.zip: 68%
+6/15/2025, 12:11:42 PM GMT+1 [Modules] Streaming discord_voice@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_voice-1.zip: 69%
+6/15/2025, 12:11:42 PM GMT+1 [Modules] Streaming discord_voice@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_voice-1.zip: 70%
+6/15/2025, 12:11:42 PM GMT+1 [Modules] Streaming discord_voice@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_voice-1.zip: 71%
+6/15/2025, 12:11:42 PM GMT+1 [Modules] Streaming discord_voice@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_voice-1.zip: 72%
+6/15/2025, 12:11:42 PM GMT+1 [Modules] Streaming discord_voice@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_voice-1.zip: 73%
+6/15/2025, 12:11:42 PM GMT+1 [Modules] Streaming discord_voice@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_voice-1.zip: 74%
+6/15/2025, 12:11:42 PM GMT+1 [Modules] Streaming discord_voice@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_voice-1.zip: 75%
+6/15/2025, 12:11:42 PM GMT+1 [Modules] Streaming discord_voice@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_voice-1.zip: 76%
+6/15/2025, 12:11:42 PM GMT+1 [Modules] Streaming discord_voice@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_voice-1.zip: 77%
+6/15/2025, 12:11:42 PM GMT+1 [Modules] Streaming discord_voice@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_voice-1.zip: 78%
+6/15/2025, 12:11:42 PM GMT+1 [Modules] Streaming discord_voice@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_voice-1.zip: 79%
+6/15/2025, 12:11:42 PM GMT+1 [Modules] Streaming discord_voice@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_voice-1.zip: 80%
+6/15/2025, 12:11:42 PM GMT+1 [Modules] Streaming discord_voice@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_voice-1.zip: 81%
+6/15/2025, 12:11:42 PM GMT+1 [Modules] Streaming discord_voice@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_voice-1.zip: 82%
+6/15/2025, 12:11:42 PM GMT+1 [Modules] Streaming discord_voice@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_voice-1.zip: 83%
+6/15/2025, 12:11:42 PM GMT+1 [Modules] Streaming discord_voice@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_voice-1.zip: 84%
+6/15/2025, 12:11:42 PM GMT+1 [Modules] Streaming discord_voice@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_voice-1.zip: 85%
+6/15/2025, 12:11:42 PM GMT+1 [Modules] Streaming discord_voice@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_voice-1.zip: 86%
+6/15/2025, 12:11:42 PM GMT+1 [Modules] Streaming discord_voice@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_voice-1.zip: 87%
+6/15/2025, 12:11:42 PM GMT+1 [Modules] Streaming discord_voice@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_voice-1.zip: 88%
+6/15/2025, 12:11:42 PM GMT+1 [Modules] Streaming discord_voice@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_voice-1.zip: 89%
+6/15/2025, 12:11:42 PM GMT+1 [Modules] Streaming discord_voice@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_voice-1.zip: 90%
+6/15/2025, 12:11:42 PM GMT+1 [Modules] Streaming discord_voice@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_voice-1.zip: 91%
+6/15/2025, 12:11:42 PM GMT+1 [Modules] Streaming discord_voice@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_voice-1.zip: 92%
+6/15/2025, 12:11:42 PM GMT+1 [Modules] Streaming discord_voice@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_voice-1.zip: 93%
+6/15/2025, 12:11:42 PM GMT+1 [Modules] Streaming discord_voice@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_voice-1.zip: 94%
+6/15/2025, 12:11:42 PM GMT+1 [Modules] Streaming discord_voice@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_voice-1.zip: 95%
+6/15/2025, 12:11:42 PM GMT+1 [Modules] Streaming discord_voice@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_voice-1.zip: 96%
+6/15/2025, 12:11:42 PM GMT+1 [Modules] Streaming discord_voice@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_voice-1.zip: 97%
+6/15/2025, 12:11:42 PM GMT+1 [Modules] Streaming discord_voice@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_voice-1.zip: 98%
+6/15/2025, 12:11:42 PM GMT+1 [Modules] Streaming discord_voice@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_voice-1.zip: 99%
+6/15/2025, 12:11:42 PM GMT+1 [Modules] Streaming discord_voice@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_voice-1.zip: 100%
+6/15/2025, 12:11:42 PM GMT+1 [Modules] Fetching discord_zstd@1 from https://discord.com/api/modules/stable/discord_zstd/1
+6/15/2025, 12:11:42 PM GMT+1 [Modules] Streaming discord_zstd@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_zstd-1.zip
+6/15/2025, 12:11:43 PM GMT+1 [Modules] Streaming discord_zstd@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_zstd-1.zip: 15%
+6/15/2025, 12:11:43 PM GMT+1 [Modules] Streaming discord_zstd@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_zstd-1.zip: 31%
+6/15/2025, 12:11:43 PM GMT+1 [Modules] Streaming discord_zstd@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_zstd-1.zip: 51%
+6/15/2025, 12:11:43 PM GMT+1 [Modules] Streaming discord_zstd@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_zstd-1.zip: 66%
+6/15/2025, 12:11:43 PM GMT+1 [Modules] Streaming discord_zstd@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_zstd-1.zip: 84%
+6/15/2025, 12:11:43 PM GMT+1 [Modules] Streaming discord_zstd@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_zstd-1.zip: 100%
+6/15/2025, 12:11:43 PM GMT+1 [Modules] Finished module downloads. [success: 6] [failure: 0]
+6/15/2025, 12:11:43 PM GMT+1 [Modules] Installing updates...
+6/15/2025, 12:11:43 PM GMT+1 [Modules] Installing discord_desktop_core@1 from /home/daniel/.config/discord/0.0.88/modules/pending/discord_desktop_core-1.zip
+6/15/2025, 12:11:43 PM GMT+1 [Modules] Installing discord_erlpack@1 from /home/daniel/.config/discord/0.0.88/modules/pending/discord_erlpack-1.zip
+6/15/2025, 12:11:43 PM GMT+1 [Modules] Installing discord_spellcheck@1 from /home/daniel/.config/discord/0.0.88/modules/pending/discord_spellcheck-1.zip
+6/15/2025, 12:11:43 PM GMT+1 [Modules] Installing discord_utils@1 from /home/daniel/.config/discord/0.0.88/modules/pending/discord_utils-1.zip
+6/15/2025, 12:11:43 PM GMT+1 [Modules] Installing discord_voice@1 from /home/daniel/.config/discord/0.0.88/modules/pending/discord_voice-1.zip
+6/15/2025, 12:11:44 PM GMT+1 [Modules] Installing discord_zstd@1 from /home/daniel/.config/discord/0.0.88/modules/pending/discord_zstd-1.zip
+6/15/2025, 12:11:44 PM GMT+1 [Modules] Finished module installations. [success: 6] [failure: 0]
+6/15/2025, 12:11:44 PM GMT+1 [Modules] Host is up to date.
+6/15/2025, 12:11:44 PM GMT+1 [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+6/15/2025, 12:11:44 PM GMT+1 [Modules] No module updates available.
+6/15/2025, 12:11:45 PM GMT+1 [Modules] Starting to install discord_krisp...
+6/15/2025, 12:11:45 PM GMT+1 [Modules] Fetching discord_krisp@1 from https://discord.com/api/modules/stable/discord_krisp/1
+6/15/2025, 12:11:45 PM GMT+1 [Modules] Streaming discord_krisp@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_krisp-1.zip
+6/15/2025, 12:11:45 PM GMT+1 [Modules] Starting to install discord_game_utils...
+6/15/2025, 12:11:45 PM GMT+1 [Modules] Starting to install discord_rpc...
+6/15/2025, 12:11:46 PM GMT+1 [Modules] Streaming discord_krisp@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_krisp-1.zip: 1%
+6/15/2025, 12:11:46 PM GMT+1 [Modules] Streaming discord_krisp@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_krisp-1.zip: 3%
+6/15/2025, 12:11:46 PM GMT+1 [Modules] Streaming discord_krisp@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_krisp-1.zip: 4%
+6/15/2025, 12:11:46 PM GMT+1 [Modules] Streaming discord_krisp@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_krisp-1.zip: 5%
+6/15/2025, 12:11:46 PM GMT+1 [Modules] Streaming discord_krisp@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_krisp-1.zip: 6%
+6/15/2025, 12:11:46 PM GMT+1 [Modules] Streaming discord_krisp@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_krisp-1.zip: 7%
+6/15/2025, 12:11:46 PM GMT+1 [Modules] Streaming discord_krisp@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_krisp-1.zip: 8%
+6/15/2025, 12:11:46 PM GMT+1 [Modules] Streaming discord_krisp@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_krisp-1.zip: 9%
+6/15/2025, 12:11:46 PM GMT+1 [Modules] Streaming discord_krisp@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_krisp-1.zip: 10%
+6/15/2025, 12:11:46 PM GMT+1 [Modules] Streaming discord_krisp@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_krisp-1.zip: 11%
+6/15/2025, 12:11:46 PM GMT+1 [Modules] Streaming discord_krisp@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_krisp-1.zip: 12%
+6/15/2025, 12:11:46 PM GMT+1 [Modules] Streaming discord_krisp@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_krisp-1.zip: 13%
+6/15/2025, 12:11:46 PM GMT+1 [Modules] Streaming discord_krisp@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_krisp-1.zip: 14%
+6/15/2025, 12:11:46 PM GMT+1 [Modules] Streaming discord_krisp@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_krisp-1.zip: 15%
+6/15/2025, 12:11:46 PM GMT+1 [Modules] Streaming discord_krisp@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_krisp-1.zip: 16%
+6/15/2025, 12:11:46 PM GMT+1 [Modules] Streaming discord_krisp@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_krisp-1.zip: 17%
+6/15/2025, 12:11:46 PM GMT+1 [Modules] Streaming discord_krisp@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_krisp-1.zip: 18%
+6/15/2025, 12:11:46 PM GMT+1 [Modules] Streaming discord_krisp@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_krisp-1.zip: 19%
+6/15/2025, 12:11:46 PM GMT+1 [Modules] Streaming discord_krisp@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_krisp-1.zip: 20%
+6/15/2025, 12:11:46 PM GMT+1 [Modules] Streaming discord_krisp@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_krisp-1.zip: 21%
+6/15/2025, 12:11:46 PM GMT+1 [Modules] Streaming discord_krisp@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_krisp-1.zip: 22%
+6/15/2025, 12:11:46 PM GMT+1 [Modules] Streaming discord_krisp@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_krisp-1.zip: 23%
+6/15/2025, 12:11:46 PM GMT+1 [Modules] Streaming discord_krisp@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_krisp-1.zip: 24%
+6/15/2025, 12:11:46 PM GMT+1 [Modules] Streaming discord_krisp@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_krisp-1.zip: 25%
+6/15/2025, 12:11:46 PM GMT+1 [Modules] Streaming discord_krisp@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_krisp-1.zip: 26%
+6/15/2025, 12:11:46 PM GMT+1 [Modules] Streaming discord_krisp@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_krisp-1.zip: 27%
+6/15/2025, 12:11:46 PM GMT+1 [Modules] Streaming discord_krisp@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_krisp-1.zip: 28%
+6/15/2025, 12:11:46 PM GMT+1 [Modules] Streaming discord_krisp@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_krisp-1.zip: 29%
+6/15/2025, 12:11:46 PM GMT+1 [Modules] Streaming discord_krisp@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_krisp-1.zip: 30%
+6/15/2025, 12:11:46 PM GMT+1 [Modules] Streaming discord_krisp@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_krisp-1.zip: 31%
+6/15/2025, 12:11:46 PM GMT+1 [Modules] Streaming discord_krisp@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_krisp-1.zip: 32%
+6/15/2025, 12:11:46 PM GMT+1 [Modules] Streaming discord_krisp@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_krisp-1.zip: 33%
+6/15/2025, 12:11:46 PM GMT+1 [Modules] Streaming discord_krisp@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_krisp-1.zip: 34%
+6/15/2025, 12:11:46 PM GMT+1 [Modules] Streaming discord_krisp@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_krisp-1.zip: 35%
+6/15/2025, 12:11:46 PM GMT+1 [Modules] Streaming discord_krisp@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_krisp-1.zip: 36%
+6/15/2025, 12:11:46 PM GMT+1 [Modules] Streaming discord_krisp@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_krisp-1.zip: 37%
+6/15/2025, 12:11:46 PM GMT+1 [Modules] Streaming discord_krisp@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_krisp-1.zip: 38%
+6/15/2025, 12:11:46 PM GMT+1 [Modules] Streaming discord_krisp@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_krisp-1.zip: 39%
+6/15/2025, 12:11:46 PM GMT+1 [Modules] Streaming discord_krisp@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_krisp-1.zip: 40%
+6/15/2025, 12:11:46 PM GMT+1 [Modules] Streaming discord_krisp@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_krisp-1.zip: 41%
+6/15/2025, 12:11:46 PM GMT+1 [Modules] Streaming discord_krisp@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_krisp-1.zip: 42%
+6/15/2025, 12:11:46 PM GMT+1 [Modules] Streaming discord_krisp@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_krisp-1.zip: 43%
+6/15/2025, 12:11:46 PM GMT+1 [Modules] Streaming discord_krisp@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_krisp-1.zip: 44%
+6/15/2025, 12:11:46 PM GMT+1 [Modules] Streaming discord_krisp@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_krisp-1.zip: 45%
+6/15/2025, 12:11:46 PM GMT+1 [Modules] Streaming discord_krisp@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_krisp-1.zip: 46%
+6/15/2025, 12:11:46 PM GMT+1 [Modules] Streaming discord_krisp@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_krisp-1.zip: 47%
+6/15/2025, 12:11:46 PM GMT+1 [Modules] Streaming discord_krisp@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_krisp-1.zip: 48%
+6/15/2025, 12:11:46 PM GMT+1 [Modules] Streaming discord_krisp@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_krisp-1.zip: 49%
+6/15/2025, 12:11:46 PM GMT+1 [Modules] Streaming discord_krisp@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_krisp-1.zip: 50%
+6/15/2025, 12:11:46 PM GMT+1 [Modules] Streaming discord_krisp@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_krisp-1.zip: 51%
+6/15/2025, 12:11:46 PM GMT+1 [Modules] Streaming discord_krisp@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_krisp-1.zip: 52%
+6/15/2025, 12:11:46 PM GMT+1 [Modules] Streaming discord_krisp@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_krisp-1.zip: 53%
+6/15/2025, 12:11:46 PM GMT+1 [Modules] Streaming discord_krisp@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_krisp-1.zip: 54%
+6/15/2025, 12:11:46 PM GMT+1 [Modules] Streaming discord_krisp@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_krisp-1.zip: 55%
+6/15/2025, 12:11:46 PM GMT+1 [Modules] Streaming discord_krisp@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_krisp-1.zip: 56%
+6/15/2025, 12:11:46 PM GMT+1 [Modules] Streaming discord_krisp@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_krisp-1.zip: 57%
+6/15/2025, 12:11:46 PM GMT+1 [Modules] Streaming discord_krisp@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_krisp-1.zip: 58%
+6/15/2025, 12:11:46 PM GMT+1 [Modules] Streaming discord_krisp@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_krisp-1.zip: 59%
+6/15/2025, 12:11:46 PM GMT+1 [Modules] Streaming discord_krisp@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_krisp-1.zip: 60%
+6/15/2025, 12:11:46 PM GMT+1 [Modules] Streaming discord_krisp@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_krisp-1.zip: 61%
+6/15/2025, 12:11:46 PM GMT+1 [Modules] Streaming discord_krisp@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_krisp-1.zip: 62%
+6/15/2025, 12:11:46 PM GMT+1 [Modules] Streaming discord_krisp@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_krisp-1.zip: 63%
+6/15/2025, 12:11:46 PM GMT+1 [Modules] Streaming discord_krisp@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_krisp-1.zip: 64%
+6/15/2025, 12:11:46 PM GMT+1 [Modules] Streaming discord_krisp@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_krisp-1.zip: 65%
+6/15/2025, 12:11:46 PM GMT+1 [Modules] Streaming discord_krisp@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_krisp-1.zip: 66%
+6/15/2025, 12:11:46 PM GMT+1 [Modules] Streaming discord_krisp@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_krisp-1.zip: 67%
+6/15/2025, 12:11:47 PM GMT+1 [Modules] Streaming discord_krisp@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_krisp-1.zip: 68%
+6/15/2025, 12:11:47 PM GMT+1 [Modules] Streaming discord_krisp@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_krisp-1.zip: 69%
+6/15/2025, 12:11:47 PM GMT+1 [Modules] Streaming discord_krisp@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_krisp-1.zip: 70%
+6/15/2025, 12:11:47 PM GMT+1 [Modules] Streaming discord_krisp@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_krisp-1.zip: 71%
+6/15/2025, 12:11:47 PM GMT+1 [Modules] Streaming discord_krisp@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_krisp-1.zip: 72%
+6/15/2025, 12:11:47 PM GMT+1 [Modules] Streaming discord_krisp@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_krisp-1.zip: 73%
+6/15/2025, 12:11:47 PM GMT+1 [Modules] Streaming discord_krisp@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_krisp-1.zip: 74%
+6/15/2025, 12:11:47 PM GMT+1 [Modules] Streaming discord_krisp@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_krisp-1.zip: 75%
+6/15/2025, 12:11:47 PM GMT+1 [Modules] Streaming discord_krisp@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_krisp-1.zip: 76%
+6/15/2025, 12:11:47 PM GMT+1 [Modules] Streaming discord_krisp@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_krisp-1.zip: 77%
+6/15/2025, 12:11:47 PM GMT+1 [Modules] Streaming discord_krisp@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_krisp-1.zip: 78%
+6/15/2025, 12:11:47 PM GMT+1 [Modules] Streaming discord_krisp@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_krisp-1.zip: 79%
+6/15/2025, 12:11:47 PM GMT+1 [Modules] Streaming discord_krisp@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_krisp-1.zip: 80%
+6/15/2025, 12:11:47 PM GMT+1 [Modules] Streaming discord_krisp@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_krisp-1.zip: 81%
+6/15/2025, 12:11:47 PM GMT+1 [Modules] Streaming discord_krisp@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_krisp-1.zip: 82%
+6/15/2025, 12:11:47 PM GMT+1 [Modules] Streaming discord_krisp@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_krisp-1.zip: 83%
+6/15/2025, 12:11:47 PM GMT+1 [Modules] Streaming discord_krisp@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_krisp-1.zip: 84%
+6/15/2025, 12:11:47 PM GMT+1 [Modules] Streaming discord_krisp@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_krisp-1.zip: 85%
+6/15/2025, 12:11:47 PM GMT+1 [Modules] Streaming discord_krisp@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_krisp-1.zip: 86%
+6/15/2025, 12:11:47 PM GMT+1 [Modules] Streaming discord_krisp@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_krisp-1.zip: 87%
+6/15/2025, 12:11:47 PM GMT+1 [Modules] Streaming discord_krisp@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_krisp-1.zip: 88%
+6/15/2025, 12:11:47 PM GMT+1 [Modules] Streaming discord_krisp@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_krisp-1.zip: 89%
+6/15/2025, 12:11:47 PM GMT+1 [Modules] Streaming discord_krisp@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_krisp-1.zip: 90%
+6/15/2025, 12:11:47 PM GMT+1 [Modules] Streaming discord_krisp@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_krisp-1.zip: 91%
+6/15/2025, 12:11:47 PM GMT+1 [Modules] Streaming discord_krisp@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_krisp-1.zip: 92%
+6/15/2025, 12:11:47 PM GMT+1 [Modules] Streaming discord_krisp@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_krisp-1.zip: 93%
+6/15/2025, 12:11:47 PM GMT+1 [Modules] Streaming discord_krisp@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_krisp-1.zip: 94%
+6/15/2025, 12:11:47 PM GMT+1 [Modules] Streaming discord_krisp@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_krisp-1.zip: 95%
+6/15/2025, 12:11:47 PM GMT+1 [Modules] Streaming discord_krisp@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_krisp-1.zip: 96%
+6/15/2025, 12:11:47 PM GMT+1 [Modules] Streaming discord_krisp@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_krisp-1.zip: 97%
+6/15/2025, 12:11:47 PM GMT+1 [Modules] Streaming discord_krisp@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_krisp-1.zip: 98%
+6/15/2025, 12:11:47 PM GMT+1 [Modules] Streaming discord_krisp@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_krisp-1.zip: 99%
+6/15/2025, 12:11:47 PM GMT+1 [Modules] Streaming discord_krisp@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_krisp-1.zip: 100%
+6/15/2025, 12:11:47 PM GMT+1 [Modules] Fetching discord_game_utils@1 from https://discord.com/api/modules/stable/discord_game_utils/1
+6/15/2025, 12:11:47 PM GMT+1 [Modules] Streaming discord_game_utils@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_game_utils-1.zip
+6/15/2025, 12:11:47 PM GMT+1 [Modules] Installing discord_krisp@1 from /home/daniel/.config/discord/0.0.88/modules/pending/discord_krisp-1.zip
+6/15/2025, 12:11:47 PM GMT+1 [Modules] Finished module installations. [success: 1] [failure: 0]
+6/15/2025, 12:11:48 PM GMT+1 [Modules] Streaming discord_game_utils@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_game_utils-1.zip: 3%
+6/15/2025, 12:11:48 PM GMT+1 [Modules] Streaming discord_game_utils@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_game_utils-1.zip: 5%
+6/15/2025, 12:11:48 PM GMT+1 [Modules] Streaming discord_game_utils@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_game_utils-1.zip: 7%
+6/15/2025, 12:11:48 PM GMT+1 [Modules] Streaming discord_game_utils@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_game_utils-1.zip: 8%
+6/15/2025, 12:11:48 PM GMT+1 [Modules] Streaming discord_game_utils@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_game_utils-1.zip: 9%
+6/15/2025, 12:11:48 PM GMT+1 [Modules] Streaming discord_game_utils@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_game_utils-1.zip: 11%
+6/15/2025, 12:11:48 PM GMT+1 [Modules] Streaming discord_game_utils@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_game_utils-1.zip: 12%
+6/15/2025, 12:11:48 PM GMT+1 [Modules] Streaming discord_game_utils@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_game_utils-1.zip: 13%
+6/15/2025, 12:11:48 PM GMT+1 [Modules] Streaming discord_game_utils@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_game_utils-1.zip: 14%
+6/15/2025, 12:11:48 PM GMT+1 [Modules] Streaming discord_game_utils@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_game_utils-1.zip: 15%
+6/15/2025, 12:11:48 PM GMT+1 [Modules] Streaming discord_game_utils@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_game_utils-1.zip: 16%
+6/15/2025, 12:11:48 PM GMT+1 [Modules] Streaming discord_game_utils@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_game_utils-1.zip: 17%
+6/15/2025, 12:11:48 PM GMT+1 [Modules] Streaming discord_game_utils@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_game_utils-1.zip: 18%
+6/15/2025, 12:11:48 PM GMT+1 [Modules] Streaming discord_game_utils@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_game_utils-1.zip: 19%
+6/15/2025, 12:11:48 PM GMT+1 [Modules] Streaming discord_game_utils@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_game_utils-1.zip: 21%
+6/15/2025, 12:11:48 PM GMT+1 [Modules] Streaming discord_game_utils@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_game_utils-1.zip: 22%
+6/15/2025, 12:11:48 PM GMT+1 [Modules] Streaming discord_game_utils@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_game_utils-1.zip: 23%
+6/15/2025, 12:11:48 PM GMT+1 [Modules] Streaming discord_game_utils@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_game_utils-1.zip: 24%
+6/15/2025, 12:11:48 PM GMT+1 [Modules] Streaming discord_game_utils@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_game_utils-1.zip: 25%
+6/15/2025, 12:11:48 PM GMT+1 [Modules] Streaming discord_game_utils@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_game_utils-1.zip: 26%
+6/15/2025, 12:11:48 PM GMT+1 [Modules] Streaming discord_game_utils@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_game_utils-1.zip: 27%
+6/15/2025, 12:11:48 PM GMT+1 [Modules] Streaming discord_game_utils@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_game_utils-1.zip: 28%
+6/15/2025, 12:11:48 PM GMT+1 [Modules] Streaming discord_game_utils@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_game_utils-1.zip: 29%
+6/15/2025, 12:11:48 PM GMT+1 [Modules] Streaming discord_game_utils@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_game_utils-1.zip: 30%
+6/15/2025, 12:11:48 PM GMT+1 [Modules] Streaming discord_game_utils@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_game_utils-1.zip: 31%
+6/15/2025, 12:11:48 PM GMT+1 [Modules] Streaming discord_game_utils@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_game_utils-1.zip: 32%
+6/15/2025, 12:11:48 PM GMT+1 [Modules] Streaming discord_game_utils@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_game_utils-1.zip: 34%
+6/15/2025, 12:11:48 PM GMT+1 [Modules] Streaming discord_game_utils@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_game_utils-1.zip: 35%
+6/15/2025, 12:11:48 PM GMT+1 [Modules] Streaming discord_game_utils@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_game_utils-1.zip: 36%
+6/15/2025, 12:11:48 PM GMT+1 [Modules] Streaming discord_game_utils@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_game_utils-1.zip: 37%
+6/15/2025, 12:11:48 PM GMT+1 [Modules] Streaming discord_game_utils@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_game_utils-1.zip: 38%
+6/15/2025, 12:11:48 PM GMT+1 [Modules] Streaming discord_game_utils@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_game_utils-1.zip: 39%
+6/15/2025, 12:11:48 PM GMT+1 [Modules] Streaming discord_game_utils@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_game_utils-1.zip: 40%
+6/15/2025, 12:11:48 PM GMT+1 [Modules] Streaming discord_game_utils@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_game_utils-1.zip: 41%
+6/15/2025, 12:11:48 PM GMT+1 [Modules] Streaming discord_game_utils@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_game_utils-1.zip: 42%
+6/15/2025, 12:11:48 PM GMT+1 [Modules] Streaming discord_game_utils@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_game_utils-1.zip: 43%
+6/15/2025, 12:11:48 PM GMT+1 [Modules] Streaming discord_game_utils@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_game_utils-1.zip: 44%
+6/15/2025, 12:11:48 PM GMT+1 [Modules] Streaming discord_game_utils@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_game_utils-1.zip: 45%
+6/15/2025, 12:11:48 PM GMT+1 [Modules] Streaming discord_game_utils@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_game_utils-1.zip: 46%
+6/15/2025, 12:11:48 PM GMT+1 [Modules] Streaming discord_game_utils@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_game_utils-1.zip: 47%
+6/15/2025, 12:11:48 PM GMT+1 [Modules] Streaming discord_game_utils@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_game_utils-1.zip: 48%
+6/15/2025, 12:11:48 PM GMT+1 [Modules] Streaming discord_game_utils@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_game_utils-1.zip: 49%
+6/15/2025, 12:11:48 PM GMT+1 [Modules] Streaming discord_game_utils@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_game_utils-1.zip: 51%
+6/15/2025, 12:11:48 PM GMT+1 [Modules] Streaming discord_game_utils@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_game_utils-1.zip: 52%
+6/15/2025, 12:11:48 PM GMT+1 [Modules] Streaming discord_game_utils@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_game_utils-1.zip: 53%
+6/15/2025, 12:11:48 PM GMT+1 [Modules] Streaming discord_game_utils@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_game_utils-1.zip: 55%
+6/15/2025, 12:11:48 PM GMT+1 [Modules] Streaming discord_game_utils@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_game_utils-1.zip: 57%
+6/15/2025, 12:11:48 PM GMT+1 [Modules] Streaming discord_game_utils@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_game_utils-1.zip: 59%
+6/15/2025, 12:11:48 PM GMT+1 [Modules] Streaming discord_game_utils@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_game_utils-1.zip: 61%
+6/15/2025, 12:11:48 PM GMT+1 [Modules] Streaming discord_game_utils@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_game_utils-1.zip: 63%
+6/15/2025, 12:11:48 PM GMT+1 [Modules] Streaming discord_game_utils@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_game_utils-1.zip: 65%
+6/15/2025, 12:11:48 PM GMT+1 [Modules] Streaming discord_game_utils@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_game_utils-1.zip: 67%
+6/15/2025, 12:11:48 PM GMT+1 [Modules] Streaming discord_game_utils@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_game_utils-1.zip: 70%
+6/15/2025, 12:11:48 PM GMT+1 [Modules] Streaming discord_game_utils@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_game_utils-1.zip: 72%
+6/15/2025, 12:11:48 PM GMT+1 [Modules] Streaming discord_game_utils@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_game_utils-1.zip: 74%
+6/15/2025, 12:11:48 PM GMT+1 [Modules] Streaming discord_game_utils@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_game_utils-1.zip: 75%
+6/15/2025, 12:11:48 PM GMT+1 [Modules] Streaming discord_game_utils@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_game_utils-1.zip: 76%
+6/15/2025, 12:11:48 PM GMT+1 [Modules] Streaming discord_game_utils@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_game_utils-1.zip: 77%
+6/15/2025, 12:11:48 PM GMT+1 [Modules] Streaming discord_game_utils@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_game_utils-1.zip: 78%
+6/15/2025, 12:11:48 PM GMT+1 [Modules] Streaming discord_game_utils@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_game_utils-1.zip: 79%
+6/15/2025, 12:11:48 PM GMT+1 [Modules] Streaming discord_game_utils@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_game_utils-1.zip: 81%
+6/15/2025, 12:11:48 PM GMT+1 [Modules] Streaming discord_game_utils@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_game_utils-1.zip: 83%
+6/15/2025, 12:11:48 PM GMT+1 [Modules] Streaming discord_game_utils@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_game_utils-1.zip: 84%
+6/15/2025, 12:11:48 PM GMT+1 [Modules] Streaming discord_game_utils@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_game_utils-1.zip: 85%
+6/15/2025, 12:11:48 PM GMT+1 [Modules] Streaming discord_game_utils@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_game_utils-1.zip: 87%
+6/15/2025, 12:11:48 PM GMT+1 [Modules] Streaming discord_game_utils@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_game_utils-1.zip: 88%
+6/15/2025, 12:11:48 PM GMT+1 [Modules] Streaming discord_game_utils@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_game_utils-1.zip: 90%
+6/15/2025, 12:11:48 PM GMT+1 [Modules] Streaming discord_game_utils@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_game_utils-1.zip: 91%
+6/15/2025, 12:11:48 PM GMT+1 [Modules] Streaming discord_game_utils@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_game_utils-1.zip: 93%
+6/15/2025, 12:11:48 PM GMT+1 [Modules] Streaming discord_game_utils@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_game_utils-1.zip: 95%
+6/15/2025, 12:11:48 PM GMT+1 [Modules] Streaming discord_game_utils@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_game_utils-1.zip: 97%
+6/15/2025, 12:11:48 PM GMT+1 [Modules] Streaming discord_game_utils@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_game_utils-1.zip: 98%
+6/15/2025, 12:11:48 PM GMT+1 [Modules] Streaming discord_game_utils@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_game_utils-1.zip: 99%
+6/15/2025, 12:11:48 PM GMT+1 [Modules] Streaming discord_game_utils@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_game_utils-1.zip: 100%
+6/15/2025, 12:11:48 PM GMT+1 [Modules] Fetching discord_rpc@1 from https://discord.com/api/modules/stable/discord_rpc/1
+6/15/2025, 12:11:48 PM GMT+1 [Modules] Streaming discord_rpc@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_rpc-1.zip
+6/15/2025, 12:11:48 PM GMT+1 [Modules] Installing discord_game_utils@1 from /home/daniel/.config/discord/0.0.88/modules/pending/discord_game_utils-1.zip
+6/15/2025, 12:11:49 PM GMT+1 [Modules] Finished module installations. [success: 1] [failure: 0]
+6/15/2025, 12:11:49 PM GMT+1 [Modules] Streaming discord_rpc@1 to /home/daniel/.config/discord/0.0.88/modules/pending/discord_rpc-1.zip: 100%
+6/15/2025, 12:11:49 PM GMT+1 [Modules] Finished module downloads. [success: 3] [failure: 0]
+6/15/2025, 12:11:49 PM GMT+1 [Modules] Installing discord_rpc@1 from /home/daniel/.config/discord/0.0.88/modules/pending/discord_rpc-1.zip
+6/15/2025, 12:11:49 PM GMT+1 [Modules] Finished module installations. [success: 1] [failure: 0]
+6/15/2025, 12:12:10 PM GMT+1 [Modules] Host is up to date.
+6/15/2025, 12:12:10 PM GMT+1 [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+6/15/2025, 12:12:10 PM GMT+1 [Modules] No module updates available.
+6/15/2025, 12:17:44 PM GMT+1 [Modules] Modules initializing
+6/15/2025, 12:17:44 PM GMT+1 [Modules] Distribution: remote
+6/15/2025, 12:17:44 PM GMT+1 [Modules] Host updates: disabled
+6/15/2025, 12:17:44 PM GMT+1 [Modules] Module updates: enabled
+6/15/2025, 12:17:44 PM GMT+1 [Modules] Module install path: /home/daniel/.config/discord/0.0.88/modules
+6/15/2025, 12:17:44 PM GMT+1 [Modules] Module installed file path: /home/daniel/.config/discord/0.0.88/modules/installed.json
+6/15/2025, 12:17:44 PM GMT+1 [Modules] Module download path: /home/daniel/.config/discord/0.0.88/modules/pending
+6/15/2025, 12:17:44 PM GMT+1 [Modules] No updates to install
+6/15/2025, 12:17:44 PM GMT+1 [Modules] Host is up to date.
+6/15/2025, 12:17:44 PM GMT+1 [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+6/15/2025, 12:17:44 PM GMT+1 [Modules] No module updates available.
+6/15/2025, 12:17:50 PM GMT+1 [Modules] Host is up to date.
+6/15/2025, 12:17:50 PM GMT+1 [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+6/15/2025, 12:17:50 PM GMT+1 [Modules] No module updates available.
+6/15/2025, 1:17:50 PM GMT+1 [Modules] Host is up to date.
+6/15/2025, 1:17:50 PM GMT+1 [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+6/15/2025, 1:17:50 PM GMT+1 [Modules] No module updates available.
+6/15/2025, 2:40:22 PM GMT+1 [Modules] Host is up to date.
+6/15/2025, 2:40:22 PM GMT+1 [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+6/15/2025, 2:40:22 PM GMT+1 [Modules] No module updates available.
+6/15/2025, 3:08:38 PM GMT+1 [Modules] Modules initializing
+6/15/2025, 3:08:38 PM GMT+1 [Modules] Distribution: remote
+6/15/2025, 3:08:38 PM GMT+1 [Modules] Host updates: disabled
+6/15/2025, 3:08:38 PM GMT+1 [Modules] Module updates: enabled
+6/15/2025, 3:08:38 PM GMT+1 [Modules] Module install path: /home/daniel/.config/discord/0.0.88/modules
+6/15/2025, 3:08:38 PM GMT+1 [Modules] Module installed file path: /home/daniel/.config/discord/0.0.88/modules/installed.json
+6/15/2025, 3:08:38 PM GMT+1 [Modules] Module download path: /home/daniel/.config/discord/0.0.88/modules/pending
+6/15/2025, 3:08:38 PM GMT+1 [Modules] No updates to install
+6/15/2025, 3:08:38 PM GMT+1 [Modules] Host is up to date.
+6/15/2025, 3:08:38 PM GMT+1 [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+6/15/2025, 3:08:38 PM GMT+1 [Modules] No module updates available.
+6/15/2025, 3:08:43 PM GMT+1 [Modules] Host is up to date.
+6/15/2025, 3:08:43 PM GMT+1 [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+6/15/2025, 3:08:43 PM GMT+1 [Modules] No module updates available.
+6/15/2025, 3:27:41 PM GMT+1 [Modules] Modules initializing
+6/15/2025, 3:27:41 PM GMT+1 [Modules] Distribution: remote
+6/15/2025, 3:27:41 PM GMT+1 [Modules] Host updates: disabled
+6/15/2025, 3:27:41 PM GMT+1 [Modules] Module updates: enabled
+6/15/2025, 3:27:41 PM GMT+1 [Modules] Module install path: /home/daniel/.config/discord/0.0.88/modules
+6/15/2025, 3:27:41 PM GMT+1 [Modules] Module installed file path: /home/daniel/.config/discord/0.0.88/modules/installed.json
+6/15/2025, 3:27:41 PM GMT+1 [Modules] Module download path: /home/daniel/.config/discord/0.0.88/modules/pending
+6/15/2025, 3:27:41 PM GMT+1 [Modules] No updates to install
+6/15/2025, 3:27:41 PM GMT+1 [Modules] Host is up to date.
+6/15/2025, 3:27:41 PM GMT+1 [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+6/15/2025, 3:27:41 PM GMT+1 [Modules] No module updates available.
+6/15/2025, 3:27:47 PM GMT+1 [Modules] Host is up to date.
+6/15/2025, 3:27:47 PM GMT+1 [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+6/15/2025, 3:27:47 PM GMT+1 [Modules] No module updates available.
+6/15/2025, 3:33:53 PM GMT+1 [Modules] Modules initializing
+6/15/2025, 3:33:53 PM GMT+1 [Modules] Distribution: remote
+6/15/2025, 3:33:53 PM GMT+1 [Modules] Host updates: disabled
+6/15/2025, 3:33:53 PM GMT+1 [Modules] Module updates: enabled
+6/15/2025, 3:33:53 PM GMT+1 [Modules] Module install path: /home/daniel/.config/discord/0.0.88/modules
+6/15/2025, 3:33:53 PM GMT+1 [Modules] Module installed file path: /home/daniel/.config/discord/0.0.88/modules/installed.json
+6/15/2025, 3:33:53 PM GMT+1 [Modules] Module download path: /home/daniel/.config/discord/0.0.88/modules/pending
+6/15/2025, 3:33:53 PM GMT+1 [Modules] No updates to install
+6/15/2025, 3:33:53 PM GMT+1 [Modules] Host is up to date.
+6/15/2025, 3:33:53 PM GMT+1 [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+6/15/2025, 3:33:53 PM GMT+1 [Modules] No module updates available.
+6/15/2025, 3:33:58 PM GMT+1 [Modules] Host is up to date.
+6/15/2025, 3:33:58 PM GMT+1 [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+6/15/2025, 3:33:58 PM GMT+1 [Modules] No module updates available.
+6/15/2025, 3:49:21 PM GMT+1 [Modules] Modules initializing
+6/15/2025, 3:49:21 PM GMT+1 [Modules] Distribution: remote
+6/15/2025, 3:49:21 PM GMT+1 [Modules] Host updates: disabled
+6/15/2025, 3:49:21 PM GMT+1 [Modules] Module updates: enabled
+6/15/2025, 3:49:21 PM GMT+1 [Modules] Module install path: /home/daniel/.config/discord/0.0.88/modules
+6/15/2025, 3:49:21 PM GMT+1 [Modules] Module installed file path: /home/daniel/.config/discord/0.0.88/modules/installed.json
+6/15/2025, 3:49:21 PM GMT+1 [Modules] Module download path: /home/daniel/.config/discord/0.0.88/modules/pending
+6/15/2025, 3:49:21 PM GMT+1 [Modules] No updates to install
+6/15/2025, 3:49:21 PM GMT+1 [Modules] Host is up to date.
+6/15/2025, 3:49:21 PM GMT+1 [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+6/15/2025, 3:49:21 PM GMT+1 [Modules] No module updates available.
+6/15/2025, 3:49:26 PM GMT+1 [Modules] Host is up to date.
+6/15/2025, 3:49:26 PM GMT+1 [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+6/15/2025, 3:49:26 PM GMT+1 [Modules] No module updates available.
+6/15/2025, 4:03:17 PM GMT+1 [Modules] Modules initializing
+6/15/2025, 4:03:17 PM GMT+1 [Modules] Distribution: remote
+6/15/2025, 4:03:17 PM GMT+1 [Modules] Host updates: disabled
+6/15/2025, 4:03:17 PM GMT+1 [Modules] Module updates: enabled
+6/15/2025, 4:03:17 PM GMT+1 [Modules] Module install path: /home/daniel/.config/discord/0.0.88/modules
+6/15/2025, 4:03:17 PM GMT+1 [Modules] Module installed file path: /home/daniel/.config/discord/0.0.88/modules/installed.json
+6/15/2025, 4:03:17 PM GMT+1 [Modules] Module download path: /home/daniel/.config/discord/0.0.88/modules/pending
+6/15/2025, 4:03:18 PM GMT+1 [Modules] No updates to install
+6/15/2025, 4:03:18 PM GMT+1 [Modules] Host is up to date.
+6/15/2025, 4:03:18 PM GMT+1 [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+6/15/2025, 4:03:18 PM GMT+1 [Modules] No module updates available.
+6/15/2025, 4:03:22 PM GMT+1 [Modules] Host is up to date.
+6/15/2025, 4:03:22 PM GMT+1 [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+6/15/2025, 4:03:22 PM GMT+1 [Modules] No module updates available.
+6/15/2025, 5:03:22 PM GMT+1 [Modules] Host is up to date.
+6/15/2025, 5:03:22 PM GMT+1 [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+6/15/2025, 5:03:22 PM GMT+1 [Modules] No module updates available.
+6/15/2025, 5:35:03 PM GMT+1 [Modules] Modules initializing
+6/15/2025, 5:35:03 PM GMT+1 [Modules] Distribution: remote
+6/15/2025, 5:35:03 PM GMT+1 [Modules] Host updates: disabled
+6/15/2025, 5:35:03 PM GMT+1 [Modules] Module updates: enabled
+6/15/2025, 5:35:03 PM GMT+1 [Modules] Module install path: /home/daniel/.config/discord/0.0.88/modules
+6/15/2025, 5:35:03 PM GMT+1 [Modules] Module installed file path: /home/daniel/.config/discord/0.0.88/modules/installed.json
+6/15/2025, 5:35:03 PM GMT+1 [Modules] Module download path: /home/daniel/.config/discord/0.0.88/modules/pending
+6/15/2025, 5:35:04 PM GMT+1 [Modules] No updates to install
+6/15/2025, 5:35:04 PM GMT+1 [Modules] Host is up to date.
+6/15/2025, 5:35:04 PM GMT+1 [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+6/15/2025, 5:35:04 PM GMT+1 [Modules] No module updates available.
+6/15/2025, 5:35:08 PM GMT+1 [Modules] Host is up to date.
+6/15/2025, 5:35:08 PM GMT+1 [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+6/15/2025, 5:35:08 PM GMT+1 [Modules] No module updates available.
+6/15/2025, 6:04:41 PM GMT+1 [Modules] Modules initializing
+6/15/2025, 6:04:41 PM GMT+1 [Modules] Distribution: remote
+6/15/2025, 6:04:41 PM GMT+1 [Modules] Host updates: disabled
+6/15/2025, 6:04:41 PM GMT+1 [Modules] Module updates: enabled
+6/15/2025, 6:04:41 PM GMT+1 [Modules] Module install path: /home/daniel/.config/discord/0.0.88/modules
+6/15/2025, 6:04:41 PM GMT+1 [Modules] Module installed file path: /home/daniel/.config/discord/0.0.88/modules/installed.json
+6/15/2025, 6:04:41 PM GMT+1 [Modules] Module download path: /home/daniel/.config/discord/0.0.88/modules/pending
+6/15/2025, 6:04:41 PM GMT+1 [Modules] No updates to install
+6/15/2025, 6:04:41 PM GMT+1 [Modules] Host is up to date.
+6/15/2025, 6:04:41 PM GMT+1 [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+6/15/2025, 6:04:42 PM GMT+1 [Modules] No module updates available.
+6/15/2025, 6:04:46 PM GMT+1 [Modules] Host is up to date.
+6/15/2025, 6:04:46 PM GMT+1 [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+6/15/2025, 6:04:46 PM GMT+1 [Modules] No module updates available.
+6/15/2025, 7:04:45 PM GMT+1 [Modules] Host is up to date.
+6/15/2025, 7:04:45 PM GMT+1 [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+6/15/2025, 7:04:45 PM GMT+1 [Modules] No module updates available.
+6/15/2025, 7:28:27 PM GMT+1 [Modules] Modules initializing
+6/15/2025, 7:28:27 PM GMT+1 [Modules] Distribution: remote
+6/15/2025, 7:28:27 PM GMT+1 [Modules] Host updates: disabled
+6/15/2025, 7:28:27 PM GMT+1 [Modules] Module updates: enabled
+6/15/2025, 7:28:27 PM GMT+1 [Modules] Module install path: /home/daniel/.config/discord/0.0.88/modules
+6/15/2025, 7:28:27 PM GMT+1 [Modules] Module installed file path: /home/daniel/.config/discord/0.0.88/modules/installed.json
+6/15/2025, 7:28:27 PM GMT+1 [Modules] Module download path: /home/daniel/.config/discord/0.0.88/modules/pending
+6/15/2025, 7:28:27 PM GMT+1 [Modules] No updates to install
+6/15/2025, 7:28:27 PM GMT+1 [Modules] Host is up to date.
+6/15/2025, 7:28:27 PM GMT+1 [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+6/15/2025, 7:28:27 PM GMT+1 [Modules] No module updates available.
+6/15/2025, 7:28:32 PM GMT+1 [Modules] Host is up to date.
+6/15/2025, 7:28:32 PM GMT+1 [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+6/15/2025, 7:28:32 PM GMT+1 [Modules] No module updates available.
+6/15/2025, 8:12:25 PM GMT+1 [Modules] Modules initializing
+6/15/2025, 8:12:25 PM GMT+1 [Modules] Distribution: remote
+6/15/2025, 8:12:25 PM GMT+1 [Modules] Host updates: disabled
+6/15/2025, 8:12:25 PM GMT+1 [Modules] Module updates: enabled
+6/15/2025, 8:12:25 PM GMT+1 [Modules] Module install path: /home/daniel/.config/discord/0.0.88/modules
+6/15/2025, 8:12:25 PM GMT+1 [Modules] Module installed file path: /home/daniel/.config/discord/0.0.88/modules/installed.json
+6/15/2025, 8:12:25 PM GMT+1 [Modules] Module download path: /home/daniel/.config/discord/0.0.88/modules/pending
+6/15/2025, 8:12:25 PM GMT+1 [Modules] No updates to install
+6/15/2025, 8:12:25 PM GMT+1 [Modules] Host is up to date.
+6/15/2025, 8:12:25 PM GMT+1 [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+6/15/2025, 8:12:25 PM GMT+1 [Modules] No module updates available.
+6/15/2025, 8:12:29 PM GMT+1 [Modules] Host is up to date.
+6/15/2025, 8:12:29 PM GMT+1 [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+6/15/2025, 8:12:29 PM GMT+1 [Modules] No module updates available.
+6/15/2025, 9:12:29 PM GMT+1 [Modules] Host is up to date.
+6/15/2025, 9:12:29 PM GMT+1 [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+6/15/2025, 9:12:29 PM GMT+1 [Modules] No module updates available.
+6/15/2025, 9:15:50 PM GMT+1 [Modules] Modules initializing
+6/15/2025, 9:15:50 PM GMT+1 [Modules] Distribution: remote
+6/15/2025, 9:15:50 PM GMT+1 [Modules] Host updates: disabled
+6/15/2025, 9:15:50 PM GMT+1 [Modules] Module updates: enabled
+6/15/2025, 9:15:50 PM GMT+1 [Modules] Module install path: /home/daniel/.config/discord/0.0.88/modules
+6/15/2025, 9:15:50 PM GMT+1 [Modules] Module installed file path: /home/daniel/.config/discord/0.0.88/modules/installed.json
+6/15/2025, 9:15:50 PM GMT+1 [Modules] Module download path: /home/daniel/.config/discord/0.0.88/modules/pending
+6/15/2025, 9:15:50 PM GMT+1 [Modules] No updates to install
+6/15/2025, 9:15:50 PM GMT+1 [Modules] Host is up to date.
+6/15/2025, 9:15:50 PM GMT+1 [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+6/15/2025, 9:15:50 PM GMT+1 [Modules] No module updates available.
+6/15/2025, 9:15:56 PM GMT+1 [Modules] Host is up to date.
+6/15/2025, 9:15:56 PM GMT+1 [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+6/15/2025, 9:15:56 PM GMT+1 [Modules] No module updates available.
+6/15/2025, 10:15:56 PM GMT+1 [Modules] Host is up to date.
+6/15/2025, 10:15:56 PM GMT+1 [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+6/15/2025, 10:15:56 PM GMT+1 [Modules] No module updates available.
+6/15/2025, 11:15:56 PM GMT+1 [Modules] Host is up to date.
+6/15/2025, 11:15:56 PM GMT+1 [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+6/15/2025, 11:15:56 PM GMT+1 [Modules] No module updates available.
+6/16/2025, 12:15:56 AM GMT+1 [Modules] Host is up to date.
+6/16/2025, 12:15:56 AM GMT+1 [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+6/16/2025, 12:15:56 AM GMT+1 [Modules] No module updates available.
+6/16/2025, 1:15:56 AM GMT+1 [Modules] Host is up to date.
+6/16/2025, 1:15:56 AM GMT+1 [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+6/16/2025, 1:15:56 AM GMT+1 [Modules] No module updates available.
+6/16/2025, 11:19:49 AM GMT+1 [Modules] Modules initializing
+6/16/2025, 11:19:49 AM GMT+1 [Modules] Distribution: remote
+6/16/2025, 11:19:49 AM GMT+1 [Modules] Host updates: disabled
+6/16/2025, 11:19:49 AM GMT+1 [Modules] Module updates: enabled
+6/16/2025, 11:19:49 AM GMT+1 [Modules] Module install path: /home/daniel/.config/discord/0.0.88/modules
+6/16/2025, 11:19:49 AM GMT+1 [Modules] Module installed file path: /home/daniel/.config/discord/0.0.88/modules/installed.json
+6/16/2025, 11:19:49 AM GMT+1 [Modules] Module download path: /home/daniel/.config/discord/0.0.88/modules/pending
+6/16/2025, 11:19:49 AM GMT+1 [Modules] No updates to install
+6/16/2025, 11:19:49 AM GMT+1 [Modules] Host is up to date.
+6/16/2025, 11:19:49 AM GMT+1 [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+6/16/2025, 11:19:50 AM GMT+1 [Modules] No module updates available.
+6/16/2025, 11:19:54 AM GMT+1 [Modules] Host is up to date.
+6/16/2025, 11:19:54 AM GMT+1 [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+6/16/2025, 11:19:54 AM GMT+1 [Modules] No module updates available.
+6/16/2025, 11:31:01 AM GMT+1 [Modules] Modules initializing
+6/16/2025, 11:31:01 AM GMT+1 [Modules] Distribution: remote
+6/16/2025, 11:31:01 AM GMT+1 [Modules] Host updates: disabled
+6/16/2025, 11:31:01 AM GMT+1 [Modules] Module updates: enabled
+6/16/2025, 11:31:01 AM GMT+1 [Modules] Module install path: /home/daniel/.config/discord/0.0.88/modules
+6/16/2025, 11:31:01 AM GMT+1 [Modules] Module installed file path: /home/daniel/.config/discord/0.0.88/modules/installed.json
+6/16/2025, 11:31:01 AM GMT+1 [Modules] Module download path: /home/daniel/.config/discord/0.0.88/modules/pending
+6/16/2025, 11:31:01 AM GMT+1 [Modules] No updates to install
+6/16/2025, 11:31:01 AM GMT+1 [Modules] Host is up to date.
+6/16/2025, 11:31:01 AM GMT+1 [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+6/16/2025, 11:31:01 AM GMT+1 [Modules] No module updates available.
+6/16/2025, 11:31:06 AM GMT+1 [Modules] Host is up to date.
+6/16/2025, 11:31:06 AM GMT+1 [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+6/16/2025, 11:31:06 AM GMT+1 [Modules] No module updates available.
+6/16/2025, 12:31:06 PM GMT+1 [Modules] Host is up to date.
+6/16/2025, 12:31:06 PM GMT+1 [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+6/16/2025, 12:31:06 PM GMT+1 [Modules] No module updates available.
+6/16/2025, 1:47:37 PM GMT+1 [Modules] Modules initializing
+6/16/2025, 1:47:37 PM GMT+1 [Modules] Distribution: remote
+6/16/2025, 1:47:37 PM GMT+1 [Modules] Host updates: disabled
+6/16/2025, 1:47:37 PM GMT+1 [Modules] Module updates: enabled
+6/16/2025, 1:47:37 PM GMT+1 [Modules] Module install path: /home/daniel/.config/discord/0.0.88/modules
+6/16/2025, 1:47:37 PM GMT+1 [Modules] Module installed file path: /home/daniel/.config/discord/0.0.88/modules/installed.json
+6/16/2025, 1:47:37 PM GMT+1 [Modules] Module download path: /home/daniel/.config/discord/0.0.88/modules/pending
+6/16/2025, 1:47:37 PM GMT+1 [Modules] No updates to install
+6/16/2025, 1:47:37 PM GMT+1 [Modules] Host is up to date.
+6/16/2025, 1:47:37 PM GMT+1 [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+6/16/2025, 1:47:37 PM GMT+1 [Modules] No module updates available.
+6/16/2025, 1:47:42 PM GMT+1 [Modules] Host is up to date.
+6/16/2025, 1:47:42 PM GMT+1 [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+6/16/2025, 1:47:42 PM GMT+1 [Modules] No module updates available.
+6/16/2025, 2:47:42 PM GMT+1 [Modules] Host is up to date.
+6/16/2025, 2:47:42 PM GMT+1 [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+6/16/2025, 2:47:42 PM GMT+1 [Modules] No module updates available.
+6/16/2025, 3:47:42 PM GMT+1 [Modules] Host is up to date.
+6/16/2025, 3:47:42 PM GMT+1 [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+6/16/2025, 3:47:42 PM GMT+1 [Modules] No module updates available.
+6/16/2025, 4:47:42 PM GMT+1 [Modules] Host is up to date.
+6/16/2025, 4:47:42 PM GMT+1 [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+6/16/2025, 4:47:42 PM GMT+1 [Modules] No module updates available.
+6/16/2025, 5:47:42 PM GMT+1 [Modules] Host is up to date.
+6/16/2025, 5:47:42 PM GMT+1 [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+6/16/2025, 5:47:42 PM GMT+1 [Modules] No module updates available.
+6/16/2025, 6:47:42 PM GMT+1 [Modules] Host is up to date.
+6/16/2025, 6:47:42 PM GMT+1 [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+6/16/2025, 6:47:42 PM GMT+1 [Modules] No module updates available.
+6/16/2025, 7:47:42 PM GMT+1 [Modules] Host is up to date.
+6/16/2025, 7:47:42 PM GMT+1 [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+6/16/2025, 7:47:42 PM GMT+1 [Modules] No module updates available.
+6/16/2025, 8:47:42 PM GMT+1 [Modules] Host is up to date.
+6/16/2025, 8:47:42 PM GMT+1 [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+6/16/2025, 8:47:42 PM GMT+1 [Modules] No module updates available.
+6/16/2025, 9:20:08 PM GMT+1 [Modules] Modules initializing
+6/16/2025, 9:20:08 PM GMT+1 [Modules] Distribution: remote
+6/16/2025, 9:20:08 PM GMT+1 [Modules] Host updates: disabled
+6/16/2025, 9:20:08 PM GMT+1 [Modules] Module updates: enabled
+6/16/2025, 9:20:08 PM GMT+1 [Modules] Module install path: /home/daniel/.config/discord/0.0.88/modules
+6/16/2025, 9:20:08 PM GMT+1 [Modules] Module installed file path: /home/daniel/.config/discord/0.0.88/modules/installed.json
+6/16/2025, 9:20:08 PM GMT+1 [Modules] Module download path: /home/daniel/.config/discord/0.0.88/modules/pending
+6/16/2025, 9:20:09 PM GMT+1 [Modules] No updates to install
+6/16/2025, 9:20:09 PM GMT+1 [Modules] Host is up to date.
+6/16/2025, 9:20:09 PM GMT+1 [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+6/16/2025, 9:20:09 PM GMT+1 [Modules] No module updates available.
+6/16/2025, 9:20:15 PM GMT+1 [Modules] Host is up to date.
+6/16/2025, 9:20:15 PM GMT+1 [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+6/16/2025, 9:20:15 PM GMT+1 [Modules] No module updates available.
+6/16/2025, 10:20:15 PM GMT+1 [Modules] Host is up to date.
+6/16/2025, 10:20:15 PM GMT+1 [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+6/16/2025, 10:20:15 PM GMT+1 [Modules] No module updates available.
+6/16/2025, 11:20:15 PM GMT+1 [Modules] Host is up to date.
+6/16/2025, 11:20:15 PM GMT+1 [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+6/16/2025, 11:20:15 PM GMT+1 [Modules] No module updates available.
+6/17/2025, 10:27:30 AM GMT+1 [Modules] Modules initializing
+6/17/2025, 10:27:30 AM GMT+1 [Modules] Distribution: remote
+6/17/2025, 10:27:30 AM GMT+1 [Modules] Host updates: disabled
+6/17/2025, 10:27:30 AM GMT+1 [Modules] Module updates: enabled
+6/17/2025, 10:27:30 AM GMT+1 [Modules] Module install path: /home/daniel/.config/discord/0.0.88/modules
+6/17/2025, 10:27:30 AM GMT+1 [Modules] Module installed file path: /home/daniel/.config/discord/0.0.88/modules/installed.json
+6/17/2025, 10:27:30 AM GMT+1 [Modules] Module download path: /home/daniel/.config/discord/0.0.88/modules/pending
+6/17/2025, 10:27:30 AM GMT+1 [Modules] No updates to install
+6/17/2025, 10:27:30 AM GMT+1 [Modules] Host is up to date.
+6/17/2025, 10:27:30 AM GMT+1 [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+6/17/2025, 10:27:30 AM GMT+1 [Modules] No module updates available.
+6/17/2025, 10:27:35 AM GMT+1 [Modules] Host is up to date.
+6/17/2025, 10:27:35 AM GMT+1 [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+6/17/2025, 10:27:35 AM GMT+1 [Modules] No module updates available.
+6/17/2025, 10:44:32 AM GMT+1 [Modules] Modules initializing
+6/17/2025, 10:44:32 AM GMT+1 [Modules] Distribution: remote
+6/17/2025, 10:44:32 AM GMT+1 [Modules] Host updates: disabled
+6/17/2025, 10:44:32 AM GMT+1 [Modules] Module updates: enabled
+6/17/2025, 10:44:32 AM GMT+1 [Modules] Module install path: /home/daniel/.config/discord/0.0.88/modules
+6/17/2025, 10:44:32 AM GMT+1 [Modules] Module installed file path: /home/daniel/.config/discord/0.0.88/modules/installed.json
+6/17/2025, 10:44:32 AM GMT+1 [Modules] Module download path: /home/daniel/.config/discord/0.0.88/modules/pending
+6/17/2025, 10:44:32 AM GMT+1 [Modules] No updates to install
+6/17/2025, 10:44:32 AM GMT+1 [Modules] Host is up to date.
+6/17/2025, 10:44:32 AM GMT+1 [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+6/17/2025, 10:44:33 AM GMT+1 [Modules] No module updates available.
+6/17/2025, 10:44:37 AM GMT+1 [Modules] Host is up to date.
+6/17/2025, 10:44:37 AM GMT+1 [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+6/17/2025, 10:44:37 AM GMT+1 [Modules] No module updates available.
+6/17/2025, 10:57:23 AM GMT+1 [Modules] Modules initializing
+6/17/2025, 10:57:23 AM GMT+1 [Modules] Distribution: remote
+6/17/2025, 10:57:23 AM GMT+1 [Modules] Host updates: disabled
+6/17/2025, 10:57:23 AM GMT+1 [Modules] Module updates: enabled
+6/17/2025, 10:57:23 AM GMT+1 [Modules] Module install path: /home/daniel/.config/discord/0.0.88/modules
+6/17/2025, 10:57:23 AM GMT+1 [Modules] Module installed file path: /home/daniel/.config/discord/0.0.88/modules/installed.json
+6/17/2025, 10:57:23 AM GMT+1 [Modules] Module download path: /home/daniel/.config/discord/0.0.88/modules/pending
+6/17/2025, 10:57:23 AM GMT+1 [Modules] No updates to install
+6/17/2025, 10:57:23 AM GMT+1 [Modules] Host is up to date.
+6/17/2025, 10:57:23 AM GMT+1 [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+6/17/2025, 10:57:23 AM GMT+1 [Modules] No module updates available.
+6/17/2025, 10:57:28 AM GMT+1 [Modules] Host is up to date.
+6/17/2025, 10:57:28 AM GMT+1 [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+6/17/2025, 10:57:28 AM GMT+1 [Modules] No module updates available.
+6/17/2025, 11:14:16 AM GMT+1 [Modules] Modules initializing
+6/17/2025, 11:14:16 AM GMT+1 [Modules] Distribution: remote
+6/17/2025, 11:14:16 AM GMT+1 [Modules] Host updates: disabled
+6/17/2025, 11:14:16 AM GMT+1 [Modules] Module updates: enabled
+6/17/2025, 11:14:16 AM GMT+1 [Modules] Module install path: /home/daniel/.config/discord/0.0.88/modules
+6/17/2025, 11:14:16 AM GMT+1 [Modules] Module installed file path: /home/daniel/.config/discord/0.0.88/modules/installed.json
+6/17/2025, 11:14:16 AM GMT+1 [Modules] Module download path: /home/daniel/.config/discord/0.0.88/modules/pending
+6/17/2025, 11:14:16 AM GMT+1 [Modules] No updates to install
+6/17/2025, 11:14:16 AM GMT+1 [Modules] Host is up to date.
+6/17/2025, 11:14:16 AM GMT+1 [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+6/17/2025, 11:14:16 AM GMT+1 [Modules] No module updates available.
+6/17/2025, 11:14:21 AM GMT+1 [Modules] Host is up to date.
+6/17/2025, 11:14:21 AM GMT+1 [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+6/17/2025, 11:14:21 AM GMT+1 [Modules] No module updates available.
+6/17/2025, 11:15:15 AM GMT+1 [Modules] Modules initializing
+6/17/2025, 11:15:15 AM GMT+1 [Modules] Distribution: remote
+6/17/2025, 11:15:15 AM GMT+1 [Modules] Host updates: disabled
+6/17/2025, 11:15:15 AM GMT+1 [Modules] Module updates: enabled
+6/17/2025, 11:15:15 AM GMT+1 [Modules] Module install path: /home/daniel/.config/discord/0.0.88/modules
+6/17/2025, 11:15:15 AM GMT+1 [Modules] Module installed file path: /home/daniel/.config/discord/0.0.88/modules/installed.json
+6/17/2025, 11:15:15 AM GMT+1 [Modules] Module download path: /home/daniel/.config/discord/0.0.88/modules/pending
+6/17/2025, 11:15:15 AM GMT+1 [Modules] No updates to install
+6/17/2025, 11:15:15 AM GMT+1 [Modules] Host is up to date.
+6/17/2025, 11:15:15 AM GMT+1 [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+6/17/2025, 11:15:15 AM GMT+1 [Modules] No module updates available.
+6/17/2025, 11:15:20 AM GMT+1 [Modules] Host is up to date.
+6/17/2025, 11:15:20 AM GMT+1 [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+6/17/2025, 11:15:20 AM GMT+1 [Modules] No module updates available.
+6/17/2025, 11:21:04 AM GMT+1 [Modules] Modules initializing
+6/17/2025, 11:21:04 AM GMT+1 [Modules] Distribution: remote
+6/17/2025, 11:21:04 AM GMT+1 [Modules] Host updates: disabled
+6/17/2025, 11:21:04 AM GMT+1 [Modules] Module updates: enabled
+6/17/2025, 11:21:04 AM GMT+1 [Modules] Module install path: /home/daniel/.config/discord/0.0.88/modules
+6/17/2025, 11:21:04 AM GMT+1 [Modules] Module installed file path: /home/daniel/.config/discord/0.0.88/modules/installed.json
+6/17/2025, 11:21:04 AM GMT+1 [Modules] Module download path: /home/daniel/.config/discord/0.0.88/modules/pending
+6/17/2025, 11:21:04 AM GMT+1 [Modules] No updates to install
+6/17/2025, 11:21:04 AM GMT+1 [Modules] Host is up to date.
+6/17/2025, 11:21:04 AM GMT+1 [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+6/17/2025, 11:21:04 AM GMT+1 [Modules] No module updates available.
+6/17/2025, 11:21:10 AM GMT+1 [Modules] Host is up to date.
+6/17/2025, 11:21:10 AM GMT+1 [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+6/17/2025, 11:21:10 AM GMT+1 [Modules] No module updates available.
+6/17/2025, 11:32:19 AM GMT+1 [Modules] Modules initializing
+6/17/2025, 11:32:19 AM GMT+1 [Modules] Distribution: remote
+6/17/2025, 11:32:19 AM GMT+1 [Modules] Host updates: disabled
+6/17/2025, 11:32:19 AM GMT+1 [Modules] Module updates: enabled
+6/17/2025, 11:32:19 AM GMT+1 [Modules] Module install path: /home/daniel/.config/discord/0.0.88/modules
+6/17/2025, 11:32:19 AM GMT+1 [Modules] Module installed file path: /home/daniel/.config/discord/0.0.88/modules/installed.json
+6/17/2025, 11:32:19 AM GMT+1 [Modules] Module download path: /home/daniel/.config/discord/0.0.88/modules/pending
+6/17/2025, 11:32:19 AM GMT+1 [Modules] No updates to install
+6/17/2025, 11:32:19 AM GMT+1 [Modules] Host is up to date.
+6/17/2025, 11:32:19 AM GMT+1 [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+6/17/2025, 11:32:19 AM GMT+1 [Modules] No module updates available.
+6/17/2025, 11:32:23 AM GMT+1 [Modules] Host is up to date.
+6/17/2025, 11:32:23 AM GMT+1 [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+6/17/2025, 11:32:23 AM GMT+1 [Modules] No module updates available.
+6/17/2025, 11:34:56 AM GMT+1 [Modules] Modules initializing
+6/17/2025, 11:34:56 AM GMT+1 [Modules] Distribution: remote
+6/17/2025, 11:34:56 AM GMT+1 [Modules] Host updates: disabled
+6/17/2025, 11:34:56 AM GMT+1 [Modules] Module updates: enabled
+6/17/2025, 11:34:56 AM GMT+1 [Modules] Module install path: /home/daniel/.config/discord/0.0.88/modules
+6/17/2025, 11:34:56 AM GMT+1 [Modules] Module installed file path: /home/daniel/.config/discord/0.0.88/modules/installed.json
+6/17/2025, 11:34:56 AM GMT+1 [Modules] Module download path: /home/daniel/.config/discord/0.0.88/modules/pending
+6/17/2025, 11:34:56 AM GMT+1 [Modules] No updates to install
+6/17/2025, 11:34:56 AM GMT+1 [Modules] Host is up to date.
+6/17/2025, 11:34:56 AM GMT+1 [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+6/17/2025, 11:34:56 AM GMT+1 [Modules] No module updates available.
+6/17/2025, 11:35:01 AM GMT+1 [Modules] Host is up to date.
+6/17/2025, 11:35:01 AM GMT+1 [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+6/17/2025, 11:35:01 AM GMT+1 [Modules] No module updates available.
+6/17/2025, 12:35:01 PM GMT+1 [Modules] Host is up to date.
+6/17/2025, 12:35:01 PM GMT+1 [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+6/17/2025, 12:35:01 PM GMT+1 [Modules] No module updates available.
+6/17/2025, 1:35:01 PM GMT+1 [Modules] Host is up to date.
+6/17/2025, 1:35:01 PM GMT+1 [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+6/17/2025, 1:35:01 PM GMT+1 [Modules] No module updates available.
+6/17/2025, 2:29:55 PM GMT+1 [Modules] Modules initializing
+6/17/2025, 2:29:55 PM GMT+1 [Modules] Distribution: remote
+6/17/2025, 2:29:55 PM GMT+1 [Modules] Host updates: disabled
+6/17/2025, 2:29:55 PM GMT+1 [Modules] Module updates: enabled
+6/17/2025, 2:29:55 PM GMT+1 [Modules] Module install path: /home/daniel/.config/discord/0.0.88/modules
+6/17/2025, 2:29:55 PM GMT+1 [Modules] Module installed file path: /home/daniel/.config/discord/0.0.88/modules/installed.json
+6/17/2025, 2:29:55 PM GMT+1 [Modules] Module download path: /home/daniel/.config/discord/0.0.88/modules/pending
+6/17/2025, 2:29:55 PM GMT+1 [Modules] No updates to install
+6/17/2025, 2:29:55 PM GMT+1 [Modules] Host is up to date.
+6/17/2025, 2:29:55 PM GMT+1 [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+6/17/2025, 2:29:55 PM GMT+1 [Modules] No module updates available.
+6/17/2025, 2:30:00 PM GMT+1 [Modules] Host is up to date.
+6/17/2025, 2:30:00 PM GMT+1 [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+6/17/2025, 2:30:00 PM GMT+1 [Modules] No module updates available.
+6/17/2025, 3:30:00 PM GMT+1 [Modules] Host is up to date.
+6/17/2025, 3:30:00 PM GMT+1 [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+6/17/2025, 3:30:00 PM GMT+1 [Modules] No module updates available.
+6/17/2025, 4:30:00 PM GMT+1 [Modules] Host is up to date.
+6/17/2025, 4:30:00 PM GMT+1 [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+6/17/2025, 4:30:00 PM GMT+1 [Modules] No module updates available.
+6/17/2025, 5:30:00 PM GMT+1 [Modules] Host is up to date.
+6/17/2025, 5:30:00 PM GMT+1 [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+6/17/2025, 5:30:00 PM GMT+1 [Modules] No module updates available.
+6/17/2025, 6:30:00 PM GMT+1 [Modules] Host is up to date.
+6/17/2025, 6:30:00 PM GMT+1 [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+6/17/2025, 6:30:00 PM GMT+1 [Modules] No module updates available.
+6/17/2025, 7:30:00 PM GMT+1 [Modules] Host is up to date.
+6/17/2025, 7:30:00 PM GMT+1 [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+6/17/2025, 7:30:00 PM GMT+1 [Modules] No module updates available.
+6/17/2025, 8:30:00 PM GMT+1 [Modules] Host is up to date.
+6/17/2025, 8:30:00 PM GMT+1 [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+6/17/2025, 8:30:00 PM GMT+1 [Modules] No module updates available.
+6/17/2025, 9:30:00 PM GMT+1 [Modules] Host is up to date.
+6/17/2025, 9:30:00 PM GMT+1 [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+6/17/2025, 9:30:00 PM GMT+1 [Modules] No module updates available.
+6/17/2025, 10:30:00 PM GMT+1 [Modules] Host is up to date.
+6/17/2025, 10:30:00 PM GMT+1 [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+6/17/2025, 10:30:00 PM GMT+1 [Modules] No module updates available.
+6/17/2025, 11:30:00 PM GMT+1 [Modules] Host is up to date.
+6/17/2025, 11:30:00 PM GMT+1 [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+6/17/2025, 11:30:00 PM GMT+1 [Modules] No module updates available.
+6/18/2025, 12:30:00 AM GMT+1 [Modules] Host is up to date.
+6/18/2025, 12:30:00 AM GMT+1 [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+6/18/2025, 12:30:00 AM GMT+1 [Modules] No module updates available.
+6/18/2025, 9:45:37 AM GMT+1 [Modules] Modules initializing
+6/18/2025, 9:45:37 AM GMT+1 [Modules] Distribution: remote
+6/18/2025, 9:45:37 AM GMT+1 [Modules] Host updates: disabled
+6/18/2025, 9:45:37 AM GMT+1 [Modules] Module updates: enabled
+6/18/2025, 9:45:37 AM GMT+1 [Modules] Module install path: /home/daniel/.config/discord/0.0.88/modules
+6/18/2025, 9:45:37 AM GMT+1 [Modules] Module installed file path: /home/daniel/.config/discord/0.0.88/modules/installed.json
+6/18/2025, 9:45:37 AM GMT+1 [Modules] Module download path: /home/daniel/.config/discord/0.0.88/modules/pending
+6/18/2025, 9:45:37 AM GMT+1 [Modules] No updates to install
+6/18/2025, 9:45:37 AM GMT+1 [Modules] Host is up to date.
+6/18/2025, 9:45:37 AM GMT+1 [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+6/18/2025, 9:45:38 AM GMT+1 [Modules] No module updates available.
+6/18/2025, 9:45:43 AM GMT+1 [Modules] Host is up to date.
+6/18/2025, 9:45:43 AM GMT+1 [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+6/18/2025, 9:45:43 AM GMT+1 [Modules] No module updates available.
+6/18/2025, 10:45:43 AM GMT+1 [Modules] Host is up to date.
+6/18/2025, 10:45:43 AM GMT+1 [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+6/18/2025, 10:45:43 AM GMT+1 [Modules] No module updates available.
+6/18/2025, 11:45:43 AM GMT+1 [Modules] Host is up to date.
+6/18/2025, 11:45:43 AM GMT+1 [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+6/18/2025, 11:45:43 AM GMT+1 [Modules] No module updates available.
+6/18/2025, 12:45:43 PM GMT+1 [Modules] Host is up to date.
+6/18/2025, 12:45:43 PM GMT+1 [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+6/18/2025, 12:45:43 PM GMT+1 [Modules] No module updates available.
+6/18/2025, 5:05:07 PM GMT+1 [Modules] Modules initializing
+6/18/2025, 5:05:07 PM GMT+1 [Modules] Distribution: remote
+6/18/2025, 5:05:07 PM GMT+1 [Modules] Host updates: disabled
+6/18/2025, 5:05:07 PM GMT+1 [Modules] Module updates: enabled
+6/18/2025, 5:05:07 PM GMT+1 [Modules] Module install path: /home/daniel/.config/discord/0.0.88/modules
+6/18/2025, 5:05:07 PM GMT+1 [Modules] Module installed file path: /home/daniel/.config/discord/0.0.88/modules/installed.json
+6/18/2025, 5:05:07 PM GMT+1 [Modules] Module download path: /home/daniel/.config/discord/0.0.88/modules/pending
+6/18/2025, 5:05:07 PM GMT+1 [Modules] No updates to install
+6/18/2025, 5:05:07 PM GMT+1 [Modules] Host is up to date.
+6/18/2025, 5:05:07 PM GMT+1 [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+6/18/2025, 5:05:08 PM GMT+1 [Modules] No module updates available.
+6/18/2025, 5:05:12 PM GMT+1 [Modules] Host is up to date.
+6/18/2025, 5:05:12 PM GMT+1 [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+6/18/2025, 5:05:12 PM GMT+1 [Modules] No module updates available.
+6/18/2025, 5:54:19 PM GMT+1 [Modules] Modules initializing
+6/18/2025, 5:54:19 PM GMT+1 [Modules] Distribution: remote
+6/18/2025, 5:54:19 PM GMT+1 [Modules] Host updates: disabled
+6/18/2025, 5:54:19 PM GMT+1 [Modules] Module updates: enabled
+6/18/2025, 5:54:19 PM GMT+1 [Modules] Module install path: /home/daniel/.config/discord/0.0.88/modules
+6/18/2025, 5:54:19 PM GMT+1 [Modules] Module installed file path: /home/daniel/.config/discord/0.0.88/modules/installed.json
+6/18/2025, 5:54:19 PM GMT+1 [Modules] Module download path: /home/daniel/.config/discord/0.0.88/modules/pending
+6/18/2025, 5:54:19 PM GMT+1 [Modules] No updates to install
+6/18/2025, 5:54:19 PM GMT+1 [Modules] Host is up to date.
+6/18/2025, 5:54:19 PM GMT+1 [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+6/18/2025, 5:54:19 PM GMT+1 [Modules] No module updates available.
+6/18/2025, 5:54:25 PM GMT+1 [Modules] Host is up to date.
+6/18/2025, 5:54:25 PM GMT+1 [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+6/18/2025, 5:54:25 PM GMT+1 [Modules] No module updates available.
+6/18/2025, 6:00:47 PM GMT+1 [Modules] Modules initializing
+6/18/2025, 6:00:47 PM GMT+1 [Modules] Distribution: remote
+6/18/2025, 6:00:47 PM GMT+1 [Modules] Host updates: disabled
+6/18/2025, 6:00:47 PM GMT+1 [Modules] Module updates: enabled
+6/18/2025, 6:00:47 PM GMT+1 [Modules] Module install path: /home/daniel/.config/discord/0.0.88/modules
+6/18/2025, 6:00:47 PM GMT+1 [Modules] Module installed file path: /home/daniel/.config/discord/0.0.88/modules/installed.json
+6/18/2025, 6:00:47 PM GMT+1 [Modules] Module download path: /home/daniel/.config/discord/0.0.88/modules/pending
+6/18/2025, 6:00:47 PM GMT+1 [Modules] No updates to install
+6/18/2025, 6:00:47 PM GMT+1 [Modules] Host is up to date.
+6/18/2025, 6:00:47 PM GMT+1 [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+6/18/2025, 6:00:48 PM GMT+1 [Modules] No module updates available.
+6/18/2025, 6:00:52 PM GMT+1 [Modules] Host is up to date.
+6/18/2025, 6:00:52 PM GMT+1 [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+6/18/2025, 6:00:52 PM GMT+1 [Modules] No module updates available.
+6/18/2025, 6:32:04 PM GMT+1 [Modules] Modules initializing
+6/18/2025, 6:32:04 PM GMT+1 [Modules] Distribution: remote
+6/18/2025, 6:32:04 PM GMT+1 [Modules] Host updates: disabled
+6/18/2025, 6:32:04 PM GMT+1 [Modules] Module updates: enabled
+6/18/2025, 6:32:04 PM GMT+1 [Modules] Module install path: /home/daniel/.config/discord/0.0.88/modules
+6/18/2025, 6:32:04 PM GMT+1 [Modules] Module installed file path: /home/daniel/.config/discord/0.0.88/modules/installed.json
+6/18/2025, 6:32:04 PM GMT+1 [Modules] Module download path: /home/daniel/.config/discord/0.0.88/modules/pending
+6/18/2025, 6:32:04 PM GMT+1 [Modules] No updates to install
+6/18/2025, 6:32:04 PM GMT+1 [Modules] Host is up to date.
+6/18/2025, 6:32:04 PM GMT+1 [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+6/18/2025, 6:32:04 PM GMT+1 [Modules] No module updates available.
+6/18/2025, 6:32:10 PM GMT+1 [Modules] Host is up to date.
+6/18/2025, 6:32:10 PM GMT+1 [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+6/18/2025, 6:32:10 PM GMT+1 [Modules] No module updates available.
+6/18/2025, 7:32:10 PM GMT+1 [Modules] Host is up to date.
+6/18/2025, 7:32:10 PM GMT+1 [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+6/18/2025, 7:32:10 PM GMT+1 [Modules] No module updates available.
+6/18/2025, 7:43:23 PM GMT+1 [Modules] Modules initializing
+6/18/2025, 7:43:23 PM GMT+1 [Modules] Distribution: remote
+6/18/2025, 7:43:23 PM GMT+1 [Modules] Host updates: disabled
+6/18/2025, 7:43:23 PM GMT+1 [Modules] Module updates: enabled
+6/18/2025, 7:43:23 PM GMT+1 [Modules] Module install path: /home/daniel/.config/discord/0.0.88/modules
+6/18/2025, 7:43:23 PM GMT+1 [Modules] Module installed file path: /home/daniel/.config/discord/0.0.88/modules/installed.json
+6/18/2025, 7:43:23 PM GMT+1 [Modules] Module download path: /home/daniel/.config/discord/0.0.88/modules/pending
+6/18/2025, 7:43:23 PM GMT+1 [Modules] No updates to install
+6/18/2025, 7:43:23 PM GMT+1 [Modules] Host is up to date.
+6/18/2025, 7:43:23 PM GMT+1 [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+6/18/2025, 7:43:23 PM GMT+1 [Modules] No module updates available.
+6/18/2025, 7:43:28 PM GMT+1 [Modules] Host is up to date.
+6/18/2025, 7:43:28 PM GMT+1 [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+6/18/2025, 7:43:28 PM GMT+1 [Modules] No module updates available.
+6/18/2025, 8:43:28 PM GMT+1 [Modules] Host is up to date.
+6/18/2025, 8:43:28 PM GMT+1 [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+6/18/2025, 8:43:28 PM GMT+1 [Modules] No module updates available.
+6/18/2025, 8:52:50 PM GMT+1 [Modules] Modules initializing
+6/18/2025, 8:52:50 PM GMT+1 [Modules] Distribution: remote
+6/18/2025, 8:52:50 PM GMT+1 [Modules] Host updates: disabled
+6/18/2025, 8:52:50 PM GMT+1 [Modules] Module updates: enabled
+6/18/2025, 8:52:50 PM GMT+1 [Modules] Module install path: /home/daniel/.config/discord/0.0.88/modules
+6/18/2025, 8:52:50 PM GMT+1 [Modules] Module installed file path: /home/daniel/.config/discord/0.0.88/modules/installed.json
+6/18/2025, 8:52:50 PM GMT+1 [Modules] Module download path: /home/daniel/.config/discord/0.0.88/modules/pending
+6/18/2025, 8:52:50 PM GMT+1 [Modules] No updates to install
+6/18/2025, 8:52:50 PM GMT+1 [Modules] Host is up to date.
+6/18/2025, 8:52:50 PM GMT+1 [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+6/18/2025, 8:52:50 PM GMT+1 [Modules] No module updates available.
+6/18/2025, 8:52:55 PM GMT+1 [Modules] Host is up to date.
+6/18/2025, 8:52:55 PM GMT+1 [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+6/18/2025, 8:52:55 PM GMT+1 [Modules] No module updates available.
+6/18/2025, 8:54:46 PM GMT+1 [Modules] Modules initializing
+6/18/2025, 8:54:46 PM GMT+1 [Modules] Distribution: remote
+6/18/2025, 8:54:46 PM GMT+1 [Modules] Host updates: disabled
+6/18/2025, 8:54:46 PM GMT+1 [Modules] Module updates: enabled
+6/18/2025, 8:54:46 PM GMT+1 [Modules] Module install path: /home/daniel/.config/discord/0.0.88/modules
+6/18/2025, 8:54:46 PM GMT+1 [Modules] Module installed file path: /home/daniel/.config/discord/0.0.88/modules/installed.json
+6/18/2025, 8:54:46 PM GMT+1 [Modules] Module download path: /home/daniel/.config/discord/0.0.88/modules/pending
+6/18/2025, 8:54:46 PM GMT+1 [Modules] No updates to install
+6/18/2025, 8:54:46 PM GMT+1 [Modules] Host is up to date.
+6/18/2025, 8:54:46 PM GMT+1 [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+6/18/2025, 8:54:46 PM GMT+1 [Modules] No module updates available.
+6/18/2025, 8:54:51 PM GMT+1 [Modules] Host is up to date.
+6/18/2025, 8:54:51 PM GMT+1 [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+6/18/2025, 8:54:51 PM GMT+1 [Modules] No module updates available.
+6/18/2025, 9:14:43 PM GMT+1 [Modules] Modules initializing
+6/18/2025, 9:14:43 PM GMT+1 [Modules] Distribution: remote
+6/18/2025, 9:14:43 PM GMT+1 [Modules] Host updates: disabled
+6/18/2025, 9:14:43 PM GMT+1 [Modules] Module updates: enabled
+6/18/2025, 9:14:43 PM GMT+1 [Modules] Module install path: /home/daniel/.config/discord/0.0.88/modules
+6/18/2025, 9:14:43 PM GMT+1 [Modules] Module installed file path: /home/daniel/.config/discord/0.0.88/modules/installed.json
+6/18/2025, 9:14:43 PM GMT+1 [Modules] Module download path: /home/daniel/.config/discord/0.0.88/modules/pending
+6/18/2025, 9:14:43 PM GMT+1 [Modules] No updates to install
+6/18/2025, 9:14:43 PM GMT+1 [Modules] Host is up to date.
+6/18/2025, 9:14:43 PM GMT+1 [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+6/18/2025, 9:14:43 PM GMT+1 [Modules] No module updates available.
+6/18/2025, 9:14:48 PM GMT+1 [Modules] Host is up to date.
+6/18/2025, 9:14:48 PM GMT+1 [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+6/18/2025, 9:14:48 PM GMT+1 [Modules] No module updates available.
+6/18/2025, 10:14:48 PM GMT+1 [Modules] Host is up to date.
+6/18/2025, 10:14:48 PM GMT+1 [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+6/18/2025, 10:14:48 PM GMT+1 [Modules] No module updates available.
+6/18/2025, 11:14:48 PM GMT+1 [Modules] Host is up to date.
+6/18/2025, 11:14:48 PM GMT+1 [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+6/18/2025, 11:14:48 PM GMT+1 [Modules] No module updates available.
+6/19/2025, 12:14:49 AM GMT+1 [Modules] Host is up to date.
+6/19/2025, 12:14:49 AM GMT+1 [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+6/19/2025, 12:14:49 AM GMT+1 [Modules] No module updates available.
+6/19/2025, 1:14:49 AM GMT+1 [Modules] Host is up to date.
+6/19/2025, 1:14:49 AM GMT+1 [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+6/19/2025, 1:14:49 AM GMT+1 [Modules] No module updates available.
+6/19/2025, 2:14:48 AM GMT+1 [Modules] Host is up to date.
+6/19/2025, 2:14:48 AM GMT+1 [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+6/19/2025, 2:14:48 AM GMT+1 [Modules] No module updates available.
+6/19/2025, 2:37:06 PM GMT+1 [Modules] Modules initializing
+6/19/2025, 2:37:06 PM GMT+1 [Modules] Distribution: remote
+6/19/2025, 2:37:06 PM GMT+1 [Modules] Host updates: disabled
+6/19/2025, 2:37:06 PM GMT+1 [Modules] Module updates: enabled
+6/19/2025, 2:37:06 PM GMT+1 [Modules] Module install path: /home/daniel/.config/discord/0.0.88/modules
+6/19/2025, 2:37:06 PM GMT+1 [Modules] Module installed file path: /home/daniel/.config/discord/0.0.88/modules/installed.json
+6/19/2025, 2:37:06 PM GMT+1 [Modules] Module download path: /home/daniel/.config/discord/0.0.88/modules/pending
+6/19/2025, 2:37:06 PM GMT+1 [Modules] No updates to install
+6/19/2025, 2:37:06 PM GMT+1 [Modules] Host is up to date.
+6/19/2025, 2:37:06 PM GMT+1 [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+6/19/2025, 2:37:06 PM GMT+1 [Modules] No module updates available.
+6/19/2025, 2:37:11 PM GMT+1 [Modules] Host is up to date.
+6/19/2025, 2:37:11 PM GMT+1 [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+6/19/2025, 2:37:11 PM GMT+1 [Modules] No module updates available.
+6/19/2025, 2:54:31 PM GMT+1 [Modules] Modules initializing
+6/19/2025, 2:54:31 PM GMT+1 [Modules] Distribution: remote
+6/19/2025, 2:54:31 PM GMT+1 [Modules] Host updates: disabled
+6/19/2025, 2:54:31 PM GMT+1 [Modules] Module updates: enabled
+6/19/2025, 2:54:31 PM GMT+1 [Modules] Module install path: /home/daniel/.config/discord/0.0.88/modules
+6/19/2025, 2:54:31 PM GMT+1 [Modules] Module installed file path: /home/daniel/.config/discord/0.0.88/modules/installed.json
+6/19/2025, 2:54:31 PM GMT+1 [Modules] Module download path: /home/daniel/.config/discord/0.0.88/modules/pending
+6/19/2025, 2:54:31 PM GMT+1 [Modules] No updates to install
+6/19/2025, 2:54:31 PM GMT+1 [Modules] Host is up to date.
+6/19/2025, 2:54:31 PM GMT+1 [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+6/19/2025, 2:54:31 PM GMT+1 [Modules] No module updates available.
+6/19/2025, 2:54:35 PM GMT+1 [Modules] Host is up to date.
+6/19/2025, 2:54:35 PM GMT+1 [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+6/19/2025, 2:54:35 PM GMT+1 [Modules] No module updates available.
+6/19/2025, 3:01:13 PM GMT+1 [Modules] Modules initializing
+6/19/2025, 3:01:13 PM GMT+1 [Modules] Distribution: remote
+6/19/2025, 3:01:13 PM GMT+1 [Modules] Host updates: disabled
+6/19/2025, 3:01:13 PM GMT+1 [Modules] Module updates: enabled
+6/19/2025, 3:01:13 PM GMT+1 [Modules] Module install path: /home/daniel/.config/discord/0.0.88/modules
+6/19/2025, 3:01:13 PM GMT+1 [Modules] Module installed file path: /home/daniel/.config/discord/0.0.88/modules/installed.json
+6/19/2025, 3:01:13 PM GMT+1 [Modules] Module download path: /home/daniel/.config/discord/0.0.88/modules/pending
+6/19/2025, 3:01:13 PM GMT+1 [Modules] No updates to install
+6/19/2025, 3:01:13 PM GMT+1 [Modules] Host is up to date.
+6/19/2025, 3:01:13 PM GMT+1 [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+6/19/2025, 3:01:13 PM GMT+1 [Modules] No module updates available.
+6/19/2025, 3:01:18 PM GMT+1 [Modules] Host is up to date.
+6/19/2025, 3:01:18 PM GMT+1 [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+6/19/2025, 3:01:18 PM GMT+1 [Modules] No module updates available.
+6/19/2025, 3:48:04 PM GMT+1 [Modules] Modules initializing
+6/19/2025, 3:48:04 PM GMT+1 [Modules] Distribution: remote
+6/19/2025, 3:48:04 PM GMT+1 [Modules] Host updates: disabled
+6/19/2025, 3:48:04 PM GMT+1 [Modules] Module updates: enabled
+6/19/2025, 3:48:04 PM GMT+1 [Modules] Module install path: /home/daniel/.config/discord/0.0.88/modules
+6/19/2025, 3:48:04 PM GMT+1 [Modules] Module installed file path: /home/daniel/.config/discord/0.0.88/modules/installed.json
+6/19/2025, 3:48:04 PM GMT+1 [Modules] Module download path: /home/daniel/.config/discord/0.0.88/modules/pending
+6/19/2025, 3:48:04 PM GMT+1 [Modules] No updates to install
+6/19/2025, 3:48:04 PM GMT+1 [Modules] Host is up to date.
+6/19/2025, 3:48:04 PM GMT+1 [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+6/19/2025, 3:48:04 PM GMT+1 [Modules] No module updates available.
+6/19/2025, 3:48:09 PM GMT+1 [Modules] Host is up to date.
+6/19/2025, 3:48:09 PM GMT+1 [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+6/19/2025, 3:48:09 PM GMT+1 [Modules] No module updates available.
+6/19/2025, 4:16:23 PM GMT+1 [Modules] Modules initializing
+6/19/2025, 4:16:23 PM GMT+1 [Modules] Distribution: remote
+6/19/2025, 4:16:23 PM GMT+1 [Modules] Host updates: disabled
+6/19/2025, 4:16:23 PM GMT+1 [Modules] Module updates: enabled
+6/19/2025, 4:16:23 PM GMT+1 [Modules] Module install path: /home/daniel/.config/discord/0.0.88/modules
+6/19/2025, 4:16:23 PM GMT+1 [Modules] Module installed file path: /home/daniel/.config/discord/0.0.88/modules/installed.json
+6/19/2025, 4:16:23 PM GMT+1 [Modules] Module download path: /home/daniel/.config/discord/0.0.88/modules/pending
+6/19/2025, 4:16:23 PM GMT+1 [Modules] No updates to install
+6/19/2025, 4:16:23 PM GMT+1 [Modules] Host is up to date.
+6/19/2025, 4:16:23 PM GMT+1 [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+6/19/2025, 4:16:23 PM GMT+1 [Modules] No module updates available.
+6/19/2025, 4:16:27 PM GMT+1 [Modules] Host is up to date.
+6/19/2025, 4:16:27 PM GMT+1 [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+6/19/2025, 4:16:27 PM GMT+1 [Modules] No module updates available.
+6/19/2025, 5:00:57 PM GMT+1 [Modules] Modules initializing
+6/19/2025, 5:00:57 PM GMT+1 [Modules] Distribution: remote
+6/19/2025, 5:00:57 PM GMT+1 [Modules] Host updates: disabled
+6/19/2025, 5:00:57 PM GMT+1 [Modules] Module updates: enabled
+6/19/2025, 5:00:57 PM GMT+1 [Modules] Module install path: /home/daniel/.config/discord/0.0.88/modules
+6/19/2025, 5:00:57 PM GMT+1 [Modules] Module installed file path: /home/daniel/.config/discord/0.0.88/modules/installed.json
+6/19/2025, 5:00:57 PM GMT+1 [Modules] Module download path: /home/daniel/.config/discord/0.0.88/modules/pending
+6/19/2025, 5:00:57 PM GMT+1 [Modules] No updates to install
+6/19/2025, 5:00:57 PM GMT+1 [Modules] Host is up to date.
+6/19/2025, 5:00:57 PM GMT+1 [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+6/19/2025, 5:00:58 PM GMT+1 [Modules] No module updates available.
+6/19/2025, 5:01:02 PM GMT+1 [Modules] Host is up to date.
+6/19/2025, 5:01:02 PM GMT+1 [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+6/19/2025, 5:01:02 PM GMT+1 [Modules] No module updates available.
+6/19/2025, 5:53:19 PM GMT+1 [Modules] Modules initializing
+6/19/2025, 5:53:19 PM GMT+1 [Modules] Distribution: remote
+6/19/2025, 5:53:19 PM GMT+1 [Modules] Host updates: disabled
+6/19/2025, 5:53:19 PM GMT+1 [Modules] Module updates: enabled
+6/19/2025, 5:53:19 PM GMT+1 [Modules] Module install path: /home/daniel/.config/discord/0.0.88/modules
+6/19/2025, 5:53:19 PM GMT+1 [Modules] Module installed file path: /home/daniel/.config/discord/0.0.88/modules/installed.json
+6/19/2025, 5:53:19 PM GMT+1 [Modules] Module download path: /home/daniel/.config/discord/0.0.88/modules/pending
+6/19/2025, 5:53:19 PM GMT+1 [Modules] No updates to install
+6/19/2025, 5:53:19 PM GMT+1 [Modules] Host is up to date.
+6/19/2025, 5:53:19 PM GMT+1 [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+6/19/2025, 5:53:19 PM GMT+1 [Modules] No module updates available.
+6/19/2025, 5:53:24 PM GMT+1 [Modules] Host is up to date.
+6/19/2025, 5:53:24 PM GMT+1 [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+6/19/2025, 5:53:24 PM GMT+1 [Modules] No module updates available.
+6/19/2025, 6:53:24 PM GMT+1 [Modules] Host is up to date.
+6/19/2025, 6:53:24 PM GMT+1 [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+6/19/2025, 6:53:24 PM GMT+1 [Modules] No module updates available.
+6/19/2025, 7:53:24 PM GMT+1 [Modules] Host is up to date.
+6/19/2025, 7:53:24 PM GMT+1 [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+6/19/2025, 7:53:24 PM GMT+1 [Modules] No module updates available.
+6/19/2025, 7:57:22 PM GMT+1 [Modules] Modules initializing
+6/19/2025, 7:57:22 PM GMT+1 [Modules] Distribution: remote
+6/19/2025, 7:57:22 PM GMT+1 [Modules] Host updates: disabled
+6/19/2025, 7:57:22 PM GMT+1 [Modules] Module updates: enabled
+6/19/2025, 7:57:22 PM GMT+1 [Modules] Module install path: /home/daniel/.config/discord/0.0.88/modules
+6/19/2025, 7:57:22 PM GMT+1 [Modules] Module installed file path: /home/daniel/.config/discord/0.0.88/modules/installed.json
+6/19/2025, 7:57:22 PM GMT+1 [Modules] Module download path: /home/daniel/.config/discord/0.0.88/modules/pending
+6/19/2025, 7:57:22 PM GMT+1 [Modules] No updates to install
+6/19/2025, 7:57:22 PM GMT+1 [Modules] Host is up to date.
+6/19/2025, 7:57:22 PM GMT+1 [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+6/19/2025, 7:57:22 PM GMT+1 [Modules] No module updates available.
+6/19/2025, 7:57:27 PM GMT+1 [Modules] Host is up to date.
+6/19/2025, 7:57:27 PM GMT+1 [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+6/19/2025, 7:57:27 PM GMT+1 [Modules] No module updates available.
+6/19/2025, 8:56:26 PM GMT+1 [Modules] Modules initializing
+6/19/2025, 8:56:26 PM GMT+1 [Modules] Distribution: remote
+6/19/2025, 8:56:26 PM GMT+1 [Modules] Host updates: disabled
+6/19/2025, 8:56:26 PM GMT+1 [Modules] Module updates: enabled
+6/19/2025, 8:56:26 PM GMT+1 [Modules] Module install path: /home/daniel/.config/discord/0.0.88/modules
+6/19/2025, 8:56:26 PM GMT+1 [Modules] Module installed file path: /home/daniel/.config/discord/0.0.88/modules/installed.json
+6/19/2025, 8:56:26 PM GMT+1 [Modules] Module download path: /home/daniel/.config/discord/0.0.88/modules/pending
+6/19/2025, 8:56:26 PM GMT+1 [Modules] No updates to install
+6/19/2025, 8:56:26 PM GMT+1 [Modules] Host is up to date.
+6/19/2025, 8:56:26 PM GMT+1 [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+6/19/2025, 8:56:26 PM GMT+1 [Modules] No module updates available.
+6/19/2025, 8:56:31 PM GMT+1 [Modules] Host is up to date.
+6/19/2025, 8:56:31 PM GMT+1 [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+6/19/2025, 8:56:31 PM GMT+1 [Modules] No module updates available.
+6/19/2025, 9:56:31 PM GMT+1 [Modules] Host is up to date.
+6/19/2025, 9:56:31 PM GMT+1 [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+6/19/2025, 9:56:31 PM GMT+1 [Modules] No module updates available.
+6/19/2025, 10:56:31 PM GMT+1 [Modules] Host is up to date.
+6/19/2025, 10:56:31 PM GMT+1 [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+6/19/2025, 10:56:31 PM GMT+1 [Modules] No module updates available.
+6/19/2025, 11:56:31 PM GMT+1 [Modules] Host is up to date.
+6/19/2025, 11:56:31 PM GMT+1 [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+6/19/2025, 11:56:31 PM GMT+1 [Modules] No module updates available.
+6/20/2025, 8:44:25 AM GMT+1 [Modules] Modules initializing
+6/20/2025, 8:44:25 AM GMT+1 [Modules] Distribution: remote
+6/20/2025, 8:44:25 AM GMT+1 [Modules] Host updates: disabled
+6/20/2025, 8:44:25 AM GMT+1 [Modules] Module updates: enabled
+6/20/2025, 8:44:25 AM GMT+1 [Modules] Module install path: /home/daniel/.config/discord/0.0.88/modules
+6/20/2025, 8:44:25 AM GMT+1 [Modules] Module installed file path: /home/daniel/.config/discord/0.0.88/modules/installed.json
+6/20/2025, 8:44:25 AM GMT+1 [Modules] Module download path: /home/daniel/.config/discord/0.0.88/modules/pending
+6/20/2025, 8:44:25 AM GMT+1 [Modules] No updates to install
+6/20/2025, 8:44:25 AM GMT+1 [Modules] Host is up to date.
+6/20/2025, 8:44:25 AM GMT+1 [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+6/20/2025, 8:44:25 AM GMT+1 [Modules] No module updates available.
+6/20/2025, 8:44:30 AM GMT+1 [Modules] Host is up to date.
+6/20/2025, 8:44:30 AM GMT+1 [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+6/20/2025, 8:44:30 AM GMT+1 [Modules] No module updates available.
+6/20/2025, 7:29:44 PM GMT+1 [Modules] Modules initializing
+6/20/2025, 7:29:44 PM GMT+1 [Modules] Distribution: remote
+6/20/2025, 7:29:44 PM GMT+1 [Modules] Host updates: disabled
+6/20/2025, 7:29:44 PM GMT+1 [Modules] Module updates: enabled
+6/20/2025, 7:29:44 PM GMT+1 [Modules] Module install path: /home/daniel/.config/discord/0.0.88/modules
+6/20/2025, 7:29:44 PM GMT+1 [Modules] Module installed file path: /home/daniel/.config/discord/0.0.88/modules/installed.json
+6/20/2025, 7:29:44 PM GMT+1 [Modules] Module download path: /home/daniel/.config/discord/0.0.88/modules/pending
+6/20/2025, 7:29:45 PM GMT+1 [Modules] No updates to install
+6/20/2025, 7:29:45 PM GMT+1 [Modules] Host is up to date.
+6/20/2025, 7:29:45 PM GMT+1 [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+6/20/2025, 7:29:45 PM GMT+1 [Modules] No module updates available.
+6/20/2025, 7:29:49 PM GMT+1 [Modules] Host is up to date.
+6/20/2025, 7:29:49 PM GMT+1 [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+6/20/2025, 7:29:49 PM GMT+1 [Modules] No module updates available.
+6/20/2025, 8:29:49 PM GMT+1 [Modules] Host is up to date.
+6/20/2025, 8:29:49 PM GMT+1 [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+6/20/2025, 8:29:49 PM GMT+1 [Modules] No module updates available.
+6/20/2025, 9:29:49 PM GMT+1 [Modules] Host is up to date.
+6/20/2025, 9:29:49 PM GMT+1 [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+6/20/2025, 9:29:49 PM GMT+1 [Modules] No module updates available.
+6/20/2025, 10:29:49 PM GMT+1 [Modules] Host is up to date.
+6/20/2025, 10:29:49 PM GMT+1 [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+6/20/2025, 10:29:49 PM GMT+1 [Modules] No module updates available.
+6/20/2025, 11:29:49 PM GMT+1 [Modules] Host is up to date.
+6/20/2025, 11:29:49 PM GMT+1 [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+6/20/2025, 11:29:49 PM GMT+1 [Modules] No module updates available.
+6/21/2025, 12:29:49 AM GMT+1 [Modules] Host is up to date.
+6/21/2025, 12:29:49 AM GMT+1 [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+6/21/2025, 12:29:49 AM GMT+1 [Modules] No module updates available.
+6/21/2025, 1:29:49 AM GMT+1 [Modules] Host is up to date.
+6/21/2025, 1:29:49 AM GMT+1 [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+6/21/2025, 1:29:49 AM GMT+1 [Modules] No module updates available.
+6/21/2025, 2:29:49 AM GMT+1 [Modules] Host is up to date.
+6/21/2025, 2:29:49 AM GMT+1 [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+6/21/2025, 2:29:49 AM GMT+1 [Modules] No module updates available.
+6/21/2025, 11:25:57 AM GMT+1 [Modules] Modules initializing
+6/21/2025, 11:25:57 AM GMT+1 [Modules] Distribution: remote
+6/21/2025, 11:25:57 AM GMT+1 [Modules] Host updates: disabled
+6/21/2025, 11:25:57 AM GMT+1 [Modules] Module updates: enabled
+6/21/2025, 11:25:57 AM GMT+1 [Modules] Module install path: /home/daniel/.config/discord/0.0.88/modules
+6/21/2025, 11:25:57 AM GMT+1 [Modules] Module installed file path: /home/daniel/.config/discord/0.0.88/modules/installed.json
+6/21/2025, 11:25:57 AM GMT+1 [Modules] Module download path: /home/daniel/.config/discord/0.0.88/modules/pending
+6/21/2025, 11:25:57 AM GMT+1 [Modules] No updates to install
+6/21/2025, 11:25:57 AM GMT+1 [Modules] Host is up to date.
+6/21/2025, 11:25:57 AM GMT+1 [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+6/21/2025, 11:25:58 AM GMT+1 [Modules] No module updates available.
+6/21/2025, 11:26:02 AM GMT+1 [Modules] Host is up to date.
+6/21/2025, 11:26:02 AM GMT+1 [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+6/21/2025, 11:26:02 AM GMT+1 [Modules] No module updates available.
+6/21/2025, 12:26:02 PM GMT+1 [Modules] Host is up to date.
+6/21/2025, 12:26:02 PM GMT+1 [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+6/21/2025, 12:26:02 PM GMT+1 [Modules] No module updates available.
+6/21/2025, 1:26:02 PM GMT+1 [Modules] Host is up to date.
+6/21/2025, 1:26:02 PM GMT+1 [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+6/21/2025, 1:26:02 PM GMT+1 [Modules] No module updates available.
+6/21/2025, 2:26:02 PM GMT+1 [Modules] Host is up to date.
+6/21/2025, 2:26:02 PM GMT+1 [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+6/21/2025, 2:26:02 PM GMT+1 [Modules] No module updates available.
+6/21/2025, 3:26:02 PM GMT+1 [Modules] Host is up to date.
+6/21/2025, 3:26:02 PM GMT+1 [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+6/21/2025, 3:26:02 PM GMT+1 [Modules] No module updates available.
+6/21/2025, 4:14:36 PM GMT+1 [Modules] Modules initializing
+6/21/2025, 4:14:36 PM GMT+1 [Modules] Distribution: remote
+6/21/2025, 4:14:36 PM GMT+1 [Modules] Host updates: disabled
+6/21/2025, 4:14:36 PM GMT+1 [Modules] Module updates: enabled
+6/21/2025, 4:14:36 PM GMT+1 [Modules] Module install path: /home/daniel/.config/discord/0.0.88/modules
+6/21/2025, 4:14:36 PM GMT+1 [Modules] Module installed file path: /home/daniel/.config/discord/0.0.88/modules/installed.json
+6/21/2025, 4:14:36 PM GMT+1 [Modules] Module download path: /home/daniel/.config/discord/0.0.88/modules/pending
+6/21/2025, 4:14:36 PM GMT+1 [Modules] No updates to install
+6/21/2025, 4:14:36 PM GMT+1 [Modules] Host is up to date.
+6/21/2025, 4:14:36 PM GMT+1 [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+6/21/2025, 4:14:36 PM GMT+1 [Modules] No module updates available.
+6/21/2025, 4:14:41 PM GMT+1 [Modules] Host is up to date.
+6/21/2025, 4:14:41 PM GMT+1 [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+6/21/2025, 4:14:41 PM GMT+1 [Modules] No module updates available.
+6/21/2025, 5:14:41 PM GMT+1 [Modules] Host is up to date.
+6/21/2025, 5:14:41 PM GMT+1 [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+6/21/2025, 5:14:42 PM GMT+1 [Modules] No module updates available.
+6/21/2025, 6:14:41 PM GMT+1 [Modules] Host is up to date.
+6/21/2025, 6:14:41 PM GMT+1 [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+6/21/2025, 6:14:42 PM GMT+1 [Modules] No module updates available.
+6/21/2025, 7:14:41 PM GMT+1 [Modules] Host is up to date.
+6/21/2025, 7:14:41 PM GMT+1 [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+6/21/2025, 7:14:42 PM GMT+1 [Modules] No module updates available.
+6/21/2025, 9:21:10 PM GMT+1 [Modules] Modules initializing
+6/21/2025, 9:21:10 PM GMT+1 [Modules] Distribution: remote
+6/21/2025, 9:21:10 PM GMT+1 [Modules] Host updates: disabled
+6/21/2025, 9:21:10 PM GMT+1 [Modules] Module updates: enabled
+6/21/2025, 9:21:10 PM GMT+1 [Modules] Module install path: /home/daniel/.config/discord/0.0.88/modules
+6/21/2025, 9:21:10 PM GMT+1 [Modules] Module installed file path: /home/daniel/.config/discord/0.0.88/modules/installed.json
+6/21/2025, 9:21:10 PM GMT+1 [Modules] Module download path: /home/daniel/.config/discord/0.0.88/modules/pending
+6/21/2025, 9:21:10 PM GMT+1 [Modules] No updates to install
+6/21/2025, 9:21:10 PM GMT+1 [Modules] Host is up to date.
+6/21/2025, 9:21:10 PM GMT+1 [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+6/21/2025, 9:21:10 PM GMT+1 [Modules] No module updates available.
+6/21/2025, 9:21:15 PM GMT+1 [Modules] Host is up to date.
+6/21/2025, 9:21:15 PM GMT+1 [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+6/21/2025, 9:21:15 PM GMT+1 [Modules] No module updates available.
+6/21/2025, 10:21:15 PM GMT+1 [Modules] Host is up to date.
+6/21/2025, 10:21:15 PM GMT+1 [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+6/21/2025, 10:21:15 PM GMT+1 [Modules] No module updates available.
+6/22/2025, 11:19:51 AM GMT+1 [Modules] Modules initializing
+6/22/2025, 11:19:51 AM GMT+1 [Modules] Distribution: remote
+6/22/2025, 11:19:51 AM GMT+1 [Modules] Host updates: disabled
+6/22/2025, 11:19:51 AM GMT+1 [Modules] Module updates: enabled
+6/22/2025, 11:19:51 AM GMT+1 [Modules] Module install path: /home/daniel/.config/discord/0.0.88/modules
+6/22/2025, 11:19:51 AM GMT+1 [Modules] Module installed file path: /home/daniel/.config/discord/0.0.88/modules/installed.json
+6/22/2025, 11:19:51 AM GMT+1 [Modules] Module download path: /home/daniel/.config/discord/0.0.88/modules/pending
+6/22/2025, 11:19:51 AM GMT+1 [Modules] No updates to install
+6/22/2025, 11:19:51 AM GMT+1 [Modules] Host is up to date.
+6/22/2025, 11:19:51 AM GMT+1 [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+6/22/2025, 11:19:52 AM GMT+1 [Modules] No module updates available.
+6/22/2025, 11:19:57 AM GMT+1 [Modules] Host is up to date.
+6/22/2025, 11:19:57 AM GMT+1 [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+6/22/2025, 11:19:57 AM GMT+1 [Modules] No module updates available.
+6/22/2025, 12:19:57 PM GMT+1 [Modules] Host is up to date.
+6/22/2025, 12:19:57 PM GMT+1 [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+6/22/2025, 12:19:57 PM GMT+1 [Modules] No module updates available.
+6/22/2025, 1:19:57 PM GMT+1 [Modules] Host is up to date.
+6/22/2025, 1:19:57 PM GMT+1 [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+6/22/2025, 1:19:57 PM GMT+1 [Modules] No module updates available.
+6/22/2025, 2:19:57 PM GMT+1 [Modules] Host is up to date.
+6/22/2025, 2:19:57 PM GMT+1 [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+6/22/2025, 2:19:57 PM GMT+1 [Modules] No module updates available.
+6/22/2025, 3:19:57 PM GMT+1 [Modules] Host is up to date.
+6/22/2025, 3:19:57 PM GMT+1 [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+6/22/2025, 3:19:57 PM GMT+1 [Modules] No module updates available.
+6/22/2025, 4:19:57 PM GMT+1 [Modules] Host is up to date.
+6/22/2025, 4:19:57 PM GMT+1 [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+6/22/2025, 4:19:57 PM GMT+1 [Modules] No module updates available.
+6/22/2025, 5:19:57 PM GMT+1 [Modules] Host is up to date.
+6/22/2025, 5:19:57 PM GMT+1 [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+6/22/2025, 5:19:57 PM GMT+1 [Modules] No module updates available.
+6/22/2025, 6:19:57 PM GMT+1 [Modules] Host is up to date.
+6/22/2025, 6:19:57 PM GMT+1 [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+6/22/2025, 6:19:57 PM GMT+1 [Modules] No module updates available.
+6/22/2025, 7:19:57 PM GMT+1 [Modules] Host is up to date.
+6/22/2025, 7:19:57 PM GMT+1 [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+6/22/2025, 7:19:57 PM GMT+1 [Modules] No module updates available.
+6/22/2025, 8:19:57 PM GMT+1 [Modules] Host is up to date.
+6/22/2025, 8:19:57 PM GMT+1 [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+6/22/2025, 8:19:57 PM GMT+1 [Modules] No module updates available.
+6/22/2025, 9:19:57 PM GMT+1 [Modules] Host is up to date.
+6/22/2025, 9:19:57 PM GMT+1 [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+6/22/2025, 9:19:57 PM GMT+1 [Modules] No module updates available.
+6/23/2025, 11:31:19 AM GMT+1 [Modules] Modules initializing
+6/23/2025, 11:31:19 AM GMT+1 [Modules] Distribution: remote
+6/23/2025, 11:31:19 AM GMT+1 [Modules] Host updates: disabled
+6/23/2025, 11:31:19 AM GMT+1 [Modules] Module updates: enabled
+6/23/2025, 11:31:19 AM GMT+1 [Modules] Module install path: /home/daniel/.config/discord/0.0.88/modules
+6/23/2025, 11:31:19 AM GMT+1 [Modules] Module installed file path: /home/daniel/.config/discord/0.0.88/modules/installed.json
+6/23/2025, 11:31:19 AM GMT+1 [Modules] Module download path: /home/daniel/.config/discord/0.0.88/modules/pending
+6/23/2025, 11:31:19 AM GMT+1 [Modules] No updates to install
+6/23/2025, 11:31:19 AM GMT+1 [Modules] Host is up to date.
+6/23/2025, 11:31:19 AM GMT+1 [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+6/23/2025, 11:31:19 AM GMT+1 [Modules] No module updates available.
+6/23/2025, 11:31:24 AM GMT+1 [Modules] Host is up to date.
+6/23/2025, 11:31:24 AM GMT+1 [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+6/23/2025, 11:31:24 AM GMT+1 [Modules] No module updates available.
+6/23/2025, 12:05:57 PM GMT+1 [Modules] Modules initializing
+6/23/2025, 12:05:57 PM GMT+1 [Modules] Distribution: remote
+6/23/2025, 12:05:57 PM GMT+1 [Modules] Host updates: disabled
+6/23/2025, 12:05:57 PM GMT+1 [Modules] Module updates: enabled
+6/23/2025, 12:05:57 PM GMT+1 [Modules] Module install path: /home/daniel/.config/discord/0.0.88/modules
+6/23/2025, 12:05:57 PM GMT+1 [Modules] Module installed file path: /home/daniel/.config/discord/0.0.88/modules/installed.json
+6/23/2025, 12:05:57 PM GMT+1 [Modules] Module download path: /home/daniel/.config/discord/0.0.88/modules/pending
+6/23/2025, 12:05:57 PM GMT+1 [Modules] No updates to install
+6/23/2025, 12:05:57 PM GMT+1 [Modules] Host is up to date.
+6/23/2025, 12:05:57 PM GMT+1 [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+6/23/2025, 12:05:57 PM GMT+1 [Modules] No module updates available.
+6/23/2025, 12:06:02 PM GMT+1 [Modules] Host is up to date.
+6/23/2025, 12:06:02 PM GMT+1 [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+6/23/2025, 12:06:02 PM GMT+1 [Modules] No module updates available.
+6/23/2025, 1:06:02 PM GMT+1 [Modules] Host is up to date.
+6/23/2025, 1:06:02 PM GMT+1 [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+6/23/2025, 1:06:02 PM GMT+1 [Modules] No module updates available.
+6/23/2025, 2:06:02 PM GMT+1 [Modules] Host is up to date.
+6/23/2025, 2:06:02 PM GMT+1 [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+6/23/2025, 2:06:02 PM GMT+1 [Modules] No module updates available.
+6/23/2025, 3:06:02 PM GMT+1 [Modules] Host is up to date.
+6/23/2025, 3:06:02 PM GMT+1 [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+6/23/2025, 3:06:02 PM GMT+1 [Modules] No module updates available.
+6/23/2025, 4:06:02 PM GMT+1 [Modules] Host is up to date.
+6/23/2025, 4:06:02 PM GMT+1 [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+6/23/2025, 4:06:02 PM GMT+1 [Modules] No module updates available.
+6/23/2025, 5:06:02 PM GMT+1 [Modules] Host is up to date.
+6/23/2025, 5:06:02 PM GMT+1 [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+6/23/2025, 5:06:02 PM GMT+1 [Modules] No module updates available.
+6/23/2025, 6:06:02 PM GMT+1 [Modules] Host is up to date.
+6/23/2025, 6:06:02 PM GMT+1 [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+6/23/2025, 6:06:02 PM GMT+1 [Modules] No module updates available.
+6/23/2025, 7:06:02 PM GMT+1 [Modules] Host is up to date.
+6/23/2025, 7:06:02 PM GMT+1 [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+6/23/2025, 7:06:02 PM GMT+1 [Modules] No module updates available.
+6/24/2025, 6:48:41 PM GMT+1 [Modules] Modules initializing
+6/24/2025, 6:48:41 PM GMT+1 [Modules] Distribution: remote
+6/24/2025, 6:48:41 PM GMT+1 [Modules] Host updates: disabled
+6/24/2025, 6:48:41 PM GMT+1 [Modules] Module updates: enabled
+6/24/2025, 6:48:41 PM GMT+1 [Modules] Module install path: /home/daniel/.config/discord/0.0.88/modules
+6/24/2025, 6:48:41 PM GMT+1 [Modules] Module installed file path: /home/daniel/.config/discord/0.0.88/modules/installed.json
+6/24/2025, 6:48:41 PM GMT+1 [Modules] Module download path: /home/daniel/.config/discord/0.0.88/modules/pending
+6/24/2025, 6:48:41 PM GMT+1 [Modules] No updates to install
+6/24/2025, 6:48:41 PM GMT+1 [Modules] Host is up to date.
+6/24/2025, 6:48:41 PM GMT+1 [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+6/24/2025, 6:48:41 PM GMT+1 [Modules] No module updates available.
+6/24/2025, 6:48:46 PM GMT+1 [Modules] Host is up to date.
+6/24/2025, 6:48:46 PM GMT+1 [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+6/24/2025, 6:48:46 PM GMT+1 [Modules] No module updates available.
+6/24/2025, 7:48:46 PM GMT+1 [Modules] Host is up to date.
+6/24/2025, 7:48:46 PM GMT+1 [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+6/24/2025, 7:48:47 PM GMT+1 [Modules] No module updates available.
+6/24/2025, 8:48:46 PM GMT+1 [Modules] Host is up to date.
+6/24/2025, 8:48:46 PM GMT+1 [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+6/24/2025, 8:48:47 PM GMT+1 [Modules] No module updates available.
+6/24/2025, 9:48:46 PM GMT+1 [Modules] Host is up to date.
+6/24/2025, 9:48:46 PM GMT+1 [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+6/24/2025, 9:48:46 PM GMT+1 [Modules] No module updates available.
+6/25/2025, 12:25:06 AM GMT+1 [Modules] Modules initializing
+6/25/2025, 12:25:06 AM GMT+1 [Modules] Distribution: remote
+6/25/2025, 12:25:06 AM GMT+1 [Modules] Host updates: disabled
+6/25/2025, 12:25:06 AM GMT+1 [Modules] Module updates: enabled
+6/25/2025, 12:25:06 AM GMT+1 [Modules] Module install path: /home/daniel/.config/discord/0.0.88/modules
+6/25/2025, 12:25:06 AM GMT+1 [Modules] Module installed file path: /home/daniel/.config/discord/0.0.88/modules/installed.json
+6/25/2025, 12:25:06 AM GMT+1 [Modules] Module download path: /home/daniel/.config/discord/0.0.88/modules/pending
+6/25/2025, 12:25:06 AM GMT+1 [Modules] No updates to install
+6/25/2025, 12:25:06 AM GMT+1 [Modules] Host is up to date.
+6/25/2025, 12:25:06 AM GMT+1 [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+6/25/2025, 12:25:06 AM GMT+1 [Modules] No module updates available.
+6/25/2025, 12:25:11 AM GMT+1 [Modules] Host is up to date.
+6/25/2025, 12:25:11 AM GMT+1 [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+6/25/2025, 12:25:11 AM GMT+1 [Modules] No module updates available.
+6/25/2025, 1:25:11 AM GMT+1 [Modules] Host is up to date.
+6/25/2025, 1:25:11 AM GMT+1 [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+6/25/2025, 1:25:11 AM GMT+1 [Modules] No module updates available.
+6/25/2025, 11:00:43 AM GMT+1 [Modules] Modules initializing
+6/25/2025, 11:00:43 AM GMT+1 [Modules] Distribution: remote
+6/25/2025, 11:00:43 AM GMT+1 [Modules] Host updates: disabled
+6/25/2025, 11:00:43 AM GMT+1 [Modules] Module updates: enabled
+6/25/2025, 11:00:43 AM GMT+1 [Modules] Module install path: /home/daniel/.config/discord/0.0.88/modules
+6/25/2025, 11:00:43 AM GMT+1 [Modules] Module installed file path: /home/daniel/.config/discord/0.0.88/modules/installed.json
+6/25/2025, 11:00:43 AM GMT+1 [Modules] Module download path: /home/daniel/.config/discord/0.0.88/modules/pending
+6/25/2025, 11:00:43 AM GMT+1 [Modules] No updates to install
+6/25/2025, 11:00:43 AM GMT+1 [Modules] Host is up to date.
+6/25/2025, 11:00:43 AM GMT+1 [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+6/25/2025, 11:00:43 AM GMT+1 [Modules] No module updates available.
+6/25/2025, 11:00:48 AM GMT+1 [Modules] Host is up to date.
+6/25/2025, 11:00:48 AM GMT+1 [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+6/25/2025, 11:00:48 AM GMT+1 [Modules] No module updates available.
+6/25/2025, 12:00:48 PM GMT+1 [Modules] Host is up to date.
+6/25/2025, 12:00:48 PM GMT+1 [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+6/25/2025, 12:00:48 PM GMT+1 [Modules] No module updates available.
+6/25/2025, 1:00:48 PM GMT+1 [Modules] Host is up to date.
+6/25/2025, 1:00:48 PM GMT+1 [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+6/25/2025, 1:00:48 PM GMT+1 [Modules] No module updates available.
+6/25/2025, 2:00:48 PM GMT+1 [Modules] Host is up to date.
+6/25/2025, 2:00:48 PM GMT+1 [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+6/25/2025, 2:00:48 PM GMT+1 [Modules] No module updates available.
+6/25/2025, 2:15:36 PM GMT+1 [Modules] Modules initializing
+6/25/2025, 2:15:36 PM GMT+1 [Modules] Distribution: remote
+6/25/2025, 2:15:36 PM GMT+1 [Modules] Host updates: disabled
+6/25/2025, 2:15:36 PM GMT+1 [Modules] Module updates: enabled
+6/25/2025, 2:15:36 PM GMT+1 [Modules] Module install path: /home/daniel/.config/discord/0.0.88/modules
+6/25/2025, 2:15:36 PM GMT+1 [Modules] Module installed file path: /home/daniel/.config/discord/0.0.88/modules/installed.json
+6/25/2025, 2:15:36 PM GMT+1 [Modules] Module download path: /home/daniel/.config/discord/0.0.88/modules/pending
+6/25/2025, 2:15:36 PM GMT+1 [Modules] No updates to install
+6/25/2025, 2:15:36 PM GMT+1 [Modules] Host is up to date.
+6/25/2025, 2:15:36 PM GMT+1 [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+6/25/2025, 2:15:36 PM GMT+1 [Modules] No module updates available.
+6/25/2025, 2:15:41 PM GMT+1 [Modules] Host is up to date.
+6/25/2025, 2:15:41 PM GMT+1 [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+6/25/2025, 2:15:41 PM GMT+1 [Modules] No module updates available.
+6/25/2025, 3:15:41 PM GMT+1 [Modules] Host is up to date.
+6/25/2025, 3:15:41 PM GMT+1 [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+6/25/2025, 3:15:41 PM GMT+1 [Modules] No module updates available.
+6/25/2025, 4:15:41 PM GMT+1 [Modules] Host is up to date.
+6/25/2025, 4:15:41 PM GMT+1 [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+6/25/2025, 4:15:41 PM GMT+1 [Modules] No module updates available.
+6/25/2025, 5:15:41 PM GMT+1 [Modules] Host is up to date.
+6/25/2025, 5:15:41 PM GMT+1 [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+6/25/2025, 5:15:41 PM GMT+1 [Modules] No module updates available.
+6/25/2025, 6:15:41 PM GMT+1 [Modules] Host is up to date.
+6/25/2025, 6:15:41 PM GMT+1 [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+6/25/2025, 6:15:41 PM GMT+1 [Modules] No module updates available.
+6/25/2025, 7:15:41 PM GMT+1 [Modules] Host is up to date.
+6/25/2025, 7:15:41 PM GMT+1 [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+6/25/2025, 7:15:41 PM GMT+1 [Modules] No module updates available.
+6/25/2025, 8:15:41 PM GMT+1 [Modules] Host is up to date.
+6/25/2025, 8:15:41 PM GMT+1 [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+6/25/2025, 8:15:41 PM GMT+1 [Modules] No module updates available.
+6/25/2025, 9:15:41 PM GMT+1 [Modules] Host is up to date.
+6/25/2025, 9:15:41 PM GMT+1 [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+6/25/2025, 9:15:41 PM GMT+1 [Modules] No module updates available.
+6/25/2025, 10:15:41 PM GMT+1 [Modules] Host is up to date.
+6/25/2025, 10:15:41 PM GMT+1 [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+6/25/2025, 10:15:41 PM GMT+1 [Modules] No module updates available.
+6/25/2025, 11:15:41 PM GMT+1 [Modules] Host is up to date.
+6/25/2025, 11:15:41 PM GMT+1 [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+6/25/2025, 11:15:41 PM GMT+1 [Modules] No module updates available.
+6/27/2025, 12:18:43 PM GMT+1 [Modules] Modules initializing
+6/27/2025, 12:18:43 PM GMT+1 [Modules] Distribution: remote
+6/27/2025, 12:18:43 PM GMT+1 [Modules] Host updates: disabled
+6/27/2025, 12:18:43 PM GMT+1 [Modules] Module updates: enabled
+6/27/2025, 12:18:43 PM GMT+1 [Modules] Module install path: /home/daniel/.config/discord/0.0.88/modules
+6/27/2025, 12:18:43 PM GMT+1 [Modules] Module installed file path: /home/daniel/.config/discord/0.0.88/modules/installed.json
+6/27/2025, 12:18:43 PM GMT+1 [Modules] Module download path: /home/daniel/.config/discord/0.0.88/modules/pending
+6/27/2025, 12:18:44 PM GMT+1 [Modules] No updates to install
+6/27/2025, 12:18:44 PM GMT+1 [Modules] Host is up to date.
+6/27/2025, 12:18:44 PM GMT+1 [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+6/27/2025, 12:18:44 PM GMT+1 [Modules] No module updates available.
+6/27/2025, 12:18:50 PM GMT+1 [Modules] Host is up to date.
+6/27/2025, 12:18:50 PM GMT+1 [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+6/27/2025, 12:18:50 PM GMT+1 [Modules] No module updates available.

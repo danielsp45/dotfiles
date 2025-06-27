@@ -1,0 +1,22 @@
+<svg
+	xmlns="http://www.w3.org/2000/svg"
+	width="20"
+	height="20"
+	fill="none"
+	stroke="#91918E"
+><path
+		stroke-linecap="round"
+		stroke-miterlimit="10"
+		stroke-width="1.5"
+		d="M6.25 2.25h4.086a1 1 0 0 1 .707.293l4.414 4.414a1 1 0 0 1 .293.707v8.086a2 2 0 0 1-2 2h-7.5a2 2 0 0 1-2-2V4.25a2 2 0 0 1 2-2Z"
+	/><path
+		stroke-linecap="round"
+		stroke-miterlimit="10"
+		stroke-width="1.5"
+		d="M10.25 2.25v3.5a2 2 0 0 0 2 2h3.5"
+	/><path
+		stroke-linecap="round"
+		stroke-linejoin="round"
+		stroke-width="1.25"
+		d="M7.75 11.25h5.75M7.25 14.25H13M8.5 16l1-6.5m2 6.5 1-6.5"
+	/></svg>

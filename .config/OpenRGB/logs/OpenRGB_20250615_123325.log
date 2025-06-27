@@ -1,0 +1,14 @@
+    OpenRGB v0.9
+    Commit:  from 
+    Launched: 20250615_123325
+====================================================================================================
+
+0     |Info:    Found file: Default.orp attempting to validate header
+0     |Info:    Valid v4 profile found for Default
+3390  |Info:    Profile loading: Succeeded for ASUS TUF GAMING B650-E WIFI @ HID: /dev/hidraw5
+13939 |Info:    Profile loading: Succeeded for ASUS TUF GAMING B650-E WIFI @ HID: /dev/hidraw5
+14703 |Info:    Profile loading: Succeeded for ASUS TUF GAMING B650-E WIFI @ HID: /dev/hidraw5
+15057 |Info:    Profile loading: Succeeded for ASUS TUF GAMING B650-E WIFI @ HID: /dev/hidraw5
+15363 |Info:    Profile loading: Succeeded for ASUS TUF GAMING B650-E WIFI @ HID: /dev/hidraw5
+16947 |Info:    Found file: Default.orp attempting to validate header
+16947 |Info:    Valid v4 profile found for Default

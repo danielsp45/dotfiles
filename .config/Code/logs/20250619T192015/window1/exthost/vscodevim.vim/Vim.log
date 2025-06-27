@@ -1,0 +1,53 @@
+2025-06-19 19:20:31.045 [info] Configuration changed
+2025-06-19 19:20:32.101 [info] Configuration changed
+2025-06-19 19:20:33.987 [info] Configuration changed
+2025-06-19 19:20:35.742 [info] Configuration changed
+2025-06-19 19:20:37.242 [info] Configuration changed
+2025-06-19 19:20:46.434 [info] Configuration changed
+2025-06-19 19:20:47.022 [info] Configuration changed
+2025-06-19 19:20:47.605 [info] Configuration changed
+2025-06-19 19:20:47.620 [info] Configuration changed
+2025-06-19 19:20:48.866 [info] Configuration changed
+2025-06-19 19:22:29.960 [info] /response_f4e3fc7d-d96a-4c02-8614-885ad94fea54/0 closed
+2025-06-19 19:22:31.602 [info] /response_f4e3fc7d-d96a-4c02-8614-885ad94fea54/1 closed
+2025-06-19 19:22:34.296 [info] Active editor: vscode-chat-code-block://ff7bb4cd-fe5c-4f05-9473-9bbf7813baab/response_f4e3fc7d-d96a-4c02-8614-885ad94fea54/1#%7B%22references%22%3A%5B%5D%7D
+2025-06-19 19:23:49.575 [info] Active editor: untitled:Untitled-1
+2025-06-19 19:23:50.386 [info] Untitled-1 closed
+2025-06-19 19:23:52.994 [info] Untitled-1 closed
+2025-06-19 19:23:52.997 [info] Untitled-1 closed
+2025-06-19 19:24:17.427 [info] Active editor: untitled:Untitled-1
+2025-06-19 19:24:18.119 [info] Untitled-1 closed
+2025-06-19 19:24:27.738 [info] Untitled-1 closed
+2025-06-19 19:24:27.741 [info] Untitled-1 closed
+2025-06-19 19:24:33.363 [info] Active editor: file:///home/daniel/Projects/trash/SomasELetras%20-%20C%C3%B3pia/frontend/package.json
+2025-06-19 19:24:37.459 [info] Active editor: vscode-chat-code-block://ff7bb4cd-fe5c-4f05-9473-9bbf7813baab/response_f4e3fc7d-d96a-4c02-8614-885ad94fea54/0#%7B%22references%22%3A%5B%5D%7D
+2025-06-19 19:24:41.760 [info] Active editor: file:///home/daniel/Projects/trash/SomasELetras%20-%20C%C3%B3pia/frontend/package.json
+2025-06-19 19:24:55.948 [info] Executing :w
+2025-06-19 19:25:29.177 [info] Active editor: vscode-chat-code-block://ff7bb4cd-fe5c-4f05-9473-9bbf7813baab/response_f4e3fc7d-d96a-4c02-8614-885ad94fea54/1#%7B%22references%22%3A%5B%5D%7D
+2025-06-19 19:25:35.295 [info] /home/daniel/Projects/trash/SomasELetras - Cópia/backend_old/package.json closed
+2025-06-19 19:25:35.296 [info] Active editor: file:///home/daniel/Projects/trash/SomasELetras%20-%20C%C3%B3pia/frontend/package.json
+2025-06-19 19:25:35.297 [info] /home/daniel/Projects/trash/SomasELetras - Cópia/backend/package.json closed
+2025-06-19 19:27:12.838 [info] Active editor: vscode-chat-code-block://ff7bb4cd-fe5c-4f05-9473-9bbf7813baab/response_f4e3fc7d-d96a-4c02-8614-885ad94fea54/1#%7B%22references%22%3A%5B%5D%7D
+2025-06-19 19:27:26.158 [info] Active editor: file:///home/daniel/Projects/trash/SomasELetras%20-%20C%C3%B3pia/frontend/package.json
+2025-06-19 19:27:38.866 [info] /response_a4b8b475-922b-472e-9889-03099e69d21c/0 closed
+2025-06-19 19:27:40.281 [info] /response_a4b8b475-922b-472e-9889-03099e69d21c/1 closed
+2025-06-19 19:27:41.376 [info] /response_a4b8b475-922b-472e-9889-03099e69d21c/2 closed
+2025-06-19 19:28:14.680 [info] /response_aff12199-4b0e-4581-8900-075b9bf275c5/0 closed
+2025-06-19 19:28:15.701 [info] /response_aff12199-4b0e-4581-8900-075b9bf275c5/1 closed
+2025-06-19 19:28:16.446 [info] /response_aff12199-4b0e-4581-8900-075b9bf275c5/2 closed
+2025-06-19 19:28:18.421 [info] /response_aff12199-4b0e-4581-8900-075b9bf275c5/3 closed
+2025-06-19 19:28:19.682 [info] /response_aff12199-4b0e-4581-8900-075b9bf275c5/4 closed
+2025-06-19 19:28:19.761 [info] /response_aff12199-4b0e-4581-8900-075b9bf275c5/5 closed
+2025-06-19 19:28:25.692 [info] Active editor: vscode-chat-code-block://ff7bb4cd-fe5c-4f05-9473-9bbf7813baab/response_aff12199-4b0e-4581-8900-075b9bf275c5/5#%7B%22references%22%3A%5B%7B%22uri%22%3A%7B%22%24mid%22%3A1%2C%22fsPath%22%3A%22%2Fhome%2Fdaniel%2FProjects%2Ftrash%2FSomasELetras%20-%20C%C3%B3pia%2Ffrontend%2Fpackage.json%22%2C%22external%22%3A%22file%3A%2F%2F%2Fhome%2Fdaniel%2FProjects%2Ftrash%2FSomasELetras%2520-%2520C%25C3%25B3pia%2Ffrontend%2Fpackage.json%22%2C%22path%22%3A%22%2Fhome%2Fdaniel%2FProjects%2Ftrash%2FSomasELetras%20-%20C%C3%B3pia%2Ffrontend%2Fpackage.json%22%2C%22scheme%22%3A%22file%22%7D%7D%5D%7D
+2025-06-19 19:30:44.302 [info] /home/daniel/Projects/trash/SomasELetras - Cópia/backend/package.json closed
+2025-06-19 19:30:44.303 [info] Active editor: file:///home/daniel/Projects/trash/SomasELetras%20-%20C%C3%B3pia/frontend/package.json
+2025-06-19 19:30:44.304 [info] /home/daniel/Projects/trash/SomasELetras - Cópia/backend_old/package.json closed
+2025-06-19 19:39:58.041 [info] Active editor: file:///home/daniel/Projects/trash/SomasELetras%20-%20C%C3%B3pia/frontend/vue.config.js
+2025-06-19 19:40:15.552 [info] Executing :w
+2025-06-19 19:41:24.308 [info] /response_24bd273a-358b-4f5d-8bef-d7e0d0b42a0a/0 closed
+2025-06-19 19:41:24.881 [info] /response_24bd273a-358b-4f5d-8bef-d7e0d0b42a0a/1 closed
+2025-06-19 19:41:25.882 [info] /response_24bd273a-358b-4f5d-8bef-d7e0d0b42a0a/2 closed
+2025-06-19 19:41:54.871 [info] Active editor: vscode-chat-code-block://ff7bb4cd-fe5c-4f05-9473-9bbf7813baab/response_24bd273a-358b-4f5d-8bef-d7e0d0b42a0a/0#%7B%22references%22%3A%5B%7B%22uri%22%3A%7B%22%24mid%22%3A1%2C%22fsPath%22%3A%22%2Fhome%2Fdaniel%2FProjects%2Ftrash%2FSomasELetras%20-%20C%C3%B3pia%2Ffrontend%2Fvue.config.js%22%2C%22external%22%3A%22file%3A%2F%2F%2Fhome%2Fdaniel%2FProjects%2Ftrash%2FSomasELetras%2520-%2520C%25C3%25B3pia%2Ffrontend%2Fvue.config.js%22%2C%22path%22%3A%22%2Fhome%2Fdaniel%2FProjects%2Ftrash%2FSomasELetras%20-%20C%C3%B3pia%2Ffrontend%2Fvue.config.js%22%2C%22scheme%22%3A%22file%22%7D%2C%22range%22%3A%7B%22startLineNumber%22%3A1%2C%22startColumn%22%3A1%2C%22endLineNumber%22%3A5%2C%22endColumn%22%3A1%7D%7D%5D%7D
+2025-06-19 19:42:28.916 [info] Active editor: file:///home/daniel/Projects/trash/SomasELetras%20-%20C%C3%B3pia/frontend/vue.config.js
+2025-06-19 19:42:52.866 [info] /response_871ff8c8-7388-4101-a39d-35d2211b0290/0 closed
+2025-06-19 19:42:55.169 [info] /response_871ff8c8-7388-4101-a39d-35d2211b0290/1 closed

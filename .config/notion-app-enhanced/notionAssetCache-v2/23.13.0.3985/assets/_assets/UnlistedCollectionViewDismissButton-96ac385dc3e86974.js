@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunknotion_next=globalThis.webpackChunknotion_next||[]).push([[52274],{925409:(n,i,o)=>{o.r(i),o.d(i,{default:()=>a});o(296540);var s=()=>o(681445),t=()=>o(581495),e=o(474848);function a(){return(0,e.jsx)(t().Rz,{onDismiss:()=>{s().S.close()},style:{position:void 0,marginLeft:6}})}}}]);

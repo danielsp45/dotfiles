@@ -1,0 +1,145 @@
+2025-06-19 19:20:16.140 [info] Started local extension host with pid 21377.
+2025-06-19 19:20:16.435 [info] Invoking resolveAuthority(ssh-remote)...
+2025-06-19 19:20:16.435 [info] [LocalProcess0][resolveAuthority(ssh-remote,1)][0ms] obtaining proxy...
+2025-06-19 19:20:16.435 [info] [LocalProcess0][resolveAuthority(ssh-remote,1)][0ms] invoking...
+2025-06-19 19:20:17.435 [info] [LocalProcess0][resolveAuthority(ssh-remote,1)][1000ms] waiting...
+2025-06-19 19:20:18.435 [info] [LocalProcess0][resolveAuthority(ssh-remote,1)][2000ms] waiting...
+2025-06-19 19:20:19.201 [error] [/home/daniel/.vscode/extensions/ms-dotnettools.vscode-dotnet-runtime-2.3.5]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.99.0.
+2025-06-19 19:20:19.223 [error] [/home/daniel/.vscode/extensions/ms-vscode-remote.remote-wsl-0.99.0]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.99.0.
+2025-06-19 19:20:19.223 [error] [/home/daniel/.vscode/extensions/ms-vscode-remote.remote-containers-0.417.0]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.99.0.
+2025-06-19 19:20:19.223 [error] [/home/daniel/.vscode/extensions/github.vscode-pull-request-github-0.110.0]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0.
+2025-06-19 19:20:19.224 [error] [/home/daniel/.vscode/extensions/ms-python.vscode-pylance-2025.6.1]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.99.0.
+2025-06-19 19:20:19.435 [info] [LocalProcess0][resolveAuthority(ssh-remote,1)][3000ms] waiting...
+2025-06-19 19:20:20.435 [info] [LocalProcess0][resolveAuthority(ssh-remote,1)][4000ms] waiting...
+2025-06-19 19:20:21.435 [info] [LocalProcess0][resolveAuthority(ssh-remote,1)][5000ms] waiting...
+2025-06-19 19:20:21.494 [info] [LocalProcess0][resolveAuthority(ssh-remote,1)][5059ms] returned Managed(1)
+2025-06-19 19:20:21.495 [info] resolveAuthority(ssh-remote) returned 'Managed(1)' after 5059 ms
+2025-06-19 19:20:21.495 [info] Creating a socket (renderer-Management-5c0ee6e4-5d5e-4ebf-974b-5fb7fd2a5a9d)...
+2025-06-19 19:20:21.495 [info] Creating a socket (renderer-ExtensionHost-8af2f395-4a87-4041-a831-8784407fd1b4)...
+2025-06-19 19:20:25.068 [info] Creating a socket (renderer-ExtensionHost-8af2f395-4a87-4041-a831-8784407fd1b4) was successful after 3573 ms.
+2025-06-19 19:20:25.069 [info] Creating a socket (renderer-Management-5c0ee6e4-5d5e-4ebf-974b-5fb7fd2a5a9d) was successful after 3574 ms.
+2025-06-19 19:20:27.134 [warning] No search provider registered for scheme: vscode-remote, waiting
+2025-06-19 19:20:27.401 [error] Canceled: Canceled
+    at p (vscode-file://vscode-app/nix/store/qsq8pyvxvwfwsvhsq6xqw1276hxzvv50-vscode-1.98.2/lib/vscode/resources/app/out/vs/workbench/workbench.desktop.main.js:1265:256)
+    at vscode-file://vscode-app/nix/store/qsq8pyvxvwfwsvhsq6xqw1276hxzvv50-vscode-1.98.2/lib/vscode/resources/app/out/vs/workbench/workbench.desktop.main.js:1265:315
+    at Object.dispose (vscode-file://vscode-app/nix/store/qsq8pyvxvwfwsvhsq6xqw1276hxzvv50-vscode-1.98.2/lib/vscode/resources/app/out/vs/workbench/workbench.desktop.main.js:8:627)
+    at Le (vscode-file://vscode-app/nix/store/qsq8pyvxvwfwsvhsq6xqw1276hxzvv50-vscode-1.98.2/lib/vscode/resources/app/out/vs/workbench/workbench.desktop.main.js:27:750)
+    at rUt.dispose (vscode-file://vscode-app/nix/store/qsq8pyvxvwfwsvhsq6xqw1276hxzvv50-vscode-1.98.2/lib/vscode/resources/app/out/vs/workbench/workbench.desktop.main.js:1265:1735)
+    at E0i.dispose (vscode-file://vscode-app/nix/store/qsq8pyvxvwfwsvhsq6xqw1276hxzvv50-vscode-1.98.2/lib/vscode/resources/app/out/vs/workbench/workbench.desktop.main.js:1265:2062)
+    at E0i.dispose (vscode-file://vscode-app/nix/store/qsq8pyvxvwfwsvhsq6xqw1276hxzvv50-vscode-1.98.2/lib/vscode/resources/app/out/vs/workbench/workbench.desktop.main.js:1265:9913)
+    at Le (vscode-file://vscode-app/nix/store/qsq8pyvxvwfwsvhsq6xqw1276hxzvv50-vscode-1.98.2/lib/vscode/resources/app/out/vs/workbench/workbench.desktop.main.js:27:750)
+    at Mmi.clear (vscode-file://vscode-app/nix/store/qsq8pyvxvwfwsvhsq6xqw1276hxzvv50-vscode-1.98.2/lib/vscode/resources/app/out/vs/workbench/workbench.desktop.main.js:27:1357)
+    at Mmi.dispose (vscode-file://vscode-app/nix/store/qsq8pyvxvwfwsvhsq6xqw1276hxzvv50-vscode-1.98.2/lib/vscode/resources/app/out/vs/workbench/workbench.desktop.main.js:27:1286)
+2025-06-19 19:20:27.405 [error] Canceled: Canceled
+    at p (vscode-file://vscode-app/nix/store/qsq8pyvxvwfwsvhsq6xqw1276hxzvv50-vscode-1.98.2/lib/vscode/resources/app/out/vs/workbench/workbench.desktop.main.js:1265:256)
+    at vscode-file://vscode-app/nix/store/qsq8pyvxvwfwsvhsq6xqw1276hxzvv50-vscode-1.98.2/lib/vscode/resources/app/out/vs/workbench/workbench.desktop.main.js:1265:315
+    at Object.dispose (vscode-file://vscode-app/nix/store/qsq8pyvxvwfwsvhsq6xqw1276hxzvv50-vscode-1.98.2/lib/vscode/resources/app/out/vs/workbench/workbench.desktop.main.js:8:627)
+    at Le (vscode-file://vscode-app/nix/store/qsq8pyvxvwfwsvhsq6xqw1276hxzvv50-vscode-1.98.2/lib/vscode/resources/app/out/vs/workbench/workbench.desktop.main.js:27:750)
+    at rUt.dispose (vscode-file://vscode-app/nix/store/qsq8pyvxvwfwsvhsq6xqw1276hxzvv50-vscode-1.98.2/lib/vscode/resources/app/out/vs/workbench/workbench.desktop.main.js:1265:1735)
+    at E0i.dispose (vscode-file://vscode-app/nix/store/qsq8pyvxvwfwsvhsq6xqw1276hxzvv50-vscode-1.98.2/lib/vscode/resources/app/out/vs/workbench/workbench.desktop.main.js:1265:2062)
+    at E0i.dispose (vscode-file://vscode-app/nix/store/qsq8pyvxvwfwsvhsq6xqw1276hxzvv50-vscode-1.98.2/lib/vscode/resources/app/out/vs/workbench/workbench.desktop.main.js:1265:9913)
+    at Le (vscode-file://vscode-app/nix/store/qsq8pyvxvwfwsvhsq6xqw1276hxzvv50-vscode-1.98.2/lib/vscode/resources/app/out/vs/workbench/workbench.desktop.main.js:27:750)
+    at Mmi.clear (vscode-file://vscode-app/nix/store/qsq8pyvxvwfwsvhsq6xqw1276hxzvv50-vscode-1.98.2/lib/vscode/resources/app/out/vs/workbench/workbench.desktop.main.js:27:1357)
+    at Mmi.dispose (vscode-file://vscode-app/nix/store/qsq8pyvxvwfwsvhsq6xqw1276hxzvv50-vscode-1.98.2/lib/vscode/resources/app/out/vs/workbench/workbench.desktop.main.js:27:1286)
+2025-06-19 19:20:27.405 [error] Canceled: Canceled
+    at p (vscode-file://vscode-app/nix/store/qsq8pyvxvwfwsvhsq6xqw1276hxzvv50-vscode-1.98.2/lib/vscode/resources/app/out/vs/workbench/workbench.desktop.main.js:1265:256)
+    at vscode-file://vscode-app/nix/store/qsq8pyvxvwfwsvhsq6xqw1276hxzvv50-vscode-1.98.2/lib/vscode/resources/app/out/vs/workbench/workbench.desktop.main.js:1265:315
+    at Object.dispose (vscode-file://vscode-app/nix/store/qsq8pyvxvwfwsvhsq6xqw1276hxzvv50-vscode-1.98.2/lib/vscode/resources/app/out/vs/workbench/workbench.desktop.main.js:8:627)
+    at Le (vscode-file://vscode-app/nix/store/qsq8pyvxvwfwsvhsq6xqw1276hxzvv50-vscode-1.98.2/lib/vscode/resources/app/out/vs/workbench/workbench.desktop.main.js:27:750)
+    at rUt.dispose (vscode-file://vscode-app/nix/store/qsq8pyvxvwfwsvhsq6xqw1276hxzvv50-vscode-1.98.2/lib/vscode/resources/app/out/vs/workbench/workbench.desktop.main.js:1265:1735)
+    at E0i.dispose (vscode-file://vscode-app/nix/store/qsq8pyvxvwfwsvhsq6xqw1276hxzvv50-vscode-1.98.2/lib/vscode/resources/app/out/vs/workbench/workbench.desktop.main.js:1265:2062)
+    at E0i.dispose (vscode-file://vscode-app/nix/store/qsq8pyvxvwfwsvhsq6xqw1276hxzvv50-vscode-1.98.2/lib/vscode/resources/app/out/vs/workbench/workbench.desktop.main.js:1265:9913)
+    at Le (vscode-file://vscode-app/nix/store/qsq8pyvxvwfwsvhsq6xqw1276hxzvv50-vscode-1.98.2/lib/vscode/resources/app/out/vs/workbench/workbench.desktop.main.js:27:750)
+    at Mmi.clear (vscode-file://vscode-app/nix/store/qsq8pyvxvwfwsvhsq6xqw1276hxzvv50-vscode-1.98.2/lib/vscode/resources/app/out/vs/workbench/workbench.desktop.main.js:27:1357)
+    at Mmi.dispose (vscode-file://vscode-app/nix/store/qsq8pyvxvwfwsvhsq6xqw1276hxzvv50-vscode-1.98.2/lib/vscode/resources/app/out/vs/workbench/workbench.desktop.main.js:27:1286)
+2025-06-19 19:20:27.405 [error] Canceled: Canceled
+    at p (vscode-file://vscode-app/nix/store/qsq8pyvxvwfwsvhsq6xqw1276hxzvv50-vscode-1.98.2/lib/vscode/resources/app/out/vs/workbench/workbench.desktop.main.js:1265:256)
+    at vscode-file://vscode-app/nix/store/qsq8pyvxvwfwsvhsq6xqw1276hxzvv50-vscode-1.98.2/lib/vscode/resources/app/out/vs/workbench/workbench.desktop.main.js:1265:315
+    at Object.dispose (vscode-file://vscode-app/nix/store/qsq8pyvxvwfwsvhsq6xqw1276hxzvv50-vscode-1.98.2/lib/vscode/resources/app/out/vs/workbench/workbench.desktop.main.js:8:627)
+    at Le (vscode-file://vscode-app/nix/store/qsq8pyvxvwfwsvhsq6xqw1276hxzvv50-vscode-1.98.2/lib/vscode/resources/app/out/vs/workbench/workbench.desktop.main.js:27:750)
+    at rUt.dispose (vscode-file://vscode-app/nix/store/qsq8pyvxvwfwsvhsq6xqw1276hxzvv50-vscode-1.98.2/lib/vscode/resources/app/out/vs/workbench/workbench.desktop.main.js:1265:1735)
+    at E0i.dispose (vscode-file://vscode-app/nix/store/qsq8pyvxvwfwsvhsq6xqw1276hxzvv50-vscode-1.98.2/lib/vscode/resources/app/out/vs/workbench/workbench.desktop.main.js:1265:2062)
+    at E0i.dispose (vscode-file://vscode-app/nix/store/qsq8pyvxvwfwsvhsq6xqw1276hxzvv50-vscode-1.98.2/lib/vscode/resources/app/out/vs/workbench/workbench.desktop.main.js:1265:9913)
+    at Le (vscode-file://vscode-app/nix/store/qsq8pyvxvwfwsvhsq6xqw1276hxzvv50-vscode-1.98.2/lib/vscode/resources/app/out/vs/workbench/workbench.desktop.main.js:27:750)
+    at Mmi.clear (vscode-file://vscode-app/nix/store/qsq8pyvxvwfwsvhsq6xqw1276hxzvv50-vscode-1.98.2/lib/vscode/resources/app/out/vs/workbench/workbench.desktop.main.js:27:1357)
+    at Mmi.dispose (vscode-file://vscode-app/nix/store/qsq8pyvxvwfwsvhsq6xqw1276hxzvv50-vscode-1.98.2/lib/vscode/resources/app/out/vs/workbench/workbench.desktop.main.js:27:1286)
+2025-06-19 19:20:27.405 [error] Canceled: Canceled
+    at p (vscode-file://vscode-app/nix/store/qsq8pyvxvwfwsvhsq6xqw1276hxzvv50-vscode-1.98.2/lib/vscode/resources/app/out/vs/workbench/workbench.desktop.main.js:1265:256)
+    at vscode-file://vscode-app/nix/store/qsq8pyvxvwfwsvhsq6xqw1276hxzvv50-vscode-1.98.2/lib/vscode/resources/app/out/vs/workbench/workbench.desktop.main.js:1265:315
+    at Object.dispose (vscode-file://vscode-app/nix/store/qsq8pyvxvwfwsvhsq6xqw1276hxzvv50-vscode-1.98.2/lib/vscode/resources/app/out/vs/workbench/workbench.desktop.main.js:8:627)
+    at Le (vscode-file://vscode-app/nix/store/qsq8pyvxvwfwsvhsq6xqw1276hxzvv50-vscode-1.98.2/lib/vscode/resources/app/out/vs/workbench/workbench.desktop.main.js:27:750)
+    at rUt.dispose (vscode-file://vscode-app/nix/store/qsq8pyvxvwfwsvhsq6xqw1276hxzvv50-vscode-1.98.2/lib/vscode/resources/app/out/vs/workbench/workbench.desktop.main.js:1265:1735)
+    at E0i.dispose (vscode-file://vscode-app/nix/store/qsq8pyvxvwfwsvhsq6xqw1276hxzvv50-vscode-1.98.2/lib/vscode/resources/app/out/vs/workbench/workbench.desktop.main.js:1265:2062)
+    at E0i.dispose (vscode-file://vscode-app/nix/store/qsq8pyvxvwfwsvhsq6xqw1276hxzvv50-vscode-1.98.2/lib/vscode/resources/app/out/vs/workbench/workbench.desktop.main.js:1265:9913)
+    at Le (vscode-file://vscode-app/nix/store/qsq8pyvxvwfwsvhsq6xqw1276hxzvv50-vscode-1.98.2/lib/vscode/resources/app/out/vs/workbench/workbench.desktop.main.js:27:750)
+    at Mmi.clear (vscode-file://vscode-app/nix/store/qsq8pyvxvwfwsvhsq6xqw1276hxzvv50-vscode-1.98.2/lib/vscode/resources/app/out/vs/workbench/workbench.desktop.main.js:27:1357)
+    at Mmi.dispose (vscode-file://vscode-app/nix/store/qsq8pyvxvwfwsvhsq6xqw1276hxzvv50-vscode-1.98.2/lib/vscode/resources/app/out/vs/workbench/workbench.desktop.main.js:27:1286)
+2025-06-19 19:20:27.408 [error] Error: Unable to read file 'vscode-remote://ssh-remote+deucalion/projects/F202500001HPCVLABEPICURE/mca55928/CHED/lab4/.vscode/settings.json' (Canceled: Canceled)
+    at Jht.G (vscode-file://vscode-app/nix/store/qsq8pyvxvwfwsvhsq6xqw1276hxzvv50-vscode-1.98.2/lib/vscode/resources/app/out/vs/workbench/workbench.desktop.main.js:3206:65038)
+    at Jht.F (vscode-file://vscode-app/nix/store/qsq8pyvxvwfwsvhsq6xqw1276hxzvv50-vscode-1.98.2/lib/vscode/resources/app/out/vs/workbench/workbench.desktop.main.js:3206:64863)
+    at async Jht.D (vscode-file://vscode-app/nix/store/qsq8pyvxvwfwsvhsq6xqw1276hxzvv50-vscode-1.98.2/lib/vscode/resources/app/out/vs/workbench/workbench.desktop.main.js:3206:64231)
+    at async Object.factory (vscode-file://vscode-app/nix/store/qsq8pyvxvwfwsvhsq6xqw1276hxzvv50-vscode-1.98.2/lib/vscode/resources/app/out/vs/workbench/workbench.desktop.main.js:3206:64135)
+2025-06-19 19:20:27.408 [error] Error: Unable to read file 'vscode-remote://ssh-remote+deucalion/projects/F202500001HPCVLABEPICURE/mca55928/CHED/lab4/.vscode/tasks.json' (Canceled: Canceled)
+    at Jht.G (vscode-file://vscode-app/nix/store/qsq8pyvxvwfwsvhsq6xqw1276hxzvv50-vscode-1.98.2/lib/vscode/resources/app/out/vs/workbench/workbench.desktop.main.js:3206:65038)
+    at Jht.F (vscode-file://vscode-app/nix/store/qsq8pyvxvwfwsvhsq6xqw1276hxzvv50-vscode-1.98.2/lib/vscode/resources/app/out/vs/workbench/workbench.desktop.main.js:3206:64863)
+    at async Jht.D (vscode-file://vscode-app/nix/store/qsq8pyvxvwfwsvhsq6xqw1276hxzvv50-vscode-1.98.2/lib/vscode/resources/app/out/vs/workbench/workbench.desktop.main.js:3206:64231)
+    at async Object.factory (vscode-file://vscode-app/nix/store/qsq8pyvxvwfwsvhsq6xqw1276hxzvv50-vscode-1.98.2/lib/vscode/resources/app/out/vs/workbench/workbench.desktop.main.js:3206:64135)
+2025-06-19 19:20:27.408 [error] Error: Unable to read file 'vscode-remote://ssh-remote+deucalion/projects/F202500001HPCVLABEPICURE/mca55928/CHED/lab4/.vscode/launch.json' (Canceled: Canceled)
+    at Jht.G (vscode-file://vscode-app/nix/store/qsq8pyvxvwfwsvhsq6xqw1276hxzvv50-vscode-1.98.2/lib/vscode/resources/app/out/vs/workbench/workbench.desktop.main.js:3206:65038)
+    at Jht.F (vscode-file://vscode-app/nix/store/qsq8pyvxvwfwsvhsq6xqw1276hxzvv50-vscode-1.98.2/lib/vscode/resources/app/out/vs/workbench/workbench.desktop.main.js:3206:64863)
+    at async Jht.D (vscode-file://vscode-app/nix/store/qsq8pyvxvwfwsvhsq6xqw1276hxzvv50-vscode-1.98.2/lib/vscode/resources/app/out/vs/workbench/workbench.desktop.main.js:3206:64231)
+    at async Object.factory (vscode-file://vscode-app/nix/store/qsq8pyvxvwfwsvhsq6xqw1276hxzvv50-vscode-1.98.2/lib/vscode/resources/app/out/vs/workbench/workbench.desktop.main.js:3206:64135)
+2025-06-19 19:20:27.656 [info] Started local extension host with pid 21483.
+2025-06-19 19:20:27.802 [error] [tht13.python]: 'configuration.jsonValidation.url' must be an absolute URL or start with './'  to reference schemas located in the extension.
+2025-06-19 19:20:28.066 [info] Settings Sync: Token updated for the account danielsp45
+2025-06-19 19:20:28.088 [info] Settings Sync: Account status changed from uninitialized to available
+2025-06-19 19:20:29.391 [error] [Extension Host] (node:21483) [DEP0005] DeprecationWarning: Buffer() is deprecated due to security and usability issues. Please use the Buffer.alloc(), Buffer.allocUnsafe(), or Buffer.from() methods instead.
+(Use `exe --trace-deprecation ...` to show where the warning was created)
+2025-06-19 19:20:30.736 [error] [/home/daniel/.vscode/extensions/ms-dotnettools.vscode-dotnet-runtime-2.3.5]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.99.0.
+2025-06-19 19:20:30.750 [error] [/home/daniel/.vscode/extensions/ms-vscode-remote.remote-wsl-0.99.0]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.99.0.
+2025-06-19 19:20:30.751 [error] [/home/daniel/.vscode/extensions/ms-vscode-remote.remote-containers-0.417.0]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.99.0.
+2025-06-19 19:20:30.751 [error] [/home/daniel/.vscode/extensions/ms-python.vscode-pylance-2025.6.1]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.99.0.
+2025-06-19 19:20:30.751 [error] [/home/daniel/.vscode/extensions/github.vscode-pull-request-github-0.110.0]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0.
+2025-06-19 19:20:31.150 [info] [perf] Render performance baseline is 9ms
+2025-06-19 19:20:44.717 [info] Started local extension host with pid 21566.
+2025-06-19 19:20:44.819 [error] [/home/daniel/.vscode/extensions/ms-dotnettools.vscode-dotnet-runtime-2.3.5]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.99.0.
+2025-06-19 19:20:44.845 [error] [/home/daniel/.vscode/extensions/ms-vscode-remote.remote-wsl-0.99.0]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.99.0.
+2025-06-19 19:20:44.846 [error] [/home/daniel/.vscode/extensions/ms-vscode-remote.remote-containers-0.417.0]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.99.0.
+2025-06-19 19:20:44.846 [error] [/home/daniel/.vscode/extensions/ms-python.vscode-pylance-2025.6.1]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.99.0.
+2025-06-19 19:20:44.847 [error] [/home/daniel/.vscode/extensions/github.vscode-pull-request-github-0.110.0]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0.
+2025-06-19 19:20:45.171 [info] Settings Sync: Token updated for the account danielsp45
+2025-06-19 19:20:45.214 [info] Settings Sync: Account status changed from uninitialized to available
+2025-06-19 19:20:45.800 [error] [Extension Host] (node:21566) [DEP0005] DeprecationWarning: Buffer() is deprecated due to security and usability issues. Please use the Buffer.alloc(), Buffer.allocUnsafe(), or Buffer.from() methods instead.
+(Use `exe --trace-deprecation ...` to show where the warning was created)
+2025-06-19 19:20:46.981 [error] [tht13.python]: 'configuration.jsonValidation.url' must be an absolute URL or start with './'  to reference schemas located in the extension.
+2025-06-19 19:20:47.255 [info] [perf] Render performance baseline is 10ms
+2025-06-19 19:20:48.599 [error] No registered selector for ID: copilot-chat.fixWithCopilot
+2025-06-19 19:20:48.599 [error] No registered selector for ID: copilot-chat.generateCommitMessage
+2025-06-19 19:20:48.608 [error] No registered selector for ID: copilot-chat.terminalToDebugging
+2025-06-19 19:20:48.608 [error] No registered selector for ID: copilot-chat.terminalToDebuggingSuccess
+2025-06-19 19:23:49.627 [error] Unable to resolve filesystem provider with relative file path 'untitled:Untitled-1': Error: Unable to resolve filesystem provider with relative file path 'untitled:Untitled-1'
+    at Jht.j (vscode-file://vscode-app/nix/store/qsq8pyvxvwfwsvhsq6xqw1276hxzvv50-vscode-1.98.2/lib/vscode/resources/app/out/vs/workbench/workbench.desktop.main.js:3206:59884)
+    at Jht.exists (vscode-file://vscode-app/nix/store/qsq8pyvxvwfwsvhsq6xqw1276hxzvv50-vscode-1.98.2/lib/vscode/resources/app/out/vs/workbench/workbench.desktop.main.js:3206:62034)
+    at a (vscode-file://vscode-app/nix/store/qsq8pyvxvwfwsvhsq6xqw1276hxzvv50-vscode-1.98.2/lib/vscode/resources/app/out/vs/workbench/workbench.desktop.main.js:1987:17106)
+    at c (vscode-file://vscode-app/nix/store/qsq8pyvxvwfwsvhsq6xqw1276hxzvv50-vscode-1.98.2/lib/vscode/resources/app/out/vs/workbench/workbench.desktop.main.js:1987:17691)
+    at xie.value (vscode-file://vscode-app/nix/store/qsq8pyvxvwfwsvhsq6xqw1276hxzvv50-vscode-1.98.2/lib/vscode/resources/app/out/vs/workbench/workbench.desktop.main.js:1987:18249)
+    at E.B (vscode-file://vscode-app/nix/store/qsq8pyvxvwfwsvhsq6xqw1276hxzvv50-vscode-1.98.2/lib/vscode/resources/app/out/vs/workbench/workbench.desktop.main.js:29:2392)
+    at E.fire (vscode-file://vscode-app/nix/store/qsq8pyvxvwfwsvhsq6xqw1276hxzvv50-vscode-1.98.2/lib/vscode/resources/app/out/vs/workbench/workbench.desktop.main.js:29:2611)
+    at xie.value (vscode-file://vscode-app/nix/store/qsq8pyvxvwfwsvhsq6xqw1276hxzvv50-vscode-1.98.2/lib/vscode/resources/app/out/vs/workbench/workbench.desktop.main.js:642:1576)
+    at E.B (vscode-file://vscode-app/nix/store/qsq8pyvxvwfwsvhsq6xqw1276hxzvv50-vscode-1.98.2/lib/vscode/resources/app/out/vs/workbench/workbench.desktop.main.js:29:2392)
+    at E.fire (vscode-file://vscode-app/nix/store/qsq8pyvxvwfwsvhsq6xqw1276hxzvv50-vscode-1.98.2/lib/vscode/resources/app/out/vs/workbench/workbench.desktop.main.js:29:2611)
+2025-06-19 19:24:17.455 [error] Unable to resolve filesystem provider with relative file path 'untitled:Untitled-1': Error: Unable to resolve filesystem provider with relative file path 'untitled:Untitled-1'
+    at Jht.j (vscode-file://vscode-app/nix/store/qsq8pyvxvwfwsvhsq6xqw1276hxzvv50-vscode-1.98.2/lib/vscode/resources/app/out/vs/workbench/workbench.desktop.main.js:3206:59884)
+    at Jht.exists (vscode-file://vscode-app/nix/store/qsq8pyvxvwfwsvhsq6xqw1276hxzvv50-vscode-1.98.2/lib/vscode/resources/app/out/vs/workbench/workbench.desktop.main.js:3206:62034)
+    at a (vscode-file://vscode-app/nix/store/qsq8pyvxvwfwsvhsq6xqw1276hxzvv50-vscode-1.98.2/lib/vscode/resources/app/out/vs/workbench/workbench.desktop.main.js:1987:17106)
+    at c (vscode-file://vscode-app/nix/store/qsq8pyvxvwfwsvhsq6xqw1276hxzvv50-vscode-1.98.2/lib/vscode/resources/app/out/vs/workbench/workbench.desktop.main.js:1987:17691)
+    at xie.value (vscode-file://vscode-app/nix/store/qsq8pyvxvwfwsvhsq6xqw1276hxzvv50-vscode-1.98.2/lib/vscode/resources/app/out/vs/workbench/workbench.desktop.main.js:1987:18249)
+    at E.B (vscode-file://vscode-app/nix/store/qsq8pyvxvwfwsvhsq6xqw1276hxzvv50-vscode-1.98.2/lib/vscode/resources/app/out/vs/workbench/workbench.desktop.main.js:29:2392)
+    at E.fire (vscode-file://vscode-app/nix/store/qsq8pyvxvwfwsvhsq6xqw1276hxzvv50-vscode-1.98.2/lib/vscode/resources/app/out/vs/workbench/workbench.desktop.main.js:29:2611)
+    at xie.value (vscode-file://vscode-app/nix/store/qsq8pyvxvwfwsvhsq6xqw1276hxzvv50-vscode-1.98.2/lib/vscode/resources/app/out/vs/workbench/workbench.desktop.main.js:642:1576)
+    at E.B (vscode-file://vscode-app/nix/store/qsq8pyvxvwfwsvhsq6xqw1276hxzvv50-vscode-1.98.2/lib/vscode/resources/app/out/vs/workbench/workbench.desktop.main.js:29:2392)
+    at E.fire (vscode-file://vscode-app/nix/store/qsq8pyvxvwfwsvhsq6xqw1276hxzvv50-vscode-1.98.2/lib/vscode/resources/app/out/vs/workbench/workbench.desktop.main.js:29:2611)
+2025-06-19 19:40:15.573 [error] [Extension Host] Error: Unexpected SIGPIPE
+    at process.<anonymous> (file:///nix/store/qsq8pyvxvwfwsvhsq6xqw1276hxzvv50-vscode-1.98.2/lib/vscode/resources/app/out/bootstrap-fork.js:3:11860)
+    at process.emit (node:events:518:28)
+    at Signal.callbackTrampoline (node:internal/async_hooks:130:17)

@@ -1,0 +1,126 @@
+2025/06/25-14:15:36.288 70fb Reusing MANIFEST /home/daniel/.config/discord/Local Storage/leveldb/MANIFEST-000001
+2025/06/25-14:15:36.290 70fb Recovering log #953
+2025/06/25-14:15:36.290 70fb Reusing old log /home/daniel/.config/discord/Local Storage/leveldb/000953.log 
+2025/06/25-14:16:36.816 70fc Level-0 table #957: started
+2025/06/25-14:16:36.819 70fc Level-0 table #957: 16206 bytes OK
+2025/06/25-14:16:36.819 70fc Delete type=0 #953
+2025/06/25-14:19:10.160 70fb Level-0 table #959: started
+2025/06/25-14:19:10.169 70fb Level-0 table #959: 1084492 bytes OK
+2025/06/25-14:19:10.170 70fb Delete type=0 #956
+2025/06/25-14:22:36.813 70fc Level-0 table #961: started
+2025/06/25-14:22:36.816 70fc Level-0 table #961: 44838 bytes OK
+2025/06/25-14:22:36.816 70fc Delete type=0 #958
+2025/06/25-14:22:36.816 70fc Compacting 4@0 + 1@1 files
+2025/06/25-14:22:36.827 70fc Generated table #962@0: 68 keys, 1111421 bytes
+2025/06/25-14:22:36.827 70fc Compacted 4@0 + 1@1 files => 1111421 bytes
+2025/06/25-14:22:36.827 70fc compacted to: files[ 0 1 1 0 0 0 0 ]
+2025/06/25-14:22:36.827 70fc Delete type=2 #957
+2025/06/25-14:22:36.827 70fc Delete type=2 #961
+2025/06/25-14:22:36.827 70fc Delete type=2 #954
+2025/06/25-14:22:36.827 70fc Delete type=2 #952
+2025/06/25-14:22:36.827 70fc Delete type=2 #959
+2025/06/25-15:10:04.148 70fc Level-0 table #964: started
+2025/06/25-15:10:04.149 70fc Level-0 table #964: 55650 bytes OK
+2025/06/25-15:10:04.150 70fc Delete type=0 #960
+2025/06/25-15:23:52.767 70fc Level-0 table #966: started
+2025/06/25-15:23:52.769 70fc Level-0 table #966: 53613 bytes OK
+2025/06/25-15:23:52.770 70fc Delete type=0 #963
+2025/06/25-15:52:17.196 70fc Level-0 table #968: started
+2025/06/25-15:52:17.198 70fc Level-0 table #968: 52604 bytes OK
+2025/06/25-15:52:17.199 70fc Delete type=0 #965
+2025/06/25-15:55:04.235 70fc Level-0 table #970: started
+2025/06/25-15:55:04.237 70fc Level-0 table #970: 44574 bytes OK
+2025/06/25-15:55:04.238 70fc Delete type=0 #967
+2025/06/25-15:55:04.238 70fc Compacting 4@0 + 1@1 files
+2025/06/25-15:55:04.245 70fc Generated table #971@0: 69 keys, 1111664 bytes
+2025/06/25-15:55:04.245 70fc Compacted 4@0 + 1@1 files => 1111664 bytes
+2025/06/25-15:55:04.246 70fc compacted to: files[ 0 1 1 0 0 0 0 ]
+2025/06/25-15:55:04.246 70fc Delete type=2 #966
+2025/06/25-15:55:04.246 70fc Delete type=2 #964
+2025/06/25-15:55:04.246 70fc Delete type=2 #970
+2025/06/25-15:55:04.246 70fc Delete type=2 #962
+2025/06/25-15:55:04.246 70fc Delete type=2 #968
+2025/06/25-16:37:17.196 70fc Level-0 table #973: started
+2025/06/25-16:37:17.198 70fc Level-0 table #973: 44725 bytes OK
+2025/06/25-16:37:17.199 70fc Delete type=0 #969
+2025/06/25-18:03:51.412 70fc Level-0 table #975: started
+2025/06/25-18:03:51.415 70fc Level-0 table #975: 53103 bytes OK
+2025/06/25-18:03:51.416 70fc Delete type=0 #972
+2025/06/25-19:03:52.756 70fc Level-0 table #977: started
+2025/06/25-19:03:52.758 70fc Level-0 table #977: 21318 bytes OK
+2025/06/25-19:03:52.759 70fc Delete type=0 #974
+2025/06/25-19:54:51.909 70fc Level-0 table #979: started
+2025/06/25-19:54:51.911 70fc Level-0 table #979: 44855 bytes OK
+2025/06/25-19:54:51.912 70fc Delete type=0 #976
+2025/06/25-19:54:51.912 70fc Compacting 4@0 + 1@1 files
+2025/06/25-19:54:51.920 70fc Generated table #980@0: 69 keys, 1112936 bytes
+2025/06/25-19:54:51.921 70fc Compacted 4@0 + 1@1 files => 1112936 bytes
+2025/06/25-19:54:51.921 70fc compacted to: files[ 0 1 1 0 0 0 0 ]
+2025/06/25-19:54:51.921 70fc Delete type=2 #971
+2025/06/25-19:54:51.921 70fc Delete type=2 #973
+2025/06/25-19:54:51.921 70fc Delete type=2 #977
+2025/06/25-19:54:51.921 70fc Delete type=2 #979
+2025/06/25-19:54:51.921 70fc Delete type=2 #975
+2025/06/25-20:00:56.089 70fc Level-0 table #982: started
+2025/06/25-20:00:56.090 70fc Level-0 table #982: 44658 bytes OK
+2025/06/25-20:00:56.091 70fc Delete type=0 #978
+2025/06/25-20:16:14.456 70fc Level-0 table #984: started
+2025/06/25-20:16:14.459 70fc Level-0 table #984: 44410 bytes OK
+2025/06/25-20:16:14.459 70fc Delete type=0 #981
+2025/06/25-20:40:27.720 70fc Level-0 table #986: started
+2025/06/25-20:40:27.723 70fc Level-0 table #986: 44772 bytes OK
+2025/06/25-20:40:27.723 70fc Delete type=0 #983
+2025/06/25-21:05:39.548 70fc Level-0 table #988: started
+2025/06/25-21:05:39.551 70fc Level-0 table #988: 44269 bytes OK
+2025/06/25-21:05:39.552 70fc Delete type=0 #985
+2025/06/25-21:05:39.552 70fc Compacting 4@0 + 1@1 files
+2025/06/25-21:05:39.561 70fc Generated table #989@0: 69 keys, 1112385 bytes
+2025/06/25-21:05:39.561 70fc Compacted 4@0 + 1@1 files => 1112385 bytes
+2025/06/25-21:05:39.562 70fc compacted to: files[ 0 1 1 0 0 0 0 ]
+2025/06/25-21:05:39.562 70fc Delete type=2 #980
+2025/06/25-21:05:39.562 70fc Delete type=2 #984
+2025/06/25-21:05:39.562 70fc Delete type=2 #988
+2025/06/25-21:05:39.562 70fc Delete type=2 #982
+2025/06/25-21:05:39.562 70fc Delete type=2 #986
+2025/06/25-21:16:28.109 70fc Level-0 table #991: started
+2025/06/25-21:16:28.110 70fc Level-0 table #991: 53066 bytes OK
+2025/06/25-21:16:28.111 70fc Delete type=0 #987
+2025/06/25-21:26:05.222 70fc Level-0 table #993: started
+2025/06/25-21:26:05.225 70fc Level-0 table #993: 67114 bytes OK
+2025/06/25-21:26:05.225 70fc Delete type=0 #990
+2025/06/25-22:01:57.353 70fc Level-0 table #995: started
+2025/06/25-22:01:57.355 70fc Level-0 table #995: 13943 bytes OK
+2025/06/25-22:01:57.356 70fc Delete type=0 #992
+2025/06/25-22:17:22.689 70fc Level-0 table #997: started
+2025/06/25-22:17:22.691 70fc Level-0 table #997: 12352 bytes OK
+2025/06/25-22:17:22.692 70fc Delete type=0 #994
+2025/06/25-22:17:22.692 70fc Compacting 4@0 + 1@1 files
+2025/06/25-22:17:22.701 70fc Generated table #998@0: 69 keys, 1132605 bytes
+2025/06/25-22:17:22.701 70fc Compacted 4@0 + 1@1 files => 1132605 bytes
+2025/06/25-22:17:22.702 70fc compacted to: files[ 0 1 1 0 0 0 0 ]
+2025/06/25-22:17:22.702 70fc Delete type=2 #995
+2025/06/25-22:17:22.702 70fc Delete type=2 #989
+2025/06/25-22:17:22.702 70fc Delete type=2 #993
+2025/06/25-22:17:22.702 70fc Delete type=2 #991
+2025/06/25-22:17:22.702 70fc Delete type=2 #997
+2025/06/25-22:30:57.352 70fc Level-0 table #1000: started
+2025/06/25-22:30:57.353 70fc Level-0 table #1000: 12599 bytes OK
+2025/06/25-22:30:57.354 70fc Delete type=0 #996
+2025/06/25-23:05:37.008 70fc Level-0 table #1002: started
+2025/06/25-23:05:37.009 70fc Level-0 table #1002: 14100 bytes OK
+2025/06/25-23:05:37.010 70fc Delete type=0 #999
+2025/06/25-23:26:06.563 70fc Level-0 table #1004: started
+2025/06/25-23:26:06.566 70fc Level-0 table #1004: 75758 bytes OK
+2025/06/25-23:26:06.567 70fc Delete type=0 #1001
+2025/06/25-23:39:00.071 70fc Level-0 table #1006: started
+2025/06/25-23:39:00.073 70fc Level-0 table #1006: 68210 bytes OK
+2025/06/25-23:39:00.074 70fc Delete type=0 #1003
+2025/06/25-23:39:00.074 70fc Compacting 4@0 + 1@1 files
+2025/06/25-23:39:00.083 70fc Generated table #1007@0: 69 keys, 1131265 bytes
+2025/06/25-23:39:00.083 70fc Compacted 4@0 + 1@1 files => 1131265 bytes
+2025/06/25-23:39:00.083 70fc compacted to: files[ 0 1 1 0 0 0 0 ]
+2025/06/25-23:39:00.083 70fc Delete type=2 #1000
+2025/06/25-23:39:00.083 70fc Delete type=2 #998
+2025/06/25-23:39:00.083 70fc Delete type=2 #1006
+2025/06/25-23:39:00.083 70fc Delete type=2 #1004
+2025/06/25-23:39:00.083 70fc Delete type=2 #1002

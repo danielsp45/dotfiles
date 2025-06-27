@@ -1,0 +1,84 @@
+{
+    "telemetry.sqmId": "",
+    "telemetry.machineId": "103c920cabfa0fe509f6b1cef5c78072238f6b242016ba41a4268b8af7cd049e",
+    "telemetry.devDeviceId": "78818960-1da7-4ee2-8d5a-0cc33efb0610",
+    "backupWorkspaces": {
+        "workspaces": [],
+        "folders": [
+            {
+                "folderUri": "vscode-remote://ssh-remote%2Bdeucalion/projects/F202500001HPCVLABEPICURE/mca55928/CHED/lab4",
+                "remoteAuthority": "ssh-remote+deucalion"
+            },
+            {
+                "folderUri": "file:///home/daniel/Projects/trash/SomasELetras%20-%20C%C3%B3pia"
+            }
+        ],
+        "emptyWindows": [
+            {
+                "backupFolder": "1750357227731"
+            }
+        ]
+    },
+    "windowControlHeight": 35,
+    "profileAssociations": {
+        "workspaces": {
+            "vscode-remote://ssh-remote%2Bdeucalion/projects/F202500001HPCVLABEPICURE/mca55928/CHED/ched": "__default__profile__",
+            "vscode-remote://ssh-remote%2Bdeucalion/projects/F202500001HPCVLABEPICURE/mca55928/CHED/lab4": "__default__profile__",
+            "file:///home/daniel/Projects/trash/SomasELetras%20-%20C%C3%B3pia": "__default__profile__"
+        },
+        "emptyWindows": {}
+    },
+    "windowsState": {
+        "lastActiveWindow": {
+            "folder": "file:///home/daniel/Projects/trash/SomasELetras%20-%20C%C3%B3pia",
+            "backupPath": "/home/daniel/.config/Code/Backups/e3c2f46650ec66a4e3627d9649e5713f",
+            "uiState": {
+                "mode": 0,
+                "x": 0,
+                "y": 0,
+                "width": 1920,
+                "height": 1080
+            }
+        },
+        "openedWindows": []
+    },
+    "theme": "vs-dark",
+    "themeBackground": "#32302f",
+    "windowSplash": {
+        "zoomLevel": 0,
+        "baseTheme": "vs-dark",
+        "colorInfo": {
+            "foreground": "#ebdbb2",
+            "background": "#32302f",
+            "editorBackground": "#32302f",
+            "titleBarBackground": "#32302f",
+            "activityBarBackground": "#32302f",
+            "activityBarBorder": "#3c3836",
+            "sideBarBackground": "#32302f",
+            "sideBarBorder": "#3c3836",
+            "statusBarBackground": "#32302f",
+            "statusBarBorder": "#3c3836",
+            "statusBarNoFolderBackground": "#32302f"
+        },
+        "layoutInfo": {
+            "sideBarSide": "right",
+            "editorPartMinWidth": 220,
+            "titleBarHeight": 35,
+            "activityBarWidth": 48,
+            "sideBarWidth": 300,
+            "auxiliarySideBarWidth": 610,
+            "statusBarHeight": 22,
+            "windowBorder": false
+        }
+    },
+    "windowSplashWorkspaceOverride": {
+        "layoutInfo": {
+            "auxiliarySideBarWidth": [
+                610,
+                [
+                    "4a3478581041fb2b8d6dcb1a23e79c42"
+                ]
+            ]
+        }
+    }
+}

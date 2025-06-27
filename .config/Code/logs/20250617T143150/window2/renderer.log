@@ -1,0 +1,51 @@
+2025-06-17 21:43:01.007 [info] Started local extension host with pid 130518.
+2025-06-17 21:43:01.151 [error] [/home/daniel/.vscode/extensions/ms-dotnettools.vscode-dotnet-runtime-2.3.5]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.99.0.
+2025-06-17 21:43:01.177 [error] [/home/daniel/.vscode/extensions/ms-vscode-remote.remote-wsl-0.99.0]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.99.0.
+2025-06-17 21:43:01.178 [error] [/home/daniel/.vscode/extensions/ms-vscode-remote.remote-containers-0.417.0]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.99.0.
+2025-06-17 21:43:01.179 [error] [/home/daniel/.vscode/extensions/ms-python.vscode-pylance-2025.6.1]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.99.0.
+2025-06-17 21:43:01.179 [error] [/home/daniel/.vscode/extensions/github.vscode-pull-request-github-0.110.0]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0.
+2025-06-17 21:43:01.221 [info] Invoking resolveAuthority(ssh-remote)...
+2025-06-17 21:43:01.221 [info] [LocalProcess0][resolveAuthority(ssh-remote,1)][0ms] obtaining proxy...
+2025-06-17 21:43:01.235 [info] [LocalProcess0][resolveAuthority(ssh-remote,1)][14ms] invoking...
+2025-06-17 21:43:01.435 [info] [LocalProcess0][resolveAuthority(ssh-remote,1)][214ms] returned Managed(1)
+2025-06-17 21:43:01.435 [info] resolveAuthority(ssh-remote) returned 'Managed(1)' after 214 ms
+2025-06-17 21:43:01.436 [info] Creating a socket (renderer-Management-a293c171-8115-40e8-9537-b325e6f83b3f)...
+2025-06-17 21:43:01.436 [info] Creating a socket (renderer-ExtensionHost-d09da28d-9a9f-4727-bf1e-2147cf307a67)...
+2025-06-17 21:43:01.543 [info] Creating a socket (renderer-Management-a293c171-8115-40e8-9537-b325e6f83b3f) was successful after 107 ms.
+2025-06-17 21:43:01.561 [info] Creating a socket (renderer-ExtensionHost-d09da28d-9a9f-4727-bf1e-2147cf307a67) was successful after 125 ms.
+2025-06-17 21:43:03.583 [info] [perf] Render performance baseline is 10ms
+2025-06-17 21:43:04.062 [error] An unknown error occurred. Please consult the log for more details.
+2025-06-17 21:43:08.863 [error] Cannot read the extension from /home/mca55928/.vscode-server/extensions/ms-python.vscode-pylance-2025.6.1: ScanningExtension: Cannot read the extension from /home/mca55928/.vscode-server/extensions/ms-python.vscode-pylance-2025.6.1
+    at Jh.scanLocalExtension (file:///home/mca55928/.vscode-server/cli/servers/Stable-ddc367ed5c8936efe395cffeec279b04ffd7db78/server/out/server-main.js:55:24861)
+2025-06-17 21:43:09.273 [info] Settings Sync: Token updated for the account danielsp45
+2025-06-17 21:43:09.273 [info] Settings Sync: Account status changed from uninitialized to available
+2025-06-17 21:43:14.501 [info] Extension host (Remote) is unresponsive.
+2025-06-17 21:43:16.219 [info] Extension host (Remote) is responsive.
+2025-06-17 21:43:20.218 [info] Extension host (Remote) is unresponsive.
+2025-06-17 21:43:25.759 [info] Extension host (Remote) is responsive.
+2025-06-17 21:43:43.202 [info] Started local extension host with pid 130780.
+2025-06-17 21:43:43.262 [error] [/home/daniel/.vscode/extensions/ms-dotnettools.vscode-dotnet-runtime-2.3.5]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.99.0.
+2025-06-17 21:43:43.365 [error] [/home/daniel/.vscode/extensions/ms-vscode-remote.remote-wsl-0.99.0]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.99.0.
+2025-06-17 21:43:43.366 [error] [/home/daniel/.vscode/extensions/ms-vscode-remote.remote-containers-0.417.0]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.99.0.
+2025-06-17 21:43:43.366 [error] [/home/daniel/.vscode/extensions/ms-python.vscode-pylance-2025.6.1]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.99.0.
+2025-06-17 21:43:43.367 [error] [/home/daniel/.vscode/extensions/github.vscode-pull-request-github-0.110.0]: Extension is not compatible with Code 1.98.2. Extension requires: ^1.100.0.
+2025-06-17 21:43:43.523 [info] Invoking resolveAuthority(ssh-remote)...
+2025-06-17 21:43:43.523 [info] [LocalProcess0][resolveAuthority(ssh-remote,1)][0ms] obtaining proxy...
+2025-06-17 21:43:43.523 [info] [LocalProcess0][resolveAuthority(ssh-remote,1)][0ms] invoking...
+2025-06-17 21:43:43.658 [info] [LocalProcess0][resolveAuthority(ssh-remote,1)][135ms] returned Managed(1)
+2025-06-17 21:43:43.658 [info] resolveAuthority(ssh-remote) returned 'Managed(1)' after 135 ms
+2025-06-17 21:43:43.658 [info] Creating a socket (renderer-Management-c07c52e4-8452-414d-b3dd-0d2eb671c9cf)...
+2025-06-17 21:43:43.659 [info] Creating a socket (renderer-ExtensionHost-7214fc7d-2ebb-4a58-b1e8-18539c1b9005)...
+2025-06-17 21:43:43.771 [info] Creating a socket (renderer-Management-c07c52e4-8452-414d-b3dd-0d2eb671c9cf) was successful after 113 ms.
+2025-06-17 21:43:43.791 [info] Creating a socket (renderer-ExtensionHost-7214fc7d-2ebb-4a58-b1e8-18539c1b9005) was successful after 131 ms.
+2025-06-17 21:43:45.728 [warning] No search provider registered for scheme: vscode-remote, waiting
+2025-06-17 21:43:45.863 [info] [perf] Render performance baseline is 10ms
+2025-06-17 21:43:51.351 [info] Settings Sync: Token updated for the account danielsp45
+2025-06-17 21:43:51.355 [info] Settings Sync: Account status changed from uninitialized to available
+2025-06-17 21:43:51.706 [info] Settings Sync: Token updated for the account danielsp45
+2025-06-17 21:43:54.681 [info] Extension host (Remote) is unresponsive.
+2025-06-17 21:43:55.867 [info] Extension host (Remote) is responsive.
+2025-06-17 21:44:00.366 [info] Extension host (Remote) is unresponsive.
+2025-06-17 21:44:01.228 [info] Extension host (Remote) is responsive.
+2025-06-17 21:44:17.239 [info] Extension host (Remote) is unresponsive.
+2025-06-17 21:44:17.498 [info] Extension host (Remote) is responsive.

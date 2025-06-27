@@ -1,0 +1,10 @@
+{
+  "float": [
+    {
+      "class": "pop-shell-example",
+      "title": "pop-shell-example"
+    }
+  ],
+  "skiptaskbarhidden": [],
+  "log_on_focus": false
+}

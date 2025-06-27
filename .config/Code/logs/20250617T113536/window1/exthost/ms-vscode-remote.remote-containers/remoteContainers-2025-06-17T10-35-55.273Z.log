@@ -1,0 +1,24 @@
+[2025-06-17T10:35:55.418Z] Dev Containers 0.401.0 over Remote - SSH 0.120.0 in VS Code 1.98.2 (ddc367ed5c8936efe395cffeec279b04ffd7db78).
+[2025-06-17T10:35:55.418Z] Start: Loading environment from ExecServer
+[2025-06-17T10:35:55.438Z] Stop (20 ms): Loading environment from ExecServer
+[2025-06-17T10:35:55.438Z] Host OS: linux 4.18.0-348.el8.0.2.x86_64
+[2025-06-17T10:35:55.438Z] Host CWD: /projects/F202500001HPCVLABEPICURE/mca55928/CHED/ched
+[2025-06-17T10:35:55.438Z] Start: Run: /bin/sh 
+[2025-06-17T10:35:55.537Z] Start: Run in host: echo ~
+[2025-06-17T10:35:55.616Z] /home/mca55928
+[2025-06-17T10:35:55.616Z] 
+[2025-06-17T10:35:55.616Z] Stop (79 ms): Run in host: echo ~
+[2025-06-17T10:35:55.616Z] Start: Run in host: id -un
+[2025-06-17T10:35:55.649Z] mca55928
+[2025-06-17T10:35:55.649Z] 
+[2025-06-17T10:35:55.649Z] Stop (33 ms): Run in host: id -un
+[2025-06-17T10:35:55.649Z] Start: Run in host:  (command -v getent >/dev/null 2>&1 && getent passwd 'mca55928' || grep -E '^mca55928|^[^:]*:[^:]*:mca55928:' /etc/passwd || true)
+[2025-06-17T10:35:55.685Z] Stop (36 ms): Run in host:  (command -v getent >/dev/null 2>&1 && getent passwd 'mca55928' || grep -E '^mca55928|^[^:]*:[^:]*:mca55928:' /etc/passwd || true)
+[2025-06-17T10:35:55.685Z] userEnvProbe: loginInteractiveShell (default)
+[2025-06-17T10:35:55.685Z] userEnvProbe: not found in cache
+[2025-06-17T10:35:55.685Z] userEnvProbe shell: /bin/bash
+[2025-06-17T10:35:56.697Z] userEnvProbe PATHs:
+Probe:     '/projects/F202500001HPCVLABEPICURE/mca55928/sbt/bin:/projects/F202500001HPCVLABEPICURE/mca55928/sbt/bin:/home/mca55928/.local/bin:/home/mca55928/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/home/mca55928/.local/share/coursier/bin:/home/mca55928/.local/share/coursier/bin'
+Container: None
+[2025-06-17T10:35:56.942Z] Initializing configuration support...
+[2025-06-17T10:35:56.942Z] Internal initialization of dev container support package...
