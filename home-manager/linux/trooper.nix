@@ -8,12 +8,12 @@
 
     home.file = {
         ".zshrc".source = ./../../zsh/linux/zshrc;
+        ".gitconfig".source = ./../../git/gitconfig;
         ".config/ghostty".source = ./../../ghostty;
         ".config/hypr".source = ./../../hypr;
         ".config/waybar".source = ./../../waybar;
         ".config/rofi".source = ./../../rofi;
         ".config/dunst".source = ./../../dunst;
-        ".gitconfig".source = ./../../git/gitconfig;
     };
 
 	home.packages = with pkgs; [
