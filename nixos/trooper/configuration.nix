@@ -45,36 +45,6 @@
 	};
 
 
-	# Enable the X11 windowing system.
-	# services.xserver.enable = true;
-
-	# Enable the GNOME Desktop Environment.
-	# services.xserver.displayManager.gdm.enable = true;
-	# services.xserver.desktopManager.gnome.enable = true;
-
-	# Enable the BSPWM window manager.
-	# services.xserver = {
-	# 	enable = true;
-	#     videoDrivers  = [ "amdgpu" ];
-	#
-	# 	windowManager.bspwm.enable = true;
-	#
-	# 	# Configure keymap in X11
-	# 	xkb = {
-	# 	  layout = "us";
-	# 	  variant = "";
-	# 	};
-	#
-	# 	displayManager.sessionCommands = ''
-	# 	  blueman-applet &
-	# 	  ~/.screenlayout/monitor.sh &
-	# 	  polybar -c ~/.config/polybar/example &
-	# 	  flameshot &
-	# 	  dunst &
-	# 	'';
-	# };
-	# services.picom.enable = true;
-	# services.xserver.displayManager.sddm.enable = true;
 	services.displayManager.ly.enable = true;
 	services.displayManager.sddm.wayland.enable = true;
     programs.hyprland.enable = true;
