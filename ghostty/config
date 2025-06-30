@@ -4,3 +4,4 @@ shell-integration = zsh
 background-opacity = 0.9
 background-blur = true
 window-decoration = none
+copy-on-select = clipboard
