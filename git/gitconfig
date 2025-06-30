@@ -1,0 +1,6 @@
+[user]
+	email = mail@danielpereira.xyz
+	name = Daniel Pereira
+
+[core]
+    editor            = nvim
