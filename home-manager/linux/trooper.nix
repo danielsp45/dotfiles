@@ -12,48 +12,74 @@
         ".config/hypr".source = ./../../hypr;
         ".config/waybar".source = ./../../waybar;
         ".config/rofi".source = ./../../rofi;
+        ".config/dunst".source = ./../../dunst;
+        ".gitconfig".source = ./../../git/gitconfig;
     };
 
-    home.packages = with pkgs; [
-        _1password-cli
-        _1password-gui
-		btrfs-progs
+	home.packages = with pkgs; [
+		# password managers
+		_1password-cli
+		_1password-gui
+
+		# development tools
+		cmake
+		gnumake
 		nodejs_23
 		starship
-		caddy
-		ghostty
-		discord
-		spotify
-		notion-app-enhanced
-		telegram-desktop
-		cmake
-		libgcc
-		gnumake
-		xclip
-		amdgpu_top
+		thefuck
+		fzf
 		vscode
-		prismlauncher
-		rocmPackages.rpp
+
+		# system utilities
+		btrfs-progs
+		amdgpu_top
 		fastfetch
-		rofi-wayland
-		waybar
-		waypaper
-		swaybg
-		swaylock
-		wayidle 
-		rose-pine-hyprcursor
-		zotero
+		ghostty
+
+		# web & networking
+		caddy
+
+		# clipboard
+		xclip
+		wl-clipboard
+
+		# productivity
 		nemo
+		notion-app-enhanced
+		zotero
+
+		# communication
+		discord
+		telegram-desktop
+		thunderbird
+
+		# multimedia
+		spotify
+
+		# gaming & launchers
+		prismlauncher
+
+		# theming
 		adw-gtk3
 		papirus-icon-theme
 		lxappearance
-		xdg-desktop-portal
+
+		# wayland & screen tools
+		rofi-wayland
+		waybar
+		swaybg
+		swaylock
+		wayidle
+		waypaper
 		grim
 		hyprshot
-		thunderbird
-		thefuck
-		fzf
-    ];
+
+		# cursor theme
+		rose-pine-hyprcursor
+
+		# GPU packages
+		rocmPackages.rpp
+	];
 
 	gtk = {
 		enable = true;
