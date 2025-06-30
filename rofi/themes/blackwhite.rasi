@@ -1,0 +1,129 @@
+/*
+ * Black & White Rofi Theme
+ * – Dark grey background
+ * – White selection with rounded corners
+ */
+
+* {
+    /* color variables */
+    bg:            #2b2b2b;               /* dark grey background */
+    hv:            #ffffff;               /* pure white (hover/selected) */
+    primary:       #888888;               /* mid grey (borders, accents) */
+    ug:            #444444;               /* darker grey (urgent) */
+    font:          "Monospace 11";
+    background-color: @bg;
+    border:        0px;
+    transparent:   rgba(0,0,0,0);
+}
+
+window {
+    width:         700;
+    orientation:   horizontal;
+    location:      center;
+    anchor:        center;
+    transparency:  "screenshot";   /* let your compositor blur/obfuscate behind */
+    border:        0px;
+    border-color:  @transparent;
+    border-radius: 8px;            /* round window corners */
+    spacing:       0;
+    children:      [ mainbox ];
+}
+
+mainbox {
+    spacing: 0;
+    children: [ inputbar, message, listview ];
+}
+
+inputbar {
+    color:         @hv;            /* white prompt text */
+    padding:       11px;
+    border:        3px 3px 2px 3px;
+    border-color:  @primary;       /* grey border */
+    border-radius: 8px 8px 0 0;    /* round top corners */
+}
+
+message {
+    padding:       0;
+    border:        0px 1px 1px 1px;
+    border-color:  @primary;
+}
+
+entry, prompt, case-indicator {
+    text-font:     inherit;
+    text-color:    inherit;
+}
+
+entry {
+    cursor: pointer;
+}
+
+prompt {
+    margin: 0px 5px 0px 0px;
+}
+
+listview {
+    layout:         vertical;
+    padding:        8px;
+    lines:          12;
+    columns:        1;
+    border:         0px 3px 3px 3px;
+    border-color:   @primary;
+    border-radius:  0 0 8px 8px;    /* round bottom corners */
+    dynamic:        false;
+}
+
+element {
+    padding:        2px;
+    vertical-align: 1;
+    color:          @hv;            /* white */
+    font:           inherit;
+}
+
+element-text {
+    background-color: inherit;
+    text-color:      inherit;
+}
+
+/* HOVERED/SELECTED ITEM */
+element selected.normal {
+    color:            @bg;          /* dark-grey text */
+    background-color: @hv;          /* white bg */
+    border-radius:    6px;          /* pill shape */
+}
+
+/* ACTIVE (keyboard nav) */
+element normal active {
+    background-color: @hv;          /* white bg */
+    color:            @bg;          /* dark-grey text */
+    border-radius:    6px;
+}
+
+/* URGENT */
+element normal urgent {
+    background-color: @ug;          /* dark grey bg */
+    color:            @hv;          /* white text */
+    border-radius:    6px;
+}
+
+element selected active {
+    background:   @hv;
+    foreground:   @bg;
+    border-radius: 3px;
+}
+
+button {
+    padding:          6px;
+    color:            @primary;
+    horizontal-align: 0.5;
+    border:           2px 0px 2px 2px;
+    border-radius:    4px 0 0 4px;
+    border-color:     @primary;
+}
+
+button selected normal {
+    border-color:     @primary;
+}
+
+scrollbar {
+    enabled: true;
+}
