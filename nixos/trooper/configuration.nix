@@ -2,7 +2,8 @@
 # your system.  Help is available in the configuration.nix(5) man page
 # and in the NixOS manual (accessible by running ‘nixos-help’).
 
-{ config, pkgs, lib, ... }:
+{ config, pkgs, lib, zen-browser, ... }:
+
 {
 	# Enable nix flakes
 	nix.settings.experimental-features = [ "nix-command" "flakes" ];
@@ -85,7 +86,7 @@
 	users.users.daniel = {
 		isNormalUser = true;
 		description = "Daniel Pereira";
-		extraGroups = [ "networkmanager" "wheel" ];
+		extraGroups = [ "networkmanager" "wheel" "input" "daniel" "docker" ];
 		shell = pkgs.zsh;
 		packages = with pkgs; [
 			kdePackages.kate
@@ -105,6 +106,7 @@
 	# $ nix search wget
 	environment.systemPackages = with pkgs; [
 		vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
+		tmux
 		wget
 		neofetch
 		git
@@ -123,14 +125,22 @@
 		dunst
 		ly
 		networkmanagerapplet
+		docker
+		docker-compose      # if you want docker-compose
+		wl-clipboard
+		xclip
+		zen-browser.packages.${pkgs.system}.default
 	];
 
-	programs.dconf.enable = true;
+	virtualisation.docker.enable = true;
 
+	programs.dconf.enable = true;
 
 	services.tailscale.enable = true;
 
 	services.hardware.openrgb.enable = true;
+
+	services.flatpak.enable = true;
 
 	hardware.bluetooth.enable = true; # enables support for bluetooth
 	hardware.bluetooth.powerOnBoot = true;
@@ -149,8 +159,10 @@
 			PasswordAuthentication = true;
 			AllowUsers = null; # Allows all users by default. Can be [ "user1" "user2" ]
 			UseDns = true;
-			X11Forwarding = false;
 			PermitRootLogin = "prohibit-password"; # "yes", "without-password", "prohibit-password", "forced-commands-only", "no"
+			X11Forwarding = true;
+			X11DisplayOffset = 10; # Good practice
+			X11UseLocalHost = true; # Also good practice
 		};
 	};
 
@@ -174,6 +186,10 @@
 		nerd-fonts.caskaydia-cove
 	];
 
+	nixpkgs.config.permittedInsecurePackages = [
+                "deskflow-1.19.0"
+              ];
+
 	# Some programs need SUID wrappers, can be configured further or are
 	# started in user sessions.
 	# programs.mtr.enable = true;
@@ -185,10 +201,9 @@
 	# List services that you want to enable:
 
 	# Open ports in the firewall.
-	# networking.firewall.allowedTCPPorts = [ ... ];
+	# networking.firewall.allowedTCPPorts = [ 24800 ];
 	# networking.firewall.allowedUDPPorts = [ ... ];
 	# Or disable the firewall altogether.
-	# networking.firewall.enable = false;
 
 
 	# This value determines the NixOS release from which the default
