@@ -29,14 +29,20 @@
 		thefuck
 		fzf
 		vscode
+		direnv
 
 		# system utilities
+		gparted
+		networkmanager
+		networkmanager-openvpn
 		btrfs-progs
+		via
 		amdgpu_top
 		fastfetch
 		ghostty
 
 		# web & networking
+		google-chrome
 		caddy
 
 		# clipboard
@@ -90,6 +96,14 @@
 			size = 24;
 		};
 	};
+
+	programs.direnv = {
+		enable = true;
+		nix-direnv.enable = true; # Highly recommended for faster Nix integration
+		# This automatically includes the 'use nix' directive for .envrc files
+		# and optimizes 'nix develop' integration with direnv.
+	};
+
 
 	programs.starship.enable = true;
 
