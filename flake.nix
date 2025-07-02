@@ -14,15 +14,20 @@
             url = "github:LnL7/nix-darwin";
             inputs.nixpkgs.follows = "nixpkgs";
         };
+		zen-browser = {
+			url = "github:youwen5/zen-browser-flake";
+			inputs.nixpkgs.follows = "nixpkgs";
+		};
     };
 
-    outputs = { self, nixpkgs, home-manager, nix-darwin, ... }:
+    outputs = { self, nixpkgs, home-manager, nix-darwin, zen-browser, ... }:
         let
 
         in {
 			nixosConfigurations = {
 				trooper = nixpkgs.lib.nixosSystem {
 					system = "x86_64-linux";
+					specialArgs = { inherit zen-browser; };
 					modules = [
 						./nixos/trooper/configuration.nix
 						./nixos/trooper/hardware-configuration.nix
