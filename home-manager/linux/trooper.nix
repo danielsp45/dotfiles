@@ -30,6 +30,7 @@
 		fzf
 		vscode
 		direnv
+		rustup
 
 		# system utilities
 		gparted
@@ -61,14 +62,15 @@
 
 		# multimedia
 		spotify
+		stremio
 
 		# gaming & launchers
+		lutris
 		prismlauncher
 
 		# theming
 		adw-gtk3
 		papirus-icon-theme
-		lxappearance
 
 		# wayland & screen tools
 		rofi-wayland
