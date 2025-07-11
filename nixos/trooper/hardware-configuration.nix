@@ -24,6 +24,11 @@
       options = [ "fmask=0077" "dmask=0077" ];
     };
 
+	fileSystems."/mnt/bench" = {
+		device = "/dev/disk/by-uuid/da444541-e215-459f-9507-64ea32d7a707";
+		fsType = "ext4";
+	};
+
   swapDevices = [ ];
 
   # Enables DHCP on each ethernet and wireless interface. In case of scripted networking
