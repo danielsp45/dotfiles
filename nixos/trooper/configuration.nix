@@ -130,6 +130,7 @@
 		wl-clipboard
 		xclip
 		zen-browser.packages.${pkgs.system}.default
+		pavucontrol
 	];
 
 	virtualisation.docker.enable = true;
@@ -151,6 +152,8 @@
 		dedicatedServer.openFirewall = true; # Open ports in the firewall for Source Dedicated Server
 		localNetworkGameTransfers.openFirewall = true; # Open ports in the firewall for Steam Local Network Game Transfers
 	};
+
+	programs.nix-ld.enable = true;
 
 	services.openssh = {
 		enable = true;
@@ -185,10 +188,6 @@
 		nerd-fonts.ubuntu-mono
 		nerd-fonts.caskaydia-cove
 	];
-
-	nixpkgs.config.permittedInsecurePackages = [
-                "deskflow-1.19.0"
-              ];
 
 	# Some programs need SUID wrappers, can be configured further or are
 	# started in user sessions.
