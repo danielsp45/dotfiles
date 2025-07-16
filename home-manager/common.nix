@@ -39,13 +39,19 @@
 		pkgs.bear
 		pkgs.pkg-config
 		pkgs.tmux
+		pkgs.wget
+		pkgs.typst
+		pkgs.roboto
+		pkgs.source-sans-pro
+		pkgs.vcpkg
     ];
 
     # Home Manager is pretty good at managing dotfiles. The primary way to manage
     # plain files is through 'home.file'.
-    home.file = {
-      ".config/nvim".source = ./../nvim;
-    };
+	home.file = {
+		".config/nvim".source = ./../nvim;
+		".tmux.conf".source = ./../tmux/tmux.conf;
+	};
 
     home.sessionVariables = {
       EDITOR = "nvim";
