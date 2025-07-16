@@ -1,0 +1,63 @@
+[global]
+    monitor = 0
+    follow = mouse
+    geometry = "400x5-15+15" # This sets position: 400px wide, 5px high, 15px from right, 15px from top
+    indicate_hidden = yes
+    shrink = no
+    transparency = 5 # Set to 0 for full obfuscation, or a low percentage like 5 for subtle blur
+    # If you want obfuscation (blur), ensure your compositor (e.g., Hyprland, picom) is configured for it.
+    # Dunst itself doesn't do blurring; it relies on the compositor for 'obfuscated' backgrounds.
+
+    notification_height = 0
+    separator_height = 2
+    separator_color = frame
+    padding = 15 # Reduced padding for sleeker look
+    horizontal_padding = 15 # Reduced padding
+    frame_width = 1
+    frame_color = "#333333" # Dark gray frame color, matching Waybar's background shades
+    sort = yes
+    idle_threshold = 120
+    line_height = 0
+    markup = full
+    format = "<span foreground='#FFFFFF'><b>%s %p</b></span>\n<span foreground='#CCCCCC'>%b</span>" # White for summary, light gray for body
+    alignment = left
+    show_age_threshold = 60
+    word_wrap = yes
+    ellipsize = middle
+    ignore_newline = no
+    stack_duplicates = true
+    hide_duplicate_count = false
+    show_indicators = yes
+    icon_position = left
+    max_icon_size = 32
+    # Icon path: ensure these paths exist and contain black/white icons for consistency
+    icon_path = /usr/share/icons/Paper/16x16/status/:/usr/share/icons/Paper/16x16/devices/:/usr/share/icons/Paper/16x16/apps/
+    sticky_history = yes
+    history_length = 20
+    always_run_script = true
+    startup_notification = false
+    verbosity = mesg
+    corner_radius = 25 # Slightly rounded corners (adjust 0-50, 8-12 is a good "subtle" range)
+    force_xinerama = false
+    mouse_left_click = close_current
+    mouse_middle_click = do_action
+    mouse_right_click = close_all
+
+[urgency_low]
+    background = "#111111" # Darker background, matching Waybar's primary background
+    foreground = "#FFFFFF" # White text
+    frame_color = "#333333" # Dark gray frame
+    timeout = 8 # Slightly shorter timeout
+
+[urgency_normal]
+    background = "#111111" # Darker background
+    foreground = "#FFFFFF" # White text
+    frame_color = "#333333" # Dark gray frame
+    timeout = 8 # Slightly shorter timeout
+
+[urgency_critical]
+    background = "#333333" # Use a distinct dark gray for critical, or a subtle red if you want a hint of color
+    foreground = "#FFFFFF" # White text
+    frame_color = "#666666" # A bit lighter gray for the frame to make it stand out
+    timeout = 0 # Stays until dismissed
+    icon = /usr/share/icons/Paper/16x16/status/dialog-warning.png # Ensure this icon is monochrome
