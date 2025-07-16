@@ -77,7 +77,28 @@
         "home-manager": "home-manager",
         "nix-darwin": "nix-darwin",
         "nixos": "nixos",
-        "nixpkgs": "nixpkgs"
+        "nixpkgs": "nixpkgs",
+        "zen-browser": "zen-browser"
+      }
+    },
+    "zen-browser": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1751256876,
+        "narHash": "sha256-4A8LmE0Hd9RvQwSEPYdITJebpLt7J99VY76IphzqZKc=",
+        "owner": "youwen5",
+        "repo": "zen-browser-flake",
+        "rev": "615b9244dc7ac777b8f0bc3a9cb7290936e4fcf9",
+        "type": "github"
+      },
+      "original": {
+        "owner": "youwen5",
+        "repo": "zen-browser-flake",
+        "type": "github"
       }
     }
   },
