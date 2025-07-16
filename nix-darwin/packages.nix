@@ -23,6 +23,7 @@
       "xquartz"
       "obsidian"
       "nikitabobko/tap/aerospace"
+	  "deskflow/tap/deskflow"
       "vmware-fusion"
       "telegram"
       "arc"
@@ -44,6 +45,10 @@
 	  "visual-studio-code"
 	  "raspberry-pi-imager"
 	  "nextcloud"
+	  "cursor"
+	  "anydesk"
+	  "zen"
+	  "stremio"
     ];
 
     brews = [
