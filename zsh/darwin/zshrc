@@ -76,6 +76,8 @@ source "$HOME/.dotfiles/zsh/functions.zsh"
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
 
+export PATH=/Users/daniel/.cache/rebar3/bin:$PATH
+
 # Source secrets if they exist
 [ -f ~/.secrets ] && source ~/.secrets
 
