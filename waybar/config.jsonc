@@ -153,7 +153,7 @@
     "custom/power": {
       "format": "",
       "tooltip": false,
-      "on-click": "shutdown now"
+      "on-click": "~/.config/waybar/scripts/power_menu.sh"
     }
   }
 ]

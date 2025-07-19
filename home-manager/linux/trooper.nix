@@ -24,9 +24,8 @@
 		# development tools
 		cmake
 		gnumake
-		nodejs_23
+		nodejs_24
 		starship
-		thefuck
 		fzf
 		vscode
 		direnv
@@ -54,6 +53,7 @@
 		nemo
 		notion-app-enhanced
 		zotero
+	    logseq
 
 		# communication
 		discord
