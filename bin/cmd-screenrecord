@@ -1,0 +1,37 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+[[ -f ~/.config/user-dirs.dirs ]] && source ~/.config/user-dirs.dirs
+OUTPUT_DIR="${OMARCHY_SCREENRECORD_DIR:-${XDG_VIDEOS_DIR:-$HOME/Videos}}"
+
+if [[ ! -d "$OUTPUT_DIR" ]]; then
+  notify-send "Screen recording directory does not exist:" "$OUTPUT_DIR" -u critical -t 3000 || true
+  exit 1
+fi
+
+screenrecording() {
+  local filename="$OUTPUT_DIR/screenrecording-$(date +'%Y-%m-%d_%H-%M-%S').mp4"
+  notify-send "Screen recording starting…" "$filename" -t 1200 || true
+  sleep 1
+
+  # Add --audio if you want mic/system audio (requires PipeWire)
+  wl-screenrec -f "$filename" \
+    --ffmpeg-encoder-options="-c:v libx264 -crf 23 -preset medium -movflags +faststart" \
+    "$@"
+}
+
+# Toggle stop if running
+if pgrep -x wl-screenrec >/dev/null || pgrep -x wf-recorder >/dev/null; then
+  pkill -x wl-screenrec || true
+  pkill -x wf-recorder || true
+  notify-send "Screen recording stopped" "Saved to $OUTPUT_DIR" -t 2000 || true
+  exit 0
+fi
+
+# Start: full output or region
+if [[ "${1:-}" == "output" ]]; then
+  screenrecording
+else
+  region="$(slurp)" || exit 1
+  screenrecording -g "$region"
+fi

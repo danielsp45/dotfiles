@@ -1,5 +1,3 @@
-// Written by Nicholas Oliver Bahary
-// on 14 September 2024
 [
   {
     "layer": "top",
@@ -12,16 +10,14 @@
     "modules-center": ["clock"],
     "modules-right": [
       "tray",
-      "pulseaudio",
-      "memory",
       "cpu",
-      // "custom/wallpaper",
-      "custom/power"
+      "memory",
+      "disk"
     ],
     "custom/linux": {
-      // render the SVG at 16px tall; tweak height to taste
-      "format": "",
-      "tooltip-format": "NixOS",
+      "format": " ",
+      "tooltip": false,
+      "on-click": "~/.local/share/config/bin/menu"
     },
     "custom/rofi": {
       "format": "\udb82\udcc7",
@@ -87,15 +83,22 @@
     },
     "memory": {
       "interval": 10,
-      "format": " {used}GiB",
+      "format": " {used}GB",
       "max-length": 13,
       "tooltip": false
     },
     "cpu": {
+      "format": " {usage}%",          //  from Nerd Fonts often matches better
       "interval": 1,
-      "format": " {usage}%",
       "max-length": 13,
       "tooltip": true
+    },
+    "disk": {
+      "interval": 6000,
+      // without this rise things would be off center vertically for some reason
+      "format": "󰋊 {used}/{total}",
+      "path": "/",
+      "unit": "TB"
     },
     "tray": {
       "icon-size": 15,
@@ -109,7 +112,7 @@
     "pulseaudio": {
       "format": "{icon} <b>{volume}%</b>",
       "format-muted": " 󰝟 ",
-      "format-bluetooth": "{icon}  <b>{volume}%</b>",
+      "format-bluetooth": "{icon} <b>{volume}%</b>",
       "format-bluetooth-muted": "󰝟 ",
       "format-icons": {
         "headset": "",
@@ -151,7 +154,7 @@
       "tooltip-format": "Left-click:  Change Wallpaper\nRight-click: Open Wallpaper Picker"
     },
     "custom/power": {
-      "format": "",
+      "format": "",
       "tooltip": false,
       "on-click": "~/.config/waybar/scripts/power_menu.sh"
     }

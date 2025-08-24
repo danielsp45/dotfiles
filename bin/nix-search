@@ -1,0 +1,115 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+# nixpkgs finder with cached descriptions
+# - First run builds a cache (fast if nix search is available).
+# - Subsequent runs are instant.
+# - Use --refresh to rebuild.
+
+REFRESH=0
+if [[ "${1:-}" == "--refresh" ]]; then REFRESH=1; fi
+
+CACHE_DIR="${XDG_CACHE_HOME:-$HOME/.cache}/nixpkgs-fzf"
+CACHE_FILE="$CACHE_DIR/index.tsv"
+mkdir -p "$CACHE_DIR"
+
+jq_exists() { command -v jq >/dev/null 2>&1; }
+have_nix_search() { nix --version >/dev/null 2>&1 && nix search --help >/dev/null 2>&1; }
+current_system() { nix eval --raw --expr builtins.currentSystem 2>/dev/null || echo "x86_64-linux"; }
+
+# Build cache: ATTR<TAB>NAME-VERSION<TAB>DESCRIPTION
+build_cache() {
+  echo "Building nixpkgs cache (with descriptions)..."
+  tmp="$(mktemp)"
+  if have_nix_search && jq_exists; then
+    # Fast path: nix search json index
+    # Different nix versions structure JSON slightly differently; normalize it.
+    SYS="$(current_system)"
+    nix search nixpkgs --json "" \
+    | jq -r --arg SYS "$SYS" '
+        # Shape normalization:
+        # Old: { "attrPath": { pname, name, version, description, ... }, ... }
+        # Newer: { "packages": { "<system>": { "attrPath": {...} } } }
+        ( .packages? // . ) as $root
+        | ( $root[$SYS]? // $root )        # pick system if present
+        | to_entries[]
+        | .key as $attr
+        | .value as $v
+        | ($v.pname // $v.name // "") as $pname
+        | ($v.version // "") as $ver
+        | ($v.description // "") as $desc
+        | $attr + "\t" +
+          ( ($pname|tostring) + (if $ver=="" then "" else "-" + $ver end) ) + "\t" +
+          ( ($desc|tostring) | gsub("[\\r\\n\\t]+";" ") | gsub("  +";" ") )
+      ' > "$tmp"
+  else
+    # Fallback: nix-env
+    nix-env -qaP --description '*' 2>/dev/null \
+      | sed -E 's/[[:space:]]{2,}/\t/g' \
+      | awk -F'\t' 'NF>=3 {print $1 "\t" $2 "\t" $3}' \
+      | sed -E 's/[\r\t]+/ /g; s/[[:space:]]{2,}/ /g' > "$tmp"
+  fi
+
+  # Add a tiny header (ignored later)
+  {
+    echo "# nixpkgs cache built: $(date -u +%F\ %T)Z"
+    echo "# columns: attr<TAB>name-version<TAB>description"
+    cat "$tmp"
+  } > "$CACHE_FILE"
+  rm -f "$tmp"
+  echo "Cache written to $CACHE_FILE"
+}
+
+# Refresh if missing/old
+if [[ $REFRESH -eq 1 || ! -s "$CACHE_FILE" || $(find "$CACHE_FILE" -mtime +14 -print -quit) ]]; then
+  build_cache
+fi
+
+copy_clipboard() {
+  local text="$1"
+  if command -v wl-copy >/dev/null 2>&1; then printf "%s" "$text" | wl-copy; echo "Copied with wl-copy."; 
+  elif command -v xclip >/dev/null 2>&1; then printf "%s" "$text" | xclip -selection clipboard; echo "Copied with xclip.";
+  elif command -v pbcopy >/dev/null 2>&1; then printf "%s" "$text" | pbcopy; echo "Copied with pbcopy.";
+  else echo "No clipboard tool found."; printf "%s\n" "$text"; fi
+}
+
+fzf_args=(
+  --multi
+  --ansi
+  --cycle
+  --delimiter=$'\t'
+  --with-nth=1,2,3          # show description in list
+  --preview '
+    line="{}"
+    attr=$(cut -f1 <<< "$line" | sed -E "s/^nixpkgs\.//")
+    namever=$(cut -f2 <<< "$line")
+    desc=$(cut -f3 <<< "$line")
+    echo "attr: pkgs.$attr"
+    echo "name: $namever"
+    echo
+    echo "$desc" | fold -s -w 100
+    echo
+    # Optional: show meta lazily (cheap and nice-to-have)
+    nix --extra-experimental-features nix-command --extra-experimental-features flakes \
+      eval --json "nixpkgs#$attr.meta" 2>/dev/null \
+      | jq -r "to_entries|map(\"\(.key): \(.value)\")|.[]" 2>/dev/null || true
+  '
+  --preview-window 'down:65%:wrap'
+  --bind 'alt-p:toggle-preview'
+  --bind 'alt-d:preview-half-page-down,alt-u:preview-half-page-up'
+  --bind 'alt-k:preview-up,alt-j:preview-down'
+)
+
+# Feed cache (skip header lines)
+selection="$(grep -v '^[#]' "$CACHE_FILE" | fzf "${fzf_args[@]}" || true)"
+[[ -z "$selection" ]] && exit 0
+
+attrs=$(
+  awk -F'\t' '{print $1}' <<< "$selection" \
+  | sed -E 's/^nixpkgs\.//'
+)
+
+# Copy space-separated (nice for Nix lists), switch to newline if you prefer
+to_copy="$(tr '\n' ' ' <<< "$attrs" | sed 's/[[:space:]]\+$//')"
+# to_copy="$attrs"
+copy_clipboard "$to_copy"

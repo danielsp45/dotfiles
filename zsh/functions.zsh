@@ -15,7 +15,7 @@ function copy(){
 function new(){
     cd ~
     clear
-    neofetch
+    fastfetch
 }
 
 function downloads() {

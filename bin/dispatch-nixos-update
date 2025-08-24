@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+
+hyprctl dispatch exec "[float;center;size 1000x300] ghostty -e bash -c '~/.local/share/config/bin/show-logo; eval \"~/.local/share/config/bin/nixos-update\"; ~/.local/share/config/bin/show-done;'"

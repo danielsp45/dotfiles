@@ -26,6 +26,8 @@
 	services.resolved.enable = true;
 	systemd.services.NetworkManager-wait-online.enable = lib.mkForce false;
 
+  services.udisks2.enable = true;
+  services.gvfs.enable = true;
 
 	# Set your time zone.
 	time.timeZone = "Europe/Lisbon";
@@ -111,15 +113,10 @@
 		neofetch
 		git
 		openrgb-with-all-plugins
-		# polybar
-		(polybar.override {
-			pulseSupport = true;
-		})
 		xorg.xinit
 		pciutils
 		arandr
 		blueman
-		flameshot
 		pulseaudio
 		playerctl
 		dunst
@@ -131,6 +128,7 @@
 		xclip
 		zen-browser.packages.${pkgs.system}.default
 		pavucontrol
+    uwsm
 	];
 
 	virtualisation.docker.enable = true;

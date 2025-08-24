@@ -1,0 +1,26 @@
+#!/usr/bin/env bash
+
+set -euo pipefail
+
+# Config file for Ghostty (use any path you like)
+GHOSTTY_CFG="${HOME}/.config/ghostty/screensaver.conf"
+
+# If a Screensaver window already exists, bail out (more reliable than pgrep)
+if hyprctl clients -j | jq -e '.[] | select(.class=="Screensaver")' >/dev/null; then
+  exit 0
+fi
+
+# Remember currently focused monitor
+focused="$(hyprctl monitors -j | jq -r '.[] | select(.focused==true).name')"
+
+# Spawn one Ghostty "screensaver" per monitor
+for m in $(hyprctl monitors -j | jq -r '.[].name'); do
+  hyprctl dispatch focusmonitor "$m"
+  hyprctl dispatch exec -- \
+    ghostty --class Screensaver \
+            --config "$GHOSTTY_CFG" \
+            -e ~/.local/share/config/bin/cmd-screensaver
+done
+
+# Restore focus
+hyprctl dispatch focusmonitor "$focused"

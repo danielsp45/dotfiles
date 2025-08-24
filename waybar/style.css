@@ -4,32 +4,41 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: "JetBrainsMono Nerd Font"; /* Ensure this font is installed */
+  font-family: "DejaVu Sans Mono";
+  /* Ensure this font is installed */
   font-size: 8.5pt;
   font-weight: 800;
   transition-property: background;
   transition-duration: 0.5s;
-  color: #FFFFFF; /* Default text color to white */
+  color: #FFFFFF;
+  /* Default text color to white */
 }
 
 /* Tooltip style */
 tooltip {
-  background: #222222; /* Dark gray for tooltip background */
-  color: #FFFFFF;     /* White text for tooltips */
+  background: #222222;
+  /* Dark gray for tooltip background */
+  color: #FFFFFF;
+  /* White text for tooltips */
   border-radius: 5pt;
-  padding: 5pt 10pt; /* Added some padding for better look */
+  padding: 5pt 10pt;
+  /* Added some padding for better look */
 }
 
 /* Waybar Top Bar */
 #waybar.top {
-  background: none; /* Transparent background */
+  background: none;
+  /* Transparent background */
 }
 
-#waybar.top > box.horizontal {
-  background: #000000; /* Pure black for the top module container */
-  box-shadow: 0 0 4pt #000000; /* Black shadow */
+#waybar.top>box.horizontal {
+  background: #000000;
+  /* Pure black for the top module container */
+  box-shadow: 0 0 3pt #000000;
+
+  /* Black shadow */
   border-radius: 12pt;
-  margin: 6pt;
+  margin: 5pt 4pt;
   padding: 2pt;
 }
 
@@ -38,27 +47,13 @@ tooltip {
   margin-left: 7pt;
   padding-right: 3pt;
   font-size: 12pt;
-  color: #FFFFFF; /* White */
+  color: #FFFFFF;
+  /* White */
 }
 
 #clock {
-  color: #FFFFFF; /* White */
-}
-
-#custom-linux {
-  color: #CCCCCC; /* Light gray */
-  margin-left: 5pt;
-  font-size: 12pt;
-}
-
-#custom-power {
-  margin-right: 11pt;
-  font-size: 16pt;
-  color: #BBBBBB; /* Slightly darker gray for icon */
-}
-
-#custom-power:hover {
-  color: #FFFFFF; /* White on hover */
+  color: #FFFFFF;
+  /* White */
 }
 
 /* Workspaces */
@@ -67,8 +62,10 @@ tooltip {
 }
 
 #workspaces button {
-  color: #888888; /* Gray for inactive workspaces */
-  padding: 0 5pt; /* Added padding for better button appearance */
+  color: #888888;
+  /* Gray for inactive workspaces */
+  padding: 0 5pt;
+  /* Added padding for better button appearance */
 }
 
 #workspaces button:not(:first-child) {
@@ -76,31 +73,39 @@ tooltip {
 }
 
 #workspaces button.visible {
-  color: #DDDDDD; /* Lighter gray for visible workspaces */
+  color: #DDDDDD;
+  /* Lighter gray for visible workspaces */
 }
 
 #workspaces button.active {
-  color: #FFFFFF; /* White for active workspace */
-  background-color: #333333; /* Dark gray background for active workspace */
-  border-radius: 5pt; /* Slightly rounded for active button */
+  color: #FFFFFF;
+  /* White for active workspace */
+  background-color: #333333;
+  /* Dark gray background for active workspace */
+  border-radius: 5pt;
+  /* Slightly rounded for active button */
 }
 
 #workspaces button:hover,
 #workspaces button:focus {
-  background: #111111; /* Very dark gray on hover */
+  background: #111111;
+  /* Very dark gray on hover */
   border-color: transparent;
   box-shadow: none;
 }
 
 #workspaces button:hover:not(.active):not(.visible),
 #workspaces button:focus:not(.active):not(.visible) {
-  color: #AAAAAA; /* Even lighter gray on hover for inactive/non-visible */
+  color: #AAAAAA;
+  /* Even lighter gray on hover for inactive/non-visible */
 }
 
 /* MPRIS (Media Player) */
 #mpris {
-  background: #222222; /* Dark gray */
-  color: #EEEEEE;     /* Off-white */
+  background: #222222;
+  /* Dark gray */
+  color: #EEEEEE;
+  /* Off-white */
   border-radius: 12pt;
   margin-left: 15pt;
   padding: 0 8pt;
@@ -109,18 +114,45 @@ tooltip {
 #window {
   margin-left: 15pt;
   margin-right: 20pt;
-  color: #FFFFFF; /* White */
+  color: #FFFFFF;
+  /* White */
 }
 
 /* System Monitors */
 #memory {
-  color: #CCCCCC; /* Light gray */
+  color: #CCCCCC;
+  /* Light gray */
   margin-right: 12pt;
 }
 
 #cpu {
-  color: #CCCCCC; /* Light gray */
+  color: #CCCCCC;
+  /* Light gray */
   margin-right: 12pt;
+}
+
+#disk {
+  color: #CCCCCC;
+  /* Light gray */
+  margin-right: 12pt;
+}
+
+#pulseaudio {
+  color: #CCCCCC;
+  /* Light gray */
+  margin-right: 12pt;
+}
+
+#custom-linux {
+  color: #CCCCCC;
+  /* Light gray */
+  margin-left: 8pt;
+  font-size: 14pt;
+}
+
+
+#custom-linux:hover {
+  color: #7EB7E2;
 }
 
 /* Tray */
@@ -129,7 +161,8 @@ tooltip {
 }
 
 #tray menu {
-  background: #222222; /* Dark gray */
+  background: #222222;
+  /* Dark gray */
   padding: 2pt;
 }
 
@@ -144,24 +177,28 @@ tooltip {
 /* Animations (Keep original, but adjust colors) */
 @keyframes blink {
   to {
-    background-color: rgba(30, 34, 42, 0.2); /* Faded gray */
+    background-color: rgba(30, 34, 42, 0.2);
+    /* Faded gray */
     color: #FFFFFF;
   }
 }
 
 /* Power States */
 #backlight {
-  color: #CCCCCC; /* Light gray */
+  color: #CCCCCC;
+  /* Light gray */
   margin-right: 10pt;
 }
 
 #pulseaudio {
-  color: #CCCCCC; /* Light gray */
+  color: #CCCCCC;
+  /* Light gray */
   margin-right: 10pt;
 }
 
 #battery {
-  color: #CCCCCC; /* Light gray */
+  color: #CCCCCC;
+  /* Light gray */
   margin-right: 15pt;
 }
 
@@ -169,11 +206,13 @@ tooltip {
 #battery.good,
 #battery.charging,
 #battery.plugged {
-  color: #888888; /* Slightly darker gray for good status */
+  color: #888888;
+  /* Slightly darker gray for good status */
 }
 
 #battery.critical:not(.charging) {
-  color: #FFFFFF; /* White for critical status */
+  color: #FFFFFF;
+  /* White for critical status */
   animation-name: blink;
   animation-duration: 0.5s;
   animation-timing-function: linear;
@@ -204,7 +243,8 @@ tooltip {
    I've kept the last one. */
 #custom-power {
   margin-right: 11pt;
-  font-size: 10pt; /* Keeping this size from the last definition */
+  font-size: 10pt;
+  /* Keeping this size from the last definition */
   color: #BBBBBB;
 }
 
@@ -214,7 +254,8 @@ tooltip {
 }
 
 #waybar.bottom box.modules-center {
-  background: #000000; /* Pure black */
+  background: #000000;
+  /* Pure black */
   margin-top: 5pt;
   padding: 0 4pt;
   border-top-left-radius: 10pt;
@@ -266,7 +307,8 @@ tooltip {
   background-position: center;
   background-repeat: no-repeat;
   background-size: 28pt;
-  font-size: 28pt; /* This size is for the text/padding, not the icon itself */
+  font-size: 28pt;
+  /* This size is for the text/padding, not the icon itself */
   padding: 0 6pt;
   margin: 0 2pt;
   /* You can try to force a tint if icons are SVG and allow it, but generally,

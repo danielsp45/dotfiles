@@ -35,9 +35,6 @@ zstyle ':completion:*' menu select
 # Tool Configuration
 #------------------------------------------------------------------------------
 
-# TheFuck
-eval $(thefuck --alias)
-
 # Terminal
 export TERM=xterm-256color
 export COLORTERM=truecolor
