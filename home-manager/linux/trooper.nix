@@ -4,7 +4,7 @@
     # Home Manager needs a bit of information about you and the paths it should
     # manage.
     home.username = "daniel";
-	home.homeDirectory = lib.mkForce "/home/daniel";
+	  home.homeDirectory = lib.mkForce "/home/daniel";
 
     home.file = {
         ".zshrc".source = ./../../zsh/linux/zshrc;
@@ -14,6 +14,10 @@
         ".config/waybar".source = ./../../waybar;
         ".config/rofi".source = ./../../rofi;
         ".config/dunst".source = ./../../dunst;
+        ".config/swayosd".source = ./../../swayosd;
+        # ".config/walker".source = ./../../walker;
+        ".config/fastfetch".source = ./../../fastfetch;
+        ".local/share/config/bin".source = ./../../bin;
     };
 
 	home.packages = with pkgs; [
@@ -25,11 +29,15 @@
 		cmake
 		gnumake
 		nodejs_24
+    python312
+    python312Packages.pip
+    gcc
 		starship
 		fzf
 		vscode
 		direnv
 		rustup
+		nix-direnv
 
 		# system utilities
 		gparted
@@ -40,9 +48,12 @@
 		amdgpu_top
 		fastfetch
 		ghostty
+    jq
+    gum
 
 		# web & networking
 		google-chrome
+    chromium
 		caddy
 
 		# clipboard
@@ -53,7 +64,7 @@
 		nemo
 		notion-app-enhanced
 		zotero
-	    logseq
+	  logseq
 
 		# communication
 		discord
@@ -63,16 +74,24 @@
 		# multimedia
 		spotify
 		stremio
+    zoom
+
+    # kindle stuff
+    calibre
+    gvfs
 
 		# gaming & launchers
 		lutris
 		prismlauncher
+		heroic
+		wine
 
 		# theming
 		adw-gtk3
 		papirus-icon-theme
 
 		# wayland & screen tools
+    walker
 		rofi-wayland
 		waybar
 		swaybg
@@ -81,6 +100,15 @@
 		waypaper
 		grim
 		hyprshot
+    satty
+    slurp
+    libnotify
+    wf-recorder
+    wl-screenrec
+    ffmpeg
+    hyprpicker
+    hypridle
+    hyprsunset
 
 		# cursor theme
 		rose-pine-hyprcursor
@@ -105,6 +133,11 @@
 		# This automatically includes the 'use nix' directive for .envrc files
 		# and optimizes 'nix develop' integration with direnv.
 	};
+
+  services.swayosd = {
+    enable = true;
+  };
+
 
 
 	programs.starship.enable = true;

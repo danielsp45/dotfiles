@@ -14,3 +14,11 @@
 
 [commit]
 	gpgsign = true
+
+[alias]
+  review = "!f() { \
+    GIT_REVIEW_ARGS=\"$*\"; export GIT_REVIEW_ARGS; \
+    git diff $GIT_REVIEW_ARGS --name-only \
+    | fzf -m --ansi \
+        --preview 'git diff $GIT_REVIEW_ARGS --color=always -- {-1}'; \
+  }; f"

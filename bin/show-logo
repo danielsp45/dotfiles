@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+clear
+echo -e "\033[32m"
+cat <~/.local/share/config/bin/logo.txt
+echo -e "\033[0m"
+echo

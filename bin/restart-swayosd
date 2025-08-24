@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+
+~/.local/share/config/bin/restart-app swayosd-server
