@@ -1,23 +1,26 @@
 { config, pkgs, lib, ... }:
 
-{
+let
+  # Where your dotfiles live on disk (change if needed)
+  dotfiles = "${config.home.homeDirectory}/.dotfiles";
+  oos = path: config.lib.file.mkOutOfStoreSymlink "${dotfiles}/${path}";
+
+in {
     # Home Manager needs a bit of information about you and the paths it should
     # manage.
     home.username = "daniel";
 	  home.homeDirectory = lib.mkForce "/home/daniel";
 
     home.file = {
-        ".zshrc".source = ./../../zsh/linux/zshrc;
-        ".gitconfig".source = ./../../git/gitconfig;
-        ".config/ghostty".source = ./../../ghostty;
-        ".config/hypr".source = ./../../hypr;
-        ".config/waybar".source = ./../../waybar;
-        ".config/rofi".source = ./../../rofi;
-        ".config/dunst".source = ./../../dunst;
-        ".config/swayosd".source = ./../../swayosd;
-        # ".config/walker".source = ./../../walker;
-        ".config/fastfetch".source = ./../../fastfetch;
-        ".local/share/config/bin".source = ./../../bin;
+        ".zshrc".source = oos "zsh/linux/zshrc";
+        ".config/ghostty".source = oos "ghostty";
+        ".config/hypr".source = oos "hypr";
+        ".config/waybar".source = oos "waybar";
+        ".config/rofi".source = oos "rofi";
+        ".config/dunst".source = oos "dunst";
+        ".config/swayosd".source = oos "swayosd";
+        ".config/walker".source = oos "walker";
+        ".local/share/config/bin".source = oos "bin";
     };
 
 	home.packages = with pkgs; [
@@ -26,18 +29,7 @@
 		_1password-gui
 
 		# development tools
-		cmake
-		gnumake
-		nodejs_24
-    python312
-    python312Packages.pip
-    gcc
-		starship
-		fzf
 		vscode
-		direnv
-		rustup
-		nix-direnv
 
 		# system utilities
 		gparted
@@ -49,12 +41,16 @@
 		fastfetch
 		ghostty
     jq
-    gum
+    quickemu
+    quickgui
+    libimobiledevice
+    ifuse
 
 		# web & networking
 		google-chrome
     chromium
 		caddy
+    ledger-live-desktop
 
 		# clipboard
 		xclip
@@ -142,5 +138,5 @@
 
 	programs.starship.enable = true;
 
-    imports = [ ./../common.nix ];
+  imports = [ ./../common.nix ];
 }
