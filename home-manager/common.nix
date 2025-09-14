@@ -1,6 +1,11 @@
-{ config, pkgs, ... }:
+{ config, pkgs, lib, ... }:
 
-{
+let
+  # Where your dotfiles live on disk (change if needed)
+  dotfiles = "${config.home.homeDirectory}/.dotfiles";
+  oos = path: config.lib.file.mkOutOfStoreSymlink "${dotfiles}/${path}";
+
+in {
   # This value determines the Home Manager release that your configuration is
   # compatible with. This helps avoid breakage when a new Home Manager release
   # introduces backwards incompatible changes.
@@ -12,40 +17,66 @@
 
   # The home.packages option allows you to install Nix packages into your
   # environment.
-  home.packages = [
-    pkgs.neovim
-    pkgs.ripgrep
-    pkgs.lazygit
-    pkgs.git
-    pkgs.bat
-    pkgs.btop
-    pkgs.neofetch
-    pkgs.tree
-    pkgs.direnv
-    pkgs.eza
-    pkgs.fend
-    pkgs.cmake
-    pkgs.onefetch
-    pkgs.devenv
-    pkgs.unzip
-    pkgs.gcc
-    pkgs.sbt
-    pkgs.zip
-    pkgs.bear
-    pkgs.pkg-config
-    pkgs.tmux
-    pkgs.wget
-    pkgs.typst
-    pkgs.roboto
-    pkgs.source-sans-pro
-    pkgs.vcpkg
+  home.packages = with pkgs; [
+    # --- Editors / IDEs ---
+    neovim
+
+    # --- CLI utilities ---
+    ripgrep
+    lazygit
+    git
+    bat
+    btop
+    neofetch
+    fastfetch
+    tree
+    direnv
+    eza
+    fend
+    onefetch
+    unzip
+    zip
+    wget
+    tmux
+    bear
+    pkg-config
+
+    # --- Build / Development tools ---
+    cmake
+		gnumake
+    devenv
+    gcc
+		nodejs_24
+    python312
+    python312Packages.pip
+    sbt
+    vcpkg
+		starship
+		fzf
+		direnv
+		rustup
+		nix-direnv
+    gum
+
+    # --- Fonts / Typesetting ---
+    typst
+    roboto
+    source-sans-pro
   ];
 
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
   # plain files is through 'home.file'.
+  # home.file = {
+  #   ".config/nvim".source = ./../nvim;
+  #   ".tmux.conf".source = ./../tmux/tmux.conf;
+  #   ".config/fastfetch".source = ./../fastfetch;
+  #   ".gitconfig".source = ./../git/gitconfig;
+  # };
   home.file = {
-    ".config/nvim".source = ./../nvim;
-    ".tmux.conf".source = ./../tmux/tmux.conf;
+    ".config/nvim".source = oos "nvim";
+    ".tmux.conf".source = oos "tmux/tmux.conf";
+    ".config/fastfetch".source = oos "fastfetch";
+    ".gitconfig".source = oos "git/gitconfig";
   };
 
   home.sessionVariables = {

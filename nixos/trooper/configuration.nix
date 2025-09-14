@@ -23,6 +23,7 @@
 	networking.networkmanager.enable = true;
 	networking.resolvconf.enable = false;  # let NM manage DNS
 	networking.useHostResolvConf = false;
+  networking.nameservers = [ "100.81.92.40" ];
 	services.resolved.enable = true;
 	systemd.services.NetworkManager-wait-online.enable = lib.mkForce false;
 
@@ -186,6 +187,7 @@
 		nerd-fonts.ubuntu-mono
 		nerd-fonts.caskaydia-cove
 	];
+
 
 	# Some programs need SUID wrappers, can be configured further or are
 	# started in user sessions.
