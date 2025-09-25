@@ -19,11 +19,11 @@ return {
     local keymap = vim.keymap -- for conciseness
 
     vim.api.nvim_create_autocmd("BufWritePre", {
-			buffer = buffer,
-			callback = function()
-				vim.lsp.buf.format { async = false }
-			end
-		})
+      buffer = buffer,
+      callback = function()
+        vim.lsp.buf.format { async = false }
+      end
+    })
 
     vim.api.nvim_create_autocmd("LspAttach", {
       group = vim.api.nvim_create_augroup("UserLspConfig", {}),
@@ -84,6 +84,16 @@ return {
       local hl = "DiagnosticSign" .. type
       vim.fn.sign_define(hl, { text = icon, texthl = hl, numhl = "" })
     end
+
+    require('lspconfig').lexical.setup {
+      cmd = { "/home/daniel/.local/share/nvim/expert_linux_amd64" },
+      root_dir = function(fname)
+        return require('lspconfig').util.root_pattern("mix.exs", ".git")(fname) or vim.loop.cwd()
+      end,
+      filetypes = { "elixir", "eelixir", "heex" },
+      -- optional settings
+      settings = {}
+    }
 
     -- mason_lspconfig.setup_handlers({
     --   -- default handler for installed servers

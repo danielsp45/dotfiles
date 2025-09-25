@@ -61,6 +61,8 @@ in {
 		notion-app-enhanced
 		zotero
 	  logseq
+    obsidian
+    localsend
 
 		# communication
 		discord

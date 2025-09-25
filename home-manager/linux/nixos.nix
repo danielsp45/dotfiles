@@ -17,7 +17,6 @@
 		pkgs.btrfs-progs
 		pkgs.nodejs_23
 		pkgs.starship
-		pkgs.protonmail-bridge
 		pkgs.caddy
 		pkgs.cloudflared
 		pkgs.ghostty
