@@ -8,6 +8,8 @@
 	# Enable nix flakes
 	nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
+  imports = [ ./../syncthing.nix ];
+
 	# Bootloader.
 	boot.loader.systemd-boot.enable = true;
 	boot.loader.efi.canTouchEfiVariables = true;
@@ -21,6 +23,9 @@
 
 	# Enable networking
 	networking.networkmanager.enable = true;
+  networking.networkmanager.plugins = with pkgs; [
+    networkmanager-openvpn
+  ];
 	networking.resolvconf.enable = false;  # let NM manage DNS
 	networking.useHostResolvConf = false;
   networking.nameservers = [ "100.81.92.40" ];
@@ -51,7 +56,7 @@
 
 	services.displayManager.ly.enable = true;
 	services.displayManager.sddm.wayland.enable = true;
-    programs.hyprland.enable = true;
+  programs.hyprland.enable = true;
 	programs.xwayland.enable = true;
 	# Optional, hint electron apps to use wayland:
 	environment.sessionVariables = {
@@ -126,7 +131,6 @@
 		docker
 		docker-compose      # if you want docker-compose
 		wl-clipboard
-		xclip
 		zen-browser.packages.${pkgs.system}.default
 		pavucontrol
     uwsm

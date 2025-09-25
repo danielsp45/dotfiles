@@ -55,6 +55,7 @@ in {
 		fzf
 		direnv
 		rustup
+    beamMinimal27Packages.elixir_1_17
 		nix-direnv
     gum
 
