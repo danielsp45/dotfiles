@@ -12,7 +12,8 @@
       "tray",
       "cpu",
       "memory",
-      "disk"
+      "disk",
+      "battery"
     ],
     "custom/linux": {
       "format": " ",
@@ -96,7 +97,7 @@
     "disk": {
       "interval": 6000,
       // without this rise things would be off center vertically for some reason
-      "format": "󰋊 {used}/{total}",
+      "format": "󰋊 {percentage_used}%",
       "path": "/",
       "unit": "TB"
     },

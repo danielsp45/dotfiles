@@ -263,7 +263,7 @@ show_update_config_menu() {
 
 show_system_menu() {
   case $(menu "System" "  Lock\n󰤄  Suspend\n󰜉  Restart\n󰐥  Shutdown") in
-  *Lock*) $BIN_PATH/omarchy-lock-screen ;;
+  *Lock*) $BIN_PATH/lock-screen ;;
   *Suspend*) systemctl suspend ;;
   *Restart*) systemctl reboot ;;
   *Shutdown*) systemctl poweroff ;;

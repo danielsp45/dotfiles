@@ -197,16 +197,15 @@ tooltip {
 }
 
 #battery {
-  color: #CCCCCC;
-  /* Light gray */
-  margin-right: 15pt;
+  margin-right: 12pt;
 }
+
 
 #battery.full,
 #battery.good,
 #battery.charging,
 #battery.plugged {
-  color: #888888;
+  color: #CCCCCC;
   /* Slightly darker gray for good status */
 }
 
