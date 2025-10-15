@@ -28,6 +28,11 @@
     [ { device = "/dev/disk/by-uuid/c2cfe6b9-bc41-45de-a3b3-ed679a0d46ca"; }
     ];
 
+  services.udev.extraHwdb = ''
+    evdev:input:*:name:TPPS/2 Elan TrackPoint
+     KEYBOARD_KEY_273=reserved
+  '';
+
   # Enables DHCP on each ethernet and wireless interface. In case of scripted networking
   # (the default) this is the recommended approach. When using systemd-networkd it's
   # still possible to use this option, but it's recommended to use it in conjunction

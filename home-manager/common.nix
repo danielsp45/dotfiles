@@ -42,7 +42,6 @@ in {
     pkg-config
 
     # --- Build / Development tools ---
-    cmake
 		gnumake
     devenv
     gcc
@@ -50,7 +49,6 @@ in {
     python312
     python312Packages.pip
     sbt
-    vcpkg
 		starship
 		fzf
 		direnv
