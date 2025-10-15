@@ -45,6 +45,8 @@ in {
     quickgui
     libimobiledevice
     ifuse
+    nwg-displays
+    nextcloud-client
 
 		# web & networking
 		google-chrome
@@ -71,7 +73,7 @@ in {
 
 		# multimedia
 		spotify
-		stremio
+		# stremio # dependes on qtwebengine which is not in a safe version
     zoom
 
     # kindle stuff
@@ -90,7 +92,6 @@ in {
 
 		# wayland & screen tools
     walker
-		rofi-wayland
 		waybar
 		swaybg
 		swaylock
@@ -106,7 +107,6 @@ in {
     ffmpeg
     hyprpicker
     hypridle
-    hyprsunset
 
 		# cursor theme
 		rose-pine-hyprcursor
