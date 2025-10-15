@@ -186,6 +186,7 @@
 		nerd-fonts.hack
 		nerd-fonts.ubuntu-mono
 		nerd-fonts.caskaydia-cove
+    nerd-fonts.iosevka
 	];
 
   services.syncthing = {

@@ -1,6 +1,7 @@
 # terminal commands alias
 alias cat="bat"
 alias nv="nvim"
+alias vi="nvim"
 alias lv="lvim"
 # alias fv="nvim $(fzf)"
 alias :q="exit"
