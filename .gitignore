@@ -1,1 +1,4 @@
 zsh/darwin/load_api_keys.sh
+
+# hyprland display config
+hypr/monitors.conf
