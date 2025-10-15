@@ -31,6 +31,8 @@ in {
 		# development tools
 		vscode
     zed-editor 
+    sshfs
+    mutagen
 
 		# system utilities
 		gparted
@@ -46,6 +48,7 @@ in {
     libimobiledevice
     ifuse
     nwg-displays
+    nextcloud-client
 
 		# web & networking
 		google-chrome
@@ -71,8 +74,7 @@ in {
 
 		# multimedia
 		spotify
-		stremio
-    zoom
+		# stremio # depends on qtwebengine-5.15.19 which has security issues
 
     # kindle stuff
     calibre
@@ -84,7 +86,6 @@ in {
 
 		# wayland & screen tools
     walker
-		rofi-wayland
 		waybar
 		swaybg
 		swaylock
@@ -127,7 +128,6 @@ in {
   services.swayosd = {
     enable = true;
   };
-
 
 	programs.starship.enable = true;
 
