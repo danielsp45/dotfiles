@@ -30,6 +30,10 @@ in {
 
 		# development tools
 		vscode
+    tlaplus
+    tlaplusToolbox
+    jdk11
+    cmake
 
 		# system utilities
 		gparted
@@ -65,6 +69,7 @@ in {
 	  logseq
     obsidian
     localsend
+    libreoffice
 
 		# communication
 		discord
@@ -73,7 +78,7 @@ in {
 
 		# multimedia
 		spotify
-		# stremio # dependes on qtwebengine which is not in a safe version
+    # stremio # dependes on qtwebengine which is not in a safe version
     zoom
 
     # kindle stuff

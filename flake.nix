@@ -18,9 +18,14 @@
 			url = "github:youwen5/zen-browser-flake";
 			inputs.nixpkgs.follows = "nixpkgs";
 		};
+    lanzaboote = {
+      url = "github:nix-community/lanzaboote/v0.4.2";
+      # Optional but recommended to limit the size of your system closure.
+      inputs.nixpkgs.follows = "nixpkgs";
     };
+  };
 
-    outputs = { self, nixpkgs, home-manager, nix-darwin, zen-browser, ... }:
+    outputs = { self, nixpkgs, home-manager, nix-darwin, zen-browser, lanzaboote, ... }:
         let
 
         in {
@@ -37,6 +42,7 @@
 							home-manager.useUserPackages = true;
 							home-manager.users.daniel = import ./home-manager/linux/trooper.nix;
 						}
+            lanzaboote.nixosModules.lanzaboote
 					];
 				};
 				storm = nixpkgs.lib.nixosSystem {
