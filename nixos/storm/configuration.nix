@@ -25,6 +25,9 @@
 	networking.useHostResolvConf = false;
 	services.resolved.enable = true;
 	systemd.services.NetworkManager-wait-online.enable = lib.mkForce false;
+  networking.networkmanager.plugins = with pkgs; [
+    networkmanager-openvpn
+  ];
 
   services.udisks2.enable = true;
   services.gvfs.enable = true;
@@ -167,6 +170,10 @@
 			X11UseLocalHost = true; # Also good practice
 		};
 	};
+
+  programs.ssh = {
+    startAgent = true;
+  };
 
 	services.cron = {
 		enable = true;
