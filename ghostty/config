@@ -1,5 +1,5 @@
 font-family = Iosevka Nerd Font
-theme = GruvboxDark
+theme = Gruvbox Dark
 shell-integration = zsh
 background-opacity = 0.9
 background-blur = true

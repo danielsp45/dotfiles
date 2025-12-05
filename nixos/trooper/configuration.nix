@@ -11,8 +11,15 @@
   imports = [ ./../syncthing.nix ];
 
 	# Bootloader.
-	boot.loader.systemd-boot.enable = true;
-	boot.loader.efi.canTouchEfiVariables = true;
+  # Lanzaboote currently replaces the systemd-boot module.
+  # This setting is usually set to true in configuration.nix
+  # generated at installation time. So we force it to false
+  # for now.
+  boot.loader.systemd-boot.enable = lib.mkForce false;
+  boot.lanzaboote = {
+    enable = true;
+    pkiBundle = "/var/lib/sbctl";
+  };
 
 	networking.hostName = "trooper"; # Define your hostname.
 	# networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
@@ -28,7 +35,8 @@
   ];
 	networking.resolvconf.enable = false;  # let NM manage DNS
 	networking.useHostResolvConf = false;
-  networking.nameservers = [ "100.81.92.40" ];
+  # networking.nameservers = [ "100.81.92.40" ];
+  networking.nameservers = [ "1.1.1.1" ];
 	services.resolved.enable = true;
 	systemd.services.NetworkManager-wait-online.enable = lib.mkForce false;
 
@@ -134,6 +142,8 @@
 		zen-browser.packages.${pkgs.system}.default
 		pavucontrol
     uwsm
+    sbctl
+    networkmanager-openvpn
 	];
 
 	virtualisation.docker.enable = true;
@@ -146,9 +156,17 @@
 
 	services.flatpak.enable = true;
 
+
 	hardware.bluetooth.enable = true; # enables support for bluetooth
 	hardware.bluetooth.powerOnBoot = true;
+  hardware.bluetooth.settings = {
+    General = {
+      Enable = "Source,Sink,Media,Socket";
+      Experimental = true;
+    };
+  };
 
+  hardware.steam-hardware.enable = true;
 	programs.steam = {
 		enable = true;
 		remotePlay.openFirewall = true; # Open ports in the firewall for Steam Remote Play
@@ -162,13 +180,15 @@
 		enable = true;
 		ports = [ 22 ];
 		settings = {
-			PasswordAuthentication = true;
+			# PasswordAuthentication = true;
+      PubkeyAuthentication = true;
 			AllowUsers = null; # Allows all users by default. Can be [ "user1" "user2" ]
 			UseDns = true;
 			PermitRootLogin = "prohibit-password"; # "yes", "without-password", "prohibit-password", "forced-commands-only", "no"
 			X11Forwarding = true;
 			X11DisplayOffset = 10; # Good practice
 			X11UseLocalHost = true; # Also good practice
+      AllowAgentForwarding = "yes";
 		};
 	};
 

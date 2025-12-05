@@ -1,17 +1,12 @@
 [user]
 	email = mail@danielpereira.xyz
 	name = Daniel Pereira
-	signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIGYVf6MSHleBLSISTUT/lasjxe6wLvQjB4ll1sxk+ylk
+	signingkey = /home/daniel/.ssh/sign_ed25519.pub
 
 [core]
     editor = nvim
-
 [gpg]
 	format = ssh
-
-[gpg "ssh"]
-	program = "/etc/profiles/per-user/daniel/bin/op-ssh-sign"
-
 [commit]
 	gpgsign = true
 
