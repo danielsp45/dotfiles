@@ -20,6 +20,7 @@ in {
         ".config/dunst".source = oos "dunst";
         ".config/swayosd".source = oos "swayosd";
         ".config/walker".source = oos "walker";
+        ".config/quickshell".source = oos "quickshell";
         ".local/share/config/bin".source = oos "bin";
     };
 
@@ -112,6 +113,7 @@ in {
     ffmpeg
     hyprpicker
     hypridle
+    quickshell
 
 		# cursor theme
 		rose-pine-hyprcursor
