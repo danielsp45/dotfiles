@@ -8,7 +8,16 @@
 	# Enable nix flakes
 	nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
-  imports = [ ./../syncthing.nix ];
+  imports = [
+		../syncthing.nix
+		../networking.nix
+    ../internationalisation.nix
+    ../programs.nix
+    ../fonts.nix
+    ../audio.nix
+    ../display-manager.nix
+    ../misc.nix
+	];
 
 	# Bootloader.
   # Lanzaboote currently replaces the systemd-boot module.
@@ -24,80 +33,6 @@
 	networking.hostName = "trooper"; # Define your hostname.
 	# networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
 
-	# Configure network proxy if necessary
-	# networking.proxy.default = "http://user:password@proxy:port/";
-	# networking.proxy.noProxy = "127.0.0.1,localhost,internal.domain";
-
-	# Enable networking
-	networking.networkmanager.enable = true;
-  networking.networkmanager.plugins = with pkgs; [
-    networkmanager-openvpn
-  ];
-	networking.resolvconf.enable = false;  # let NM manage DNS
-	networking.useHostResolvConf = false;
-  # networking.nameservers = [ "100.81.92.40" ];
-  networking.nameservers = [ "1.1.1.1" ];
-	services.resolved.enable = true;
-	systemd.services.NetworkManager-wait-online.enable = lib.mkForce false;
-
-  services.udisks2.enable = true;
-  services.gvfs.enable = true;
-
-	# Set your time zone.
-	time.timeZone = "Europe/Lisbon";
-
-	# Select internationalisation properties.
-	i18n.defaultLocale = "en_US.UTF-8";
-
-	i18n.extraLocaleSettings = {
-		LC_ADDRESS = "pt_PT.UTF-8";
-		LC_IDENTIFICATION = "pt_PT.UTF-8";
-		LC_MEASUREMENT = "pt_PT.UTF-8";
-		LC_MONETARY = "pt_PT.UTF-8";
-		LC_NAME = "pt_PT.UTF-8";
-		LC_NUMERIC = "pt_PT.UTF-8";
-		LC_PAPER = "pt_PT.UTF-8";
-		LC_TELEPHONE = "pt_PT.UTF-8";
-		LC_TIME = "pt_PT.UTF-8";
-	};
-
-
-	services.displayManager.ly.enable = true;
-	services.displayManager.sddm.wayland.enable = true;
-  programs.hyprland.enable = true;
-	programs.xwayland.enable = true;
-	# Optional, hint electron apps to use wayland:
-	environment.sessionVariables = {
-		NIXOS_OZONE_WL = "1";
-		CLUTTER_BACKEND = "wayland";
-		SDL_VIDEODRIVER = "wayland";
-		QT_QPA_PLATFORM = "wayland";
-		GDK_BACKEND = "wayland";
-	};
-
-
-	# Enable CUPS to print documents.
-	services.printing.enable = true;
-
-	# Enable sound with pipewire.
-	services.pulseaudio.enable = false;
-	security.rtkit.enable = true;
-	services.pipewire = {
-		enable = true;
-		alsa.enable = true;
-		alsa.support32Bit = true;
-		pulse.enable = true;
-		# If you want to use JACK applications, uncomment this
-		#jack.enable = true;
-
-		# use the example session manager (no others are packaged yet so this is enabled by default,
-		# no need to redefine it in your config for now)
-		#media-session.enable = true;
-	};
-
-	# Enable touchpad support (enabled default in most desktopManager).
-	# services.xserver.libinput.enable = true;
-
 	# Define a user account. Don't forget to set a password with ‘passwd’.
 	users.users.daniel = {
 		isNormalUser = true;
@@ -110,88 +45,6 @@
 		];
 	};
 
-	programs.zsh.enable = true;
-
-	# Install firefox.
-	programs.firefox.enable = true;
-
-	# Allow unfree packages
-	nixpkgs.config.allowUnfree = true;
-
-	# List packages installed in system profile. To search, run:
-	# $ nix search wget
-	environment.systemPackages = with pkgs; [
-		vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
-		tmux
-		wget
-		neofetch
-		git
-		openrgb-with-all-plugins
-		xorg.xinit
-		pciutils
-		arandr
-		blueman
-		pulseaudio
-		playerctl
-		dunst
-		ly
-		networkmanagerapplet
-		docker
-		docker-compose      # if you want docker-compose
-		wl-clipboard
-		zen-browser.packages.${pkgs.system}.default
-		pavucontrol
-    uwsm
-    sbctl
-    networkmanager-openvpn
-	];
-
-	virtualisation.docker.enable = true;
-
-	programs.dconf.enable = true;
-
-	services.tailscale.enable = true;
-
-	services.hardware.openrgb.enable = true;
-
-	services.flatpak.enable = true;
-
-
-	hardware.bluetooth.enable = true; # enables support for bluetooth
-	hardware.bluetooth.powerOnBoot = true;
-  hardware.bluetooth.settings = {
-    General = {
-      Enable = "Source,Sink,Media,Socket";
-      Experimental = true;
-    };
-  };
-
-  hardware.steam-hardware.enable = true;
-	programs.steam = {
-		enable = true;
-		remotePlay.openFirewall = true; # Open ports in the firewall for Steam Remote Play
-		dedicatedServer.openFirewall = true; # Open ports in the firewall for Source Dedicated Server
-		localNetworkGameTransfers.openFirewall = true; # Open ports in the firewall for Steam Local Network Game Transfers
-	};
-
-	programs.nix-ld.enable = true;
-
-	services.openssh = {
-		enable = true;
-		ports = [ 22 ];
-		settings = {
-			# PasswordAuthentication = true;
-      PubkeyAuthentication = true;
-			AllowUsers = null; # Allows all users by default. Can be [ "user1" "user2" ]
-			UseDns = true;
-			PermitRootLogin = "prohibit-password"; # "yes", "without-password", "prohibit-password", "forced-commands-only", "no"
-			X11Forwarding = true;
-			X11DisplayOffset = 10; # Good practice
-			X11UseLocalHost = true; # Also good practice
-      AllowAgentForwarding = "yes";
-		};
-	};
-
 	services.cron = {
 		enable = true;
 		# This creates a crontab entry for the user "daniel"
@@ -199,30 +52,6 @@
 			# Backup the system every day at 3am
 		];
 	};
-
-
-	fonts.packages = with pkgs; [ 
-		noto-fonts 
-		font-awesome
-		nerd-fonts.jetbrains-mono
-		nerd-fonts.fira-code
-		nerd-fonts.jetbrains-mono
-		nerd-fonts.hack
-		nerd-fonts.ubuntu-mono
-		nerd-fonts.caskaydia-cove
-    nerd-fonts.iosevka
-	];
-
-
-	# Some programs need SUID wrappers, can be configured further or are
-	# started in user sessions.
-	# programs.mtr.enable = true;
-	# programs.gnupg.agent = {
-	#   enable = true;
-	#   enableSSHSupport = true;
-	# };
-
-	# List services that you want to enable:
 
 	# Open ports in the firewall.
 	# networking.firewall.allowedTCPPorts = [ 24800 ];
