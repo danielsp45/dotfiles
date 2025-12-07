@@ -19,7 +19,6 @@
     idle_threshold = 120
     line_height = 0
     markup = full
-    format = "<span foreground='#FFFFFF'><b>%s %p</b></span>\n<span foreground='#CCCCCC'>%b</span>" # White for summary, light gray for body
     alignment = left
     show_age_threshold = 60
     word_wrap = yes
@@ -31,17 +30,16 @@
     icon_position = left
     max_icon_size = 32
     # Icon path: ensure these paths exist and contain black/white icons for consistency
-    icon_path = /usr/share/icons/Paper/16x16/status/:/usr/share/icons/Paper/16x16/devices/:/usr/share/icons/Paper/16x16/apps/
     sticky_history = yes
     history_length = 20
     always_run_script = true
     startup_notification = false
     verbosity = mesg
-    corner_radius = 25 # Slightly rounded corners (adjust 0-50, 8-12 is a good "subtle" range)
+    corner_radius = 10
     force_xinerama = false
-    mouse_left_click = close_current
+    mouse_left_click = do_action
     mouse_middle_click = do_action
-    mouse_right_click = close_all
+    mouse_right_click = close_current
 
 [urgency_low]
     background = "#111111" # Darker background, matching Waybar's primary background
