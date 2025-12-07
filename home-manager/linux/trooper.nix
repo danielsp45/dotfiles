@@ -112,6 +112,8 @@ in {
     ffmpeg
     hyprpicker
     hypridle
+    hyprsunset
+    hyprlock
 
 		# cursor theme
 		rose-pine-hyprcursor
