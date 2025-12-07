@@ -114,6 +114,8 @@ in {
     hyprpicker
     hypridle
     quickshell
+    hyprsunset
+    hyprlock
 
 		# cursor theme
 		rose-pine-hyprcursor
