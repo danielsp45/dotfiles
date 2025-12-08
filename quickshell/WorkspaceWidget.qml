@@ -5,15 +5,26 @@ import QtQuick
 import QtQuick.Layouts
 
 RowLayout {
-
   Repeater {
     model: Hyprland.workspaces
 
     Text {
       text: modelData.id
-      color: "#ebdbb2"
+      color: modelData.active ? "white" : "gray"
       font.pixelSize: 12
-      Layout.margins: 4
+      font.bold: modelData.active
+      Layout.leftMargin:  6
+      Layout.rightMargin: 6
+
+      MouseArea {
+        anchors.fill: parent
+        hoverEnabled: true
+        cursorShape: Qt.PointingHandCursor
+
+        onClicked: {
+          modelData.activate()
+        }
+      }
     }
   }
 }

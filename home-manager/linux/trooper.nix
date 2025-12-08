@@ -52,6 +52,7 @@ in {
     ifuse
     nwg-displays
     nextcloud-client
+    lm_sensors
 
 		# web & networking
 		google-chrome
