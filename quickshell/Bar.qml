@@ -21,11 +21,11 @@ Scope {
         right: true
       }
 
-      implicitHeight: 40
+      implicitHeight: 35
 
       Rectangle {
         id: barBg
-        height: 35
+        height: 30
         width: parent.width - 15
 
         anchors {
@@ -66,8 +66,23 @@ Scope {
 
             Item { width: 6 }           // spacer
 
-            MprisWidget {
-                Layout.alignment: Qt.AlignVCenter
+            Item {
+              id: mprisAnchor
+              Layout.alignment: Qt.AlignVCenter
+
+              // let the layout size this wrapper to the widget
+              implicitWidth: mprisInner.implicitWidth
+              implicitHeight: mprisInner.implicitHeight
+
+              MprisWidget {
+                id: mprisInner
+                anchors.fill: parent
+              }
+
+              TapHandler {
+                acceptedButtons: Qt.LeftButton
+                onTapped: mprisPopup.visible = !mprisPopup.visible
+              }
             }
           }
 
