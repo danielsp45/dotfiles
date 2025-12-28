@@ -33,7 +33,8 @@ in {
 		vscode
     tlaplus
     tlaplusToolbox
-    jdk11
+    # jdk11
+    jdk21
     cmake
 
 		# system utilities
@@ -53,6 +54,7 @@ in {
     nwg-displays
     nextcloud-client
     lm_sensors
+    cifs-utils
 
 		# web & networking
 		google-chrome
@@ -82,6 +84,7 @@ in {
 		spotify
     # stremio # dependes on qtwebengine which is not in a safe version
     zoom
+    localsend
 
     # kindle stuff
     calibre
