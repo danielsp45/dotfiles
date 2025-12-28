@@ -29,6 +29,23 @@
 		fsType = "ext4";
 	};
 
+    fileSystems."/mnt/nas" = {
+    device = "//nas.danielpereira.xyz/storage-share";
+    fsType = "cifs";
+    options = [
+      "credentials=/home/daniel/.smbcredentials"
+      "uid=1000"
+      "gid=100"
+      "iocharset=utf8"
+      "_netdev"
+      "nofail"
+      "x-systemd.automount"
+      "x-systemd.idle-timeout=600"
+      "vers=3.0"
+    ];
+  };
+
+
   swapDevices = [ ];
 
   # Enables DHCP on each ethernet and wireless interface. In case of scripted networking
