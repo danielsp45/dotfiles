@@ -10,4 +10,11 @@
   networking.nameservers = [ "1.1.1.1" ];
 	services.resolved.enable = true;
 	systemd.services.NetworkManager-wait-online.enable = lib.mkForce false;
+
+  networking.firewall.allowedTCPPorts = [
+    53317 # localsend
+  ];
+  networking.firewall.allowedUDPPorts = [
+    53317 # localsend
+  ];
 }

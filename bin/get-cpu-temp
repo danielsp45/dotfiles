@@ -1,0 +1,31 @@
+#!/usr/bin/env bash
+
+# Try lm_sensors first (Tctl, Tdie, or Package id 0)
+if command -v sensors >/dev/null 2>&1; then
+  sensors | awk '
+    /Tctl:|Tdie:|Package id 0:/ {
+      t = $2;        # like "+51.2°C"
+      gsub(/[+°C]/,"", t);
+      print int(t);  # integer degrees
+      exit
+    }
+  ' && exit 0
+fi
+
+# Fallback: scan /sys/class/thermal for something that looks like CPU
+for z in /sys/class/thermal/thermal_zone*; do
+  [ -e "$z" ] || continue
+  type=$(cat "$z/type" 2>/dev/null || echo "")
+  case "$type" in
+    *cpu*|x86_pkg_temp|k10temp*|acpitz*)
+      t=$(cat "$z/temp" 2>/dev/null || echo "")
+      if [ -n "$t" ]; then
+        echo $((t / 1000))
+        exit 0
+      fi
+      ;;
+  esac
+done
+
+# If all else fails
+echo 0

@@ -20,6 +20,7 @@ in {
         ".config/dunst".source = oos "dunst";
         ".config/swayosd".source = oos "swayosd";
         ".config/walker".source = oos "walker";
+        ".config/quickshell".source = oos "quickshell";
         ".local/share/config/bin".source = oos "bin";
     };
 
@@ -32,7 +33,8 @@ in {
 		vscode
     tlaplus
     tlaplusToolbox
-    jdk11
+    # jdk11
+    jdk21
     cmake
 
 		# system utilities
@@ -51,6 +53,8 @@ in {
     ifuse
     nwg-displays
     nextcloud-client
+    lm_sensors
+    cifs-utils
 
 		# web & networking
 		google-chrome
@@ -80,6 +84,7 @@ in {
 		spotify
     # stremio # dependes on qtwebengine which is not in a safe version
     zoom
+    localsend
 
     # kindle stuff
     calibre
@@ -112,6 +117,7 @@ in {
     ffmpeg
     hyprpicker
     hypridle
+    quickshell
     hyprsunset
     hyprlock
 

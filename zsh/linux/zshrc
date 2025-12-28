@@ -47,4 +47,7 @@ export COLORTERM=truecolor
 source "$HOME/.dotfiles/zsh/aliases.zsh"
 source "$HOME/.dotfiles/zsh/functions.zsh"
 
+export PATH="$HOME/.local/share/config/bin:$PATH"
+
+
 eval "$(starship init zsh)"
