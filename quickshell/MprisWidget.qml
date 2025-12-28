@@ -2,9 +2,14 @@
 import QtQuick
 import QtQuick.Layouts
 import Quickshell.Services.Mpris
+import Quickshell
+import Quickshell.Wayland
+
 
 Rectangle {
     id: root
+    property bool hovered: false
+    property bool showPopup: false
 
     // --- pick the active player ---
     // 1) prefer a player that is actually playing
@@ -114,22 +119,82 @@ Rectangle {
     }
 
     // --- click over whole pill ---
-    MouseArea {
-        anchors.fill: parent
-        hoverEnabled: true
-        acceptedButtons: Qt.LeftButton | Qt.MiddleButton | Qt.RightButton
+MouseArea {
+    anchors.fill: parent
+    hoverEnabled: true
+    acceptedButtons: Qt.LeftButton | Qt.MiddleButton | Qt.RightButton
 
-        onClicked: (mouse) => {
-            const p = root.activePlayer;
-            if (!p)
-                return;
+    onEntered: root.hovered = true
+    onExited: root.hovered = false
 
-            if (mouse.button === Qt.LeftButton && p.canTogglePlaying)
-                p.togglePlaying();
-            else if (mouse.button === Qt.RightButton && p.canGoNext)
-                p.next();
-            else if (mouse.button === Qt.MiddleButton && p.canGoPrevious)
-                p.previous();
+    onClicked: (mouse) => {
+        const p = root.activePlayer;
+        if (!p) return;
+
+        if (mouse.button === Qt.LeftButton && p.canTogglePlaying)
+            p.togglePlaying();
+        else if (mouse.button === Qt.RightButton && p.canGoNext)
+            p.next();
+        else if (mouse.button === Qt.MiddleButton && p.canGoPrevious)
+            p.previous();
+    }
+}
+
+
+    PopupWindow {
+        id: testPopup
+        visible: root.hovered
+
+        color: "transparent"
+
+        // Anchor to this widget (the pill)
+        anchor.item: root
+        anchor.edges: Edges.Bottom
+        anchor.gravity: Edges.Top | Edges.HCenter
+
+        anchor.margins.top: 28
+
+        // (optional) keep it on-screen if you're near the edge
+        anchor.adjustment: PopupAdjustment.Flip | PopupAdjustment.Slide
+
+        width: 400
+        height: 300
+
+        Rectangle {
+            anchors.fill: parent
+            radius: 12
+            color: "#111111"
+            border.color: "#555555"
+            border.width: 1
+
+          Rectangle {
+              width: 150
+              height: 150
+              radius: 12
+              color: "#222"
+              clip: true
+
+              Image {
+                  id: art
+                  anchors.fill: parent
+                  horizontalAlignment: Image.AlignCenterHorizontal
+                  verticalAlignment: Image.AlignCenter
+                  source: root.activePlayer ? root.activePlayer.trackArtUrl : ""
+                  fillMode: Image.PreserveAspectCrop
+                  asynchronous: true
+                  cache: true
+                  visible: source !== ""
+              }
+
+              // fallback when there's no art
+              Text {
+                  anchors.centerIn: parent
+                  text: "♪"
+                  color: "#888"
+                  visible: !art.visible
+                  font.pixelSize: 24
+              }
+          }
         }
     }
 }
