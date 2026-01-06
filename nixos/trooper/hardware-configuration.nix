@@ -29,7 +29,7 @@
 		fsType = "ext4";
 	};
 
-    fileSystems."/mnt/nas" = {
+  fileSystems."/mnt/nas" = {
     device = "//nas.danielpereira.xyz/storage-share";
     fsType = "cifs";
     options = [
@@ -39,8 +39,14 @@
       "iocharset=utf8"
       "_netdev"
       "nofail"
+
+      "noauto"
       "x-systemd.automount"
       "x-systemd.idle-timeout=600"
+
+      "x-systemd.requires=network-online.target"
+      "x-systemd.after=network-online.target"
+
       "vers=3.0"
     ];
   };

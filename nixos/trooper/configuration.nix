@@ -37,13 +37,20 @@
 	users.users.daniel = {
 		isNormalUser = true;
 		description = "Daniel Pereira";
-		extraGroups = [ "networkmanager" "wheel" "input" "daniel" "docker" ];
+		extraGroups = [ "networkmanager" "wheel" "input" "daniel" "docker" "dialout" "uucp" ];
 		shell = pkgs.zsh;
 		packages = with pkgs; [
 			kdePackages.kate
 			#  thunderbird
 		];
 	};
+
+  systemd.services = {
+    ModemManager = {
+      enable = false;
+      restartIfChanged = false;
+    };
+  };
 
 	services.cron = {
 		enable = true;
