@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+if pgrep -x hyprsunset >/dev/null; then
+  pkill -x hyprsunset
+else
+  hyprsunset --temperature 5000 >/dev/null 2>&1 &
+fi
