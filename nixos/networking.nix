@@ -12,9 +12,9 @@
 	systemd.services.NetworkManager-wait-online.enable = lib.mkForce false;
 
   networking.firewall.allowedTCPPorts = [
-    53317 # localsend
+    53317
   ];
   networking.firewall.allowedUDPPorts = [
-    53317 # localsend
+    53317
   ];
 }
