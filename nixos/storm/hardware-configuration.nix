@@ -24,6 +24,29 @@
       options = [ "fmask=0077" "dmask=0077" ];
     };
 
+    fileSystems."/mnt/nas" = {
+    device = "//nas.danielpereira.xyz/storage-share";
+    fsType = "cifs";
+    options = [
+      "credentials=/home/daniel/.smbcredentials"
+      "uid=1000"
+      "gid=100"
+      "iocharset=utf8"
+      "_netdev"
+      "nofail"
+
+      "noauto"
+      "x-systemd.automount"
+      "x-systemd.idle-timeout=600"
+
+      "x-systemd.requires=network-online.target"
+      "x-systemd.after=network-online.target"
+
+      "vers=3.0"
+    ];
+  };
+
+
   swapDevices =
     [ { device = "/dev/disk/by-uuid/c2cfe6b9-bc41-45de-a3b3-ed679a0d46ca"; }
     ];
