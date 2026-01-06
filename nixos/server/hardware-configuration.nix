@@ -4,50 +4,43 @@
 { config, lib, pkgs, modulesPath, ... }:
 
 {
-	imports =
-		[ (modulesPath + "/installer/scan/not-detected.nix")
-		];
+  imports =
+    [ (modulesPath + "/installer/scan/not-detected.nix")
+    ];
 
-	boot.initrd.availableKernelModules = [ "ehci_pci" "ata_piix" "usb_storage" "usbhid" "sd_mod" ];
-	boot.initrd.kernelModules = [ ];
-	boot.kernelModules = [ ];
-	boot.extraModulePackages = [ ];
+  boot.initrd.availableKernelModules = [ "ehci_pci" "ata_piix" "usb_storage" "usbhid" "sd_mod" ];
+  boot.initrd.kernelModules = [ ];
+  boot.kernelModules = [ ];
+  boot.extraModulePackages = [ ];
 
-	fileSystems."/" =
-		{ device = "/dev/disk/by-uuid/ade55323-ba3d-4ed0-8675-675298056ffb";
-			fsType = "ext4";
-		};
+  fileSystems."/" =
+    { device = "/dev/disk/by-uuid/7f29e30c-ad0d-47d6-a813-20e664d9d34f";
+      fsType = "ext4";
+    };
 
-	fileSystems."/boot" =
-		{ device = "/dev/disk/by-uuid/5DB5-86CE";
-			fsType = "vfat";
-			options = [ "fmask=0077" "dmask=0077" ];
-		};
-
-	# --- Capacity Disk ---
-
-	fileSystems."/mnt/data" =
-		{ device = "/dev/disk/by-uuid/99c48fcb-2a18-40c3-898e-ea7d08012501";
-			fsType = "btrfs";
-			options = [ "compress=zstd" "noatime" ];
-		};
-
-	fileSystems."/var/lib/nextcloud" = {
-		device = "/mnt/data/nextcloud";
-		fsType = "none";
-		options = [ "bind" ];
-	};
+  fileSystems."/mnt/truenas" = {
+    device = "nas.danielpereira.xyz:/mnt/Main/server";  # exported path from TrueNAS
+    fsType = "nfs";
+    options = [
+      "nfsvers=3"             # force NFSv3
+      "x-systemd.automount"   # only mount when accessed
+      "_netdev"               # wait for network
+      "hard"                  # retry indefinitely if server goes down
+      "timeo=600"             # 60s timeout for retransmit
+      "retrans=2"
+    ];
+  };
 
 
-	swapDevices = [ ];
+  swapDevices = [ ];
 
-	# Enables DHCP on each ethernet and wireless interface. In case of scripted networking
-	# (the default) this is the recommended approach. When using systemd-networkd it's
-	# still possible to use this option, but it's recommended to use it in conjunction
-	# with explicit per-interface declarations with `networking.interfaces.<interface>.useDHCP`.
-	networking.useDHCP = lib.mkDefault true;
-	# networking.interfaces.enp3s0.useDHCP = lib.mkDefault true;
+  # Enables DHCP on each ethernet and wireless interface. In case of scripted networking
+  # (the default) this is the recommended approach. When using systemd-networkd it's
+  # still possible to use this option, but it's recommended to use it in conjunction
+  # with explicit per-interface declarations with `networking.interfaces.<interface>.useDHCP`.
+  networking.useDHCP = lib.mkDefault true;
+  # networking.interfaces.enp3s0.useDHCP = lib.mkDefault true;
 
-	nixpkgs.hostPlatform = lib.mkDefault "x86_64-linux";
-	hardware.cpu.intel.updateMicrocode = lib.mkDefault config.hardware.enableRedistributableFirmware;
+  nixpkgs.hostPlatform = lib.mkDefault "x86_64-linux";
+  hardware.cpu.intel.updateMicrocode = lib.mkDefault config.hardware.enableRedistributableFirmware;
 }
