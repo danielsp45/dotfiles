@@ -59,6 +59,7 @@ in {
 		# clipboard
 		xclip
 		wl-clipboard
+    localsend
 
 		# productivity
 		nemo
