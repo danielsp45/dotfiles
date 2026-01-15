@@ -26,7 +26,7 @@ in {
     lazygit
     git
     bat
-    btop
+    btop-rocm
     neofetch
     fastfetch
     tree

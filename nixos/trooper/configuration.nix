@@ -9,6 +9,7 @@
 	nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
   imports = [
+    ./borgbackup.nix
 		../syncthing.nix
 		../networking.nix
     ../internationalisation.nix
@@ -28,6 +29,7 @@
   boot.lanzaboote = {
     enable = true;
     pkiBundle = "/var/lib/sbctl";
+    configurationLimit = 10; # keep last 10 boot entries
   };
 
 	networking.hostName = "trooper"; # Define your hostname.
@@ -60,6 +62,23 @@
 		];
 	};
 
+  boot.kernelModules = [
+    "v4l2loopback" # Webcam loopback
+  ];
+  boot.extraModulePackages = [
+    pkgs.linuxPackages.v4l2loopback # Webcam loopback
+  ];
+
+  programs.obs-studio = {
+    enable = true;
+
+    # This sets up v4l2loopback automatically
+    enableVirtualCamera = true;
+
+    plugins = with pkgs.obs-studio-plugins; [
+      droidcam-obs
+    ];
+  };
 	# Open ports in the firewall.
 	# networking.firewall.allowedTCPPorts = [ 24800 ];
 	# networking.firewall.allowedUDPPorts = [ ... ];

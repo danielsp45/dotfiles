@@ -30,20 +30,24 @@ in {
 		_1password-gui
 
 		# development tools
+    claude-code
 		vscode
     tlaplus
     tlaplusToolbox
     # jdk11
     jdk21
     cmake
+    esphome
 
 		# system utilities
 		gparted
 		networkmanager
 		networkmanager-openvpn
 		btrfs-progs
-		via
+		# via
 		amdgpu_top
+    mangohud
+    rocmPackages.rocm-smi
 		fastfetch
 		ghostty
     jq
@@ -55,6 +59,8 @@ in {
     nextcloud-client
     lm_sensors
     cifs-utils
+    borgmatic
+    borgbackup
 
 		# web & networking
 		google-chrome
@@ -65,6 +71,7 @@ in {
 		# clipboard
 		xclip
 		wl-clipboard
+    screen
 
 		# productivity
 		nemo
@@ -74,6 +81,7 @@ in {
     obsidian
     localsend
     libreoffice
+    bitwig-studio
 
 		# communication
 		discord
@@ -87,13 +95,11 @@ in {
     localsend
 
     # kindle stuff
-    calibre
     gvfs
 
 		# gaming & launchers
 		lutris
 		prismlauncher
-		heroic
 		wine
 
 		# theming
@@ -148,8 +154,6 @@ in {
   services.swayosd = {
     enable = true;
   };
-
-
 
 	programs.starship.enable = true;
 
