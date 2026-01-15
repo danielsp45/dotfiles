@@ -35,6 +35,9 @@
     uwsm
     sbctl
     networkmanager-openvpn
+    v4l-utils
+    android-tools
+    adb-sync
 	];
 
 	virtualisation.docker.enable = true;

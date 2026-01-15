@@ -48,6 +48,9 @@
       "x-systemd.after=network-online.target"
 
       "vers=3.0"
+      "noperm"
+      "dir_mode=0770"
+      "file_mode=0660"
     ];
   };
 
