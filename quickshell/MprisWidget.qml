@@ -158,7 +158,7 @@ MouseArea {
         anchor.adjustment: PopupAdjustment.Flip | PopupAdjustment.Slide
 
         width: 400
-        height: 300
+        height: 190
 
         Rectangle {
             anchors.fill: parent
@@ -167,34 +167,69 @@ MouseArea {
             border.color: "#555555"
             border.width: 1
 
-          Rectangle {
-              width: 150
-              height: 150
-              radius: 12
-              color: "#222"
-              clip: true
+            RowLayout {
+                anchors.fill: parent
+                anchors.margins: 20
+                spacing: 16
 
-              Image {
-                  id: art
-                  anchors.fill: parent
-                  horizontalAlignment: Image.AlignCenterHorizontal
-                  verticalAlignment: Image.AlignCenter
-                  source: root.activePlayer ? root.activePlayer.trackArtUrl : ""
-                  fillMode: Image.PreserveAspectCrop
-                  asynchronous: true
-                  cache: true
-                  visible: source !== ""
-              }
+                // Album art
+                Rectangle {
+                    Layout.preferredWidth: 150
+                    Layout.preferredHeight: 150
+                    radius: 12
+                    color: "#222"
+                    clip: true
 
-              // fallback when there's no art
-              Text {
-                  anchors.centerIn: parent
-                  text: "♪"
-                  color: "#888"
-                  visible: !art.visible
-                  font.pixelSize: 24
-              }
-          }
+                    Image {
+                        id: art
+                        anchors.fill: parent
+                        source: root.activePlayer ? root.activePlayer.trackArtUrl : ""
+                        fillMode: Image.PreserveAspectCrop
+                        asynchronous: true
+                        cache: true
+                        visible: source !== ""
+                    }
+
+                    // fallback when there's no art
+                    Text {
+                        anchors.centerIn: parent
+                        text: "♪"
+                        color: "#888"
+                        visible: !art.visible
+                        font.pixelSize: 48
+                    }
+                }
+
+                // Track information
+                ColumnLayout {
+                    Layout.fillWidth: true
+                    Layout.fillHeight: true
+                    spacing: 8
+
+                    Text {
+                        id: popupTrackTitle
+                        text: root.activePlayer ? root.activePlayer.trackTitle || "Unknown Track" : ""
+                        color: "white"
+                        font.pixelSize: 16
+                        font.bold: true
+                        wrapMode: Text.WordWrap
+                        Layout.fillWidth: true
+                    }
+
+                    Text {
+                        id: popupTrackArtist
+                        text: root.activePlayer ? root.activePlayer.trackArtist || "Unknown Artist" : ""
+                        color: "#aaaaaa"
+                        font.pixelSize: 14
+                        wrapMode: Text.WordWrap
+                        Layout.fillWidth: true
+                    }
+
+                    Item {
+                        Layout.fillHeight: true
+                    }
+                }
+            }
         }
     }
 }
