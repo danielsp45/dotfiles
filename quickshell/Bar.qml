@@ -110,9 +110,18 @@ Scope {
           }
 
           // RIGHT SIDE: stats (optionally hide in compact)
-        IoStatsWidget {
+          RowLayout {
+            spacing: sp(8)
             Layout.alignment: Qt.AlignVCenter | Qt.AlignRight
             visible: !compact
+
+            IoStatsWidget {
+              Layout.alignment: Qt.AlignVCenter
+            }
+
+            BatteryWidget {
+              Layout.alignment: Qt.AlignVCenter
+            }
           }
         }
 
