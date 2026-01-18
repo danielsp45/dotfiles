@@ -13,6 +13,7 @@ Item {
     property bool hasBattery: false
     property int batteryPercent: 0
     property bool isCharging: false
+    property bool lowBatteryNotified: false
 
     Text {
         id: batteryText
@@ -65,7 +66,7 @@ Item {
     // Update battery stats every 5 seconds
     Timer {
         id: batteryTimer
-        interval: 5000
+        interval: 1000
         running: false
         repeat: true
         onTriggered: {
@@ -84,7 +85,19 @@ Item {
             onStreamFinished: {
                 const percent = Number(text.trim())
                 if (!isNaN(percent)) {
+                    const oldPercent = root.batteryPercent
                     root.batteryPercent = percent
+
+                    // Send notification when battery reaches 10% and not charging
+                    if (percent <= 10 && !root.isCharging && !root.lowBatteryNotified) {
+                        notifyProc.running = true
+                        root.lowBatteryNotified = true
+                    }
+
+                    // Reset notification flag if battery goes above 15% or starts charging
+                    if ((percent > 15 || root.isCharging) && root.lowBatteryNotified) {
+                        root.lowBatteryNotified = false
+                    }
                 }
             }
         }
@@ -102,5 +115,12 @@ Item {
                 root.isCharging = (status === "Charging" || status === "Full")
             }
         }
+    }
+
+    // Send low battery notification
+    Process {
+        id: notifyProc
+        command: ["notify-send", "-i", "battery-caution", "Low Battery", "Battery is at " + root.batteryPercent + "%. Please plug in your charger."]
+        running: false
     }
 }
