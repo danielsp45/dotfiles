@@ -52,7 +52,10 @@ in {
 		starship
 		fzf
 		direnv
-		rustup
+    rustc
+    cargo
+    rustfmt
+    clippy
     beamMinimal27Packages.elixir_1_17
 		nix-direnv
     gum

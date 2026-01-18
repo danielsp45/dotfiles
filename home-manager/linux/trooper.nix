@@ -34,10 +34,10 @@ in {
 		vscode
     tlaplus
     tlaplusToolbox
-    # jdk11
     jdk21
     cmake
     esphome
+    duckdb
 
 		# system utilities
 		gparted
