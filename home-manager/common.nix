@@ -27,7 +27,6 @@ in {
     git
     bat
     btop-rocm
-    neofetch
     fastfetch
     tree
     direnv
