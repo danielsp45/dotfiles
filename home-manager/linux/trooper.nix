@@ -30,7 +30,6 @@ in {
 		_1password-gui
 
 		# development tools
-    claude-code
 		vscode
     tlaplus
     tlaplusToolbox
@@ -38,8 +37,12 @@ in {
     cmake
     esphome
     duckdb
+    vagrant
+    ansible
 
 		# system utilities
+    qbittorrent
+    calibre  # Temporarily disabled due to build error
 		gparted
 		networkmanager
 		networkmanager-openvpn
@@ -61,6 +64,9 @@ in {
     cifs-utils
     borgmatic
     borgbackup
+    droidcam
+    lm_sensors
+    mission-center
 
 		# web & networking
 		google-chrome
@@ -126,6 +132,9 @@ in {
     quickshell
     hyprsunset
     hyprlock
+    hyprlauncher
+    hyprtoolkit
+    hicolor-icon-theme
 
 		# cursor theme
 		rose-pine-hyprcursor
