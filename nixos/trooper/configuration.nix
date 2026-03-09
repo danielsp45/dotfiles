@@ -39,7 +39,7 @@
 	users.users.daniel = {
 		isNormalUser = true;
 		description = "Daniel Pereira";
-		extraGroups = [ "networkmanager" "wheel" "input" "daniel" "docker" "dialout" "uucp" ];
+		extraGroups = [ "networkmanager" "wheel" "input" "daniel" "docker" "dialout" "uucp" "libvirtd" ];
 		shell = pkgs.zsh;
 		packages = with pkgs; [
 			kdePackages.kate
@@ -77,7 +77,17 @@
 
     plugins = with pkgs.obs-studio-plugins; [
       droidcam-obs
+      obs-backgroundremoval
     ];
+  };
+
+  virtualisation.libvirtd = {
+    enable = true;
+    qemu = {
+      package = pkgs.qemu_kvm;
+      runAsRoot = true;
+      swtpm.enable = true;
+    };
   };
 	# Open ports in the firewall.
 	# networking.firewall.allowedTCPPorts = [ 24800 ];
