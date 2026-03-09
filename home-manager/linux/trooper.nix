@@ -39,6 +39,7 @@ in {
     duckdb
     vagrant
     ansible
+    claude-code
 
 		# system utilities
     qbittorrent

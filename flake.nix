@@ -3,17 +3,18 @@
 
 	inputs = {
 		nixpkgs.url = "github:nixos/nixpkgs/nixpkgs-unstable";
+    claudecode.url = "github:sadjow/claude-code-nix";
 		nixos = {
 			url = "github:nixos/nixpkgs/nixpkgs-unstable";
 		};
-        home-manager = {
-            url = "github:nix-community/home-manager";
-            inputs.nixpkgs.follows = "nixpkgs";
-        };
-        nix-darwin = {
-            url = "github:LnL7/nix-darwin";
-            inputs.nixpkgs.follows = "nixpkgs";
-        };
+    home-manager = {
+        url = "github:nix-community/home-manager";
+        inputs.nixpkgs.follows = "nixpkgs";
+    };
+    nix-darwin = {
+        url = "github:LnL7/nix-darwin";
+        inputs.nixpkgs.follows = "nixpkgs";
+    };
 		zen-browser = {
 			url = "github:youwen5/zen-browser-flake";
 			inputs.nixpkgs.follows = "nixpkgs";
@@ -25,7 +26,7 @@
     };
   };
 
-    outputs = { self, nixpkgs, home-manager, nix-darwin, zen-browser, lanzaboote, ... }:
+    outputs = { self, nixpkgs, home-manager, nix-darwin, zen-browser, lanzaboote, claudecode, ... }:
         let
 
         in {
@@ -36,6 +37,7 @@
 					modules = [
 						./nixos/trooper/configuration.nix
 						./nixos/trooper/hardware-configuration.nix
+            { nixpkgs.overlays = [ claudecode.overlays.default ]; }
 						home-manager.nixosModules.home-manager
 						{
 							home-manager.useGlobalPkgs = true;
@@ -51,6 +53,7 @@
 					modules = [
 						./nixos/storm/configuration.nix
 						./nixos/storm/hardware-configuration.nix
+            { nixpkgs.overlays = [ claudecode.overlays.default ]; }
 						home-manager.nixosModules.home-manager
 						{
 							home-manager.useGlobalPkgs = true;
@@ -59,6 +62,7 @@
 						}
 					];
 				};
+
 				server = nixpkgs.lib.nixosSystem {
 					system = "x86_64-linux";
 					modules = [

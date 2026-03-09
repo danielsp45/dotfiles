@@ -34,6 +34,7 @@ in {
     zed-editor 
     sshfs
     mutagen
+    claude-code
 
 		# system utilities
 		gparted
