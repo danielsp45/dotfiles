@@ -15,7 +15,6 @@
 		vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
 		tmux
 		wget
-		neofetch
 		git
 		openrgb-with-all-plugins
 		xorg.xinit
