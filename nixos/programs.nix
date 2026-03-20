@@ -39,6 +39,8 @@
     adb-sync
 	];
 
+  services.flatpak.enable = true;
+
 	virtualisation.docker.enable = true;
 
 	programs.dconf.enable = true;
@@ -46,8 +48,6 @@
 	services.tailscale.enable = true;
 
 	services.hardware.openrgb.enable = true;
-
-	services.flatpak.enable = true;
 
 	hardware.bluetooth.enable = true; # enables support for bluetooth
 	hardware.bluetooth.powerOnBoot = true;

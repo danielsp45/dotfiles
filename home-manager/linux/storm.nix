@@ -35,6 +35,7 @@ in {
     sshfs
     mutagen
     claude-code
+    ansible
 
 		# system utilities
 		gparted
