@@ -1,11 +1,9 @@
-function nx-rebuild() {
-	DOTFILES=$HOME/.dotfiles#"$1"
-    darwin-rebuild switch --flake $DOTFILES
+function nx-update() {
+  nix flake update
 }
 
-function nx-update() {
-	cd $HOME/.dotfiles
-	nix flake update
+function nx-rebuild() {
+  sudo nixos-rebuild switch --flake ~/.dotfiles#$(hostname)
 }
 
 function copy(){
