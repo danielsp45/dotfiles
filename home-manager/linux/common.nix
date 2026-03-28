@@ -46,6 +46,8 @@ in {
     ifuse
     nwg-displays
     nextcloud-client
+    networkmanager-dmenu
+    rofi-wayland
 
     # web & networking
     google-chrome

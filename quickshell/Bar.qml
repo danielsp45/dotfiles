@@ -115,7 +115,20 @@ Scope {
             Layout.alignment: Qt.AlignVCenter | Qt.AlignRight
             visible: !compact
 
-            IoStatsWidget {
+            Rectangle {
+              color: "#333333"
+              radius: height / 2
+              implicitHeight: sp(24)
+              implicitWidth: ioStats.implicitWidth + sp(20)
+              Layout.alignment: Qt.AlignVCenter
+
+              IoStatsWidget {
+                id: ioStats
+                anchors.centerIn: parent
+              }
+            }
+
+            NetworkWidget {
               Layout.alignment: Qt.AlignVCenter
             }
 
