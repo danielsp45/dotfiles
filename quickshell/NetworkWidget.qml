@@ -15,7 +15,7 @@ RowLayout {
         id: networkText
         text: root.networkLabel
         color: "white"
-        font.pixelSize: 14
+        font.pixelSize: 11
         font.bold: true
         visible: root.networkLabel !== ""
     }
@@ -84,7 +84,7 @@ RowLayout {
                         break
                     } else if (type === "wifi") {
                         const ssid = wifiSsid || parts.slice(3).join(":").trim()
-                        label = wifiIcon(wifiSignal) + " " + ssid
+                        label = wifiIcon(wifiSignal) + "  " + ssid
                         break
                     }
                 }
