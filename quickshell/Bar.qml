@@ -32,23 +32,14 @@ Scope {
         right: true
       }
 
-      implicitHeight: sp(35)
+      implicitHeight: sp(30)
 
       Rectangle {
         id: barBg
-        height: sp(30)
-        width: parent.width - sp(15)
+        anchors.fill: parent
 
-        anchors {
-          top: parent.top
-          topMargin: sp(4)
-          horizontalCenter: parent.horizontalCenter
-        }
-
-        radius: height / 2
+        radius: 0
         color: "black"
-        border.color: "#555555"
-        border.width: 1
 
         // MAIN ROW: left group + right stats
         RowLayout {
