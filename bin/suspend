@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+# Lock the screen first, then suspend
+~/.local/share/config/bin/lock-screen
+sleep 1
+systemctl suspend
