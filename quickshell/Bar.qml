@@ -1,4 +1,4 @@
-// Bar.qml (drop-in replacement)
+// Bar.qml
 import Quickshell
 import Quickshell.Wayland
 import Quickshell.Hyprland
@@ -16,7 +16,6 @@ Scope {
       color: "transparent"
 
       // --- Per-screen scaling + compact breakpoint ---
-      // 96 DPI baseline; clamp so it never gets silly on weird DPI reports.
       readonly property real uiScale: Math.max(0.85, Math.min(1.45,
         (screen.logicalDotsPerInch ? screen.logicalDotsPerInch / 96.0 : 1.0)
       ))
