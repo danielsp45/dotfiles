@@ -31,6 +31,10 @@ in {
     vscode
     ansible
     claude-code
+    zed-editor
+    zellij
+    devcontainer
+    flamegraph
 
     # system utilities
     gparted
