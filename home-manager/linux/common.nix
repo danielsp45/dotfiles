@@ -50,6 +50,7 @@ in {
     ifuse
     nwg-displays
     nextcloud-client
+    protonmail-desktop
 
     # web & networking
     google-chrome

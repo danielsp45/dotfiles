@@ -27,7 +27,7 @@
     screen
 
     # productivity
-    libreoffice
+    # libreoffice
     bitwig-studio
 
     # multimedia

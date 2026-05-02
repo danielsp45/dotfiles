@@ -37,7 +37,13 @@
 					modules = [
 						./nixos/trooper/configuration.nix
 						./nixos/trooper/hardware-configuration.nix
-            { nixpkgs.overlays = [ claudecode.overlays.default ]; }
+            { nixpkgs.overlays = [
+                claudecode.overlays.default
+                (final: prev: {
+                  openldap = prev.openldap.overrideAttrs (_: { doCheck = false; });
+                })
+              ];
+            }
 						home-manager.nixosModules.home-manager
 						{
 							home-manager.useGlobalPkgs = true;

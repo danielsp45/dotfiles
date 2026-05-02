@@ -29,7 +29,7 @@
   boot.lanzaboote = {
     enable = true;
     pkiBundle = "/var/lib/sbctl";
-    configurationLimit = 10; # keep last 10 boot entries
+    configurationLimit = 3; # keep last 3 boot entries
   };
 
 	networking.hostName = "trooper"; # Define your hostname.
