@@ -1,26 +1,24 @@
 return {
 	"neovim/nvim-lspconfig",
-	event = { "BufReadPre", "BufNewFile" },
+	lazy = false,
 	dependencies = {
 		"hrsh7th/cmp-nvim-lsp",
 		{ "antosha417/nvim-lsp-file-operations", config = true },
-		{ "folke/neodev.nvim", opts = {} },
+		{
+			"folke/lazydev.nvim",
+			ft = "lua",
+			opts = {
+				library = {
+					{ path = "${3rd}/luv/library", words = { "vim%.uv" } },
+				},
+			},
+		},
 	},
 	config = function()
-		-- import lspconfig plugin
-		-- local lspconfig = require("lspconfig")
-		local lspconfig = vim.lsp.config
-
-		-- import mason_lspconfig plugin
-		local mason_lspconfig = require("mason-lspconfig")
-
-		-- import cmp-nvim-lsp plugin
 		local cmp_nvim_lsp = require("cmp_nvim_lsp")
-
-		local keymap = vim.keymap -- for conciseness
+		local keymap = vim.keymap
 
 		vim.api.nvim_create_autocmd("BufWritePre", {
-			buffer = buffer,
 			callback = function()
 				vim.lsp.buf.format({ async = false })
 			end,
@@ -29,22 +27,19 @@ return {
 		vim.api.nvim_create_autocmd("LspAttach", {
 			group = vim.api.nvim_create_augroup("UserLspConfig", {}),
 			callback = function(ev)
-				-- Buffer local mappings.
-				-- See `:help vim.lsp.*` for documentation on any of the below functions
 				local opts = { buffer = ev.buf, silent = true }
 
-				-- set keybinds
 				opts.desc = "Show LSP references"
-				keymap.set("n", "gR", "<cmd>Telescope lsp_references<CR>", opts) -- show definition, references
+				keymap.set("n", "gR", "<cmd>Telescope lsp_references<CR>", opts)
 
 				opts.desc = "Go to declaration"
-				keymap.set("n", "gD", vim.lsp.buf.declaration, opts) -- go to declaration
+				keymap.set("n", "gD", vim.lsp.buf.declaration, opts)
 
 				opts.desc = "Show LSP definitions"
-				keymap.set("n", "gd", "<cmd>Telescope lsp_definitions<CR>", opts) -- show lsp definitions
+				keymap.set("n", "gd", "<cmd>Telescope lsp_definitions<CR>", opts)
 
 				opts.desc = "Show LSP implementations"
-				keymap.set("n", "gi", "<cmd>Telescope lsp_implementations<CR>", opts) -- show lsp implementations
+				keymap.set("n", "gi", "<cmd>Telescope lsp_implementations<CR>", opts)
 
 				opts.desc = "Show LSP type definitions"
 				keymap.set("n", "gt", "<cmd>Telescope lsp_type_definitions<CR>", opts)
@@ -68,40 +63,34 @@ return {
 				keymap.set("n", "]d", vim.diagnostic.goto_next, opts)
 
 				opts.desc = "Show documentation for what is under cursor"
-				keymap.set("n", "K", vim.lsp.buf.hover, opts)
+				keymap.set("n", "K", function()
+					vim.lsp.buf.hover({ border = "rounded" })
+				end, opts)
 
 				opts.desc = "Restart LSP"
 				keymap.set("n", "<leader>rs", ":LspRestart<CR>", opts)
 			end,
 		})
 
-		-- used to enable autocompletion (assign to every lsp server config)
-		local capabilities = cmp_nvim_lsp.default_capabilities()
+		-- Apply cmp capabilities to all LSP servers
+		vim.lsp.config("*", {
+			capabilities = cmp_nvim_lsp.default_capabilities(),
+		})
 
-		-- Change the Diagnostic symbols in the sign column (gutter)
-		local signs = { Error = " ", Warn = " ", Hint = "󰠠 ", Info = " " }
+		local signs = { Error = " ", Warn = " ", Hint = "󰠠 ", Info = " " }
 		for type, icon in pairs(signs) do
 			local hl = "DiagnosticSign" .. type
 			vim.fn.sign_define(hl, { text = icon, texthl = hl, numhl = "" })
 		end
 
-		require("lspconfig").lexical.setup({
+		vim.lsp.config("lexical", {
 			cmd = { "/home/daniel/.local/share/nvim/expert_linux_amd64" },
 			root_dir = function(fname)
-				return require("lspconfig").util.root_pattern("mix.exs", ".git")(fname) or vim.loop.cwd()
+				return vim.fs.root(fname, { "mix.exs", ".git" }) or vim.uv.cwd()
 			end,
 			filetypes = { "elixir", "eelixir", "heex" },
-			-- optional settings
 			settings = {},
 		})
-
-		-- mason_lspconfig.setup_handlers({
-		--   -- default handler for installed servers
-		--   function(server_name)
-		--     lspconfig[server_name].setup({
-		--       capabilities = capabilities,
-		--     })
-		--   end,
-		-- })
+		vim.lsp.enable("lexical")
 	end,
 }
