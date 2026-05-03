@@ -19,6 +19,14 @@
     };
   };
 
+  services.qbittorrent = {
+    enable = true;
+    webuiPort = 8081;
+    user = "daniel";  # Run as this user
+    openFirewall = true; # if needed
+  };
+
+
 
   #### Runtime
   virtualisation.docker.enable = true;

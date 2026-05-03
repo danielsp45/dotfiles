@@ -18,16 +18,22 @@
       fsType = "ext4";
     };
 
-  fileSystems."/mnt/truenas" = {
-    device = "nas.danielpereira.xyz:/mnt/Main/server";  # exported path from TrueNAS
-    fsType = "nfs";
+  fileSystems."/mnt/nas" = {
+    device = "//nas.danielpereira.xyz/storage-share";
+    fsType = "cifs";
     options = [
-      "nfsvers=3"             # force NFSv3
-      "x-systemd.automount"   # only mount when accessed
-      "_netdev"               # wait for network
-      "hard"                  # retry indefinitely if server goes down
-      "timeo=600"             # 60s timeout for retransmit
-      "retrans=2"
+      "credentials=/home/daniel/.smbcredentials"
+      "uid=1000"
+      "gid=100"
+      "iocharset=utf8"
+      "_netdev"
+      "nofail"
+      "x-systemd.automount"
+      "x-systemd.idle-timeout=600"
+      "vers=3.0"
+      "noperm"
+      "dir_mode=0770"
+      "file_mode=0660"
     ];
   };
 

@@ -144,9 +144,9 @@
             - title: Nginx
               url: http://100.81.92.40:81
               icon: https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/webp/nginx-proxy-manager.webp
-            - title: Nextcloud
-              url: http://cloud.danielpereira.xyz
-              icon: https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/webp/nextcloud.webp
+            - title: Home-Assitant
+              url: http://100.81.92.40:8123
+              icon: https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/webp/home-assistant.webp
             - title: AdGuard
               url: http://adguard.danielpereira.xyz
               icon: https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/webp/adguard-home.webp
