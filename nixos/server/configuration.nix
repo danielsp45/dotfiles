@@ -8,6 +8,7 @@
 imports =
 [ # Include the results of the hardware scan.
 ./hardware-configuration.nix
+./borgbackup.nix
 ./services.nix
 ];
 
@@ -16,7 +17,7 @@ boot.loader.grub.enable = true;
 boot.loader.grub.device = "/dev/sda";
 boot.loader.grub.useOSProber = true;
 
-networking.hostName = "nixos"; # Define your hostname.
+networking.hostName = "server"; # Define your hostname.
 # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
 
 # Configure network proxy if necessary
@@ -48,7 +49,7 @@ LC_TIME = "pt_PT.UTF-8";
 users.users.daniel = {
 isNormalUser = true;
 description = "Daniel Pereira";
-extraGroups = [ "networkmanager" "wheel" "input" "daniel" "docker" ];
+extraGroups = [ "networkmanager" "wheel" "input" "daniel" "docker" "libvirtd" "kvm" ];
 shell = pkgs.zsh;
 packages = with pkgs; [
 kdePackages.kate
@@ -75,6 +76,9 @@ git
 borgbackup
 docker
 docker-compose      # if you want docker-compose
+vagrant
+qemu
+qemu_kvm
 ];
 
 services.tailscale = {
@@ -97,6 +101,13 @@ PermitRootLogin = "prohibit-password"; # "yes", "without-password", "prohibit-pa
 };
 };
 
+  virtualisation.libvirtd = {
+    enable = true;
+    qemu = {
+      package = pkgs.qemu_kvm;
+      runAsRoot = false;
+    };
+  };
 
 
 programs.nix-ld.enable = true;
