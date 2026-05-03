@@ -1,0 +1,33 @@
+{ pkgs, ... }:
+{
+  home.packages = with pkgs; [
+    _1password-cli
+    _1password-gui
+    ansible
+    devcontainer
+    flamegraph
+    gparted
+    networkmanager
+    networkmanager-openvpn
+    btrfs-progs
+    jq
+    quickemu
+    quickgui
+    libimobiledevice
+    ifuse
+    nwg-displays
+    nextcloud-client
+    protonmail-desktop
+    google-chrome
+    chromium
+    caddy
+    ledger-live-desktop
+    xclip
+    wl-clipboard
+    localsend
+    nemo
+    adw-gtk3
+    papirus-icon-theme
+    hicolor-icon-theme
+  ];
+}

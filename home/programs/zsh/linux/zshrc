@@ -1,0 +1,50 @@
+#------------------------------------------------------------------------------
+# Oh-My-Zsh Configuration
+#------------------------------------------------------------------------------
+export ZSH="$HOME/.oh-my-zsh"
+export ZSH_THEME=""    # disable oh-my-zsh themes, let starship handle the prompt
+
+#------------------------------------------------------------------------------
+# Plugins
+#------------------------------------------------------------------------------
+# Core plugins
+plugins=(
+git
+z
+asdf
+docker-compose
+extract
+fzf-tab
+# autoswitch_virtualenv
+direnv
+zsh-autosuggestions
+)
+
+# Source Oh-My-Zsh
+source $ZSH/oh-my-zsh.sh
+
+#------------------------------------------------------------------------------
+# Completion System
+#------------------------------------------------------------------------------
+autoload -U compinit && compinit
+zstyle ':completion:*' menu select
+
+#------------------------------------------------------------------------------
+# Tool Configuration
+#------------------------------------------------------------------------------
+
+# Terminal
+export TERM=xterm-256color
+export COLORTERM=truecolor
+
+#------------------------------------------------------------------------------
+# Custom Configurations
+#------------------------------------------------------------------------------
+# Source custom configurations
+source "$HOME/.dotfiles/home/programs/zsh/aliases.zsh"
+source "$HOME/.dotfiles/home/programs/zsh/functions.zsh"
+
+export PATH="$HOME/.local/share/config/bin:$PATH"
+
+
+eval "$(starship init zsh)"
