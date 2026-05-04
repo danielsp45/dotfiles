@@ -16,5 +16,6 @@
     pkg-config
     gum
     nmap
+    mosh
   ];
 }
