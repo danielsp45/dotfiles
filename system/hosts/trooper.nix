@@ -19,6 +19,7 @@
   dotfiles.modules.borgbackup.enable = true;
   dotfiles.modules.obs.enable = true;
   dotfiles.modules.virtualisation.enable = true;
+  dotfiles.modules.nfs-client.enable = true;
 
   # Lanzaboote replaces systemd-boot for secure boot
   boot.loader.systemd-boot.enable = lib.mkForce false;
