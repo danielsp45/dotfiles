@@ -24,28 +24,6 @@
     fsType = "ext4";
   };
 
-  fileSystems."/mnt/nas" = {
-    device = "//nas.danielpereira.xyz/storage-share";
-    fsType = "cifs";
-    options = [
-      "credentials=/home/daniel/.smbcredentials"
-      "uid=1000"
-      "gid=100"
-      "iocharset=utf8"
-      "_netdev"
-      "nofail"
-      "noauto"
-      "x-systemd.automount"
-      "x-systemd.idle-timeout=600"
-      "x-systemd.requires=network-online.target"
-      "x-systemd.after=network-online.target"
-      "vers=3.0"
-      "noperm"
-      "dir_mode=0770"
-      "file_mode=0660"
-    ];
-  };
-
   swapDevices = [ ];
 
   networking.useDHCP = lib.mkDefault true;
