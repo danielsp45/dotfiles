@@ -8,22 +8,12 @@
   boot.kernelModules = [ ];
   boot.extraModulePackages = [ ];
 
+  boot.supportedFilesystems = [ "zfs" ];
+  networking.hostId = "547864fc";
+
   fileSystems."/" = {
     device = "/dev/disk/by-uuid/7f29e30c-ad0d-47d6-a813-20e664d9d34f";
     fsType = "ext4";
-  };
-
-  fileSystems."/mnt/truenas" = {
-    device = "nas.danielpereira.xyz:/mnt/Main/server";
-    fsType = "nfs";
-    options = [
-      "nfsvers=3"
-      "x-systemd.automount"
-      "_netdev"
-      "hard"
-      "timeo=600"
-      "retrans=2"
-    ];
   };
 
   swapDevices = [ ];

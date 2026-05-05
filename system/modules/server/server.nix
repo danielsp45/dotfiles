@@ -23,20 +23,6 @@
       ];
       environment.TZ = "Europe/Lisbon";
     };
-    containers.couchdb = {
-      image = "couchdb";
-      ports = [ "5984:5984" ];
-      environment = {
-        COUCHDB_USER = "admin";
-        COUCHDB_PASSWORD = "admin";
-      };
-      volumes = [
-        "/mnt/truenas/couchdb/data:/opt/couchdb/data"
-        "/mnt/truenas/couchdb/etc:/opt/couchdb/etc/local.d"
-        "/mnt/truenas/couchdb/logs:/opt/couchdb/var/log"
-      ];
-      extraOptions = [ "--restart=unless-stopped" ];
-    };
   };
 
   systemd.tmpfiles.rules = [ "d /var/lib/glance 0755 root root -" ];
