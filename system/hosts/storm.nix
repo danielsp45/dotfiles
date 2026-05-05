@@ -14,6 +14,7 @@
   dotfiles.modules.firefox.enable = true;
   dotfiles.modules.syncthing.enable = true;
   dotfiles.modules.programs.enable = true;
+  dotfiles.modules.nfs-client.enable = true;
 
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;

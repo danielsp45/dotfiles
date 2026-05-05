@@ -13,6 +13,14 @@
   boot.kernelModules = [ ];
   boot.extraModulePackages = [ ];
 
+  boot.loader.grub.enable = true;
+  boot.loader.grub.device = "/dev/sdf";
+
+  fileSystems."/boot" = {
+    device = "/dev/disk/by-uuid/18944332-8bcb-4068-a747-eaee4e74b229";
+    fsType = "ext4";
+  };
+
   fileSystems."/" =
     { device = "/dev/disk/by-uuid/7f29e30c-ad0d-47d6-a813-20e664d9d34f";
       fsType = "ext4";
