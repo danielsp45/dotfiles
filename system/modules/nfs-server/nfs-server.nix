@@ -6,7 +6,7 @@ in
   services.nfs.server = {
     enable = true;
     exports = ''
-      /              ${nfs.allowedNetwork}(ro,fsid=0,no_subtree_check)
+      /              ${nfs.allowedNetwork}(ro,fsid=0,no_subtree_check,crossmnt)
       ${nfs.exportPath} ${nfs.allowedNetwork}(rw,sync,no_subtree_check,no_root_squash)
     '';
   };
