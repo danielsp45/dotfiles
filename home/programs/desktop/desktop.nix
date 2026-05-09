@@ -29,5 +29,6 @@
     adw-gtk3
     papirus-icon-theme
     hicolor-icon-theme
+    kdePackages.okular
   ];
 }

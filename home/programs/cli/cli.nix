@@ -17,5 +17,7 @@
     gum
     nmap
     mosh
+    pandoc
+    texlive.combined.scheme-full
   ];
 }
