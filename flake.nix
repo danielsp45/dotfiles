@@ -68,7 +68,7 @@
           overlays = stormOverlays;
         };
 
-        server = mkNixosConfig "x86_64-linux" "server" { };
+        pandora = mkNixosConfig "x86_64-linux" "pandora" { };
       };
 
       homeConfigurations = {
@@ -78,7 +78,7 @@
         "daniel@storm" = mkHomeConfig "x86_64-linux" "storm" "daniel" {
           overlays = stormOverlays;
         };
-        "daniel@server" = mkHomeConfig "x86_64-linux" "server" "daniel" { };
+        "daniel@pandora" = mkHomeConfig "x86_64-linux" "pandora" "daniel" { };
         "ubuntu-vagrant" = mkHomeConfig "aarch64-linux" "ubuntu-vagrant" "daniel" { };
         "gsd-cluster" = mkHomeConfig "x86_64-linux" "gsd-cluster" "daniel" { };
       };
