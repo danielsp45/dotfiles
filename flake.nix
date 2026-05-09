@@ -46,15 +46,20 @@
         zen-browser = zen-browser.packages.${final.stdenv.hostPlatform.system}.default;
       };
 
+      feynmanOverlay = final: prev: {
+        feynman = final.callPackage ./pkgs/feynman { };
+      };
+
       trooperOverlays = [
         zenBrowserOverlay
         claudecode.overlays.default
+        feynmanOverlay
         (final: prev: {
           openldap = prev.openldap.overrideAttrs (_: { doCheck = false; });
         })
       ];
 
-      stormOverlays = [ zenBrowserOverlay claudecode.overlays.default ];
+      stormOverlays = [ zenBrowserOverlay claudecode.overlays.default feynmanOverlay ];
 
     in
     {

@@ -20,6 +20,11 @@ function downloads() {
     eza -l --sort newest ~/Downloads
 }
 
+function open() {
+  nohup okular "$1" &>/dev/null &
+  disown
+}
+
 # Rescues a given file from the Downloads folder
 function rescue() {
   local src

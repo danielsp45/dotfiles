@@ -58,6 +58,7 @@ in
   ];
   dotfiles.programs.apps.enable = enableFor [ "trooper" "storm" ];
   dotfiles.programs.claude.enable = enableFor [ "trooper" "storm" "server" ];
+  dotfiles.programs.feynman.enable = enableFor [ "trooper" "storm" ];
   dotfiles.programs.zellij.enable = enableFor [ "trooper" "storm" "server" ];
   dotfiles.programs.espanso.enable = false;
 
