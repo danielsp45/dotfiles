@@ -29,7 +29,7 @@ in
   dotfiles.programs.zsh.enable = enableFor [
     "trooper"
     "storm"
-    "server"
+    "pandora"
   ];
 
   # Terminals
@@ -54,12 +54,12 @@ in
   dotfiles.programs.desktop.enable = enableFor [
     "trooper"
     "storm"
-    "server"
+    "pandora"
   ];
   dotfiles.programs.apps.enable = enableFor [ "trooper" "storm" ];
-  dotfiles.programs.claude.enable = enableFor [ "trooper" "storm" "server" ];
   dotfiles.programs.feynman.enable = enableFor [ "trooper" "storm" ];
-  dotfiles.programs.zellij.enable = enableFor [ "trooper" "storm" "server" ];
+  dotfiles.programs.claude.enable = enableFor [ "trooper" "storm" "pandora" ];
+  dotfiles.programs.zellij.enable = enableFor [ "trooper" "storm" "pandora" ];
   dotfiles.programs.espanso.enable = false;
 
   # Legacy X11 (inactive, configs preserved)
@@ -79,5 +79,5 @@ in
   dotfiles.programs.keychron.enable = enableFor [ "storm" ];
 
   # Server-only
-  dotfiles.programs.server.enable = enableFor [ "server" ];
+  dotfiles.programs.server.enable = enableFor [ "pandora" ];
 }
