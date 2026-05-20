@@ -20,6 +20,7 @@
     hyprlauncher
     hyprtoolkit
     rose-pine-hyprcursor
+    wtype
   ];
   xdg.configFile."hypr" = mkSymlink "config";
   xdg.configFile."waypaper" = mkSymlink "waypaper";
