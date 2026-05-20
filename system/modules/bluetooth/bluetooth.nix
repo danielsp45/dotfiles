@@ -3,11 +3,10 @@
   hardware.bluetooth.enable = true;
   hardware.bluetooth.powerOnBoot = true;
   hardware.bluetooth.settings = {
-    General = {
-      Enable = "Source,Sink,Media,Socket";
-      Experimental = true;
-    };
+    General.Experimental = true;
   };
 
-  environment.systemPackages = [ pkgs.blueman ];
+  hardware.enableRedistributableFirmware = true;
+
+  services.blueman.enable = true;
 }

@@ -1,4 +1,4 @@
-{ lib, ... }:
+{ lib, pkgs, ... }:
 {
   dotfiles.modules.audio.enable = true;
   dotfiles.modules.networking.enable = true;
@@ -21,6 +21,10 @@
   dotfiles.modules.virtualisation.enable = true;
   dotfiles.modules.nfs-client.enable = true;
 
+  # Pinned to 6.6 LTS to avoid MT7921 BT regression (wmt func ctrl bug backported to 6.18/6.12)
+  # Remove once the fix lands in nixpkgs
+  boot.kernelPackages = pkgs.linuxPackages_6_6;
+
   # Lanzaboote replaces systemd-boot for secure boot
   boot.loader.systemd-boot.enable = lib.mkForce false;
   boot.lanzaboote = {
@@ -30,7 +34,7 @@
   };
 
   users.users.daniel.extraGroups = [
-    "networkmanager" "wheel" "input" "daniel" "docker" "dialout" "uucp" "libvirtd"
+    "networkmanager" "wheel" "input" "daniel" "docker" "dialout" "uucp" "libvirtd" "bluetooth"
   ];
 
   systemd.services.ModemManager = {
@@ -39,4 +43,6 @@
   };
 
   services.cron.enable = true;
+
+  nix.settings.cores = 8;
 }
