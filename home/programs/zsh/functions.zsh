@@ -180,6 +180,12 @@ function setwpp() {
     echo "\033[32mWallpaper changed to: $(basename "$WALLPAPER")\033[0m"
 }
 
+function fh() {
+  local selected
+  selected=$(fc -ln 1 | awk '!seen[$0]++' | tac | fzf --no-sort --prompt="history > ")
+  [ -n "$selected" ] && print -rn -- "$selected" | wl-copy && echo "Copied: $selected"
+}
+
 function remote-ched() {
 	user="mca55928"
 	folder="projects/F202500001HPCVLABEPICURE/${user}/CHED"
