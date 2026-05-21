@@ -38,7 +38,7 @@ return {
         harpoon:setup()
         -- REQUIRED
 
-        vim.keymap.set("n", "<leader>a", function() harpoon:list():add() end)
+        vim.keymap.set("n", "<leader>ha", function() harpoon:list():add() end)
         vim.keymap.set("n", "<leader>r", function() harpoon:list():remove() end)
         vim.keymap.set("n", "<leader>x", function() harpoon:list():clear() end)
 
