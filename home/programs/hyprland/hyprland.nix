@@ -17,7 +17,6 @@
     hypridle
     hyprsunset
     hyprlock
-    hyprlauncher
     hyprtoolkit
     rose-pine-hyprcursor
     wtype

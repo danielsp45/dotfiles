@@ -5,7 +5,9 @@
     prismlauncher
     wine
     qbittorrent
-    bitwig-studio
     mangohud
+    bitwig-studio
+    lmms
+    qt5.qtwayland
   ];
 }
