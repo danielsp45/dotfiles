@@ -84,6 +84,7 @@
           overlays = stormOverlays;
         };
         "daniel@pandora" = mkHomeConfig "x86_64-linux" "pandora" "daniel" { };
+        "daniel@hermes" = mkHomeConfig "aarch64-linux" "hermes" "daniel" { };
         "ubuntu-vagrant" = mkHomeConfig "aarch64-linux" "ubuntu-vagrant" "daniel" { };
         "gsd-cluster" = mkHomeConfig "x86_64-linux" "gsd-cluster" "daniel" { };
       };

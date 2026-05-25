@@ -23,6 +23,7 @@ in
     "storm"
     "ubuntu-vagrant"
     "gsd-cluster"
+    "hermes"
   ];
 
   # Shell — all Linux hosts
@@ -30,6 +31,7 @@ in
     "trooper"
     "storm"
     "pandora"
+    "hermes"
   ];
 
   # Terminals
