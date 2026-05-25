@@ -5,5 +5,6 @@
     rocmPackages.rocm-smi
     rocmPackages.rpp
     lm_sensors
+    btop-rocm
   ];
 }

@@ -3,7 +3,6 @@
   home.packages = with pkgs; [
     ripgrep
     bat
-    btop-rocm
     tree
     eza
     fend
