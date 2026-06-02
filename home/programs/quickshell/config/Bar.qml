@@ -2,14 +2,33 @@
 import Quickshell
 import Quickshell.Wayland
 import Quickshell.Hyprland
+import Quickshell.Io
+import Quickshell.Services.Pipewire
 import QtQuick
 import QtQuick.Layouts
+import "QuickSettings"
 
 Scope {
+  id: barScope
+
+  // Name of the screen whose Quick Settings panel is open ("" = none). A single
+  // shared value guarantees only one panel — and thus one focus grab — at a time.
+  property string qsScreen: ""
+
+  IpcHandler {
+    target: "quickSettings"
+    // Toggle on the currently focused monitor.
+    function toggle() {
+      const n = Hyprland.focusedMonitor ? Hyprland.focusedMonitor.name : ""
+      barScope.qsScreen = (barScope.qsScreen === n) ? "" : n
+    }
+  }
+
   Variants {
     model: Quickshell.screens
 
     PanelWindow {
+      id: barWindow
       required property var modelData
       screen: modelData
 
@@ -67,16 +86,6 @@ Scope {
 
             Item { width: compact ? sp(3) : sp(6) } // spacer
 
-            HyprsunsetWidget {
-              Layout.alignment: Qt.AlignVCenter | Qt.AlignRight
-              visible: !compact
-              size: sp(24)
-              radius: sp(16)
-              iconPx: sp(16)
-            }
-
-            Item { width: compact ? sp(3) : sp(6) } // spacer
-
             // In compact mode, hide MPRIS to reduce clutter on narrow displays
             Item {
               id: mprisAnchor
@@ -118,12 +127,46 @@ Scope {
               }
             }
 
-            NetworkWidget {
+            // Clickable status cluster: volume + network + battery. Opens the
+            // GNOME-style Quick Settings panel.
+            Rectangle {
+              id: statusCluster
               Layout.alignment: Qt.AlignVCenter
-            }
+              radius: height / 2
+              implicitHeight: sp(24)
+              implicitWidth: clusterRow.implicitWidth + sp(16)
+              readonly property bool qsOpen: barScope.qsScreen === barWindow.modelData.name
+              color: (clusterHover.hovered || qsOpen) ? "#333333" : "transparent"
+              Behavior on color { ColorAnimation { duration: 120 } }
 
-            BatteryWidget {
-              Layout.alignment: Qt.AlignVCenter
+              // Keep the default sink tracked so the bar volume glyph is live.
+              PwObjectTracker { objects: Pipewire.defaultAudioSink ? [Pipewire.defaultAudioSink] : [] }
+
+              RowLayout {
+                id: clusterRow
+                anchors.centerIn: parent
+                spacing: sp(8)
+
+                Text {
+                  readonly property var sink: Pipewire.defaultAudioSink
+                  Layout.alignment: Qt.AlignVCenter
+                  color: "white"
+                  font.pixelSize: sp(16)
+                  font.bold: true
+                  font.family: "Symbols Nerd Font"
+                  text: (sink && sink.audio && sink.audio.muted) ? "󰝟" : "󰕾"
+                }
+
+                NetworkWidget { Layout.alignment: Qt.AlignVCenter; fontPx: sp(15) }
+
+                BatteryWidget { Layout.alignment: Qt.AlignVCenter; fontPx: sp(15) }
+              }
+
+              HoverHandler { id: clusterHover }
+              TapHandler {
+                onTapped: barScope.qsScreen =
+                  (barScope.qsScreen === barWindow.modelData.name ? "" : barWindow.modelData.name)
+              }
             }
           }
         }
@@ -135,6 +178,15 @@ Scope {
           px: sp(compact ? 10 : 12)
           anchors.centerIn: parent
         }
+      }
+
+      // GNOME-style Quick Settings dropdown, anchored under the status cluster.
+      QuickSettingsPanel {
+        id: qsPanel
+        anchorItem: barBg
+        triggerWindow: barWindow
+        shown: barScope.qsScreen === barWindow.modelData.name
+        onDismissed: barScope.qsScreen = ""
       }
     }
   }

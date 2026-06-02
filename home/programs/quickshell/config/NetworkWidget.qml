@@ -10,20 +10,15 @@ RowLayout {
     implicitHeight: networkText.implicitHeight
 
     property string networkLabel: ""
+    property int fontPx: 11
 
     Text {
         id: networkText
         text: root.networkLabel
         color: "white"
-        font.pixelSize: 11
+        font.pixelSize: root.fontPx
         font.bold: true
         visible: root.networkLabel !== ""
-    }
-
-    MouseArea {
-        anchors.fill: parent
-        cursorShape: Qt.PointingHandCursor
-        onClicked: Quickshell.execDetached(["nm-connection-editor"])
     }
 
     Timer {

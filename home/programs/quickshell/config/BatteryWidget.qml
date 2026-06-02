@@ -14,6 +14,7 @@ Item {
     property int batteryPercent: 0
     property bool isCharging: false
     property bool lowBatteryNotified: false
+    property int fontPx: 11
 
     Text {
         id: batteryText
@@ -43,7 +44,7 @@ Item {
             return icon + " " + root.batteryPercent + "%"
         }
         color: root.batteryPercent < 10 && !root.isCharging ? "#ff0000" : "white"
-        font.pixelSize: 11
+        font.pixelSize: root.fontPx
         font.bold: true
     }
 
