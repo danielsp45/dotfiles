@@ -1,7 +1,7 @@
 zsh/darwin/load_api_keys.sh
 
 # hyprland display config
-hypr/monitors.conf
+home/programs/hyprland/config/monitors.conf
 
 # large wallpapers (>100MB, exceeds GitHub limit)
 home/programs/hyprland/wallpapers/carina-nebula.png

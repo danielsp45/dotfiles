@@ -4,5 +4,7 @@
     sshfs
     mutagen
     via
+    yt-dlp
+    mpv
   ];
 }
