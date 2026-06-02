@@ -12,6 +12,6 @@
     cargo
     rustfmt
     clippy
-    beamMinimal27Packages.elixir_1_17
+    elixir-bin."1.17.3"
   ];
 }

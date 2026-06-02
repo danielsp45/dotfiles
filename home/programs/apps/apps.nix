@@ -13,6 +13,5 @@
     spotify
     calibre
     gvfs
-    zoom
   ];
 }

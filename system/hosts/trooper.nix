@@ -21,9 +21,9 @@
   dotfiles.modules.virtualisation.enable = true;
   dotfiles.modules.nfs-client.enable = true;
 
-  # Pinned to 6.6 LTS to avoid MT7921 BT regression (wmt func ctrl bug backported to 6.18/6.12)
-  # Remove once the fix lands in nixpkgs
-  boot.kernelPackages = pkgs.linuxPackages_6_6;
+  boot.kernelPackages = pkgs.linuxPackages;
+
+  nixpkgs.config.permittedInsecurePackages = [ "electron-39.8.10" ];
 
   # Lanzaboote replaces systemd-boot for secure boot
   boot.loader.systemd-boot.enable = lib.mkForce false;
@@ -45,4 +45,8 @@
   services.cron.enable = true;
 
   nix.settings.cores = 8;
+
+  # xdg-desktop-portal 1.18+ reads /proc/<pid>/root to verify app identity for
+  # screen capture requests; ptrace_scope=1 blocks this for non-parent processes
+  boot.kernel.sysctl."kernel.yama.ptrace_scope" = 0;
 }

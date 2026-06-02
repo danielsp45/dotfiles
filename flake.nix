@@ -23,6 +23,10 @@
       url = "github:nix-community/lanzaboote/v1.0.0";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    elixir-overlay = {
+      url = "github:zoedsoupe/elixir-overlay";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
   outputs =
@@ -34,6 +38,7 @@
       zen-browser,
       lanzaboote,
       claudecode,
+      elixir-overlay,
       ...
     }:
     let
@@ -50,16 +55,21 @@
         feynman = final.callPackage ./pkgs/feynman { };
       };
 
+      elixirOverlay = elixir-overlay.overlays.default;
+
       trooperOverlays = [
         zenBrowserOverlay
         claudecode.overlays.default
         feynmanOverlay
+        elixirOverlay
         (final: prev: {
           openldap = prev.openldap.overrideAttrs (_: { doCheck = false; });
         })
       ];
 
-      stormOverlays = [ zenBrowserOverlay claudecode.overlays.default feynmanOverlay ];
+      stormOverlays = [ zenBrowserOverlay claudecode.overlays.default feynmanOverlay elixirOverlay ];
+
+      devOverlays = [ elixirOverlay ];
 
     in
     {
@@ -84,9 +94,9 @@
           overlays = stormOverlays;
         };
         "daniel@pandora" = mkHomeConfig "x86_64-linux" "pandora" "daniel" { };
-        "daniel@hermes" = mkHomeConfig "aarch64-linux" "hermes" "daniel" { };
-        "ubuntu-vagrant" = mkHomeConfig "aarch64-linux" "ubuntu-vagrant" "daniel" { };
-        "gsd-cluster" = mkHomeConfig "x86_64-linux" "gsd-cluster" "daniel" { };
+        "daniel@hermes" = mkHomeConfig "aarch64-linux" "hermes" "daniel" { overlays = devOverlays; };
+        "ubuntu-vagrant" = mkHomeConfig "aarch64-linux" "ubuntu-vagrant" "daniel" { overlays = devOverlays; };
+        "gsd-cluster" = mkHomeConfig "x86_64-linux" "gsd-cluster" "daniel" { overlays = devOverlays; };
       };
 
       darwinConfigurations = {
