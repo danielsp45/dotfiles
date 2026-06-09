@@ -83,14 +83,6 @@ return {
 			vim.fn.sign_define(hl, { text = icon, texthl = hl, numhl = "" })
 		end
 
-		vim.lsp.config("lexical", {
-			cmd = { "/home/daniel/.local/share/nvim/expert_linux_amd64" },
-			root_dir = function(fname)
-				return vim.fs.root(fname, { "mix.exs", ".git" }) or vim.uv.cwd()
-			end,
-			filetypes = { "elixir", "eelixir", "heex" },
-			settings = {},
-		})
-		vim.lsp.enable("lexical")
+		vim.lsp.enable("expert")
 	end,
 }

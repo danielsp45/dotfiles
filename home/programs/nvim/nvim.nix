@@ -1,6 +1,6 @@
 { pkgs, mkSymlink, ... }:
 {
-  home.packages = [ pkgs.neovim ];
+  home.packages = [ pkgs.neovim pkgs.tree-sitter ];
   home.sessionVariables.EDITOR = "nvim";
   xdg.configFile."nvim/init.lua" = mkSymlink "init.lua";
   xdg.configFile."nvim/lazy-lock.json" = mkSymlink "lazy-lock.json";
