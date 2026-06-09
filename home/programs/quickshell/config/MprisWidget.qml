@@ -1,6 +1,7 @@
 // MprisWidget.qml
 import QtQuick
 import QtQuick.Layouts
+import QtQuick.Effects
 import Quickshell.Services.Mpris
 import Quickshell
 import Quickshell.Wayland
@@ -8,8 +9,6 @@ import Quickshell.Wayland
 
 Rectangle {
     id: root
-    property bool hovered: false
-    property bool showPopup: false
 
     // --- pick the active player ---
     // 1) prefer a player that is actually playing
@@ -23,7 +22,6 @@ Rectangle {
             const p = vals[i];
             if (!p) continue;
 
-            // try typical playing flags
             if (p.playing === true)
                 return p;
             if (p.isPlaying === true)
@@ -34,7 +32,6 @@ Rectangle {
                 return p;
         }
 
-        // nothing is playing, show the most recently created
         return vals[vals.length - 1];
     }
 
@@ -47,22 +44,33 @@ Rectangle {
 
     implicitHeight: 24
 
-    // pill sizing: just content + padding (Waybar-style)
     property int horizontalPadding: 10
     property int spacing: 8
 
-    // overall width = width of row content + left/right padding
-    implicitWidth: row.implicitWidth + horizontalPadding * 2
+    // Fixed pill width — marquee handles long text
+    property int pillWidth: 240
+    implicitWidth: pillWidth
 
-    // Max length of text (similar to Waybar's title-len)
-    property int titleMaxChars: 40
+    // Combined hover state: pill hover OR popup hover.
+    // Driven explicitly to avoid Wayland pointer-leave races.
+    property bool pillHovered: false
+    property bool popupHovered: false
+    property bool popupShown: pillHovered || popupHovered
 
-    function clampText(s) {
-        if (!s)
-            return "";
-        if (s.length <= titleMaxChars)
-            return s;
-        return s.slice(0, titleMaxChars - 1) + "…";
+    onPopupShownChanged: {
+        if (popupShown) {
+            popupHideTimer.stop()
+            hoverPopup._render = true
+        } else {
+            popupHideTimer.restart()
+        }
+    }
+
+    // Delay before destroying the window so the hide animation can finish.
+    Timer {
+        id: popupHideTimer
+        interval: 250
+        onTriggered: hoverPopup._render = false
     }
 
     RowLayout {
@@ -76,7 +84,7 @@ Rectangle {
         Text {
             id: icon
             text: ""
-            color: "white"
+            color: "#1ED760"
             font.pixelSize: 13
             Layout.alignment: Qt.AlignVCenter
 
@@ -91,142 +99,204 @@ Rectangle {
             }
         }
 
-        // --- track text ---
-        Text {
-            id: trackText
-            color: "white"
-            font.pixelSize: 12
-            font.bold: true
-            elide: Text.ElideRight   // in case layout squeezes us
-            Layout.fillWidth: true   // fill *within* the pill
+        // --- track text (marquee) ---
+        Item {
+            id: marqueeContainer
+            Layout.fillWidth: true
+            Layout.preferredHeight: marqueeText.implicitHeight
+            clip: true
 
-            text: {
-                const p = root.activePlayer;
-                if (!p) return "";
+            property bool needsScroll: marqueeText.implicitWidth > width
 
-                const title  = p.trackTitle  || "";
-                const artist = p.trackArtist || "";
-                const id     = p.identity    || "";
+            Text {
+                id: marqueeText
+                color: "white"
+                font.pixelSize: 12
+                font.bold: true
+                y: (marqueeContainer.height - height) / 2
 
-                let s;
-                if (title && artist) s = artist + " • " + title;
-                else if (title)      s = title;
-                else                 s = id;
+                text: {
+                    const p = root.activePlayer;
+                    if (!p) return "";
 
-                return root.clampText(s);
+                    const title  = p.trackTitle  || "";
+                    const artist = p.trackArtist || "";
+                    const id     = p.identity    || "";
+
+                    if (title && artist) return artist + " • " + title;
+                    else if (title)      return title;
+                    else                 return id;
+                }
+            }
+
+            SequentialAnimation {
+                running: marqueeContainer.needsScroll
+                loops: Animation.Infinite
+
+                PauseAnimation { duration: 2000 }
+                NumberAnimation {
+                    target: marqueeText
+                    property: "x"
+                    to: -(marqueeText.implicitWidth - marqueeContainer.width)
+                    duration: Math.max(0, marqueeText.implicitWidth - marqueeContainer.width) * 30
+                    easing.type: Easing.Linear
+                }
+                PauseAnimation { duration: 1500 }
+                NumberAnimation {
+                    target: marqueeText
+                    property: "x"
+                    to: 0
+                    duration: 400
+                    easing.type: Easing.InOutQuad
+                }
             }
         }
     }
 
-    // --- click over whole pill ---
-MouseArea {
-    anchors.fill: parent
-    hoverEnabled: true
-    acceptedButtons: Qt.LeftButton | Qt.MiddleButton | Qt.RightButton
-
-    onEntered: root.hovered = true
-    onExited: root.hovered = false
-
-    onClicked: (mouse) => {
-        const p = root.activePlayer;
-        if (!p) return;
-
-        if (mouse.button === Qt.LeftButton && p.canTogglePlaying)
-            p.togglePlaying();
-        else if (mouse.button === Qt.RightButton && p.canGoNext)
-            p.next();
-        else if (mouse.button === Qt.MiddleButton && p.canGoPrevious)
-            p.previous();
+    // Hover tracking via HoverHandler (unaffected by popup window creation).
+    HoverHandler {
+        onHoveredChanged: root.pillHovered = hovered
     }
-}
 
+    // Click handling.
+    MouseArea {
+        anchors.fill: parent
+        acceptedButtons: Qt.LeftButton | Qt.MiddleButton | Qt.RightButton
+
+        onClicked: (mouse) => {
+            const p = root.activePlayer;
+            if (!p) return;
+
+            if (mouse.button === Qt.LeftButton && p.canTogglePlaying)
+                p.togglePlaying();
+            else if (mouse.button === Qt.RightButton && p.canGoNext)
+                p.next();
+            else if (mouse.button === Qt.MiddleButton && p.canGoPrevious)
+                p.previous();
+        }
+    }
 
     PopupWindow {
-        id: testPopup
-        visible: root.hovered
-
+        id: hoverPopup
         color: "transparent"
 
-        // Anchor to this widget (the pill)
         anchor.item: root
         anchor.edges: Edges.Bottom
         anchor.gravity: Edges.Top | Edges.HCenter
-
-        anchor.margins.top: 28
-
-        // (optional) keep it on-screen if you're near the edge
+        anchor.margins.top: 8
         anchor.adjustment: PopupAdjustment.Flip | PopupAdjustment.Slide
 
-        width: 400
-        height: 190
+        // 24px shadow room on all sides; card sits in the centre.
+        readonly property int shadowMargin: 24
 
-        Rectangle {
+        property bool _render: false
+        visible: _render
+
+        implicitWidth: 400 + shadowMargin * 2
+        implicitHeight: 190 + shadowMargin * 2
+
+        // Track hover over the popup itself so moving the mouse from pill
+        // to popup doesn't collapse it.
+        HoverHandler {
+            onHoveredChanged: root.popupHovered = hovered
+        }
+
+        Item {
             anchors.fill: parent
-            radius: 12
-            color: "#111111"
-            border.color: "#555555"
-            border.width: 1
 
-            RowLayout {
-                anchors.fill: parent
-                anchors.margins: 20
-                spacing: 16
+            Item {
+                id: popupCard
+                x: hoverPopup.shadowMargin
+                width: 400
+                height: 190
 
-                // Album art
-                Rectangle {
-                    Layout.preferredWidth: 150
-                    Layout.preferredHeight: 150
-                    radius: 12
-                    color: "#222"
-                    clip: true
+                // Slide down from 12px above final position when appearing.
+                // Both values are positive so nothing clips at the window edge.
+                y: root.popupShown
+                    ? hoverPopup.shadowMargin
+                    : hoverPopup.shadowMargin - 12
+                opacity: root.popupShown ? 1 : 0
 
-                    Image {
-                        id: art
-                        anchors.fill: parent
-                        source: root.activePlayer ? root.activePlayer.trackArtUrl : ""
-                        fillMode: Image.PreserveAspectCrop
-                        asynchronous: true
-                        cache: true
-                        visible: source !== ""
-                    }
+                Behavior on y { NumberAnimation { duration: root.popupShown ? 200 : 150; easing.type: root.popupShown ? Easing.OutCubic : Easing.InCubic } }
+                Behavior on opacity { NumberAnimation { duration: root.popupShown ? 200 : 140 } }
 
-                    // fallback when there's no art
-                    Text {
-                        anchors.centerIn: parent
-                        text: "♪"
-                        color: "#888"
-                        visible: !art.visible
-                        font.pixelSize: 48
-                    }
+                MultiEffect {
+                    source: popupBg
+                    anchors.fill: popupBg
+                    z: -1
+                    autoPaddingEnabled: true
+                    shadowEnabled: true
+                    shadowColor: "#000000"
+                    shadowOpacity: 0.35
+                    shadowBlur: 0.45
+                    shadowVerticalOffset: 3
+                    shadowHorizontalOffset: 0
                 }
 
-                // Track information
-                ColumnLayout {
-                    Layout.fillWidth: true
-                    Layout.fillHeight: true
-                    spacing: 8
+                Rectangle {
+                    id: popupBg
+                    anchors.fill: parent
+                    radius: 16
+                    color: "#323232"
+                    layer.enabled: true
+                }
 
-                    Text {
-                        id: popupTrackTitle
-                        text: root.activePlayer ? root.activePlayer.trackTitle || "Unknown Track" : ""
-                        color: "white"
-                        font.pixelSize: 16
-                        font.bold: true
-                        wrapMode: Text.WordWrap
-                        Layout.fillWidth: true
+                RowLayout {
+                    anchors.fill: parent
+                    anchors.margins: 20
+                    spacing: 16
+
+                    // Album art
+                    Rectangle {
+                        Layout.preferredWidth: 150
+                        Layout.preferredHeight: 150
+                        radius: 12
+                        color: "#1a1a1a"
+                        clip: true
+
+                        Image {
+                            id: art
+                            anchors.fill: parent
+                            source: root.activePlayer ? root.activePlayer.trackArtUrl : ""
+                            fillMode: Image.PreserveAspectCrop
+                            asynchronous: true
+                            cache: true
+                            visible: source !== ""
+                        }
+
+                        Text {
+                            anchors.centerIn: parent
+                            text: "♪"
+                            color: "#666"
+                            visible: !art.visible
+                            font.pixelSize: 48
+                        }
                     }
 
-                    Text {
-                        id: popupTrackArtist
-                        text: root.activePlayer ? root.activePlayer.trackArtist || "Unknown Artist" : ""
-                        color: "#aaaaaa"
-                        font.pixelSize: 14
-                        wrapMode: Text.WordWrap
+                    // Track information
+                    ColumnLayout {
                         Layout.fillWidth: true
-                    }
-
-                    Item {
                         Layout.fillHeight: true
+                        spacing: 6
+
+                        Text {
+                            text: root.activePlayer ? root.activePlayer.trackTitle || "Unknown Track" : ""
+                            color: "#ffffff"
+                            font.pixelSize: 15
+                            font.bold: true
+                            wrapMode: Text.WordWrap
+                            Layout.fillWidth: true
+                        }
+
+                        Text {
+                            text: root.activePlayer ? root.activePlayer.trackArtist || "Unknown Artist" : ""
+                            color: "#b3b3b3"
+                            font.pixelSize: 13
+                            wrapMode: Text.WordWrap
+                            Layout.fillWidth: true
+                        }
+
+                        Item { Layout.fillHeight: true }
                     }
                 }
             }
