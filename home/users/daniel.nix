@@ -43,10 +43,10 @@ in
   # Desktop environment — graphical hosts only
   dotfiles.programs.ghostty.enable = enableFor [ "trooper" "storm" ];
   dotfiles.programs.hyprland.enable = enableFor [ "trooper" "storm" ];
-  dotfiles.programs.waybar.enable = enableFor [ "trooper" "storm" ];
+  # dotfiles.programs.waybar.enable = enableFor [ "trooper" "storm" ];
   dotfiles.programs.dunst.enable = enableFor [ "trooper" "storm" ];
   dotfiles.programs.swayosd.enable = enableFor [ "trooper" "storm" ];
-  dotfiles.programs.sherlock.enable = enableFor [ "trooper" "storm" ];
+  dotfiles.programs.walker.enable = enableFor [ "trooper" "storm" ];
   dotfiles.programs.quickshell.enable = enableFor [ "trooper" "storm" ];
   dotfiles.programs.rofi.enable = enableFor [ "trooper" "storm" ];
   dotfiles.programs.gtk.enable = enableFor [ "trooper" "storm" ];
