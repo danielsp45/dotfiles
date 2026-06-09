@@ -22,6 +22,15 @@ ColumnLayout {
         return null
     }
     readonly property var networks: wifiDevice ? wifiDevice.networks.values : []
+    readonly property var sortedNetworks: {
+        const arr = Array.from(root.networks)
+        arr.sort((a, b) => {
+            if (a.connected && !b.connected) return -1
+            if (!a.connected && b.connected) return 1
+            return 0
+        })
+        return arr
+    }
 
     property string pwTarget: ""   // network name currently showing a password field
 
@@ -96,7 +105,7 @@ ColumnLayout {
             }
 
             Repeater {
-                model: root.networks
+                model: root.sortedNetworks
                 delegate: ColumnLayout {
                     required property var modelData
                     Layout.fillWidth: true
@@ -107,7 +116,8 @@ ColumnLayout {
                         implicitHeight: 40
                         radius: 8
                         color: rowTap.pressed ? Theme.surfaceAlt
-                            : (rowHover.hovered ? Theme.surface : "transparent")
+                            : (rowHover.hovered ? Theme.surface
+                            : (modelData.connected ? Qt.rgba(Theme.accent.r, Theme.accent.g, Theme.accent.b, 0.18) : "transparent"))
 
                         RowLayout {
                             anchors.fill: parent
@@ -120,7 +130,10 @@ ColumnLayout {
                                 color: Theme.accent; Layout.preferredWidth: 14
                             }
                             Text {
-                                text: modelData.name; color: Theme.text; font.pixelSize: 13
+                                text: modelData.name
+                                color: modelData.connected ? Theme.accent : Theme.text
+                                font.pixelSize: 13
+                                font.bold: modelData.connected
                                 elide: Text.ElideRight; Layout.fillWidth: true
                             }
                             Text {
