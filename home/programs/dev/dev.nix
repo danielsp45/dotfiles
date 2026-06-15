@@ -13,5 +13,6 @@
     rustfmt
     clippy
     elixir-bin."1.17.3"
+    beam28Packages.expert
   ];
 }

@@ -1,9 +1,24 @@
 { pkgs, ... }:
 {
+  # xdg.portal = {
+  #   enable = true;
+  #   extraPortals = [ pkgs.xdg-desktop-portal-gtk ];
+  #   config.hyprland = {
+  #     default = [ "hyprland" "gtk" ];
+  #     "org.freedesktop.impl.portal.ScreenCast" = [ "hyprland" ];
+  #     "org.freedesktop.impl.portal.ScreenShot" = [ "hyprland" ];
+  #   };
+  # };
+
   xdg.portal = {
     enable = true;
-    extraPortals = [ pkgs.xdg-desktop-portal-hyprland pkgs.xdg-desktop-portal-gtk ];
-    config.common.default = [ "hyprland" "gtk" ];
+    extraPortals = [ pkgs.xdg-desktop-portal-gtk ];
+    config.hyprland = {
+      default = [ "hyprland" "gtk" ];
+      "org.freedesktop.impl.portal.ScreenCast" = [ "hyprland" ];
+      "org.freedesktop.impl.portal.ScreenShot" = [ "hyprland" ];
+      "org.freedesktop.impl.portal.FileChooser" = [ "gtk" ];
+    };
   };
 
   services.displayManager.ly.enable = true;

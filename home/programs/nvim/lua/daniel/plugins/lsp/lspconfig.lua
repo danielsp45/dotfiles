@@ -19,6 +19,7 @@ return {
 		local keymap = vim.keymap
 
 		vim.api.nvim_create_autocmd("BufWritePre", {
+			pattern = { "*.ex", "*.exs", "*.heex" },
 			callback = function()
 				vim.lsp.buf.format({ async = false })
 			end,

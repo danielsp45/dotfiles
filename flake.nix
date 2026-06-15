@@ -19,10 +19,6 @@
       url = "github:youwen5/zen-browser-flake";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-    lanzaboote = {
-      url = "github:nix-community/lanzaboote/v1.0.0";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
     elixir-overlay = {
       url = "github:zoedsoupe/elixir-overlay";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -36,7 +32,6 @@
       home-manager,
       nix-darwin,
       zen-browser,
-      lanzaboote,
       claudecode,
       elixir-overlay,
       ...
@@ -76,7 +71,6 @@
       nixosConfigurations = {
         trooper = mkNixosConfig "x86_64-linux" "trooper" {
           overlays = trooperOverlays;
-          extraModules = [ lanzaboote.nixosModules.lanzaboote ];
         };
 
         storm = mkNixosConfig "x86_64-linux" "storm" {

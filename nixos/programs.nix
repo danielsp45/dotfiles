@@ -68,6 +68,21 @@
 
 	programs.nix-ld.enable = true;
 
+  programs._1password.enable = true;
+  programs._1password-gui = {
+    enable = true;
+    polkitPolicyOwners = [ "daniel" ];
+  };
+
+  environment.etc = {
+    "1password/custom_allowed_browsers" = {
+      text = ''
+        zen
+      '';
+      mode = "0755";
+    };
+  };
+
 	services.openssh = {
 		enable = true;
 		ports = [ 22 ];

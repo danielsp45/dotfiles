@@ -13,5 +13,6 @@
     spotify
     calibre
     gvfs
+    jellyfin
   ];
 }

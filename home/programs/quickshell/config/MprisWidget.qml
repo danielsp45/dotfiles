@@ -47,9 +47,10 @@ Rectangle {
     property int horizontalPadding: 10
     property int spacing: 8
 
-    // Fixed pill width — marquee handles long text
-    property int pillWidth: 240
-    implicitWidth: pillWidth
+    readonly property int maxTextWidth: 200
+    implicitWidth: horizontalPadding * 2
+        + (icon.visible ? icon.implicitWidth + spacing : 0)
+        + Math.min(marqueeText.implicitWidth, maxTextWidth)
 
     // Combined hover state: pill hover OR popup hover.
     // Driven explicitly to avoid Wayland pointer-leave races.
@@ -102,8 +103,8 @@ Rectangle {
         // --- track text (marquee) ---
         Item {
             id: marqueeContainer
-            Layout.fillWidth: true
-            Layout.preferredHeight: marqueeText.implicitHeight
+            implicitWidth: Math.min(marqueeText.implicitWidth, root.maxTextWidth)
+            implicitHeight: marqueeText.implicitHeight
             clip: true
 
             property bool needsScroll: marqueeText.implicitWidth > width

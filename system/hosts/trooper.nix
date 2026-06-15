@@ -1,4 +1,4 @@
-{ lib, pkgs, ... }:
+{ pkgs, ... }:
 {
   dotfiles.modules.audio.enable = true;
   dotfiles.modules.networking.enable = true;
@@ -25,13 +25,9 @@
 
   nixpkgs.config.permittedInsecurePackages = [ "electron-39.8.10" ];
 
-  # Lanzaboote replaces systemd-boot for secure boot
-  boot.loader.systemd-boot.enable = lib.mkForce false;
-  boot.lanzaboote = {
-    enable = true;
-    pkiBundle = "/var/lib/sbctl";
-    configurationLimit = 3;
-  };
+  boot.loader.systemd-boot.enable = true;
+  boot.loader.systemd-boot.configurationLimit = 3;
+  boot.loader.efi.canTouchEfiVariables = true;
 
   users.users.daniel.extraGroups = [
     "networkmanager" "wheel" "input" "daniel" "docker" "dialout" "uucp" "libvirtd" "bluetooth"
