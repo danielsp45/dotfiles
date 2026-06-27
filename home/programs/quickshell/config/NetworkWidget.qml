@@ -79,7 +79,7 @@ RowLayout {
                         break
                     } else if (type === "wifi") {
                         const ssid = wifiSsid || parts.slice(3).join(":").trim()
-                        label = wifiIcon(wifiSignal) + "  " + ssid
+                        label = wifiIcon(wifiSignal)
                         break
                     }
                 }

@@ -41,7 +41,7 @@ Item {
                 }
             }
 
-            return icon + " " + root.batteryPercent + "%"
+            return icon
         }
         color: root.batteryPercent < 10 && !root.isCharging ? "#ff0000" : "white"
         font.pixelSize: root.fontPx
