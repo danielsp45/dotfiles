@@ -9,5 +9,6 @@
     bitwig-studio
     lmms
     qt5.qtwayland
+    wowup-cf
   ];
 }
