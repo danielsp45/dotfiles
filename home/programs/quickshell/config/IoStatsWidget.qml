@@ -16,7 +16,7 @@ RowLayout {
     // --- MEM --------------------------------------------------------------
     property double memUsedGiB: 0.0
     // --- DISK -------------------------------------------------------------
-    property double diskUsedGiB: 0.0
+    property int diskUsedPercent: 0
 
     Text {
         // Nerd Font CPU icon
@@ -36,7 +36,7 @@ RowLayout {
 
     Text {
         // Disk icon
-        text: "󰋊  " + diskUsedGiB.toFixed(1) + "GB"
+        text: "󰋊  " + diskUsedPercent + "%"
         color: "white"
         font.pixelSize: 11
         font.bold: true
@@ -141,14 +141,14 @@ RowLayout {
     // ---------------- Disk (/) ----------------
     Process {
         id: diskProc
-        command: ["sh", "-c", "df -B1 / | tail -1 | awk '{print $3}'"]
+        command: ["sh", "-c", "df / | tail -1 | awk '{print $5}' | tr -d '%'"]
         running: false
 
         stdout: StdioCollector {
             onStreamFinished: {
-                const usedBytes = Number(text.trim())
-                if (!isNaN(usedBytes)) {
-                    root.diskUsedGiB = usedBytes / (1024 * 1024 * 1024)
+                const pct = Number(text.trim())
+                if (!isNaN(pct)) {
+                    root.diskUsedPercent = pct
                 }
             }
         }
