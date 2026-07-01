@@ -30,8 +30,11 @@
   boot.loader.efi.canTouchEfiVariables = true;
 
   users.users.daniel.extraGroups = [
-    "networkmanager" "wheel" "input" "daniel" "docker" "dialout" "uucp" "libvirtd" "bluetooth"
+    "networkmanager" "wheel" "input" "daniel" "docker" "dialout" "uucp" "libvirtd" "bluetooth" "video"
   ];
+
+  services.usbmuxd.enable = true;
+  environment.systemPackages = [ pkgs.libimobiledevice ];
 
   systemd.services.ModemManager = {
     enable = false;
