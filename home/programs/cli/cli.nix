@@ -18,5 +18,7 @@
     mosh
     pandoc
     texlive.combined.scheme-full
+    opencode
+    opencode-desktop
   ];
 }
