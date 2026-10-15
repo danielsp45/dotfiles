@@ -32,6 +32,7 @@
     papirus-icon-theme
     hicolor-icon-theme
     kdePackages.okular
+    espanso-wayland
     mpv
     iptvnator
   ];

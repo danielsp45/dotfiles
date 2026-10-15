@@ -13,7 +13,7 @@ matches:
     replace: "Hi there!"
 
   - trigger: ":email"
-    replace: "hello@danielpereira.xyz"
+    replace: "mail@danielpereira.xyz"
 
   - trigger: ":domain"
     replace: "danielpereira.xyz"

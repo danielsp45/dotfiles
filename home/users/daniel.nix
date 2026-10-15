@@ -62,7 +62,7 @@ in
   dotfiles.programs.feynman.enable = enableFor [ "trooper" "storm" ];
   dotfiles.programs.claude.enable = enableFor [ "trooper" "storm" "pandora" ];
   dotfiles.programs.zellij.enable = enableFor [ "trooper" "storm" "pandora" ];
-  dotfiles.programs.espanso.enable = false;
+  dotfiles.programs.espanso.enable = true;
 
   # Legacy X11 (inactive, configs preserved)
   dotfiles.programs.bspwm.enable = false;
