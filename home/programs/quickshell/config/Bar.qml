@@ -171,12 +171,30 @@ Scope {
           }
         }
 
-        // CENTER CLOCK: independent of layout, truly centered in the pill
-        ClockWidget {
-          id: clock
-          color: "white"
-          px: sp(compact ? 10 : 12)
+        // CENTER: clock + weather pill (weather to the right of the time),
+        // independent of layout and centered in the bar. Weather hides itself
+        // until data loads, so the clock sits centered alone until then.
+        RowLayout {
+          id: centerGroup
           anchors.centerIn: parent
+          spacing: sp(10)
+
+          ClockWidget {
+            id: clock
+            color: "white"
+            px: sp(compact ? 10 : 12)
+            Layout.alignment: Qt.AlignVCenter
+          }
+
+          WeatherWidget {
+            id: weather
+            fontPx: sp(compact ? 10 : 12)
+            triggerWindow: barWindow
+            // Anchor the popup to the full-width bar so it centers on the
+            // screen rather than under the (off-center) pill.
+            popupAnchorItem: barBg
+            Layout.alignment: Qt.AlignVCenter
+          }
         }
       }
 
