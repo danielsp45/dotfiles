@@ -13,11 +13,13 @@
     jq
     quickemu
     quickgui
+    virt-manager
     libimobiledevice
     ifuse
     nwg-displays
     nextcloud-client
     protonmail-desktop
+    proton-vpn
     google-chrome
     chromium
     caddy
