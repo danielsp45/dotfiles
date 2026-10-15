@@ -1,0 +1,47 @@
+#!/usr/bin/env bash
+
+# media-control — route media-key actions to the player that's actually active,
+# instead of playerctl's default (the first player on the bus, which is usually
+# the browser). This fixes media keys controlling a paused YouTube tab while
+# music plays in Spotify.
+#
+# Selection order:
+#   1. the player currently Playing (so keys always hit the active audio)
+#   2. otherwise Spotify, if present
+#   3. otherwise the first player playerctl would have used
+#
+# Usage: media-control <play-pause|next|previous|stop|play|pause>
+# Set DRYRUN=1 to print the chosen player instead of acting (for testing).
+
+cmd="${1:-play-pause}"
+
+players=$(playerctl -l 2>/dev/null)
+[ -z "$players" ] && exit 0
+
+target=""
+
+# 1) the player that is currently Playing
+while IFS= read -r p; do
+  [ -z "$p" ] && continue
+  if [ "$(playerctl -p "$p" status 2>/dev/null)" = "Playing" ]; then
+    target="$p"
+    break
+  fi
+done <<< "$players"
+
+# 2) nothing playing → prefer Spotify if present
+if [ -z "$target" ]; then
+  while IFS= read -r p; do
+    if [ "$p" = "spotify" ]; then target="$p"; break; fi
+  done <<< "$players"
+fi
+
+# 3) otherwise the first player playerctl would have used
+[ -z "$target" ] && target=$(head -n1 <<< "$players")
+
+if [ "${DRYRUN:-0}" = "1" ]; then
+  echo "$target"
+  exit 0
+fi
+
+exec playerctl -p "$target" "$cmd"
