@@ -10,9 +10,14 @@ Item {
 
     property string label: ""
     property string sublabel: ""
-    property string iconName: ""      // Nerd Font glyph
+    property string iconName: ""      // Nerd Font glyph (used when iconComponent is null)
     property bool   checked: false
     property bool   hasSubMenu: false
+
+    // Optional custom icon (e.g. a natively-drawn logo) rendered instead of the
+    // font glyph. Bind its color to `iconColor` so it follows the checked state.
+    property Component iconComponent: null
+    readonly property color iconColor: pill.fg
 
     signal toggled()
     signal subMenuRequested()
@@ -46,12 +51,25 @@ Item {
             anchors.rightMargin: 8
             spacing: 12
 
-            Text {
-                text: root.iconName
-                color: pill.fg
-                font.pixelSize: 20
-                font.family: "Symbols Nerd Font"
+            Item {
+                Layout.preferredWidth: 20
+                Layout.preferredHeight: 20
                 Layout.alignment: Qt.AlignVCenter
+
+                Loader {
+                    anchors.centerIn: parent
+                    active: root.iconComponent !== null
+                    visible: active
+                    sourceComponent: root.iconComponent
+                }
+                Text {
+                    anchors.centerIn: parent
+                    visible: root.iconComponent === null
+                    text: root.iconName
+                    color: pill.fg
+                    font.pixelSize: 20
+                    font.family: "Symbols Nerd Font"
+                }
             }
 
             ColumnLayout {

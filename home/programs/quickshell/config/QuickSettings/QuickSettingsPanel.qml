@@ -28,7 +28,7 @@ PopupWindow {
     // open (hence only one focus grab).
     property bool shown: false
     property bool _render: false
-    property string view: "main"   // "main" | "wifi" | "bluetooth"
+    property string view: "main"   // "main" | "wifi" | "bluetooth" | "tailscale"
 
     // Window the trigger lives in (the bar). Included in the focus grab so that
     // clicking the trigger to close doesn't register as "outside" and reopen.
@@ -56,7 +56,7 @@ PopupWindow {
     implicitHeight: card.height + shadowMargin * 2
 
     onShownChanged: {
-        if (shown) { view = "main"; _render = true; nightSvc.refresh(); localSendSvc.refresh(); darkSvc.refresh() }
+        if (shown) { view = "main"; _render = true; nightSvc.refresh(); localSendSvc.refresh(); tailscaleSvc.refresh(true); darkSvc.refresh() }
         else hideTimer.restart()
     }
     Timer { id: hideTimer; interval: 170; onTriggered: win._render = false }
@@ -69,6 +69,7 @@ PopupWindow {
     PowerProfileService { id: powerSvc }
     NightLightService { id: nightSvc }
     LocalSendService { id: localSendSvc }
+    TailscaleService { id: tailscaleSvc }
     DarkModeService { id: darkSvc; onOnChanged: Theme.darkMode = on }
 
     // Dismiss when the user clicks outside the panel.
@@ -130,7 +131,9 @@ PopupWindow {
                 NumberAnimation { duration: win.shown ? 200 : 150; easing.type: win.shown ? Easing.OutCubic : Easing.InCubic }
             }
             Behavior on opacity { NumberAnimation { duration: win.shown ? 200 : 140 } }
-            Behavior on height { NumberAnimation { duration: 160; easing.type: Easing.OutCubic } }
+            // No Behavior on height: card.height is derived from viewport.height,
+            // which already animates. Easing it here too would chase a moving
+            // target and make resizes feel rubbery — let the card track directly.
 
             // soft drop shadow — MultiEffect blurs the card behind itself; the
             // crisp opaque card (bg) draws on top, so only the halo shows.
@@ -267,16 +270,19 @@ PopupWindow {
                                 onToggled: nightSvc.toggle()
                             }
                             ToggleButton {
-                                id: airplane
+                                id: tsTile
                                 Layout.fillWidth: true
-                                property bool on: false
-                                label: "Airplane Mode"; iconName: "󰀝"
-                                checked: on
-                                sublabel: on ? "On" : "Off"
-                                onToggled: {
-                                    on = !on
-                                    Quickshell.execDetached(["nmcli", "radio", "all", on ? "off" : "on"])
+                                label: "Tailscale"; hasSubMenu: true
+                                iconComponent: Component {
+                                    TailscaleIcon { size: 20; color: tsTile.iconColor }
                                 }
+                                checked: tailscaleSvc.active
+                                sublabel: tailscaleSvc.needsLogin ? "Needs login"
+                                        : (tailscaleSvc.active
+                                            ? (tailscaleSvc.selfName || "Connected")
+                                            : (tailscaleSvc.installed ? "Off" : "Not installed"))
+                                onToggled: tailscaleSvc.toggleTailscale()
+                                onSubMenuRequested: win.view = "tailscale"
                             }
                             ToggleButton {
                                 Layout.fillWidth: true
@@ -338,6 +344,7 @@ PopupWindow {
                         readonly property real activeHeight:
                             win.view === "wifi" ? wifiPanel.implicitHeight
                             : win.view === "bluetooth" ? btPanel.implicitHeight
+                            : win.view === "tailscale" ? tsPanel.implicitHeight
                             : 0
 
                         WifiSubPanel {
@@ -352,6 +359,15 @@ PopupWindow {
                             width: parent.width
 
                             visible: win.view === "bluetooth"
+                            onBack: win.view = "main"
+                        }
+                        TailscaleSubPanel {
+                            id: tsPanel
+                            width: parent.width
+                            service: tailscaleSvc
+
+                            visible: win.view === "tailscale"
+                            onVisibleChanged: if (visible) tailscaleSvc.refresh(true)
                             onBack: win.view = "main"
                         }
                     }

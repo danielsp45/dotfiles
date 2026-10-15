@@ -16,8 +16,9 @@ qs ipc call quickSettings toggle
 - **Wired banner** — when an Ethernet device is connected, a non-toggle
   "Wired / <connection>" row appears above the grid (the Wi-Fi tile stays put);
   tapping it opens network settings. Hidden when nothing is plugged in.
-- **Toggle grid** — Wi-Fi and Bluetooth (chevron opens a sliding sub-panel for
-  picking networks/devices), Dark Style, Night Light, Airplane Mode, Power Saver,
+- **Toggle grid** — Wi-Fi, Bluetooth, and Tailscale (chevron opens a sliding
+  sub-panel — networks/devices for Wi-Fi/Bluetooth; connect toggle, accounts,
+  exit nodes, and peers for Tailscale), Dark Style, Night Light, Power Saver,
   LocalSend (starts/stops `localsend_app` in the background for receiving).
 - **Sliders** — volume (click the icon to mute) and brightness.
 - **Media** — MPRIS controls, shown only when a player is active.
@@ -27,7 +28,9 @@ qs ipc call quickSettings toggle
 Native Quickshell singletons (no polling): `Quickshell.Networking` (Wi-Fi),
 `Quickshell.Bluetooth` (BlueZ), `Quickshell.Services.Pipewire` (audio),
 `Quickshell.Services.Mpris` (media). Brightness and power-profiles use the small
-Process-backed `BrightnessService` / `PowerProfileService`.
+Process-backed `BrightnessService` / `PowerProfileService`. Tailscale uses the
+Process-backed `TailscaleService` (polls the `tailscale` CLI; parsing lives in
+`TailscaleModel.js`).
 
 ## Optional dependencies (features hide themselves if missing)
 
@@ -39,6 +42,10 @@ Process-backed `BrightnessService` / `PowerProfileService`.
 | `blueman-manager` | "Bluetooth Settings" button | button opens nothing |
 | `toggle-hyprsunset` script | Night Light toggle | no-op |
 | `localsend_app` | LocalSend toggle | toggle does nothing |
+| `tailscale` | Tailscale tile + sub-panel | tile shows "Not installed" |
+| `wl-copy` (wl-clipboard) | Copy peer IP/name/DNS | copy actions no-op |
+| `xdg-open` | Opening the Tailscale login URL | login can't open browser |
+| `pkexec` | "Authorize Tailscale operator" | authorization prompt fails |
 | Symbols Nerd Font | all icons | tofu glyphs |
 
 Lock uses `~/.local/share/config/bin/lock-screen`. To enable the header gear,
