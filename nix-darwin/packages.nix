@@ -49,6 +49,7 @@
 	  "anydesk"
 	  "zen"
 	  "stremio"
+    "jellyfin"
     ];
 
     brews = [
