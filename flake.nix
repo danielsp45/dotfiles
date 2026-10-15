@@ -3,6 +3,10 @@
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixpkgs-unstable";
+    # Pinned to the last nixpkgs rev where zotero builds. Current unstable
+    # dropped the Firefox ESR 140 that zotero needs, breaking the build
+    # (NixOS/nixpkgs#568692). Drop this once the upstream fix lands.
+    nixpkgs-zotero.url = "github:NixOS/nixpkgs/7a0f122f5090cf4c2ade2a13a0e229d4e19ba71f";
     claudecode.url = "github:sadjow/claude-code-nix";
     nixos = {
       url = "github:nixos/nixpkgs/nixpkgs-unstable";
@@ -29,6 +33,7 @@
     {
       self,
       nixpkgs,
+      nixpkgs-zotero,
       home-manager,
       nix-darwin,
       zen-browser,
@@ -50,6 +55,13 @@
         feynman = final.callPackage ./pkgs/feynman { };
       };
 
+      zoteroOverlay = final: prev: {
+        zotero = (import nixpkgs-zotero {
+          inherit (final.stdenv.hostPlatform) system;
+          config.allowUnfree = true;
+        }).zotero;
+      };
+
       elixirOverlay = elixir-overlay.overlays.default;
 
       trooperOverlays = [
@@ -57,12 +69,13 @@
         claudecode.overlays.default
         feynmanOverlay
         elixirOverlay
+        zoteroOverlay
         (final: prev: {
           openldap = prev.openldap.overrideAttrs (_: { doCheck = false; });
         })
       ];
 
-      stormOverlays = [ zenBrowserOverlay claudecode.overlays.default feynmanOverlay elixirOverlay ];
+      stormOverlays = [ zenBrowserOverlay claudecode.overlays.default feynmanOverlay elixirOverlay zoteroOverlay ];
 
       devOverlays = [ elixirOverlay ];
 

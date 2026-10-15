@@ -16,6 +16,8 @@
   dotfiles.modules.programs.enable = true;
   dotfiles.modules.nfs-client.enable = true;
 
+  nixpkgs.config.permittedInsecurePackages = [ "electron-39.8.10" ];
+
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
 

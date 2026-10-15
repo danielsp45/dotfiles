@@ -8,6 +8,5 @@
     arandr
     zen-browser
     android-tools
-    adb-sync
   ];
 }
