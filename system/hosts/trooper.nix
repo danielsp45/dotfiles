@@ -33,6 +33,22 @@
     "networkmanager" "wheel" "input" "daniel" "docker" "dialout" "uucp" "libvirtd" "bluetooth" "video"
   ];
 
+  # ext4 has no uid/gid mount options; ownership lives on-disk, so chown the
+  # mountpoint to daniel after it's mounted. A tmpfiles rule races the mount
+  # (it's nofail, so not ordered before local-fs.target), so bind the chown to
+  # the mount unit itself.
+  systemd.services.chown-mnt-data = {
+    description = "Give daniel ownership of /mnt/data";
+    after = [ "mnt-data.mount" ];
+    requires = [ "mnt-data.mount" ];
+    wantedBy = [ "multi-user.target" ];
+    unitConfig.RequiresMountsFor = "/mnt/data";
+    serviceConfig = {
+      Type = "oneshot";
+      ExecStart = "${pkgs.coreutils}/bin/chown daniel:users /mnt/data";
+    };
+  };
+
   services.usbmuxd.enable = true;
   environment.systemPackages = [ pkgs.libimobiledevice ];
 

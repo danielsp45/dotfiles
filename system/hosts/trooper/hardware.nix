@@ -5,12 +5,21 @@
 
   boot.initrd.availableKernelModules = [ "nvme" "xhci_pci" "ahci" "usb_storage" "usbhid" "sd_mod" ];
   boot.initrd.kernelModules = [ ];
-  boot.kernelModules = [ "kvm-amd" ];
+  boot.kernelModules = [ "kvm-amd" "brd" ];
   boot.extraModulePackages = [ ];
+  boot.extraModprobeConfig = ''
+    options brd rd_nr=1 rd_size=10485760 max_part=0
+  '';
 
   fileSystems."/" = {
     device = "/dev/disk/by-uuid/44ef7b39-0f7c-478f-942b-a649a925b7ab";
     fsType = "ext4";
+  };
+
+  fileSystems."/mnt/data" = {
+    device = "/dev/disk/by-label/data";
+    fsType = "ext4";
+    options = [ "noatime" "nofail" ];
   };
 
   fileSystems."/boot" = {
