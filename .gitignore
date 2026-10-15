@@ -6,3 +6,7 @@ home/programs/hyprland/config/local/
 
 # large wallpapers (>100MB, exceeds GitHub limit)
 home/programs/hyprland/wallpapers/carina-nebula.png
+
+# nix build output
+result
+result-*
