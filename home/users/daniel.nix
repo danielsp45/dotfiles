@@ -59,6 +59,7 @@ in
     "pandora"
   ];
   dotfiles.programs.apps.enable = enableFor [ "trooper" "storm" ];
+  dotfiles.programs.zotero-mcp.enable = enableFor [ "trooper" "storm" ];
   dotfiles.programs.feynman.enable = enableFor [ "trooper" "storm" ];
   dotfiles.programs.claude.enable = enableFor [ "trooper" "storm" "pandora" ];
   dotfiles.programs.zellij.enable = enableFor [ "trooper" "storm" "pandora" ];

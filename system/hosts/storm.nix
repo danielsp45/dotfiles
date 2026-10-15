@@ -1,5 +1,6 @@
 { ... }:
 {
+  nixpkgs.config.permittedInsecurePackages = [ "electron-39.8.10" ];
   dotfiles.modules.audio.enable = true;
   dotfiles.modules.networking.enable = true;
   dotfiles.modules.fonts.enable = true;
@@ -15,8 +16,6 @@
   dotfiles.modules.syncthing.enable = true;
   dotfiles.modules.programs.enable = true;
   dotfiles.modules.nfs-client.enable = true;
-
-  nixpkgs.config.permittedInsecurePackages = [ "electron-39.8.10" ];
 
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
