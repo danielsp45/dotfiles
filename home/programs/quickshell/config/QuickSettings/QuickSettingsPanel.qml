@@ -56,7 +56,7 @@ PopupWindow {
     implicitHeight: card.height + shadowMargin * 2
 
     onShownChanged: {
-        if (shown) { view = "main"; _render = true; nightSvc.refresh(); localSendSvc.refresh() }
+        if (shown) { view = "main"; _render = true; nightSvc.refresh(); localSendSvc.refresh(); darkSvc.refresh() }
         else hideTimer.restart()
     }
     Timer { id: hideTimer; interval: 170; onTriggered: win._render = false }
@@ -69,6 +69,7 @@ PopupWindow {
     PowerProfileService { id: powerSvc }
     NightLightService { id: nightSvc }
     LocalSendService { id: localSendSvc }
+    DarkModeService { id: darkSvc; onOnChanged: Theme.darkMode = on }
 
     // Dismiss when the user clicks outside the panel.
     HyprlandFocusGrab {
@@ -254,9 +255,9 @@ PopupWindow {
                             ToggleButton {
                                 Layout.fillWidth: true
                                 label: "Dark Style"; iconName: "󰖔"
-                                checked: Theme.darkMode
-                                sublabel: Theme.darkMode ? "On" : "Off"
-                                onToggled: Theme.darkMode = !Theme.darkMode
+                                checked: darkSvc.on
+                                sublabel: darkSvc.on ? "On" : "Off"
+                                onToggled: darkSvc.toggle()
                             }
                             ToggleButton {
                                 Layout.fillWidth: true
