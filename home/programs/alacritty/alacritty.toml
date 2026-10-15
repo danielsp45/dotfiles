@@ -13,15 +13,15 @@ y = 5
 size = 16.0
 
 [font.normal]
-family = "Iosevka Nerd Font"
+family = "JetBrainsMono Nerd Font"
 style = "Regular"
 
 [font.bold]
-family = "Iosevka Nerd Font"
+family = "JetBrainsMono Nerd Font"
 style = "Bold"
 
 [font.italic]
-family = "Iosevka Nerd Font"
+family = "JetBrainsMono Nerd Font"
 style = "Light"
 
 [font.offset]
