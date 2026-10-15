@@ -47,5 +47,5 @@
     restartTriggers = [ config.environment.etc."glance".source ];
   };
 
-  networking.firewall.allowedTCPPorts = [ 80 81 443 8080 8384 5984 ];
+  networking.firewall.allowedTCPPorts = [ 80 81 443 1194 8080 8384 5984 ];
 }
