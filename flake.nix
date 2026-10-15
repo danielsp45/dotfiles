@@ -55,6 +55,10 @@
         feynman = final.callPackage ./pkgs/feynman { };
       };
 
+      iptvnatorOverlay = final: prev: {
+        iptvnator = final.callPackage ./pkgs/iptvnator { };
+      };
+
       zoteroOverlay = final: prev: {
         zotero = (import nixpkgs-zotero {
           inherit (final.stdenv.hostPlatform) system;
@@ -68,6 +72,7 @@
         zenBrowserOverlay
         claudecode.overlays.default
         feynmanOverlay
+        iptvnatorOverlay
         elixirOverlay
         zoteroOverlay
         (final: prev: {
@@ -75,7 +80,7 @@
         })
       ];
 
-      stormOverlays = [ zenBrowserOverlay claudecode.overlays.default feynmanOverlay elixirOverlay zoteroOverlay ];
+      stormOverlays = [ zenBrowserOverlay claudecode.overlays.default feynmanOverlay iptvnatorOverlay elixirOverlay zoteroOverlay ];
 
       devOverlays = [ elixirOverlay ];
 

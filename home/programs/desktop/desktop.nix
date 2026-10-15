@@ -30,5 +30,7 @@
     papirus-icon-theme
     hicolor-icon-theme
     kdePackages.okular
+    mpv
+    iptvnator
   ];
 }
