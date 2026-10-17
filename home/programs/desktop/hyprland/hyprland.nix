@@ -1,7 +1,7 @@
 { pkgs, lib, mkSymlink, ... }:
 let
   wallpaper = "~/.wallpaper";
-  defaultWallpaper = "$HOME/.dotfiles/home/programs/hyprland/wallpapers/carina-nebula.png";
+  defaultWallpaper = "$HOME/.dotfiles/home/programs/desktop/hyprland/wallpapers/carina-nebula.png";
 in
 {
   home.packages = with pkgs; [

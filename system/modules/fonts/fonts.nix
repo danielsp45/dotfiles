@@ -4,7 +4,7 @@ let
   # Not in nixpkgs (Apple doesn't license it for redistribution), so we fetch the
   # prebuilt TTF from samuelngs/apple-emoji-ttf. Registers as family
   # "Apple Color Emoji" — referenced by fontconfig's emoji default in
-  # home/programs/fonts/fonts.nix.
+  # home/programs/desktop/fonts/fonts.nix.
   apple-color-emoji = pkgs.stdenvNoCC.mkDerivation {
     pname = "apple-color-emoji";
     version = "macos-26-20260722";

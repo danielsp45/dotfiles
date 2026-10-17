@@ -41,8 +41,8 @@ export COLORTERM=truecolor
 # Custom Configurations
 #------------------------------------------------------------------------------
 # Source custom configurations
-source "$HOME/.dotfiles/home/programs/zsh/aliases.zsh"
-source "$HOME/.dotfiles/home/programs/zsh/functions.zsh"
+source "$HOME/.dotfiles/home/programs/shell/zsh/aliases.zsh"
+source "$HOME/.dotfiles/home/programs/shell/zsh/functions.zsh"
 
 export PATH="$HOME/.local/bin:$HOME/.local/share/config/bin:$PATH"
 

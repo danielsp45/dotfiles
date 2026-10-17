@@ -8,10 +8,7 @@ let
     (name: mkSystemModule name (import ../system/modules/${name}/${name}.nix))
     (lib.attrNames (builtins.readDir ../system/modules));
 
-  mkHomeModule = import ../home/lib/mkHomeModule.nix { inherit lib; };
-  homeModules = map
-    (name: mkHomeModule name (import ../home/programs/${name}/${name}.nix))
-    (lib.attrNames (builtins.readDir ../home/programs));
+  homeModules = import ./homeModules.nix { inherit lib; };
 
   baseHMModules = [ ../home ../home/lib ] ++ homeModules;
 in

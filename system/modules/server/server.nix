@@ -1,7 +1,7 @@
 { config, pkgs, lib, ... }:
 {
-  environment.etc."glance".source = ../../../home/programs/glance;
-  environment.etc."adguard/conf".source = ../../../home/programs/adguard/conf;
+  environment.etc."glance".source = ../../../home/programs/server/glance;
+  environment.etc."adguard/conf".source = ../../../home/programs/server/adguard/conf;
 
   services.resolved.enable = lib.mkForce false;
 

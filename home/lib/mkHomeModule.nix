@@ -1,5 +1,5 @@
 { lib }:
-name: body:
+name: dir: body:
 {
   config,
   lib,
@@ -9,7 +9,7 @@ name: body:
 let
   mkSymlink =
     relativePath:
-    config.lib.dotfiles.mkSymlinkFrom "${config.home.homeDirectory}/.dotfiles/home/programs/${name}" relativePath;
+    config.lib.dotfiles.mkSymlinkFrom "${config.home.homeDirectory}/.dotfiles/home/programs/${dir}" relativePath;
 in
 {
   options.dotfiles.programs.${name}.enable = lib.mkEnableOption "Enable ${name} configuration";
