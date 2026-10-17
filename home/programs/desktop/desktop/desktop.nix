@@ -33,6 +33,5 @@
     hicolor-icon-theme
     kdePackages.okular
     mpv
-    iptvnator
   ];
 }
