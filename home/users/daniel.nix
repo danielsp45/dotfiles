@@ -64,10 +64,6 @@ in
   dotfiles.programs.claude.enable = enableFor [ "trooper" "storm" "pandora" ];
   dotfiles.programs.zellij.enable = enableFor [ "trooper" "storm" "pandora" ];
 
-  # Legacy X11 (inactive, configs preserved)
-  dotfiles.programs.bspwm.enable = false;
-  dotfiles.programs.polybar.enable = false;
-
   # macOS (darwin not yet migrated)
   dotfiles.programs.aerospace.enable = false;
 
