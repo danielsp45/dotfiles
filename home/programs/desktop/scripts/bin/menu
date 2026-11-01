@@ -23,11 +23,11 @@ menu() {
 }
 
 present_terminal_simple() {
-  hyprctl dispatch exec "[float;center;size 1000x100] ghostty -e bash -c '~/.local/share/config/bin/show-logo; eval \"$1\";'"
+  hyprctl dispatch "hl.dsp.exec_cmd([==[ghostty -e bash -c '~/.local/share/config/bin/show-logo; eval \"$1\";']==], { float = true, center = true, size = \"1000 100\" })"
 }
 
 present_terminal() {
-  hyprctl dispatch exec "[float;center;size 1000x100] ghostty -e bash -c '~/.local/share/config/bin/show-logo; eval \"$1\"; ~/.local/share/config/bin/show-done;'"
+  hyprctl dispatch "hl.dsp.exec_cmd([==[ghostty -e bash -c '~/.local/share/config/bin/show-logo; eval \"$1\"; ~/.local/share/config/bin/show-done;']==], { float = true, center = true, size = \"1000 100\" })"
 }
 
 edit_in_nvim() {
@@ -129,7 +129,7 @@ show_setup_menu() {
   case $(menu "Setup" "  Audio\n󰂯  Bluetooth\n󰍹  Monitors\n  Config") in
   *Audio*) ghostty --class=Wiremix -e wiremix ;;
   *Bluetooth*) blueberry ;;
-  *Monitors*) edit_in_nvim ~/.config/hypr/monitors.conf ;;
+  *Monitors*) edit_in_nvim ~/.config/hypr/monitors.lua ;;
   *Config*) edit_in_nvim ~/.dotfiles ;;
   *) show_main_menu ;;
   esac
@@ -147,7 +147,7 @@ show_setup_power_menu() {
 
 show_setup_config_menu() {
   case $(menu "Setup" "  Hyprland\n  Hypridle\n  Hyprlock\n  Hyprsunset\n  Swayosd\n󰌧  Walker\n󰍜  Waybar\n󰞅  XCompose") in
-  *Hyprland*) edit_in_nvim ~/.config/hypr/hyprland.conf ;;
+  *Hyprland*) edit_in_nvim ~/.config/hypr/hyprland.lua ;;
   *Hypridle*) edit_in_nvim ~/.config/hypr/hypridle.conf && ~/.local/share/omarchy/bin/omarchy-restart-hypridle ;;
   *Hyprlock*) edit_in_nvim ~/.config/hypr/hyprlock.conf ;;
   *Hyprsunset*) edit_in_nvim ~/.config/hypr/hyprsunset.conf && ~/.local/share/omarchy/bin/omarchy-restart-hyprsunset ;;

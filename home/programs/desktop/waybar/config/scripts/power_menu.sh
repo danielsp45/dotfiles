@@ -4,7 +4,7 @@
 # The keys are what Rofi displays, values are the commands to execute.
 declare -A options=(
     ["Suspend"]="systemctl suspend"
-    ["Logout"]="hyprctl dispatch exit" # This command exits Hyprland
+    ["Logout"]="hyprctl dispatch hl.dsp.exit()" # This command exits Hyprland
     ["Reboot"]="systemctl reboot"
     ["Shutdown"]="systemctl poweroff"
     # IMPORTANT: Only include "Hibernate" if you have configured it correctly

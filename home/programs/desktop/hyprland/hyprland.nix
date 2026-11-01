@@ -27,16 +27,19 @@ in
   ];
 
   xdg.configFile = {
-    "hypr/animations.conf" = mkSymlink "config/animations.conf";
+    "hypr/animations.lua" = mkSymlink "config/animations.lua";
     "hypr/hypridle.conf" = mkSymlink "config/hypridle.conf";
-    "hypr/hyprland.conf" = mkSymlink "config/hyprland.conf";
+    # Hyprland writes a default hyprland.lua when it finds none; replace it.
+    "hypr/hyprland.lua" = mkSymlink "config/hyprland.lua" // { force = true; };
     "hypr/hyprlauncher.conf" = mkSymlink "config/hyprlauncher.conf";
     "hypr/hyprsunset.conf" = mkSymlink "config/hyprsunset.conf";
     "hypr/hyprtoolkit.conf" = mkSymlink "config/hyprtoolkit.conf";
-    "hypr/input.conf" = mkSymlink "config/input.conf";
-    "hypr/keybinds.conf" = mkSymlink "config/keybinds.conf";
+    "hypr/input.lua" = mkSymlink "config/input.lua";
+    "hypr/keybinds.lua" = mkSymlink "config/keybinds.lua";
+    # nwg-displays reads monitors.conf and writes both monitors.conf and monitors.lua.
     "hypr/monitors.conf" = mkSymlink "config/monitors.conf";
-    "hypr/windows.conf" = mkSymlink "config/windows.conf";
+    "hypr/monitors.lua" = mkSymlink "config/monitors.lua";
+    "hypr/windows.lua" = mkSymlink "config/windows.lua";
     "hypr/local" = mkSymlink "config/local";
 
     "hypr/hyprpaper.conf".text = ''

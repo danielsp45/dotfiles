@@ -2,14 +2,14 @@
   description = "Daniel's Nix configuration";
 
   inputs = {
-    nixpkgs.url = "github:nixos/nixpkgs/nixpkgs-unstable";
+    nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
     # Pinned to the last nixpkgs rev where zotero builds. Current unstable
     # dropped the Firefox ESR 140 that zotero needs, breaking the build
     # (NixOS/nixpkgs#568692). Drop this once the upstream fix lands.
     nixpkgs-zotero.url = "github:NixOS/nixpkgs/7a0f122f5090cf4c2ade2a13a0e229d4e19ba71f";
     claudecode.url = "github:sadjow/claude-code-nix";
     nixos = {
-      url = "github:nixos/nixpkgs/nixpkgs-unstable";
+      url = "github:nixos/nixpkgs/nixos-unstable";
     };
     home-manager = {
       url = "github:nix-community/home-manager";
@@ -20,8 +20,9 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
     zen-browser = {
-      url = "github:youwen5/zen-browser-flake";
+      url = "github:0xc000022070/zen-browser-flake";
       inputs.nixpkgs.follows = "nixpkgs";
+      inputs.home-manager.follows = "home-manager";
     };
     elixir-overlay = {
       url = "github:zoedsoupe/elixir-overlay";

@@ -15,12 +15,9 @@ focused="$(hyprctl monitors -j | jq -r '.[] | select(.focused==true).name')"
 
 # Spawn one Ghostty "screensaver" per monitor
 for m in $(hyprctl monitors -j | jq -r '.[].name'); do
-  hyprctl dispatch focusmonitor "$m"
-  hyprctl dispatch exec -- \
-    ghostty --class Screensaver \
-            --config "$GHOSTTY_CFG" \
-            -e ~/.local/share/config/bin/cmd-screensaver
+  hyprctl dispatch "hl.dsp.focus({ monitor = \"$m\" })"
+  hyprctl dispatch "hl.dsp.exec_cmd([==[ghostty --class Screensaver --config '$GHOSTTY_CFG' -e ~/.local/share/config/bin/cmd-screensaver]==])"
 done
 
 # Restore focus
-hyprctl dispatch focusmonitor "$focused"
+hyprctl dispatch "hl.dsp.focus({ monitor = \"$focused\" })"

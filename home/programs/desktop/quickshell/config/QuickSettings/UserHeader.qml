@@ -128,7 +128,7 @@ ColumnLayout {
 
             Repeater {
                 model: [
-                    { icon: "󰍃", label: "Log Out",  cmd: "hyprctl dispatch exit" },
+                    { icon: "󰍃", label: "Log Out",  cmd: "hyprctl dispatch 'hl.dsp.exit()'" },
                     { icon: "󰒲", label: "Suspend",   cmd: "~/.local/share/config/bin/suspend" },
                     { icon: "󰑓", label: "Restart",   cmd: "systemctl reboot" },
                     { icon: "󰐥", label: "Power Off", cmd: "systemctl poweroff" }
