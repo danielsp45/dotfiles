@@ -18,6 +18,39 @@ local cpp_scopes = {
 
 M.scope_types = { c = cpp_scopes, cpp = cpp_scopes }
 
+-- Elixir scopes are ordinary calls (`defmodule`, `def`, ...), so they are
+-- recognised by the call's target rather than by node type.
+local elixir_defs = { defmodule = false, def = true, defp = true, defmacro = true, defmacrop = true }
+
+-- Returns the name node of a `defmodule`/`def` call and whether it is a function.
+local function elixir_scope(node, buf)
+  if node:type() ~= "call" then
+    return nil
+  end
+  local target = node:field("target")[1]
+  local is_fn = target and elixir_defs[vim.treesitter.get_node_text(target, buf)]
+  if is_fn == nil then
+    return nil
+  end
+  local args
+  for child in node:iter_children() do
+    if child:type() == "arguments" then
+      args = child
+      break
+    end
+  end
+  local name = args and args:named_child(0)
+  if name and name:type() == "binary_operator" then -- `def f(x) when ...`
+    name = name:field("left")[1]
+  end
+  if name and name:type() == "call" then -- `def f(x)`
+    name = name:field("target")[1]
+  end
+  return name, is_fn
+end
+
+M.scope_finders = { elixir = elixir_scope }
+
 local state = { key = nil, root = nil, cache = {} }
 
 -- Parsing ---------------------------------------------------------------
@@ -79,6 +112,9 @@ local function candidates(path)
   local names = {}
   for i = #parts, 1, -1 do
     table.insert(names, table.concat(parts, "::", 1, i))
+    if i > 1 then -- Elixir headings: CarDash.PSACC.vehicle_info
+      table.insert(names, table.concat(parts, ".", 1, i))
+    end
     if i == #parts and i > 1 then
       table.insert(names, parts[i])
     end
@@ -162,7 +198,8 @@ function M.scope_path()
   local buf = vim.api.nvim_get_current_buf()
   local lang = vim.treesitter.language.get_lang(vim.bo[buf].filetype)
   local types = lang and M.scope_types[lang]
-  if not types then
+  local finder = lang and M.scope_finders[lang]
+  if not types and not finder then
     return "", false, nil
   end
 
@@ -175,16 +212,20 @@ function M.scope_path()
   local node = vim.treesitter.get_node({ bufnr = buf })
   local parts, pos, innermost = {}, nil, true
   while node do
-    if types[node:type()] then
-      local target = name_node(node)
-      if target then
-        table.insert(parts, 1, vim.treesitter.get_node_text(target, buf))
-        if innermost and is_function(node) then
-          local row, col = leaf(target):start()
-          pos = { row, col }
-        end
-        innermost = false
+    local target, is_fn
+    if finder then
+      target, is_fn = finder(node, buf)
+    elseif types[node:type()] then
+      target = name_node(node)
+      is_fn = target and is_function(node)
+    end
+    if target then
+      table.insert(parts, 1, vim.treesitter.get_node_text(target, buf))
+      if innermost and is_fn then
+        local row, col = leaf(target):start()
+        pos = { row, col }
       end
+      innermost = false
     end
     node = node:parent()
   end
