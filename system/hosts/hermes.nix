@@ -47,6 +47,45 @@
   # wakes almost instantly, at the cost of somewhat higher battery drain.
   boot.kernelParams = [ "mem_sleep_default=s2idle" ];
 
+  # The T2 drops and re-adds its internal USB devices across suspend. The Touch
+  # Bar drivers then re-probe in the wrong order (keys before backlight, display
+  # never binds), tiny-dfr's udev rule can leave the Touch Bar unconfigured
+  # (it must be in USB configuration 2, "display mode"), and tiny-dfr dies.
+  # Unload the drivers before sleep; on resume reload them in order, put the
+  # Touch Bar back into configuration 2 and restart tiny-dfr.
+  systemd.services.t2-touchbar-sleep = let
+    modprobe = "${pkgs.kmod}/bin/modprobe";
+    systemctl = "${config.systemd.package}/bin/systemctl";
+    touchbarDisplayMode = pkgs.writeShellScript "touchbar-display-mode" ''
+      for d in /sys/bus/usb/devices/*; do
+        [ "$(cat "$d/idVendor" 2>/dev/null)" = 05ac ] || continue
+        [ "$(cat "$d/idProduct" 2>/dev/null)" = 8302 ] || continue
+        [ "$(cat "$d/bConfigurationValue")" = 2 ] || echo 2 > "$d/bConfigurationValue"
+      done
+    '';
+  in {
+    description = "Reset T2 Touch Bar drivers around suspend";
+    before = [ "sleep.target" ];
+    wantedBy = [ "sleep.target" ];
+    unitConfig.StopWhenUnneeded = true;
+    serviceConfig = {
+      Type = "oneshot";
+      RemainAfterExit = true;
+      ExecStart = [
+        "-${systemctl} stop tiny-dfr.service"
+        "-${modprobe} -r appletbdrm hid_appletb_kbd hid_appletb_bl"
+      ];
+      ExecStop = [
+        "${modprobe} hid_appletb_bl"
+        "${modprobe} hid_appletb_kbd"
+        "${modprobe} appletbdrm"
+        "-${touchbarDisplayMode}"
+        "-${systemctl} reset-failed tiny-dfr.service"
+        "-${systemctl} --no-block restart tiny-dfr.service"
+      ];
+    };
+  };
+
   # Power button: short press locks the screen.
   # Apple's firmware sends a power-button ACPI notification that the regular
   # `button` driver ignores (no KEY_POWER ever reaches logind/Hyprland). The only
