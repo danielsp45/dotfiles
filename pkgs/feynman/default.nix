@@ -3,6 +3,7 @@
   stdenv,
   fetchurl,
   autoPatchelfHook,
+  nodejs_22,
 }:
 
 stdenv.mkDerivation rec {
@@ -14,9 +15,8 @@ stdenv.mkDerivation rec {
     hash = "sha256-qzaoobHkjIykJX9PGeH/a2LX6EERt/5HGbUk9RzU2vY=";
   };
 
+  # autoPatchelfHook is still needed for native .node addons in node_modules.
   nativeBuildInputs = [ autoPatchelfHook ];
-
-  # Bundled node binary links against libstdc++
   buildInputs = [ stdenv.cc.cc.lib ];
 
   # The bundled node_modules include a musl-variant clipboard library that we
@@ -27,14 +27,17 @@ stdenv.mkDerivation rec {
     runHook preInstall
 
     mkdir -p $out/share/feynman $out/bin
-    cp -r node app $out/share/feynman/
+    # The tarball's bundled node binary is not installed: after autoPatchelf it
+    # segfaults in glibc's loader (dl_main) with glibc >= 2.44. Use nixpkgs'
+    # Node 22 instead (feynman requires node >=20.19.0 <23).
+    cp -r app $out/share/feynman/
 
-    # The wrapper calls the patched node from the store, but the app runs from
+    # The wrapper calls nixpkgs' node from the store, but the app runs from
     # ~/.local/share/feynman/app/ (a writable copy managed by home-manager
     # activation) so that feynman can write its workspace to app/.feynman/.
     cat > $out/bin/feynman << EOF
     #!/bin/sh
-    exec $out/share/feynman/node/bin/node "\$HOME/.local/share/feynman/app/bin/feynman.js" "\$@"
+    exec ${nodejs_22}/bin/node "\$HOME/.local/share/feynman/app/bin/feynman.js" "\$@"
     EOF
     chmod +x $out/bin/feynman
 
