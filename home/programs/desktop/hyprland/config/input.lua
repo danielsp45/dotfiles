@@ -18,6 +18,16 @@ hl.config({
     },
 })
 
+-- hermes (MacBook Pro T2) built-in trackpad: it's huge and sits right under
+-- the palms, so a stray tap followed by a brush turned into a drag that
+-- selected text (and the next keystroke replaced it). Click with a physical
+-- press or a plain tap only; two-finger click = right click, macOS-style.
+hl.device({
+    name                 = "apple-inc.-apple-internal-keyboard-/-trackpad-1",
+    tap_and_drag         = false,
+    clickfinger_behavior = true,
+})
+
 -- Example per-device config
 -- See https://wiki.hypr.land/configuring/core/devices/
 hl.device({

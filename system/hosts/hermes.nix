@@ -24,6 +24,29 @@
   # nixos-hardware input in scope.
   hardware.apple-t2.kernelChannel = "stable";
 
+  # Touch Bar: tiny-dfr draws the media/function rows (via appletbdrm) and
+  # switches to F1–F12 while Fn is held. Without it only the kernel's basic
+  # hid-appletb-kbd fallback is active.
+  hardware.apple.touchBar = {
+    enable = true;
+    settings = {
+      MediaLayerDefault = true; # brightness/volume/media by default, Fn → F-keys
+      ShowButtonOutlines = true;
+      EnablePixelShift = true; # avoid burn-in
+    };
+  };
+
+  # The T2 exposes the built-in trackpad over its internal USB bus, so udev
+  # tags it as an *external* touchpad. libinput then skips disable-while-typing
+  # and keyboard-aware palm rejection, and palm brushes register as taps.
+  services.udev.extraRules = ''
+    ACTION=="add|change", KERNEL=="event*", ENV{ID_INPUT_TOUCHPAD}=="1", ATTRS{name}=="Apple Inc. Apple Internal Keyboard / Trackpad", ENV{ID_INPUT_TOUCHPAD_INTEGRATION}="internal", ENV{ID_INTEGRATION}="internal"
+  '';
+
+  # Lid close / suspend uses s2idle ("light" sleep) instead of S3 deep sleep:
+  # wakes almost instantly, at the cost of somewhat higher battery drain.
+  boot.kernelParams = [ "mem_sleep_default=s2idle" ];
+
   # Wi-Fi and Bluetooth firmware for T2 Macs
   hardware.firmware = [ (pkgs.stdenvNoCC.mkDerivation {
     name = "brcm-firmware";
