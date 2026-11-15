@@ -51,11 +51,12 @@ app("equal",         "Fend calculator",  terminal .. " -e fend", { float = true,
 app("SHIFT + equal", "Math (walker)",    'walker && sleep 0.1 && wtype "="')
 app("E",             "Unicode/Emoji (walker)", "walker -m symbols")
 
--- Switch workspaces with mainMod + [0-9]
+-- Switch workspaces with mainMod + [0-9] (instantly, no slide animation)
+local instant_workspace = require("animations").instant_workspace
 -- Move active window to a workspace with mainMod + SHIFT + [0-9]
 for i = 1, 10 do
     local key = tostring(i % 10) -- workspace 10 maps to key 0
-    hl.bind(mod(key),            hl.dsp.focus({ workspace = i }))
+    hl.bind(mod(key),            instant_workspace(hl.dsp.focus({ workspace = i })))
     hl.bind(mod("SHIFT + " .. key), hl.dsp.window.move({ workspace = i }))
 end
 

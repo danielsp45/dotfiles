@@ -24,6 +24,43 @@ hl.animation({ leaf = "layersIn",      enabled = true, speed = 4,    bezier = "e
 hl.animation({ leaf = "layersOut",     enabled = true, speed = 1.5,  bezier = "linear",       style = "fade" })
 hl.animation({ leaf = "fadeLayersIn",  enabled = true, speed = 1.79, bezier = "almostLinear" })
 hl.animation({ leaf = "fadeLayersOut", enabled = true, speed = 1.39, bezier = "almostLinear" })
-hl.animation({ leaf = "workspaces",    enabled = true, speed = 1.94, bezier = "almostLinear", style = "fade" })
-hl.animation({ leaf = "workspacesIn",  enabled = true, speed = 1.21, bezier = "almostLinear", style = "fade" })
-hl.animation({ leaf = "workspacesOut", enabled = true, speed = 1.94, bezier = "almostLinear", style = "fade" })
+-- Workspaces slide so the three-finger swipe follows the fingers (GNOME-style).
+-- Keyboard switches skip the animation via M.instant_workspace() below.
+local workspace_anims = {
+    { leaf = "workspaces",    enabled = true, speed = 1.94, bezier = "almostLinear", style = "slide" },
+    { leaf = "workspacesIn",  enabled = true, speed = 1.21, bezier = "almostLinear", style = "slide" },
+    { leaf = "workspacesOut", enabled = true, speed = 1.94, bezier = "almostLinear", style = "slide" },
+}
+for _, spec in ipairs(workspace_anims) do hl.animation(spec) end
+
+local M = {}
+
+-- Wrap a dispatcher so it runs with workspace animations switched off, i.e. the
+-- workspace changes instantly. Used for SUPER+<number>.
+--
+-- The animation starts on the next frame, not inside dispatch(), so the
+-- animations are re-enabled from a timer once the switch has settled. The
+-- generation counter keeps an older timer from re-enabling them in the middle
+-- of a newer, rapid-fire switch.
+local REENABLE_MS = 300 -- longer than the slowest workspace animation
+local generation = 0
+
+local function set_workspace_anims(enabled)
+    for _, spec in ipairs(workspace_anims) do
+        hl.animation(enabled and spec or { leaf = spec.leaf, enabled = false })
+    end
+end
+
+function M.instant_workspace(dispatcher)
+    return function()
+        generation = generation + 1
+        local mine = generation
+        set_workspace_anims(false)
+        hl.dispatch(dispatcher)
+        hl.timer(function()
+            if mine == generation then set_workspace_anims(true) end
+        end, { timeout = REENABLE_MS, type = "oneshot" })
+    end
+end
+
+return M

@@ -18,6 +18,21 @@ hl.config({
     },
 })
 
+-- GNOME-style workspace switching: three-finger horizontal swipe drags
+-- between workspaces, following the fingers, and snaps on release.
+hl.gesture({
+    fingers   = 3,
+    direction = "horizontal",
+    action    = "workspace",
+})
+
+hl.config({
+    gestures = {
+        workspace_swipe_cancel_ratio   = 0.15, -- a short flick is enough, like GNOME
+        workspace_swipe_direction_lock = true,
+    },
+})
+
 -- hermes (MacBook Pro T2) built-in trackpad: it's huge and sits right under
 -- the palms, so a stray tap followed by a brush turned into a drag that
 -- selected text (and the next keystroke replaced it). Click with a physical
