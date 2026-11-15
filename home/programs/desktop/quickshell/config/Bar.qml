@@ -40,8 +40,9 @@ Scope {
       ))
       function sp(x) { return Math.round(x * uiScale) }
 
-      // "Compact" for narrow screens (e.g. vertical 1080). Tweak threshold if you want.
-      readonly property bool compact: screen.width < sp(1300)
+      // "Compact" for narrow screens (e.g. vertical 1080). Compared against the
+      // logical width, unscaled, so a 1280-wide HiDPI laptop (hermes) isn't compact.
+      readonly property bool compact: screen.width < 1200
 
       // --- Window placement ---
       anchors {
@@ -108,13 +109,13 @@ Scope {
             }
           }
 
-          // RIGHT SIDE: stats (optionally hide in compact)
+          // RIGHT SIDE: stats (hidden in compact) + Quick Settings cluster (always)
           RowLayout {
             spacing: sp(8)
             Layout.alignment: Qt.AlignVCenter | Qt.AlignRight
-            visible: !compact
 
             Rectangle {
+              visible: !compact
               color: "#333333"
               radius: height / 2
               implicitHeight: sp(24)
