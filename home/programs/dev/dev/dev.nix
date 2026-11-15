@@ -12,7 +12,7 @@
     cargo
     rustfmt
     clippy
-    elixir-bin."1.17.3"
+    beam-overlay.elixir."1.20.5"
     beam28Packages.expert
     herdr
   ];

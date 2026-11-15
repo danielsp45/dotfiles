@@ -25,7 +25,7 @@
       inputs.home-manager.follows = "home-manager";
     };
     elixir-overlay = {
-      url = "github:zoedsoupe/elixir-overlay";
+      url = "github:zoedsoupe/beam-overlay";
       inputs.nixpkgs.follows = "nixpkgs";
     };
   };
