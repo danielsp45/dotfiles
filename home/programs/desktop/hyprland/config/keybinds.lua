@@ -92,6 +92,11 @@ hl.bind("XF86AudioMute",         exec("swayosd-client --output-volume mute-toggl
 hl.bind("XF86AudioMicMute",      exec("wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle"), held)
 hl.bind("XF86MonBrightnessUp",   exec("swayosd-client --brightness raise"), held)
 hl.bind("XF86MonBrightnessDown", exec("swayosd-client --brightness lower"), held)
+-- Keyboard backlight (MacBook Touch Bar illumination keys). The LED is named
+-- ":white:kbd_backlight" on T2 Macs; harmless on hosts without it.
+local kbd = ' --device ":white:kbd_backlight"'
+hl.bind("XF86KbdBrightnessUp",   exec("swayosd-client --brightness raise" .. kbd), held)
+hl.bind("XF86KbdBrightnessDown", exec("swayosd-client --brightness lower" .. kbd), held)
 
 -- Requires playerctl. media-control routes to the currently-playing player so
 -- the keys hit the active audio (e.g. Spotify) instead of a paused browser tab.
