@@ -1,5 +1,5 @@
 // UserHeader.qml
-// Avatar + username on the left; lock / power on the right.
+// Battery (icon + percentage) on the left; lock / power on the right.
 // Tapping the power button reveals an inline row of action buttons that
 // expands downward (GNOME-style), pushing the rest of the panel down.
 import QtQuick
@@ -23,40 +23,41 @@ ColumnLayout {
         Layout.preferredHeight: 40
         spacing: 12
 
-        // avatar
+        // Battery pill (GNOME: icon + percentage, top-left). Hidden on
+        // machines without a battery.
         Rectangle {
-            Layout.preferredWidth: 32
+            id: batteryPill
+            visible: BatteryService.available
+            // GNOME-style: plain foreground; charging shows via the bolt glyph.
+            readonly property color fg: BatteryService.critical ? Theme.danger : Theme.text
             Layout.preferredHeight: 32
+            Layout.preferredWidth: batteryRow.implicitWidth + 24
             radius: 16
             color: Theme.surface
-            clip: true
 
-            Image {
-                id: avatar
-                anchors.fill: parent
-                source: "file:///var/lib/AccountsService/icons/" + root.userName
-                fillMode: Image.PreserveAspectCrop
-                asynchronous: true
-                visible: status === Image.Ready
-            }
-            Text {
+            Row {
+                id: batteryRow
                 anchors.centerIn: parent
-                text: "󰀄"
-                font.family: "Symbols Nerd Font"
-                font.pixelSize: 18
-                color: Theme.subtext
-                visible: !avatar.visible
+                spacing: 6
+
+                Text {
+                    anchors.verticalCenter: parent.verticalCenter
+                    text: BatteryService.glyph
+                    font.family: "Symbols Nerd Font"
+                    font.pixelSize: 15
+                    color: batteryPill.fg
+                }
+                Text {
+                    anchors.verticalCenter: parent.verticalCenter
+                    text: BatteryService.percent + "%"
+                    font.pixelSize: 13
+                    font.bold: true
+                    color: batteryPill.fg
+                }
             }
         }
 
-        Text {
-            text: root.userName
-            color: Theme.text
-            font.pixelSize: 14
-            font.bold: true
-            Layout.fillWidth: true
-            elide: Text.ElideRight
-        }
+        Item { Layout.fillWidth: true }
 
         // action buttons: settings (optional), lock, power
         Repeater {

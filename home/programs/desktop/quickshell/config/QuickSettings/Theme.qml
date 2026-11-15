@@ -23,7 +23,6 @@ Singleton {
     readonly property color subtext:    darkMode ? "#b3b3b3" : "#5e5e63"
     readonly property color divider:    darkMode ? "#4d4d4d" : "#cfcfd4"
     readonly property color danger:     "#e25555"
-
     // --- metrics ---
     readonly property real backgroundOpacity: 1.0
     readonly property int  panelWidth:   360
