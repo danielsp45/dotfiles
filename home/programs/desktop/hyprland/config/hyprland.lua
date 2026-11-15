@@ -11,8 +11,7 @@ hl.on("hyprland.start", function()
     hl.exec_cmd("blueman-applet")
     hl.exec_cmd("1password --silent")
     hl.exec_cmd("qs")
-    hl.exec_cmd("walker --gapplication-service")
-    hl.exec_cmd("elephant")
+    -- walker and elephant run as systemd user services (see walker/walker.nix)
 end)
 
 -----------------------------

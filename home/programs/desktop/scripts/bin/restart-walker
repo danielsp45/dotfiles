@@ -1,4 +1,3 @@
 #!/usr/bin/env bash
 
-pkill walker
-setsid uwsm app -- walker --gapplication-service &
+systemctl --user restart elephant walker
