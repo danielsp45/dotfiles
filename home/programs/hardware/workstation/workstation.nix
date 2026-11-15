@@ -7,7 +7,6 @@
     cmake
     esphome
     duckdb
-    vagrant
     cifs-utils
     borgmatic
     borgbackup
