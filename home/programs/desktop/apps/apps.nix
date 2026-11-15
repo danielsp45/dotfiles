@@ -13,5 +13,6 @@
     calibre
     gvfs
     jellyfin
+    stremio-linux-shell
   ];
 }

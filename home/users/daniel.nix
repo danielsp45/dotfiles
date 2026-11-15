@@ -69,7 +69,7 @@ in
   dotfiles.programs.aerospace.enable = false;
 
   # Trooper-only
-  dotfiles.programs.gaming.enable = enableFor [ "trooper" ];
+  dotfiles.programs.gaming.enable = enableFor [ "trooper" "hermes" ];
   dotfiles.programs.amd.enable = enableFor [ "trooper" ];
   dotfiles.programs.workstation.enable = enableFor [ "trooper" ];
 
