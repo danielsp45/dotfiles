@@ -53,5 +53,8 @@ set `UserHeader.settingsCommand` (no `gnome-control-center` is installed here).
 
 ## Theming
 
-`Theme.qml` is a singleton palette; flip `Theme.darkMode` (the Dark Style tile
-does this) to switch between the dark palette and an Adwaita-Light variant.
+`Theme.qml` is a singleton palette; `Theme.darkMode` follows `DarkMode.qml`, which
+owns the system dark style (dconf `gtk-theme` + `color-scheme`). The Dark Style
+tile toggles it, and auto mode switches to dark at sunset and light at sunrise
+using the weather location (or IP geolocation). A manual toggle holds until the
+next sunrise/sunset.

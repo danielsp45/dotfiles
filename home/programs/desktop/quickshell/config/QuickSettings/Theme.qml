@@ -1,15 +1,15 @@
 pragma Singleton
 // Theme.qml
 // Shared palette singleton for the Quick Settings panel. Accessed as `Theme.*`
-// from any component. Flip `darkMode` to switch between a Catppuccin-ish dark
-// palette and an Adwaita-Light variant matching GNOME.
+// from any component. `darkMode` follows the system dark style (DarkMode.qml) and
+// switches between a Catppuccin-ish dark palette and an Adwaita-Light variant.
 import QtQuick
 import Quickshell
 
 Singleton {
     id: theme
 
-    property bool darkMode: true
+    readonly property bool darkMode: DarkMode.on
 
     // --- semantic colors (resolve based on darkMode) ---
     // Dark palette mirrors GNOME's Adwaita-dark quick settings: neutral grays for
