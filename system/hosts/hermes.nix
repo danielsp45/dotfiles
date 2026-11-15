@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ config, pkgs, ... }:
 {
   dotfiles.modules.audio.enable = true;
   dotfiles.modules.networking.enable = true;
@@ -46,6 +46,39 @@
   # Lid close / suspend uses s2idle ("light" sleep) instead of S3 deep sleep:
   # wakes almost instantly, at the cost of somewhat higher battery drain.
   boot.kernelParams = [ "mem_sleep_default=s2idle" ];
+
+  # Power button: short press locks the screen.
+  # Apple's firmware sends a power-button ACPI notification that the regular
+  # `button` driver ignores (no KEY_POWER ever reaches logind/Hyprland). The only
+  # driver that reacts is `tiny_power_button`, which signals systemd (PID 1)
+  # directly — by default with SIGRTMIN+4 = instant poweroff. Make it send
+  # SIGPWR instead: systemd then just starts sigpwr.target, which we hook to
+  # lock the screen. Holding the button still forces a hardware power-off.
+  boot.extraModprobeConfig = ''
+    options tiny_power_button power_signal=30
+  '';
+  systemd.services.power-button-lock = {
+    description = "Lock the screen on a power-button press";
+    wantedBy = [ "sigpwr.target" ];
+    serviceConfig = {
+      Type = "oneshot";
+      # sigpwr.target stays active after starting; stop it so the next press
+      # triggers again.
+      ExecStartPost = "${pkgs.systemd}/bin/systemctl stop --no-block sigpwr.target";
+    };
+    path = [ pkgs.coreutils pkgs.util-linux config.programs.hyprland.package ];
+    script = ''
+      # Ask every running Hyprland instance to run the user's lock-screen script.
+      for dir in /run/user/*/hypr/*/; do
+        [ -S "$dir/.socket.sock" ] || continue
+        uid=$(stat -c %u "$dir")
+        runuser -u "$(id -nu "$uid")" -- env \
+          XDG_RUNTIME_DIR="/run/user/$uid" \
+          HYPRLAND_INSTANCE_SIGNATURE="$(basename "$dir")" \
+          hyprctl eval 'hl.exec_cmd("~/.local/share/config/bin/lock-screen")' || true
+      done
+    '';
+  };
 
   # Wi-Fi and Bluetooth firmware for T2 Macs
   hardware.firmware = [ (pkgs.stdenvNoCC.mkDerivation {
