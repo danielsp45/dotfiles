@@ -35,34 +35,35 @@ in
   ];
 
   # Terminals
-  dotfiles.programs.alacritty.enable = enableFor [ "trooper" "storm" ];
+  dotfiles.programs.alacritty.enable = enableFor [ "trooper" "storm" "hermes" ];
 
   # btop config — all hosts (package provided by cli module)
   dotfiles.programs.btop.enable = true;
 
   # Desktop environment — graphical hosts only
-  dotfiles.programs.ghostty.enable = enableFor [ "trooper" "storm" ];
-  dotfiles.programs.hyprland.enable = enableFor [ "trooper" "storm" ];
-  # dotfiles.programs.waybar.enable = enableFor [ "trooper" "storm" ];
-  dotfiles.programs.dunst.enable = enableFor [ "trooper" "storm" ];
-  dotfiles.programs.swayosd.enable = enableFor [ "trooper" "storm" ];
-  dotfiles.programs.walker.enable = enableFor [ "trooper" "storm" ];
-  dotfiles.programs.quickshell.enable = enableFor [ "trooper" "storm" ];
-  dotfiles.programs.rofi.enable = enableFor [ "trooper" "storm" ];
-  dotfiles.programs.gtk.enable = enableFor [ "trooper" "storm" ];
-  dotfiles.programs.scripts.enable = enableFor [ "trooper" "storm" ];
+  dotfiles.programs.ghostty.enable = enableFor [ "trooper" "storm" "hermes" ];
+  dotfiles.programs.hyprland.enable = enableFor [ "trooper" "storm" "hermes" ];
+  # dotfiles.programs.waybar.enable = enableFor [ "trooper" "storm" "hermes" ];
+  dotfiles.programs.dunst.enable = enableFor [ "trooper" "storm" "hermes" ];
+  dotfiles.programs.swayosd.enable = enableFor [ "trooper" "storm" "hermes" ];
+  dotfiles.programs.walker.enable = enableFor [ "trooper" "storm" "hermes" ];
+  dotfiles.programs.quickshell.enable = enableFor [ "trooper" "storm" "hermes" ];
+  dotfiles.programs.rofi.enable = enableFor [ "trooper" "storm" "hermes" ];
+  dotfiles.programs.gtk.enable = enableFor [ "trooper" "storm" "hermes" ];
+  dotfiles.programs.scripts.enable = enableFor [ "trooper" "storm" "hermes" ];
 
   # Desktop packages and apps
   dotfiles.programs.desktop.enable = enableFor [
     "trooper"
     "storm"
     "pandora"
+    "hermes"
   ];
-  dotfiles.programs.apps.enable = enableFor [ "trooper" "storm" ];
-  dotfiles.programs.zotero-mcp.enable = enableFor [ "trooper" "storm" ];
-  dotfiles.programs.feynman.enable = enableFor [ "trooper" "storm" ];
-  dotfiles.programs.claude.enable = enableFor [ "trooper" "storm" "pandora" ];
-  dotfiles.programs.zellij.enable = enableFor [ "trooper" "storm" "pandora" ];
+  dotfiles.programs.apps.enable = enableFor [ "trooper" "storm" "hermes" ];
+  dotfiles.programs.zotero-mcp.enable = enableFor [ "trooper" "storm" "hermes" ];
+  dotfiles.programs.feynman.enable = enableFor [ "trooper" "storm" "hermes" ];
+  dotfiles.programs.claude.enable = enableFor [ "trooper" "storm" "pandora" "hermes" ];
+  dotfiles.programs.zellij.enable = enableFor [ "trooper" "storm" "pandora" "hermes" ];
 
   # macOS (darwin not yet migrated)
   dotfiles.programs.aerospace.enable = false;
@@ -72,8 +73,9 @@ in
   dotfiles.programs.amd.enable = enableFor [ "trooper" ];
   dotfiles.programs.workstation.enable = enableFor [ "trooper" ];
 
-  # Storm-only
-  dotfiles.programs.laptop.enable = enableFor [ "storm" ];
+  # Storm/hermes — laptops
+  dotfiles.programs.laptop.enable = enableFor [ "storm" "hermes" ];
+  # Storm-only — physical Keychron K2 Pro, not present on hermes
   dotfiles.programs.keychron.enable = enableFor [ "storm" ];
 
   # Server-only

@@ -1,0 +1,10 @@
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
+From: Workaround <nop@nop.invalid>
+Date: Thu, 1 Jan 2026 00:00:00 +0000
+Subject: [PATCH] no-op: 4005 superseded by dd9b845c 4001+4004
+
+The fix in 4005 (rearranging HID_ANY_ID/default probe cases) was
+already incorporated into the restructured 4004 from dd9b845c.
+---
+-- 
+2.0.0
