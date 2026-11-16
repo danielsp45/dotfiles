@@ -15,8 +15,17 @@ vim.g.mapleader = " " -- Make sure to set `mapleader` before lazy so your mappin
 vim.g.maplocalleader = "\\" -- Same for `maplocalleader`
 
 require("lazy").setup({
-    {import = "daniel.plugins"},
-    {import = "daniel.plugins.lsp"},
+    spec = {
+        {import = "daniel.plugins"},
+        {import = "daniel.plugins.lsp"},
+    },
+
+    -- plugins with `dev = true` load from ~/Projects when checked out there,
+    -- and are cloned from GitHub otherwise
+    dev = {
+        path = "~/Projects",
+        fallback = true,
+    },
 
     -- ui config
     ui = {
