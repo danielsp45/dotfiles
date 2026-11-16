@@ -124,6 +124,21 @@ in
     '';
   };
 
+  # Idle daemon: lock, screen off and suspend after inactivity (hypridle.conf).
+  systemd.user.services.hypridle = {
+    Unit = {
+      Description = "Hyprland idle daemon";
+      PartOf = [ "graphical-session.target" ];
+      After = [ "graphical-session.target" ];
+      X-Restart-Triggers = [ "${pkgs.hypridle}" ];
+    };
+    Service = {
+      ExecStart = "${pkgs.hypridle}/bin/hypridle";
+      Restart = "on-failure";
+    };
+    Install.WantedBy = [ "graphical-session.target" ];
+  };
+
   xdg.configFile."waypaper" = mkSymlink "waypaper";
 
   home.activation.wallpaper = lib.hm.dag.entryAfter [ "writeBoundary" ] ''
