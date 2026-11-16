@@ -58,20 +58,28 @@ Singleton {
     }
 
     property Process _read: Process {
-        // capacity, status, then the AC adapter's online flag (ADP1/AC/ACAD…;
-        // prints 0 when no mains supply is found).
-        command: ["sh", "-c", "cat /sys/class/power_supply/BAT0/capacity /sys/class/power_supply/BAT0/status; "
+        // capacity, status, "now full" charge (or energy), then the AC
+        // adapter's online flag (ADP1/AC/ACAD…; prints 0 when no mains supply
+        // is found).
+        command: ["sh", "-c", "b=/sys/class/power_supply/BAT0; cat $b/capacity $b/status; "
+            + "echo $(cat $b/charge_now $b/charge_full 2>/dev/null || cat $b/energy_now $b/energy_full 2>/dev/null); "
             + "for f in /sys/class/power_supply/*/type; do "
             + "[ \"$(cat \"$f\")\" = Mains ] && { cat \"${f%/type}/online\"; exit; }; done; echo 0"]
         running: false
         stdout: StdioCollector {
             onStreamFinished: {
                 const lines = text.trim().split("\n")
-                const p = Number(lines[0])
+                // Some batteries (the T2 MacBooks) report `capacity` against the
+                // design capacity, so a worn battery tops out well below 100%.
+                // Use charge relative to the battery's current full capacity.
+                const nf = (lines[2] || "").trim().split(/\s+/).map(Number)
+                let p = Number(lines[0])
+                if (nf.length === 2 && nf[1] > 0 && !isNaN(nf[0]))
+                    p = Math.min(100, Math.round(nf[0] / nf[1] * 100))
                 if (!isNaN(p)) svc.percent = p
                 if (lines.length > 1) svc.status = lines[1].trim()
                 // Fall back to the battery status if there's no Mains supply.
-                svc.pluggedIn = lines.length > 2 && lines[2].trim() === "1" ? true : svc.charging
+                svc.pluggedIn = lines.length > 3 && lines[3].trim() === "1" ? true : svc.charging
                 svc._checkLow()
             }
         }
