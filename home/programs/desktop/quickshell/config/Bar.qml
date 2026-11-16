@@ -101,11 +101,6 @@ Scope {
                 id: mprisInner
                 anchors.fill: parent
               }
-
-              TapHandler {
-                acceptedButtons: Qt.LeftButton
-                onTapped: mprisPopup.visible = !mprisPopup.visible
-              }
             }
           }
 

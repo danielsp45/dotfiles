@@ -1,6 +1,6 @@
 // WeatherPopup.qml
 // Detail popup for the center weather widget: a PopupWindow centered under the
-// bar item (same pattern as MprisWidget), styled with the Theme palette and a
+// bar item, styled with the Theme palette and a
 // drop shadow. Read-only — mirrors omarchy's weather panel layout:
 //   • hero row: big condition icon + temperature on the left; location and
 //     FEELS / WIND / HUMID stats stacked on the right

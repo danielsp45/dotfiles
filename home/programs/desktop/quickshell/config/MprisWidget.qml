@@ -1,10 +1,7 @@
 // MprisWidget.qml
 import QtQuick
 import QtQuick.Layouts
-import QtQuick.Effects
 import Quickshell.Services.Mpris
-import Quickshell
-import Quickshell.Wayland
 
 
 Rectangle {
@@ -35,6 +32,24 @@ Rectangle {
         return vals[vals.length - 1];
     }
 
+    // --- source detection: Spotify app, or YouTube in a browser ---
+    // Browsers expose the page URL as xesam:url in the MPRIS metadata.
+    readonly property string source: {
+        const p = activePlayer;
+        if (!p) return "";
+
+        const id = (p.identity || "").toLowerCase();
+        const desk = (p.desktopEntry || "").toLowerCase();
+        if (id.indexOf("spotify") !== -1 || desk.indexOf("spotify") !== -1)
+            return "spotify";
+
+        const url = ((p.metadata && p.metadata["xesam:url"]) || "") + "";
+        if (/^https?:\/\/([a-z0-9-]+\.)*(youtube\.com|youtu\.be)\//i.test(url))
+            return "youtube";
+
+        return "";
+    }
+
     visible: activePlayer !== null
 
     // --- pill look ---
@@ -52,28 +67,6 @@ Rectangle {
         + (icon.visible ? icon.implicitWidth + spacing : 0)
         + Math.min(marqueeText.implicitWidth, maxTextWidth)
 
-    // Combined hover state: pill hover OR popup hover.
-    // Driven explicitly to avoid Wayland pointer-leave races.
-    property bool pillHovered: false
-    property bool popupHovered: false
-    property bool popupShown: pillHovered || popupHovered
-
-    onPopupShownChanged: {
-        if (popupShown) {
-            popupHideTimer.stop()
-            hoverPopup._render = true
-        } else {
-            popupHideTimer.restart()
-        }
-    }
-
-    // Delay before destroying the window so the hide animation can finish.
-    Timer {
-        id: popupHideTimer
-        interval: 250
-        onTriggered: hoverPopup._render = false
-    }
-
     RowLayout {
         id: row
         anchors.fill: parent
@@ -81,33 +74,27 @@ Rectangle {
         anchors.rightMargin: root.horizontalPadding
         spacing: root.spacing
 
-        // --- icon: only Spotify gets the logo ---
+        // --- source icon (Spotify / YouTube) ---
         Text {
             id: icon
-            text: ""
-            color: "#1ED760"
+            visible: root.source !== ""
+            text: root.source === "youtube" ? "" : ""
+            color: root.source === "youtube" ? "#FF0033" : "#1ED760"
             font.pixelSize: 13
             Layout.alignment: Qt.AlignVCenter
-
-            visible: {
-                const p = root.activePlayer;
-                if (!p) return false;
-
-                const id = (p.identity || "").toLowerCase();
-                const desk = (p.desktopEntry || "").toLowerCase();
-
-                return id.indexOf("spotify") !== -1 || desk.indexOf("spotify") !== -1;
-            }
         }
 
         // --- track text (marquee) ---
         Item {
             id: marqueeContainer
-            implicitWidth: Math.min(marqueeText.implicitWidth, root.maxTextWidth)
+            Layout.alignment: Qt.AlignVCenter
+            Layout.preferredWidth: Math.min(marqueeText.implicitWidth, root.maxTextWidth)
             implicitHeight: marqueeText.implicitHeight
             clip: true
 
-            property bool needsScroll: marqueeText.implicitWidth > width
+            // How far the text has to move so its end lines up with the
+            // container's right edge (never more, so no empty space shows).
+            readonly property real overflow: Math.max(0, marqueeText.implicitWidth - width)
 
             Text {
                 id: marqueeText
@@ -115,6 +102,7 @@ Rectangle {
                 font.pixelSize: 12
                 font.bold: true
                 y: (marqueeContainer.height - height) / 2
+                onTextChanged: restartTimer.restart()
 
                 text: {
                     const p = root.activePlayer;
@@ -130,16 +118,36 @@ Rectangle {
                 }
             }
 
+            // Restart from the start whenever the title or available width
+            // changes, so a half-finished scroll of a longer title never
+            // leaves the new text shifted left.
+            function restartScroll() {
+                marquee.stop();
+                marqueeText.x = 0;
+                if (overflow > 1)
+                    marquee.start();
+            }
+            onOverflowChanged: restartTimer.restart()
+            Component.onCompleted: restartScroll()
+
+            // Coalesce the bursts of changes when a track switches.
+            Timer {
+                id: restartTimer
+                interval: 50
+                onTriggered: marqueeContainer.restartScroll()
+            }
+
             SequentialAnimation {
-                running: marqueeContainer.needsScroll
+                id: marquee
                 loops: Animation.Infinite
 
                 PauseAnimation { duration: 2000 }
                 NumberAnimation {
                     target: marqueeText
                     property: "x"
-                    to: -(marqueeText.implicitWidth - marqueeContainer.width)
-                    duration: Math.max(0, marqueeText.implicitWidth - marqueeContainer.width) * 30
+                    from: 0
+                    to: -marqueeContainer.overflow
+                    duration: marqueeContainer.overflow * 30
                     easing.type: Easing.Linear
                 }
                 PauseAnimation { duration: 1500 }
@@ -152,11 +160,6 @@ Rectangle {
                 }
             }
         }
-    }
-
-    // Hover tracking via HoverHandler (unaffected by popup window creation).
-    HoverHandler {
-        onHoveredChanged: root.pillHovered = hovered
     }
 
     // Click handling.
@@ -174,133 +177,6 @@ Rectangle {
                 p.next();
             else if (mouse.button === Qt.MiddleButton && p.canGoPrevious)
                 p.previous();
-        }
-    }
-
-    PopupWindow {
-        id: hoverPopup
-        color: "transparent"
-
-        anchor.item: root
-        anchor.edges: Edges.Bottom
-        anchor.gravity: Edges.Top | Edges.HCenter
-        anchor.margins.top: 8
-        anchor.adjustment: PopupAdjustment.Flip | PopupAdjustment.Slide
-
-        // 24px shadow room on all sides; card sits in the centre.
-        readonly property int shadowMargin: 24
-
-        property bool _render: false
-        visible: _render
-
-        implicitWidth: 400 + shadowMargin * 2
-        implicitHeight: 190 + shadowMargin * 2
-
-        // Track hover over the popup itself so moving the mouse from pill
-        // to popup doesn't collapse it.
-        HoverHandler {
-            onHoveredChanged: root.popupHovered = hovered
-        }
-
-        Item {
-            anchors.fill: parent
-
-            Item {
-                id: popupCard
-                x: hoverPopup.shadowMargin
-                width: 400
-                height: 190
-
-                // Slide down from 12px above final position when appearing.
-                // Both values are positive so nothing clips at the window edge.
-                y: root.popupShown
-                    ? hoverPopup.shadowMargin
-                    : hoverPopup.shadowMargin - 12
-                opacity: root.popupShown ? 1 : 0
-
-                Behavior on y { NumberAnimation { duration: root.popupShown ? 200 : 150; easing.type: root.popupShown ? Easing.OutCubic : Easing.InCubic } }
-                Behavior on opacity { NumberAnimation { duration: root.popupShown ? 200 : 140 } }
-
-                MultiEffect {
-                    source: popupBg
-                    anchors.fill: popupBg
-                    z: -1
-                    autoPaddingEnabled: true
-                    shadowEnabled: true
-                    shadowColor: "#000000"
-                    shadowOpacity: 0.35
-                    shadowBlur: 0.45
-                    shadowVerticalOffset: 3
-                    shadowHorizontalOffset: 0
-                }
-
-                Rectangle {
-                    id: popupBg
-                    anchors.fill: parent
-                    radius: 16
-                    color: "#323232"
-                    layer.enabled: true
-                }
-
-                RowLayout {
-                    anchors.fill: parent
-                    anchors.margins: 20
-                    spacing: 16
-
-                    // Album art
-                    Rectangle {
-                        Layout.preferredWidth: 150
-                        Layout.preferredHeight: 150
-                        radius: 12
-                        color: "#1a1a1a"
-                        clip: true
-
-                        Image {
-                            id: art
-                            anchors.fill: parent
-                            source: root.activePlayer ? root.activePlayer.trackArtUrl : ""
-                            fillMode: Image.PreserveAspectCrop
-                            asynchronous: true
-                            cache: true
-                            visible: source !== ""
-                        }
-
-                        Text {
-                            anchors.centerIn: parent
-                            text: "♪"
-                            color: "#666"
-                            visible: !art.visible
-                            font.pixelSize: 48
-                        }
-                    }
-
-                    // Track information
-                    ColumnLayout {
-                        Layout.fillWidth: true
-                        Layout.fillHeight: true
-                        spacing: 6
-
-                        Text {
-                            text: root.activePlayer ? root.activePlayer.trackTitle || "Unknown Track" : ""
-                            color: "#ffffff"
-                            font.pixelSize: 15
-                            font.bold: true
-                            wrapMode: Text.WordWrap
-                            Layout.fillWidth: true
-                        }
-
-                        Text {
-                            text: root.activePlayer ? root.activePlayer.trackArtist || "Unknown Artist" : ""
-                            color: "#b3b3b3"
-                            font.pixelSize: 13
-                            wrapMode: Text.WordWrap
-                            Layout.fillWidth: true
-                        }
-
-                        Item { Layout.fillHeight: true }
-                    }
-                }
-            }
         }
     }
 }
