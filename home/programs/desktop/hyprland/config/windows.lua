@@ -10,6 +10,14 @@ hl.window_rule({
     fullscreen = true,
 })
 
+-- The Quickshell overview animates itself (zoom in/out); Hyprland's layer
+-- fade on top of that made it look choppy.
+hl.layer_rule({
+    name    = "overview-no-anim",
+    match   = { namespace = "^quickshell-overview$" },
+    no_anim = true,
+})
+
 -- "Smart gaps" / "No gaps when only": uncomment all if you wish to use that.
 -- hl.workspace_rule({ workspace = "w[tv1]", gaps_out = 0, gaps_in = 0 })
 -- hl.workspace_rule({ workspace = "f[1]",   gaps_out = 0, gaps_in = 0 })

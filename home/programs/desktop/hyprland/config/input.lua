@@ -26,6 +26,19 @@ hl.gesture({
     action    = "workspace",
 })
 
+-- GNOME-style overview: three-finger swipe up opens the Quickshell workspace
+-- overview (quickshell/config/Overview.qml), swipe down closes it.
+hl.gesture({
+    fingers   = 3,
+    direction = "up",
+    action    = function() hl.exec_cmd("qs ipc call overview open") end,
+})
+hl.gesture({
+    fingers   = 3,
+    direction = "down",
+    action    = function() hl.exec_cmd("qs ipc call overview close") end,
+})
+
 hl.config({
     gestures = {
         workspace_swipe_cancel_ratio   = 0.15, -- a short flick is enough, like GNOME
