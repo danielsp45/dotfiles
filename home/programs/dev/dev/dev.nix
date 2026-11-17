@@ -4,6 +4,7 @@
     gnumake
     devenv
     gcc
+    clang-tools # clangd LSP + clang-format
     nodejs_24
     python312
     python312Packages.pip
