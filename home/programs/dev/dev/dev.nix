@@ -16,5 +16,6 @@
     beam-overlay.elixir."1.20.5"
     beam28Packages.expert
     herdr
+    openspec
   ];
 }
