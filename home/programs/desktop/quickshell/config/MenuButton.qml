@@ -14,6 +14,7 @@ Rectangle {
 
     property bool hovered: false
     property bool popupHovered: false
+    readonly property bool popupShown: sysPanel.shown
 
     Timer {
         id: hideTimer

@@ -44,6 +44,51 @@ Scope {
       // logical width, unscaled, so a 1280-wide HiDPI laptop (hermes) isn't compact.
       readonly property bool compact: screen.width < 1200
 
+      // --- Fullscreen auto-hide ---
+      // When the active workspace on this monitor has a fullscreen window, the
+      // bar moves to the Overlay layer (above the fullscreen window) but stays
+      // invisible and click-through except for a thin strip at the top edge.
+      // Pointing at that strip reveals the bar; it hides again once the pointer
+      // leaves and no dropdown from it is open.
+      readonly property var hyprMonitor: Hyprland.monitorFor(modelData)
+      readonly property bool fsActive: !!(hyprMonitor && hyprMonitor.activeWorkspace
+                                          && hyprMonitor.activeWorkspace.hasFullscreen)
+      readonly property bool popupOpen: qsPanel.shown || weather.popupShown || menuButton.popupShown
+      property bool hoverRevealed: false
+      readonly property bool revealed: !fsActive || hoverRevealed || popupOpen
+
+      WlrLayershell.layer: fsActive ? WlrLayer.Overlay : WlrLayer.Top
+      WlrLayershell.namespace: "quickshell-bar"
+
+      // Hidden: only the top-edge strip takes input. Revealed: the whole bar.
+      mask: Region { item: barWindow.revealed ? barAnchor : hotZone }
+
+      onFsActiveChanged: if (!fsActive) hoverRevealed = false
+
+      HoverHandler {
+        id: barHover
+        onHoveredChanged: {
+          if (hovered) { hideDelay.stop(); revealDelay.restart() }
+          else { revealDelay.stop(); hideDelay.restart() }
+        }
+      }
+      // Short dwell before revealing so brushing past the edge doesn't flash it.
+      Timer { id: revealDelay; interval: 120; onTriggered: barWindow.hoverRevealed = true }
+      Timer { id: hideDelay; interval: 400; onTriggered: barWindow.hoverRevealed = false }
+
+      // Static stand-in for the bar's footprint. Popups anchor to this rather
+      // than barBg, so the slide animation never drags them along.
+      Item {
+        id: barAnchor
+        anchors.fill: parent
+      }
+
+      Item {
+        id: hotZone
+        anchors { top: parent.top; left: parent.left; right: parent.right }
+        height: 2
+      }
+
       // --- Window placement ---
       anchors {
         top: true
@@ -59,6 +104,25 @@ Scope {
 
         radius: 0
         color: "black"
+
+        // Slide down from above the screen edge while fading in; slide back up
+        // (slightly faster, easing in) on hide.
+        opacity: barWindow.revealed ? 1 : 0
+        transform: Translate {
+          y: barWindow.revealed ? 0 : -barBg.height
+          Behavior on y {
+            NumberAnimation {
+              duration: barWindow.revealed ? 280 : 220
+              easing.type: barWindow.revealed ? Easing.OutCubic : Easing.InCubic
+            }
+          }
+        }
+        Behavior on opacity {
+          NumberAnimation {
+            duration: barWindow.revealed ? 220 : 200
+            easing.type: barWindow.revealed ? Easing.OutQuad : Easing.InQuad
+          }
+        }
 
         // MAIN ROW: left group + right stats
         RowLayout {
@@ -76,6 +140,7 @@ Scope {
             Layout.fillWidth: true
 
             MenuButton {
+              id: menuButton
               Layout.alignment: Qt.AlignVCenter
             }
 
@@ -188,7 +253,7 @@ Scope {
             triggerWindow: barWindow
             // Anchor the popup to the full-width bar so it centers on the
             // screen rather than under the (off-center) pill.
-            popupAnchorItem: barBg
+            popupAnchorItem: barAnchor
             Layout.alignment: Qt.AlignVCenter
           }
         }
@@ -197,7 +262,7 @@ Scope {
       // GNOME-style Quick Settings dropdown, anchored under the status cluster.
       QuickSettingsPanel {
         id: qsPanel
-        anchorItem: barBg
+        anchorItem: barAnchor
         triggerWindow: barWindow
         shown: barScope.qsScreen === barWindow.modelData.name
         onDismissed: barScope.qsScreen = ""
