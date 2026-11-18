@@ -26,18 +26,11 @@ hl.gesture({
     action    = "workspace",
 })
 
--- GNOME-style overview: three-finger swipe up opens the Quickshell workspace
--- overview (quickshell/config/Overview.qml), swipe down closes it.
-hl.gesture({
-    fingers   = 3,
-    direction = "up",
-    action    = function() hl.exec_cmd("qs ipc call overview open") end,
-})
-hl.gesture({
-    fingers   = 3,
-    direction = "down",
-    action    = function() hl.exec_cmd("qs ipc call overview close") end,
-})
+-- GNOME-style overview: the vertical three-finger swipe (up opens, down
+-- closes) is NOT bound here. Hyprland only runs a gesture's Lua action once
+-- the swipe has ended, so Quickshell reads the swipe from libinput itself and
+-- the zoom follows the fingers (quickshell/config/Overview.qml,
+-- TouchpadGestures.qml). Binding up/down here too would open it twice.
 
 hl.config({
     gestures = {
